@@ -2,6 +2,10 @@
 # Associate internals original text with physical files.
 
 
+$key = q/cite_abrial2010/;
+$ref_files{$key} = "$dir".q|node21.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/cite_losl-b/;
 $ref_files{$key} = "$dir".q|node21.html|; 
 $noresave{$key} = "$nosave";
