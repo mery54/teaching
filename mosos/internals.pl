@@ -15,7 +15,7 @@ $ref_files{$key} = "$dir".q|node3.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$ref_files{$key} = "$dir".q|node11.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
@@ -31,7 +31,7 @@ $ref_files{$key} = "$dir".q|node8.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$ref_files{$key} = "$dir".q|node17.html|; 
+$ref_files{$key} = "$dir".q|node10.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
@@ -39,7 +39,7 @@ $ref_files{$key} = "$dir".q|node4.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
-$ref_files{$key} = "$dir".q|node11.html|; 
+$ref_files{$key} = "$dir".q|node12.html|; 
 $noresave{$key} = "$nosave";
 
 1;

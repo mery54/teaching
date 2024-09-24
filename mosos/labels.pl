@@ -15,7 +15,7 @@ $external_labels{$key} = "$URL/" . q|node3.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
-$external_labels{$key} = "$URL/" . q|node10.html|; 
+$external_labels{$key} = "$URL/" . q|node11.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
@@ -31,7 +31,7 @@ $external_labels{$key} = "$URL/" . q|node8.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$external_labels{$key} = "$URL/" . q|node17.html|; 
+$external_labels{$key} = "$URL/" . q|node10.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
@@ -39,7 +39,7 @@ $external_labels{$key} = "$URL/" . q|node4.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
-$external_labels{$key} = "$URL/" . q|node11.html|; 
+$external_labels{$key} = "$URL/" . q|node12.html|; 
 $noresave{$key} = "$nosave";
 
 1;
