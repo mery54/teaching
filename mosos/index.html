@@ -1,147 +1,352 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Modelling Software-based Systems</title>
+<!--Generated on Tue Sep 24 12:12:47 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on September 24, 2024.-->
 
-<!--Converted with LaTeX2HTML 2024 (Released January 1, 2024) -->
-<HTML lang="en">
-<HEAD>
-<TITLE>Modelling Software-based Systems</TITLE>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="ltx-listings.css" type="text/css">
+<link rel="stylesheet" href="ltx-ulem.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line" style="background-color:#FFFFFF;">
+<h1 class="ltx_title ltx_title_document">Modelling Software-based Systems</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Dominique Méry
+<br class="ltx_break">LORIA &amp; Telecom Nancy
+<br class="ltx_break">Université de Lorraine
+<br class="ltx_break"><span class="ltx_ref ltx_nolink ltx_url ltx_font_typewriter ltx_ref_self">dominique.mery@loria.fr</span>
+</span></span>
+</div>
+<div class="ltx_dates">(September 24, 2024)</div>
 
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2024">
+<div id="p1" class="ltx_para">
+<p class="ltx_p">This site contains resources relating to the use of the Event-B
+language and the Rodin platform to verify contracts for a small
+sequential programming language. We give the Rodin models and a
+description of these models in the form of a text <span class="ltx_text ltx_LaTeX_logo" style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_text" style="position:relative; bottom:0.4ex;font-variant:small-caps;;">a</span>T<span class="ltx_text" style="position:relative; bottom:-0.2ex;font-variant:small-caps;font-size:120%;">e</span>X</span>.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The Event-B method is based on a modelling
+language used to describe state-based models and safety
+properties of those state-based models. The originality of Event-B
+lies in its ability to
+enable incremental and proof-based modelling of <span class="ltx_text ltx_font_italic">reactive
+systems</span>. The Event-B language contains both set notations and a
+first-order predicate calculus; it offers the possibility of defining
+models of reactive systems called machines and contexts and includes
+the refinement relationship that allows us to follow an incremental
+development methodology.</p>
+</div>
+<nav class="ltx_TOC ltx_list_toc ltx_toc_toc"><h6 class="ltx_title ltx_title_contents">Contents</h6>
+<ol class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S1" title="In Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Documentation and Tools</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S2" title="In Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Course MCFSI at Telecom Nancy</span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a href="#S2.SS1" title="In 2 Course MCFSI at Telecom Nancy ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>Slides for the course MCFSI</span></a>
+<ol class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S2.SS1.SSS1" title="In 2.1 Slides for the course MCFSI ‣ 2 Course MCFSI at Telecom Nancy ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1.1 </span>Lecture 1
+<span class="ltx_ref ltx_href">The
+Modelling Language Event-B</span>.</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S2.SS1.SSS2" title="In 2.1 Slides for the course MCFSI ‣ 2 Course MCFSI at Telecom Nancy ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1.2 </span>Lecture 2
+<span class="ltx_ref ltx_href">Proof
+Obligations</span>.</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S2.SS1.SSS3" title="In 2.1 Slides for the course MCFSI ‣ 2 Course MCFSI at Telecom Nancy ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1.3 </span>Lecture 3
+<span class="ltx_ref ltx_href">Correctness by Construction with the
+Modelling Language Event-B using the Refinement</span>.</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S2.SS1.SSS4" title="In 2.1 Slides for the course MCFSI ‣ 2 Course MCFSI at Telecom Nancy ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1.4 </span> Lecture 4
+<span class="ltx_ref ltx_href">Access
+Control </span></span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS2" title="In 2 Course MCFSI at Telecom Nancy ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Tutorials</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS3" title="In 2 Course MCFSI at Telecom Nancy ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Project</span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S3" title="In Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Course Modelling and verifying software-based systems for
+Master in Compurer Science of the University of Lorraine</span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a href="#S3.SS1" title="In 3 Course Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>Slides of the course</span></a>
+<ol class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S3.SS1.SSS1" title="In 3.1 Slides of the course ‣ 3 Course Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.1 </span>Lecture 1
+<span class="ltx_ref ltx_href">The
+Modelling Language Event-B</span>.</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S3.SS1.SSS2" title="In 3.1 Slides of the course ‣ 3 Course Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.2 </span> Lecture 2
+<span class="ltx_ref ltx_href">Proof
+Obligations</span>.</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S3.SS1.SSS3" title="In 3.1 Slides of the course ‣ 3 Course Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.3 </span>Lecture 3
+<span class="ltx_ref ltx_href">Correctness by Construction with the
+Modelling Language Event-B using the Refinement</span>.</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S3.SS1.SSS4" title="In 3.1 Slides of the course ‣ 3 Course Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.4 </span> Lecture 4
+<span class="ltx_ref ltx_href">Access
+Control </span></span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS2" title="In 3 Course Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Tutorials</span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" title="In Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Event-B Models</span></a></li>
+</ol></nav>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Documentation and Tools</h2>
 
-<LINK REL="STYLESHEET" HREF="web.css">
+<div id="S1.p1" class="ltx_para">
+<ul id="S1.I1" class="ltx_itemize">
+<li id="S1.I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"></span>
+<div id="S1.I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">The main document on the Event-B modelling language and
+methodology is the book of Jean-Raymond Abrial <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib10" title="Modeling in Event-B: System and Software Engineering" class="ltx_ref">1</a>]</cite>.</p>
+</div>
+</li>
+<li id="S1.I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"></span>
+<div id="S1.I1.ix2.p1" class="ltx_para">
+<p class="ltx_p">The Rodin platform is available at the
+<a href="https://www.event-b.org/install.html" title="" class="ltx_ref ltx_href">following
+link</a>.</p>
+</div>
+</li>
+<li id="S1.I1.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"></span>
+<div id="S1.I1.ix3.p1" class="ltx_para">
+<p class="ltx_p">The chapter <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="The event-b modelling method: concepts and case studies" class="ltx_ref">3</a>]</cite> (from <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib5" title="Logics of specification languages" class="ltx_ref">2</a>]</cite>.) authored
+by Dominique Cansell and Dominique Méry and entitled <span class="ltx_text ltx_font_italic">The
+Event-B Modelling Method: Concepts and Case Studies</span> has
+benne published from lectures notes given in a Summer Schooll and you can use it for
+getting details from Event-B see the <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/BasicEventB.pdf" title="" class="ltx_ref ltx_href">following
+link</a>.</p>
+</div>
+</li>
+<li id="S1.I1.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"></span>
+<div id="S1.I1.ix4.p1" class="ltx_para">
+<p class="ltx_p">Lectures Notes <span class="ltx_text ltx_font_italic">The Modelling Language</span> at the
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/main-Poly1.pdf" title="" class="ltx_ref ltx_href">following
+link</a>.</p>
+</div>
+</li>
+<li id="S1.I1.ix5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"></span>
+<div id="S1.I1.ix5.p1" class="ltx_para">
+<p class="ltx_p">Chapter <span class="ltx_text ltx_font_italic">Event-B</span> at the
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/Chapter10.pdf" title="" class="ltx_ref ltx_href">following link</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Course MCFSI at Telecom Nancy</h2>
 
-<LINK REL="next" HREF="node1.html">
-</HEAD>
+<section id="S2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.1 </span>Slides for the course MCFSI</h3>
 
-<BODY  bgcolor="#ffffff">
+<section id="S2.SS1.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">2.1.1 </span>Lecture 1
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf" title="" class="ltx_ref ltx_href">The
+Modelling Language Event-B</a>.
+</h4>
 
-<DIV CLASS="navigation"><!--Navigation Panel-->
-<A
- HREF="node1.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png"> 
-<A ID="tex2html2"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node1.html">Contents</A>
- &nbsp; <B>  <A ID="tex2html3"
-  HREF="node1.html">Contents</A></B> 
-<BR>
-<BR></DIV>
-<!--End of Navigation Panel-->
- 
-<H1 class="CENTER">Modelling Software-based Systems</H1>
-<P class="CENTER"><STRONG>Dominique Méry</STRONG>
-<BR>
-LORIA &amp; Telecom Nancy
-<BR>
-Université de Lorraine
-<BR><kbd><A ID="tex2html1"
-  HREF="dominique.mery@loria.fr">dominique.mery@loria.fr</A></kbd>
-</P>
-<BR><P class="CENTER"><B>Date:</B> September 24, 2024</P>
+</section>
+<section id="S2.SS1.SSS2" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">2.1.2 </span>Lecture 2
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-po.pdf" title="" class="ltx_ref ltx_href">Proof
+Obligations</a>.</h4>
 
-<HR>
-<P>
-This site contains resources relating to the use of the Event-B 
-language and the Rodin platform to verify contracts for a small 
-sequential programming language.  We give the Rodin models and a 
-description of these models in the form of a text <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>.
+</section>
+<section id="S2.SS1.SSS3" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">2.1.3 </span>Lecture 3
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf" title="" class="ltx_ref ltx_href">Correctness by Construction with the
+Modelling Language Event-B using the Refinement</a>.</h4>
 
-<P>
-The Event-B  method is based on a modelling
- language used to describe state-based models and  safety
- properties of those state-based models.  The originality of  Event-B
- lies in its ability  to
- enable incremental and proof-based modelling of <SPAN  CLASS="textit">reactive
-   systems</SPAN>. The  Event-B   language contains both set notations and a
- first-order predicate calculus; it offers the possibility of defining
- models of reactive systems called machines and contexts and includes
-  the refinement relationship that allows us to follow an incremental
-  development methodology.  
+</section>
+<section id="S2.SS1.SSS4" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">2.1.4 </span> Lecture 4
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf" title="" class="ltx_ref ltx_href">Access
+Control </a>
+</h4>
 
-<P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"></A>
+</section>
+</section>
+<section id="S2.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2 </span>Tutorials</h3>
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html4"
-  HREF="node1.html">Contents</A>
-<LI><A ID="tex2html5"
-  HREF="node2.html">Documentation and Tools</A>
-<LI><A ID="tex2html6"
-  HREF="node3.html">Course MCFSI  at Telecom Nancy</A>
-<UL>
-<LI><A ID="tex2html7"
-  HREF="node4.html">Slides for the course MCFSI</A>
-<UL>
-<LI><A ID="tex2html8"
-  HREF="node5.html">Lecture 1
-  <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf">The 
-    Modelling Language Event-B</a>. 
-</A>
-<LI><A ID="tex2html9"
-  HREF="node6.html">Lecture 2
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-po.pdf">Proof
-      Obligations</a>.</A>
-<LI><A ID="tex2html10"
-  HREF="node7.html">Lecture 3 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf">Correctness by Construction with the  
-      Modelling Language Event-B using the Refinement</a>.</A>
-<LI><A ID="tex2html11"
-  HREF="node8.html">Lecture 4 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf">Access 
-      Control </a>
-</A>
-</UL>
-<LI><A ID="tex2html12"
-  HREF="node9.html">Tutorials</A>
-<LI><A ID="tex2html13"
-  HREF="node10.html">Project</A>
-</UL>
-<BR>
-<LI><A ID="tex2html14"
-  HREF="node11.html">Course Modelling and verifying software-based systems for
-  Master in Compurer Science of the University of Lorraine</A>
-<UL>
-<LI><A ID="tex2html15"
-  HREF="node12.html">Slides of the course</A>
-<UL>
-<LI><A ID="tex2html16"
-  HREF="node13.html">Lecture 1 
-  <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf">The 
-    Modelling Language Event-B</a>.</A>
-<LI><A ID="tex2html17"
-  HREF="node14.html">Lecture 2 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf">Proof 
-      Obligations</a>.</A>
-<LI><A ID="tex2html18"
-  HREF="node15.html">Lecture 3 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf">Correctness by Construction with the  
-      Modelling Language Event-B using the Refinement</a>.</A>
-<LI><A ID="tex2html19"
-  HREF="node16.html">Lecture 4 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf">Access 
-      Control </a></A>
-</UL>
-<LI><A ID="tex2html20"
-  HREF="node17.html">Tutorials</A>
-</UL>
-<BR>
-<LI><A ID="tex2html21"
-  HREF="node18.html">Event-B Models</A>
-<LI><A ID="tex2html22"
-  HREF="node19.html">References</A>
-<LI><A ID="tex2html23"
-  HREF="node20.html">About this document ...</A>
-</UL>
-<!--End of Table of Child-Links-->
-<BR><HR>
+<div id="S2.SS2.p1" class="ltx_para">
+<ul id="S2.I1" class="ltx_itemize">
+<li id="S2.I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"></span>
+<div id="S2.I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">Tutorial 1
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/tutorial1.pdf" title="" class="ltx_ref ltx_href">Using
+the Event-B modelling language</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S2.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.3 </span>Project</h3>
 
-</BODY>
-</HTML>
+<div id="S2.SS3.p1" class="ltx_para">
+<p class="ltx_p">The assessment of students is based on two works:</p>
+<ul id="S2.I2" class="ltx_itemize">
+<li id="S2.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">An written exam</p>
+</div>
+</li>
+<li id="S2.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">A project which is stated in the following document
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/telecom-projects2425.pdf" title="" class="ltx_ref ltx_href">Projet
+3A IL</a></p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Course Modelling and verifying software-based systems for
+Master in Compurer Science of the University of Lorraine</h2>
+
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.1 </span>Slides of the course</h3>
+
+<section id="S3.SS1.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.1.1 </span>Lecture 1
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf" title="" class="ltx_ref ltx_href">The
+Modelling Language Event-B</a>.</h4>
+
+</section>
+<section id="S3.SS1.SSS2" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.1.2 </span> Lecture 2
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf" title="" class="ltx_ref ltx_href">Proof
+Obligations</a>.</h4>
+
+</section>
+<section id="S3.SS1.SSS3" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.1.3 </span>Lecture 3
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf" title="" class="ltx_ref ltx_href">Correctness by Construction with the
+Modelling Language Event-B using the Refinement</a>.</h4>
+
+</section>
+<section id="S3.SS1.SSS4" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.1.4 </span> Lecture 4
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf" title="" class="ltx_ref ltx_href">Access
+Control </a>
+</h4>
+
+</section>
+</section>
+<section id="S3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.2 </span>Tutorials</h3>
+
+<div id="S3.SS2.p1" class="ltx_para">
+<ul id="S3.I1" class="ltx_itemize">
+<li id="S3.I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"></span>
+<div id="S3.I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">Tutorial 1
+<a href="http://mery54.github.io/teaching/mosos/lecturesnotes/tutorial1.pdf" title="" class="ltx_ref ltx_href">Using
+the Event-B modelling language</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Event-B Models</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">The Event-B models are at the <a href="http://mery54.github.io/teaching/models/" title="" class="ltx_ref ltx_href">link for <span class="ltx_text ltx_font_sansserif">Event-B</span> </a>.</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p"><a href="http://mery54.github.io/teaching/mosos/lecturesnotes/%0Aex-safety.zip" title="" class="ltx_ref ltx_href">Archive Rodin for explaining differences between
+Event-B invariant and Eveny-B theorem. </a></p>
+</div>
+<div id="S4.p3" class="ltx_para">
+<p class="ltx_p"><a href="http://mery54.github.io/teaching/mosos/lecturesnotes/%0Aex-school.zip" title="" class="ltx_ref ltx_href">Archive Rodin for the management of school. </a></p>
+</div>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul id="bib.L1" class="ltx_biblist">
+<li id="bib.bib10" class="ltx_bibitem ltx_bib_book">
+<span class="ltx_tag ltx_bib_key ltx_role_refnum ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_author">J.-R. Abrial</span><span class="ltx_text ltx_bib_year"> (2010)</span>
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_title">Modeling in Event-B: System and Software Engineering</span>.
+</span>
+<span class="ltx_bibblock"> <span class="ltx_text ltx_bib_publisher">cup</span>.
+</span>
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S1.I1.ix1.p1" title="1 Documentation and Tools ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1</span></a>.
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem ltx_bib_book">
+<span class="ltx_tag ltx_bib_key ltx_role_refnum ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_editor">D. Bjørner and M. C. Henson (Eds.)</span><span class="ltx_text ltx_bib_year"> (2007)</span>
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_title">Logics of specification languages</span>.
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_series">EATCS Textbook in Computer Science</span>,  <span class="ltx_text ltx_bib_publisher">Springer</span>.
+</span>
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S1.I1.ix3.p1" title="1 Documentation and Tools ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1</span></a>,
+<a href="#bib.bib1" title="The event-b modelling method: concepts and case studies" class="ltx_ref">3</a>.
+</span>
+</li>
+<li id="bib.bib1" class="ltx_bibitem ltx_bib_inbook">
+<span class="ltx_tag ltx_bib_key ltx_role_refnum ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_author">D. Cansell and D. Méry</span><span class="ltx_text ltx_bib_year"> (2007)</span>
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_title">The event-b modelling method: concepts and case studies</span>.
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_pages"> pp. 33–140</span>.
+</span>
+<span class="ltx_bibblock">Note: <span class="ltx_text ltx_bib_note">See <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib5" title="Logics of specification languages" class="ltx_ref">2</a>]</cite>.</span>
+</span>
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S1.I1.ix3.p1" title="1 Documentation and Tools ‣ Modelling Software-based Systems" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1</span></a>.
+</span>
+</li>
+</ul>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Tue Sep 24 12:12:47 2024 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
