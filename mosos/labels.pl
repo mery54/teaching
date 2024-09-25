@@ -3,15 +3,15 @@
 
 
 $key = q/cite_abrial2010/;
-$external_labels{$key} = "$URL/" . q|node22.html|; 
+$external_labels{$key} = "$URL/" . q|node25.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-b/;
-$external_labels{$key} = "$URL/" . q|node22.html|; 
+$external_labels{$key} = "$URL/" . q|node25.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-eatcs/;
-$external_labels{$key} = "$URL/" . q|node22.html|; 
+$external_labels{$key} = "$URL/" . q|node25.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -19,15 +19,15 @@ $external_labels{$key} = "$URL/" . q|node3.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
-$external_labels{$key} = "$URL/" . q|node11.html|; 
+$external_labels{$key} = "$URL/" . q|node15.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_labels{$key} = "$URL/" . q|node21.html|; 
+$external_labels{$key} = "$URL/" . q|node24.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$external_labels{$key} = "$URL/" . q|node18.html|; 
+$external_labels{$key} = "$URL/" . q|node22.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
@@ -47,7 +47,7 @@ $external_labels{$key} = "$URL/" . q|node4.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
-$external_labels{$key} = "$URL/" . q|node12.html|; 
+$external_labels{$key} = "$URL/" . q|node16.html|; 
 $noresave{$key} = "$nosave";
 
 1;
@@ -66,7 +66,7 @@ $external_latex_labels{$key} = q|3 Course Modelling and verifying software-based
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_latex_labels{$key} = q|4.2 Event-B Archives for the tutorial 1|; 
+$external_latex_labels{$key} = q|4.3 Event-B Archives for the tutorial 2|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
