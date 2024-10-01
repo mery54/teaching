@@ -2,7 +2,7 @@
 (* Calcul de la fonction de MacCarthy *)
 EXTENDS Naturals,TLC,Integers
 CONSTANTS x,max,u
-min = -max
+min == -max
 VARIABLES  y1,y2,z,pc
 ---------------------------------
 BF(X) == X#u => X \in min..max
