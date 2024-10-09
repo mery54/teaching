@@ -62,23 +62,23 @@ $external_latex_labels{$key} = q|2 Course MCFSI at Telecom Nancy|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
-$external_latex_labels{$key} = q|3 Course Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine|; 
+$external_latex_labels{$key} = q|4 Course Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_latex_labels{$key} = q|4.3 Event-B Archives for the tutorial 2|; 
+$external_latex_labels{$key} = q|5.2 Event-B Archives for the tutorial 1|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$external_latex_labels{$key} = q|4 Event-B Models|; 
+$external_latex_labels{$key} = q|5 Event-B Models|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
-$external_latex_labels{$key} = q|2.1.3 Lecture 3 <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf">Correctness by Construction with the Modelling Language Event-B using the Refinement</a>|; 
+$external_latex_labels{$key} = q|2.1.4 Lecture 4 <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf">Correctness by Construction with the Modelling Language Event-B using the Refinement</a>|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-4-hrefhttp:m/;
-$external_latex_labels{$key} = q|2.1.4 Lecture 4 <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf">Access Control </a>|; 
+$external_latex_labels{$key} = q|2.1.5 Lecture 5 <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf">Access Control </a>|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
@@ -90,7 +90,7 @@ $external_latex_labels{$key} = q|2.1 Slides for the course MCFSI|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
-$external_latex_labels{$key} = q|3.1 Slides of the course|; 
+$external_latex_labels{$key} = q|4.1 Slides of the course|; 
 $noresave{$key} = "$nosave";
 
 1;
