@@ -3,15 +3,15 @@
 
 
 $key = q/cite_abrial2010/;
-$ref_files{$key} = "$dir".q|node27.html|; 
+$ref_files{$key} = "$dir".q|node28.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-b/;
-$ref_files{$key} = "$dir".q|node27.html|; 
+$ref_files{$key} = "$dir".q|node28.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-eatcs/;
-$ref_files{$key} = "$dir".q|node27.html|; 
+$ref_files{$key} = "$dir".q|node28.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -23,11 +23,11 @@ $ref_files{$key} = "$dir".q|node17.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$ref_files{$key} = "$dir".q|node26.html|; 
+$ref_files{$key} = "$dir".q|node27.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$ref_files{$key} = "$dir".q|node24.html|; 
+$ref_files{$key} = "$dir".q|node25.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
