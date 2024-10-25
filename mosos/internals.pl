@@ -3,35 +3,35 @@
 
 
 $key = q/cite_abrial2010/;
-$ref_files{$key} = "$dir".q|node31.html|; 
+$ref_files{$key} = "$dir".q|node30.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-b/;
-$ref_files{$key} = "$dir".q|node31.html|; 
+$ref_files{$key} = "$dir".q|node30.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-eatcs/;
-$ref_files{$key} = "$dir".q|node31.html|; 
+$ref_files{$key} = "$dir".q|node30.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
-$ref_files{$key} = "$dir".q|node3.html|; 
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
-$ref_files{$key} = "$dir".q|node17.html|; 
+$ref_files{$key} = "$dir".q|node16.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$ref_files{$key} = "$dir".q|node28.html|; 
+$ref_files{$key} = "$dir".q|node27.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$ref_files{$key} = "$dir".q|node25.html|; 
+$ref_files{$key} = "$dir".q|node24.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
-$ref_files{$key} = "$dir".q|node8.html|; 
+$ref_files{$key} = "$dir".q|node7.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-4-hrefhttp:m/;
@@ -39,15 +39,15 @@ $ref_files{$key} = "$dir".q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$ref_files{$key} = "$dir".q|node11.html|; 
+$ref_files{$key} = "$dir".q|node10.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
-$ref_files{$key} = "$dir".q|node4.html|; 
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
-$ref_files{$key} = "$dir".q|node18.html|; 
+$ref_files{$key} = "$dir".q|node17.html|; 
 $noresave{$key} = "$nosave";
 
 1;
