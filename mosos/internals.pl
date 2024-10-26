@@ -3,15 +3,15 @@
 
 
 $key = q/cite_abrial2010/;
-$ref_files{$key} = "$dir".q|node33.html|; 
+$ref_files{$key} = "$dir".q|node35.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-b/;
-$ref_files{$key} = "$dir".q|node33.html|; 
+$ref_files{$key} = "$dir".q|node35.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-eatcs/;
-$ref_files{$key} = "$dir".q|node33.html|; 
+$ref_files{$key} = "$dir".q|node35.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-discont/;
@@ -24,6 +24,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
 $ref_files{$key} = "$dir".q|node17.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:documentation/;
+$ref_files{$key} = "$dir".q|node32.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;

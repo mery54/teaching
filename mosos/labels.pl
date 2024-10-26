@@ -3,15 +3,15 @@
 
 
 $key = q/cite_abrial2010/;
-$external_labels{$key} = "$URL/" . q|node33.html|; 
+$external_labels{$key} = "$URL/" . q|node35.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-b/;
-$external_labels{$key} = "$URL/" . q|node33.html|; 
+$external_labels{$key} = "$URL/" . q|node35.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-eatcs/;
-$external_labels{$key} = "$URL/" . q|node33.html|; 
+$external_labels{$key} = "$URL/" . q|node35.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-discont/;
@@ -24,6 +24,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
 $external_labels{$key} = "$URL/" . q|node17.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:documentation/;
+$external_labels{$key} = "$URL/" . q|node32.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
