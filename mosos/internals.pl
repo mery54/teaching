@@ -3,19 +3,19 @@
 
 
 $key = q/cite_abrial2010/;
-$ref_files{$key} = "$dir".q|node38.html|; 
+$ref_files{$key} = "$dir".q|node41.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-b/;
-$ref_files{$key} = "$dir".q|node38.html|; 
+$ref_files{$key} = "$dir".q|node41.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-eatcs/;
-$ref_files{$key} = "$dir".q|node38.html|; 
+$ref_files{$key} = "$dir".q|node41.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-discont/;
-$ref_files{$key} = "$dir".q|node34.html|; 
+$ref_files{$key} = "$dir".q|node37.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -27,7 +27,7 @@ $ref_files{$key} = "$dir".q|node19.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:documentation/;
-$ref_files{$key} = "$dir".q|node35.html|; 
+$ref_files{$key} = "$dir".q|node38.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
