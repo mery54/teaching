@@ -3,19 +3,19 @@
 
 
 $key = q/cite_abrial2010/;
-$external_labels{$key} = "$URL/" . q|node41.html|; 
+$external_labels{$key} = "$URL/" . q|node42.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-b/;
-$external_labels{$key} = "$URL/" . q|node41.html|; 
+$external_labels{$key} = "$URL/" . q|node42.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cite_losl-eatcs/;
-$external_labels{$key} = "$URL/" . q|node41.html|; 
+$external_labels{$key} = "$URL/" . q|node42.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-discont/;
-$external_labels{$key} = "$URL/" . q|node37.html|; 
+$external_labels{$key} = "$URL/" . q|node38.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -27,7 +27,7 @@ $external_labels{$key} = "$URL/" . q|node19.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:documentation/;
-$external_labels{$key} = "$URL/" . q|node38.html|; 
+$external_labels{$key} = "$URL/" . q|node39.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
@@ -47,7 +47,7 @@ $external_labels{$key} = "$URL/" . q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$external_labels{$key} = "$URL/" . q|node11.html|; 
+$external_labels{$key} = "$URL/" . q|node37.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
