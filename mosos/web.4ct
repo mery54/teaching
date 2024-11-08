@@ -1,6 +1,6 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contents}}{4}\relax 
-\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-20001}{QQ2-1-2}{Documentation and Tools}}{4}\relax 
+\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-20001}{QQ2-1-2}{Documentation and Tools}}{5}\relax 
 \doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-30002}{QQ2-1-3}{Course MCFSI at Telecom Nancy}}{6}\relax 
 \doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{1}{x1-40002.1}{QQ2-1-4}{Slides for the course MCFSI}}{6}\relax 
 \doTocEntry\tocsubsubsection{2.1.1}{\csname a:TocLink\endcsname{1}{x1-50002.1.1}{QQ2-1-5}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf}{The Modelling Language Event-B}. }}{6}\relax 
@@ -12,33 +12,33 @@
 \doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{1}{x1-110002.3}{QQ2-1-11}{Project}}{7}\relax 
 \doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{1}{x1-120002.4}{QQ2-1-12}{Event-B Models}}{7}\relax 
 \doTocEntry\tocsubsubsection{2.4.1}{\csname a:TocLink\endcsname{1}{x1-130002.4.1}{QQ2-1-13}{Event-B Archives for the lectures}}{7}\relax 
-\doTocEntry\tocsubsubsection{2.4.2}{\csname a:TocLink\endcsname{1}{x1-140002.4.2}{QQ2-1-14}{Event-B Archives for the tutorial 1}}{7}\relax 
+\doTocEntry\tocsubsubsection{2.4.2}{\csname a:TocLink\endcsname{1}{x1-140002.4.2}{QQ2-1-14}{Event-B Archives for the tutorial 1}}{8}\relax 
 \doTocEntry\tocsubsubsection{2.4.3}{\csname a:TocLink\endcsname{1}{x1-150002.4.3}{QQ2-1-15}{Event-B Archives for the tutorial 2}}{8}\relax 
 \doTocEntry\tocsubsubsection{2.4.4}{\csname a:TocLink\endcsname{1}{x1-160002.4.4}{QQ2-1-16}{Event-B Archives for the tutorial 3}}{8}\relax 
 \doTocEntry\tocsubsubsection{2.4.5}{\csname a:TocLink\endcsname{1}{x1-170002.4.5}{QQ2-1-17}{Event-B Archives for the tutorial 4}}{8}\relax 
-\doTocEntry\tocsubsubsection{2.4.6}{\csname a:TocLink\endcsname{1}{x1-180002.4.6}{QQ2-1-18}{Event-B Archives}}{8}\relax 
-\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-19}{Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine}}{8}\relax 
+\doTocEntry\tocsubsubsection{2.4.6}{\csname a:TocLink\endcsname{1}{x1-180002.4.6}{QQ2-1-18}{Event-B Archives}}{9}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-19}{Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine}}{9}\relax 
 \doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{1}{x1-200003.1}{QQ2-1-20}{Slides of the course}}{9}\relax 
 \doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{1}{x1-210003.1.1}{QQ2-1-21}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf}{The Modelling Language Event-B}.}}{9}\relax 
 \doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{1}{x1-220003.1.2}{QQ2-1-22}{ Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf}{Proof Obligations}.}}{9}\relax 
 \doTocEntry\tocsubsubsection{3.1.3}{\csname a:TocLink\endcsname{1}{x1-230003.1.3}{QQ2-1-23}{Lecture 3 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf}{Correctness by Construction with the Modelling Language Event-B using the Refinement}.}}{9}\relax 
 \doTocEntry\tocsubsubsection{3.1.4}{\csname a:TocLink\endcsname{1}{x1-240003.1.4}{QQ2-1-24}{ Lecture 4 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf}{Access Control }}}{9}\relax 
 \doTocEntry\tocsubsubsection{3.1.5}{\csname a:TocLink\endcsname{1}{x1-250003.1.5}{QQ2-1-25}{ Lecture 5 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect-verification.pdf}{Checking contracts with Event-B}}}{9}\relax 
-\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{1}{x1-260003.2}{QQ2-1-26}{Tutorials}}{9}\relax 
-\doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{1}{x1-270003.3}{QQ2-1-27}{Event-B Models}}{9}\relax 
+\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{1}{x1-260003.2}{QQ2-1-26}{Tutorials}}{10}\relax 
+\doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{1}{x1-270003.3}{QQ2-1-27}{Event-B Models}}{10}\relax 
 \doTocEntry\tocsubsubsection{3.3.1}{\csname a:TocLink\endcsname{1}{x1-280003.3.1}{QQ2-1-28}{Event-B Archives for the lectures}}{10}\relax 
 \doTocEntry\tocsubsubsection{3.3.2}{\csname a:TocLink\endcsname{1}{x1-290003.3.2}{QQ2-1-29}{Event-B Archives for the tutorial 1}}{10}\relax 
-\doTocEntry\tocsubsubsection{3.3.3}{\csname a:TocLink\endcsname{1}{x1-300003.3.3}{QQ2-1-30}{Event-B Archives for the tutorial 2}}{10}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-31000}{QQ2-1-31}{Exercice 1 Tutorial 2}}{10}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-32000}{QQ2-1-32}{Exercice 2 Tutorial 2}}{10}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-33000}{QQ2-1-33}{Exercice 3 Tutorial 2}}{10}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-34000}{QQ2-1-34}{Exercice 4 Tutorial 2}}{10}\relax 
+\doTocEntry\tocsubsubsection{3.3.3}{\csname a:TocLink\endcsname{1}{x1-300003.3.3}{QQ2-1-30}{Event-B Archives for the tutorial 2}}{11}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-31000}{QQ2-1-31}{Exercice 1 Tutorial 2}}{11}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-32000}{QQ2-1-32}{Exercice 2 Tutorial 2}}{11}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-33000}{QQ2-1-33}{Exercice 3 Tutorial 2}}{11}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-34000}{QQ2-1-34}{Exercice 4 Tutorial 2}}{11}\relax 
 \doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-35000}{QQ2-1-35}{Exercice 5 Tutorial 2}}{11}\relax 
 \doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-36000}{QQ2-1-36}{Exercice 6 Tutorial 2}}{11}\relax 
 \doTocEntry\tocsubsection{3.4}{\csname a:TocLink\endcsname{1}{x1-370003.4}{QQ2-1-37}{Project}}{11}\relax 
-\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{1}{x1-380004}{QQ2-1-38}{Course DISCONT: Modelling hybrid systems}}{11}\relax 
-\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{1}{x1-390004.1}{QQ2-1-39}{Documentation}}{11}\relax 
-\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{1}{x1-400004.2}{QQ2-1-40}{Slides for the course 2020-2021}}{11}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{1}{x1-380004}{QQ2-1-38}{Course DISCONT: Modelling hybrid systems}}{12}\relax 
+\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{1}{x1-390004.1}{QQ2-1-39}{Documentation}}{12}\relax 
+\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{1}{x1-400004.2}{QQ2-1-40}{Slides for the course 2020-2021}}{12}\relax 
 \doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{1}{x1-410004.3}{QQ2-1-41}{Slides for the course 2021-2022}}{12}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-42000}{QQ2-1-42}{References}}{12}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-42000}{QQ2-1-42}{References}}{13}\relax 
 \par 

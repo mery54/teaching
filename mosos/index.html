@@ -1,244 +1,381 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head><title>Modelling Software-based Systems</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='web.css' rel='stylesheet' type='text/css' /> 
+<meta content='web.tex' name='src' /> 
+</head><body>
+   <div class='maketitle'>
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
 
-<!--Converted with LaTeX2HTML 2024 (Released January 1, 2024) -->
-<HTML lang="en">
-<HEAD>
-<TITLE>Modelling Software-based Systems</TITLE>
-
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2024">
-
-<LINK REL="STYLESHEET" HREF="web.css">
-
-<LINK REL="next" HREF="node1.html">
-</HEAD>
-
-<BODY  bgcolor="#ffffff">
-
-<DIV CLASS="navigation"><!--Navigation Panel-->
-<A
- HREF="node1.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png"> 
-<A ID="tex2html3"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node1.html">Contents</A>
- &nbsp; <B>  <A ID="tex2html4"
-  HREF="node1.html">Contents</A></B> 
-<BR>
-<BR></DIV>
-<!--End of Navigation Panel-->
+<h2 class='titleHead'>Modelling Software-based Systems</h2>
+                 <div class='author'><span class='ptmr7t-x-x-144'>Dominique Méry</span>
+<br /><span class='ptmr7t-x-x-144'>LORIA &amp; Telecom Nancy</span>
+<br />              <span class='ptmr7t-x-x-144'>Université de Lorraine</span>
+<br /><a class='url' href='https://members.loria.fr/Mery'><span class='pcrr7t-x-x-144'>https://members.loria.fr/Mery</span></a>
+<br /><a class='url' href='dominique.mery@loria.fr'><span class='pcrr7t-x-x-144'>dominique.mery@loria.fr</span></a></div><br />
+<div class='date'><span class='ptmr7t-x-x-144'>November 8, 2024</span></div>
+</div>
+<!-- l. 80 --><p class='indent'>This repository contains course notes, exercises, models and projects from three courses given as
+part of master’s level training on the Event-B formal method. It provides access to resources in
+the form of pdf files or Rodin archives. The relationship with the Atelier-B platform is
+explained.
+</p><!-- l. 86 --><p class='indent'>The table of contents shows the summary of three main courses (at Université de Lorraine/University
+of Lorraine) based on our experiment using the Event-B method: </p>
+<ul class='itemize1'>
+<li class='itemize'>The first  course  <span class='ptmb7t-x-x-120'>MCFSI  </span>is  part  of  the  curriculum  of  the  last  yer  students  of  Telecom
+Nancy who are focusing on software engineering.
+</li>
+<li class='itemize'>The second course <span class='ptmb7t-x-x-120'>MsC in Computer Scince </span>is aimed at students on the IT Masters
+course at the University of Lorraine.
+</li>
+<li class='itemize'>The third course <span class='ptmb7t-x-x-120'>DISCONT </span>is aimed at Telecom Nancy students in their final year who
+are specialising in software engineering and embedded systems. The course focuses on
+hybrid systems and hybrid models. The work of the ANR DISCONT project (see  <a href='https://anr.fr/Projet-ANR-17-CE25-0005'>website
+at ANR</a> or  <a href='https://discont.loria.fr'>website at LORIA</a> )</li></ul>
+<!-- l. 103 --><p class='indent'>The Event-B method is based on a modelling language used to describe state-based
+models and safety properties of those state-based models. The originality of Event-B lies
+in its ability to enable incremental and proof-based modelling of <span class='ptmri7t-x-x-120'>reactive systems</span>. The
+Event-B language contains both set notations and a first-order predicate calculus; it offers
+the possibility of defining models of reactive systems called machines and contexts and
+includes the refinement relationship that allows us to follow an incremental development
+methodology.
+                                                                                       
+                                                                                       
+</p>
+<h3 class='likesectionHead' id='contents'><a id='x1-1000'></a>Contents</h3>
+<div class='tableofcontents'>
+<span class='sectionToc'>1 <a href='#documentation-and-tools' id='QQ2-1-2'>Documentation and Tools</a></span>
+<br /><span class='sectionToc'>2 <a href='#course-mcfsi-at-telecom-nancy' id='QQ2-1-3'>Course MCFSI at Telecom Nancy</a></span>
+<br /><span class='subsectionToc'>2.1 <a href='#slides-for-the-course-mcfsi' id='QQ2-1-4'>Slides for the course MCFSI</a></span>
+<br /><span class='subsubsectionToc'>2.1.1 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmcfsilectpdfthe-modelling-language-eventb-' id='QQ2-1-5'>Lecture 1  The Modelling Language Event-B. </a></span>
+<br /><span class='subsubsectionToc'>2.1.2 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmcfsipopdfproof-obligations' id='QQ2-1-6'>Lecture 2  Proof Obligations.</a></span>
+<br /><span class='subsubsectionToc'>2.1.3 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmcfsiverificationpdfchecking-contracts-using-eventb' id='QQ2-1-7'>Lecture 3  Checking contracts using Event-B.</a></span>
+<br /><span class='subsubsectionToc'>2.1.4 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmcfsilectpdfcorrectness-by-construction-with-the-modelling-language-eventb-using-the-refinement' id='QQ2-1-8'>Lecture 4  Correctness by Construction with the Modelling
+Language Event-B using the Refinement.</a></span>
+<br /><span class='subsubsectionToc'>2.1.5 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmcfsilectpdfaccess-control-' id='QQ2-1-9'> Lecture 5  Access Control  </a></span>
+<br /><span class='subsectionToc'>2.2 <a href='#tutorials' id='QQ2-1-10'>Tutorials</a></span>
+<br /><span class='subsectionToc'>2.3 <a href='#project' id='QQ2-1-11'>Project</a></span>
+<br /><span class='subsectionToc'>2.4 <a href='#eventb-models' id='QQ2-1-12'>Event-B Models</a></span>
+<br /><span class='subsubsectionToc'>2.4.1 <a href='#eventb-archives-for-the-lectures' id='QQ2-1-13'>Event-B Archives for the lectures</a></span>
+<br /><span class='subsubsectionToc'>2.4.2 <a href='#eventb-archives-for-the-tutorial-' id='QQ2-1-14'>Event-B Archives for the tutorial 1</a></span>
+<br /><span class='subsubsectionToc'>2.4.3 <a href='#eventb-archives-for-the-tutorial-1' id='QQ2-1-15'>Event-B Archives for the tutorial 2</a></span>
+<br /><span class='subsubsectionToc'>2.4.4 <a href='#eventb-archives-for-the-tutorial-2' id='QQ2-1-16'>Event-B Archives for the tutorial 3</a></span>
+<br /><span class='subsubsectionToc'>2.4.5 <a href='#eventb-archives-for-the-tutorial-3' id='QQ2-1-17'>Event-B Archives for the tutorial 4</a></span>
+<br /><span class='subsubsectionToc'>2.4.6 <a href='#eventb-archives' id='QQ2-1-18'>Event-B Archives</a></span>
+<br /><span class='sectionToc'>3 <a href='#course-msc-in-computer-science-modelling-and-verifying-softwarebased-systems-for-master-in-compurer-science-of-the-university-of-lorraine' id='QQ2-1-19'>Course MsC in Computer Science: Modelling and verifying software-based
+systems for Master in Compurer Science of the University of Lorraine</a></span>
+<br /><span class='subsectionToc'>3.1 <a href='#slides-of-the-course' id='QQ2-1-20'>Slides of the course</a></span>
+<br /><span class='subsubsectionToc'>3.1.1 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmasterillectpdfthe-modelling-language-eventb' id='QQ2-1-21'>Lecture 1  The Modelling Language Event-B.</a></span>
+<br /><span class='subsubsectionToc'>3.1.2 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmasterillectpdfproof-obligations' id='QQ2-1-22'> Lecture 2  Proof Obligations.</a></span>
+<br /><span class='subsubsectionToc'>3.1.3 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmasterillectpdfcorrectness-by-construction-with-the-modelling-language-eventb-using-the-refinement' id='QQ2-1-23'>Lecture 3  Correctness by Construction with the Modelling
+Language Event-B using the Refinement.</a></span>
+<br /><span class='subsubsectionToc'>3.1.4 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmasterillectpdfaccess-control-' id='QQ2-1-24'> Lecture 4  Access Control </a></span>
+<br /><span class='subsubsectionToc'>3.1.5 <a href='#lecture-httpmerygithubioteachingmososlecturesnotesmasterillectverificationpdfchecking-contracts-with-eventb' id='QQ2-1-25'> Lecture 5  Checking contracts with Event-B</a></span>
+<br /><span class='subsectionToc'>3.2 <a href='#tutorials1' id='QQ2-1-26'>Tutorials</a></span>
+<br /><span class='subsectionToc'>3.3 <a href='#eventb-models1' id='QQ2-1-27'>Event-B Models</a></span>
+<br /><span class='subsubsectionToc'>3.3.1 <a href='#eventb-archives-for-the-lectures1' id='QQ2-1-28'>Event-B Archives for the lectures</a></span>
+<br /><span class='subsubsectionToc'>3.3.2 <a href='#eventb-archives-for-the-tutorial-4' id='QQ2-1-29'>Event-B Archives for the tutorial 1</a></span>
+<br /><span class='subsubsectionToc'>3.3.3 <a href='#eventb-archives-for-the-tutorial-5' id='QQ2-1-30'>Event-B Archives for the tutorial 2</a></span>
+<br /><span class='subsectionToc'>3.4 <a href='#project1' id='QQ2-1-37'>Project</a></span>
+<br /><span class='sectionToc'>4 <a href='#course-discont-modelling-hybrid-systems' id='QQ2-1-38'>Course DISCONT: Modelling hybrid systems</a></span>
+<br /><span class='subsectionToc'>4.1 <a href='#documentation' id='QQ2-1-39'>Documentation</a></span>
+<br /><span class='subsectionToc'>4.2 <a href='#slides-for-the-course-' id='QQ2-1-40'>Slides for the course 2020-2021</a></span>
+<br /><span class='subsectionToc'>4.3 <a href='#slides-for-the-course-1' id='QQ2-1-41'>Slides for the course 2021-2022</a></span>
+</div>
+<!-- l. 121 --><p class='noindent'>
+</p>
+                                                                                       
+                                                                                       
+<h3 class='sectionHead' id='documentation-and-tools'><span class='titlemark'>1 </span> <a id='x1-20001'></a>Documentation and Tools</h3>
+<ul class='itemize1'>
+<li class='itemize'>The main document on the Event-B modelling language and methodology is the book of
+Jean-Raymond Abrial <span class='cite'> [<a href='#Xabrial2010'>1</a>]</span>.
+</li>
+<li class='itemize'>The Rodin platform is available at the  <a href='https://www.event-b.org/install.html'>following link</a>.
+</li>
+<li class='itemize'>The list of   <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/symboles.pdf'>symbols </a> is useful for typing symbols which will appear as mathematical
+notations.
+</li>
+<li class='itemize'>The first chapter on the modelling language Event-B  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/main-C1.pdf'>chapter 1</a> summarizes details on the
+foundations and on the applications.
+</li>
+<li class='itemize'>The second chapter on using the modelling language Event-B for developing sequential
+algorithms  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/main-C2.pdf'>chapter 2</a> with examples.
+</li>
+<li class='itemize'>The third chapter on using the modelling language Event-B for verifying contracts for
+sequential algorithms  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/main-fmt.pdf'>chapter 3</a> with examples.
+</li>
+<li class='itemize'>The chapter <span class='cite'> [<a href='#Xlosl-b'>3</a>]</span> (from <span class='cite'> [<a href='#Xlosl-eatcs'>2</a>]</span>.) authored by Dominique Cansell and Dominique Méry and
+entitled <span class='ptmri7t-x-x-120'>The Event-B Modelling Method: Concepts and Case Studies </span>has benne published
+from lectures notes given in a Summer School and you can use it for getting details from
+Event-B see the  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/BasicEventB.pdf'>following link</a>.
+</li>
+<li class='itemize'>Lectures Notes <span class='ptmri7t-x-x-120'>The Modelling Language </span>at the  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/main-Poly1.pdf'>following link</a>.
+</li>
+<li class='itemize'>Chapter <span class='ptmri7t-x-x-120'>Event-B </span>at the  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/Chapter10.pdf'>following link</a>.
+</li></ul>
+                                                                                       
+                                                                                       
+<!-- l. 190 --><p class='noindent'>
+</p>
+<h3 class='sectionHead' id='course-mcfsi-at-telecom-nancy'><span class='titlemark'>2 </span> <a id='x1-30002'></a>Course MCFSI at Telecom Nancy</h3>
+<!-- l. 194 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='slides-for-the-course-mcfsi'><span class='titlemark'>2.1 </span> <a id='x1-40002.1'></a>Slides for the course MCFSI</h4>
+<!-- l. 202 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmcfsilectpdfthe-modelling-language-eventb-'><span class='titlemark'>2.1.1 </span> <a id='x1-50002.1.1'></a>Lecture 1  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf'>The Modelling Language Event-B</a>. </h5>
+<!-- l. 207 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmcfsipopdfproof-obligations'><span class='titlemark'>2.1.2 </span> <a id='x1-60002.1.2'></a>Lecture 2  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-po.pdf'>Proof Obligations</a>.</h5>
+<!-- l. 213 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmcfsiverificationpdfchecking-contracts-using-eventb'><span class='titlemark'>2.1.3 </span> <a id='x1-70002.1.3'></a>Lecture 3  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-verification.pdf'>Checking contracts using Event-B</a>.</h5>
+<!-- l. 219 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmcfsilectpdfcorrectness-by-construction-with-the-modelling-language-eventb-using-the-refinement'><span class='titlemark'>2.1.4 </span> <a id='x1-80002.1.4'></a>Lecture 4  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf'>Correctness by Construction with the Modelling Language Event-B using the
+Refinement</a>.</h5>
+<!-- l. 226 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmcfsilectpdfaccess-control-'><span class='titlemark'>2.1.5 </span> <a id='x1-90002.1.5'></a> Lecture 5  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf'>Access Control </a> </h5>
+<!-- l. 230 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='tutorials'><span class='titlemark'>2.2 </span> <a id='x1-100002.2'></a>Tutorials</h4>
+<ul class='itemize1'>
+<li class='itemize'>Tutorial 1  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-td1.pdf'>Using the Event-B modelling language on simple examples</a>.
+                                                                                       
+                                                                                       
+</li>
+<li class='itemize'>Tutorial 2  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-td2.pdf'>Using the Event-B modelling language for verifying contracts</a>.
+</li>
+<li class='itemize'>Tutorial  3    <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-td3.pdf'>Using  the  refinement  in  the  Event-B  modelling  language  for  derinving
+sequential algorithms</a>.
+</li>
+<li class='itemize'>Tutorial 4  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-td4.pdf'>Using the refinement in the Event-B modelling language for derinving systems</a>.
+</li></ul>
+<!-- l. 259 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='project'><span class='titlemark'>2.3 </span> <a id='x1-110002.3'></a>Project</h4>
+<!-- l. 262 --><p class='noindent'>The assessment of students is based on two works: </p>
+<ul class='itemize1'>
+<li class='itemize'>A written exam
+</li>
+<li class='itemize'>A project which is stated in the following document  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/telecom-projects2425.pdf'>Projet 3A IL</a></li></ul>
+<!-- l. 270 --><p class='indent'>The deadline for the project is February 1, 2025 and the presentation is organised on Monday,
+February 10, 2025.
+</p><!-- l. 273 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='eventb-models'><span class='titlemark'>2.4 </span> <a id='x1-120002.4'></a>Event-B Models</h4>
+<!-- l. 277 --><p class='noindent'>The Event-B models related to the tutoriuals are given in the next list:
+</p><!-- l. 280 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives-for-the-lectures'><span class='titlemark'>2.4.1 </span> <a id='x1-130002.4.1'></a>Event-B Archives for the lectures</h5>
+<!-- l. 284 --><p class='noindent'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/ ex-safety.zip'>Archive Rodin for explaining differences between Event-B invariant and Eveny-B theorem.
+</a>
+</p><!-- l. 289 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/ ex-school.zip'>Archive Rodin for the management of school. </a>
+</p><!-- l. 294 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/ clock-tut0.zip'>Archive Rodin for clock modelling. </a>
+</p><!-- l. 297 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/factorial-plugin-tutO.zip'>Archive Rodin for modelling the design of the factorial function.</a>
+                                                                                       
+                                                                                       
+</p><!-- l. 301 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives-for-the-tutorial-'><span class='titlemark'>2.4.2 </span> <a id='x1-140002.4.2'></a>Event-B Archives for the tutorial 1</h5>
+<!-- l. 307 --><p class='noindent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-ex1-tut1.zip'>Archive Rodin mcfsi1-ex1-tut1.zip.</a>
+</p><!-- l. 310 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-ex1-tut1.zip'>Archive Rodin mcfsi1-ex2-tut1.zip.</a>
+</p><!-- l. 314 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-simple.zip'>Archive Rodin mcfsi1-simple.zip.</a>
+</p><!-- l. 317 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-variant1.zip'>Archive Rodin mcfsi1-variant1.zip.</a>
+</p><!-- l. 320 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-variant2.zip'>Archive Rodin mcfsi1-variant2.zip.</a>
+</p><!-- l. 324 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-summation.zip'>Archive Rodin mcfsi1-summation.zip.</a>
+</p><!-- l. 328 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-ressource-pb1.zip'>Archive Rodin mcfsi1-ressource-pb1.zip.</a>
+</p><!-- l. 332 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-ressource-pb1.zip'>Archive Rodin mcfsi1-ressource-pb2.zip.</a>
+</p><!-- l. 339 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-invariantsafety.zip'>Archive Rodin mcfsi1-invariantsafety.zip.</a>
+</p><!-- l. 344 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-ex8.zip'>Archive Rodin mcfsi1-ex8.zip.</a>
+</p><!-- l. 347 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-ex9.zip'>Archive Rodin ex8-tut1.zip.</a>
+</p><!-- l. 352 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-ex9.zip'>Archive Rodin mcfsi1-ex9.zip.</a>
+</p><!-- l. 356 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives-for-the-tutorial-1'><span class='titlemark'>2.4.3 </span> <a id='x1-150002.4.3'></a>Event-B Archives for the tutorial 2</h5>
+<!-- l. 363 --><p class='noindent'><a href='http://mery54.github.io/teaching/mosos/models/alg-maxtwonumbers.zip'>Archive Rodin alg-maxtwonumbers.zp.</a>
+</p><!-- l. 370 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/alg-ex1.zip'>Archive Rodin alg-ex1.zp.</a>
+</p><!-- l. 373 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/alg-ex2.zip'>Archive Rodin alg-ex2.zp.</a>
+</p><!-- l. 376 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/alg-ex3.zip'>Archive Rodin alg-ex3.zp.</a>
+</p><!-- l. 379 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/alg-ex4.zip'>Archive Rodin alg-ex4.zp.</a>
+</p><!-- l. 385 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/alg-simple.zip'>Archive Rodin alg-simple.zip.</a>
+</p><!-- l. 391 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives-for-the-tutorial-2'><span class='titlemark'>2.4.4 </span> <a id='x1-160002.4.4'></a>Event-B Archives for the tutorial 3</h5>
+<!-- l. 399 --><p class='noindent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi3-ex1-plugin.zip'>Archive Rodin mcfsi3-ex1-plugin.zip.</a>
+</p><!-- l. 402 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi3-ex2.zip'>Archive Rodin mcfsi3-ex2.zip.</a>
+</p><!-- l. 405 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi3-ex2-plugin.zip'>Archive Rodin mcfsi3-ex2.zip.</a>
+</p><!-- l. 410 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/codes/power2.c'>Fichier power2.c.</a>
+</p><!-- l. 413 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/codes/power2.h'>Fichier power2.h.</a>
+</p><!-- l. 417 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi3-ex3.zip'>Archive Rodin mcfsi3-ex3.zip.</a>
+</p><!-- l. 422 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi3-ex4.zip'>Archive Rodin mcfsi3-ex4.zip.</a>
+</p><!-- l. 427 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi3-ex5.zip'>Archive Rodin mcfsi3-ex5.zip.</a>
+</p><!-- l. 431 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives-for-the-tutorial-3'><span class='titlemark'>2.4.5 </span> <a id='x1-170002.4.5'></a>Event-B Archives for the tutorial 4</h5>
+<!-- l. 439 --><p class='noindent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi4-ex1.zip'>Archive Rodin mcfsi4-ex1.zip.</a>
+</p><!-- l. 443 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi4-ex2.zip'>Archive Rodin mcfsi4-ex2.zip.</a>
+</p><!-- l. 450 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi4-ex3.zip'>Archive Rodin mcfsi4-ex3.zip.</a>
+</p><!-- l. 456 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi4-ex4.zip'>Archive Rodin mcfsi4-ex4.zip.</a>
+                                                                                       
+                                                                                       
+</p><!-- l. 462 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives'><span class='titlemark'>2.4.6 </span> <a id='x1-180002.4.6'></a>Event-B Archives</h5>
+<!-- l. 471 --><p class='noindent'><a href='http://mery54.github.io/teaching/mosos/models/mrg1.zip'>Archive Rodin mrg1.zip.</a>
+</p><!-- l. 474 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/abacus.zip'>Archive Rodin abacus.zip.</a>
+</p><!-- l. 482 --><p class='noindent'>
+</p>
+<h3 class='sectionHead' id='course-msc-in-computer-science-modelling-and-verifying-softwarebased-systems-for-master-in-compurer-science-of-the-university-of-lorraine'><span class='titlemark'>3 </span> <a id='x1-190003'></a>Course MsC in Computer Science: Modelling and verifying software-based systems for Master
+in Compurer Science of the University of Lorraine</h3>
+<!-- l. 486 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='slides-of-the-course'><span class='titlemark'>3.1 </span> <a id='x1-200003.1'></a>Slides of the course</h4>
+<!-- l. 491 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmasterillectpdfthe-modelling-language-eventb'><span class='titlemark'>3.1.1 </span> <a id='x1-210003.1.1'></a>Lecture 1  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf'>The Modelling Language Event-B</a>.</h5>
+<!-- l. 496 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmasterillectpdfproof-obligations'><span class='titlemark'>3.1.2 </span> <a id='x1-220003.1.2'></a> Lecture 2  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf'>Proof Obligations</a>.</h5>
+<!-- l. 500 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmasterillectpdfcorrectness-by-construction-with-the-modelling-language-eventb-using-the-refinement'><span class='titlemark'>3.1.3 </span> <a id='x1-230003.1.3'></a>Lecture 3  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf'>Correctness by Construction with the Modelling Language Event-B using the
+Refinement</a>.</h5>
+<!-- l. 504 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmasterillectpdfaccess-control-'><span class='titlemark'>3.1.4 </span> <a id='x1-240003.1.4'></a> Lecture 4  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf'>Access Control </a></h5>
+<!-- l. 508 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='lecture-httpmerygithubioteachingmososlecturesnotesmasterillectverificationpdfchecking-contracts-with-eventb'><span class='titlemark'>3.1.5 </span> <a id='x1-250003.1.5'></a> Lecture 5  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect-verification.pdf'>Checking contracts with Event-B</a></h5>
+                                                                                       
+                                                                                       
+<!-- l. 512 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='tutorials1'><span class='titlemark'>3.2 </span> <a id='x1-260003.2'></a>Tutorials</h4>
+<ul class='itemize1'>
+<li class='itemize'>Tutorial 1  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/master-tutorial1.pdf'>Using the Event-B modelling language</a>.
+</li>
+<li class='itemize'>Tutorial 2   <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/master-tutorial2.pdf'>Designing and verifying sequential algorithms using the Event-B modelling
+language</a>.</li></ul>
+<!-- l. 527 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='eventb-models1'><span class='titlemark'>3.3 </span> <a id='x1-270003.3'></a>Event-B Models</h4>
+<!-- l. 531 --><p class='noindent'>The Event-B models related to the tutoriuals are given in the next list:
+</p><!-- l. 534 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives-for-the-lectures1'><span class='titlemark'>3.3.1 </span> <a id='x1-280003.3.1'></a>Event-B Archives for the lectures</h5>
+<!-- l. 538 --><p class='noindent'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/ ex-safety.zip'>Archive Rodin for explaining differences between Event-B invariant and Eveny-B theorem.
+</a>
+</p><!-- l. 543 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/ ex-school.zip'>Archive Rodin for the management of school. </a>
+</p><!-- l. 547 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives-for-the-tutorial-4'><span class='titlemark'>3.3.2 </span> <a id='x1-290003.3.2'></a>Event-B Archives for the tutorial 1</h5>
+<!-- l. 553 --><p class='noindent'><a href='http://mery54.github.io/teaching/mosos/models/ex1-tut1.zip'>Archive Rodin ex1-tut1.zip.</a>
+</p><!-- l. 556 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex2-tut1.zip'>Archive Rodin ex2-tut1.zip.</a>
+</p><!-- l. 559 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex4-tut1.zip'>Archive Rodin ex4-tut1.zip.</a>
+</p><!-- l. 563 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex51-tut1.zip'>Archive Rodin ex51-tut1.zip.</a>
+</p><!-- l. 566 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex52-tut1.zip'>Archive Rodin ex52-tut1.zip.</a>
+</p><!-- l. 571 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex6-tut1.zip'>Archive Rodin ex6-tut1.zip.</a>
+</p><!-- l. 576 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex7-tut1.zip'>Archive Rodin ex7-tut1.zip.</a>
+</p><!-- l. 580 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex8-tut1.zip'>Archive Rodin ex8-tut1.zip.</a>
+</p><!-- l. 584 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex9-tut1.zip'>Archive Rodin ex9-tut1.zip.</a>
+</p><!-- l. 589 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-variant1.zip'>Archive Rodin mcfsi1-variant1.zip.</a>
+</p><!-- l. 592 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/mcfsi1-variant2.zip'>Archive Rodin mcfsi1-variant2.zip.</a>
+</p><!-- l. 596 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex10-1-tut1.zip'>Archive Rodin ex10-1-tut1.zip.</a>
+</p><!-- l. 599 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/ex10-2-tut1.zip'>Archive Rodin ex10-2-tut1.zip.</a>
+                                                                                       
+                                                                                       
+</p><!-- l. 603 --><p class='noindent'>
+</p>
+<h5 class='subsubsectionHead' id='eventb-archives-for-the-tutorial-5'><span class='titlemark'>3.3.3 </span> <a id='x1-300003.3.3'></a>Event-B Archives for the tutorial 2</h5>
+<!-- l. 606 --><p class='noindent'><span class='paragraphHead' id='exercice-tutorial-'><a id='x1-31000'></a><span class='ptmb7t-x-x-120'>Exercice 1 Tutorial 2</span></span>
+Nous donnons deux solutions possibles: l’une avec ok et l’autre sans ok.
+</p><!-- l. 611 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/fx1-tut2.zip'>Archive Rodin fx1-tut2.zip.</a>
+</p><!-- l. 615 --><p class='indent'><a href='http://mery54.github.io/teaching/mosos/models/fx1-tut2.zip'>Archive Rodin fx1-tut2bis.zip.</a>
+</p>
+<!-- l. 618 --><p class='noindent'><span class='paragraphHead' id='exercice-tutorial-1'><a id='x1-32000'></a><span class='ptmb7t-x-x-120'>Exercice 2 Tutorial 2</span></span>
+<a href='http://mery54.github.io/teaching/mosos/models/fx2-tut2.zip'>Archive Rodin fx2-tut2.zip.</a>
+</p>
+<!-- l. 626 --><p class='noindent'><span class='paragraphHead' id='exercice-tutorial-2'><a id='x1-33000'></a><span class='ptmb7t-x-x-120'>Exercice 3 Tutorial 2</span></span>
+<a href='http://mery54.github.io/teaching/mosos/models/mcfsi3-ex3.zip'>Archive Rodin mcfsi3-ex3.zip.</a>
+</p>
+<!-- l. 632 --><p class='noindent'><span class='paragraphHead' id='exercice-tutorial-3'><a id='x1-34000'></a><span class='ptmb7t-x-x-120'>Exercice 4 Tutorial 2</span></span>
+<a href='http://mery54.github.io/teaching/mosos/models/fx4-tut2.zip'>Archive Rodin fx4-tut2.zip.</a>
+</p>
+<!-- l. 639 --><p class='noindent'><span class='paragraphHead' id='exercice-tutorial-4'><a id='x1-35000'></a><span class='ptmb7t-x-x-120'>Exercice 5 Tutorial 2</span></span>
+<a href='http://mery54.github.io/teaching/mosos/models/fx5-tut2.zip'>Archive Rodin fx5-tut2.zip.</a>
+</p>
+<!-- l. 645 --><p class='noindent'><span class='paragraphHead' id='exercice-tutorial-5'><a id='x1-36000'></a><span class='ptmb7t-x-x-120'>Exercice 6 Tutorial 2</span></span>
+<a href='http://mery54.github.io/teaching/mosos/models/fx6-tut2.zip'>Archive Rodin fx6-tut2.zip.</a>
+</p><!-- l. 653 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='project1'><span class='titlemark'>3.4 </span> <a id='x1-370003.4'></a>Project</h4>
+<!-- l. 656 --><p class='noindent'>The assessment of students is based on two works: </p>
+<ul class='itemize1'>
+<li class='itemize'>A written exam 1h30
+                                                                                       
+                                                                                       
+</li>
+<li class='itemize'>A project which is stated in the following document  <a href='http://mery54.github.io/teaching/mosos/lecturesnotes/master-projets2425.pdf'>Projet Master </a></li></ul>
+<!-- l. 664 --><p class='indent'>The deadline for the project is February 15, 2025 and the presentation will be organised later in
+February 2025.
+</p><!-- l. 670 --><p class='noindent'>
+</p>
+<h3 class='sectionHead' id='course-discont-modelling-hybrid-systems'><span class='titlemark'>4 </span> <a id='x1-380004'></a>Course DISCONT: Modelling hybrid systems</h3>
+<!-- l. 674 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='documentation'><span class='titlemark'>4.1 </span> <a id='x1-390004.1'></a>Documentation</h4>
+<!-- l. 679 --><p class='noindent'>The report entitled  <a href='https://inria.hal.science/hal-02895528v1 '>A Refinement Strategy for Hybrid System Design with Safety Constraints</a> is giving
+details on the method Event-B in hybrid strategy.
+</p><!-- l. 685 --><p class='indent'>The report entitled  <a href='https://hal.science/hal-04189025v2 '>From System Events to Software Operations for Refinement-based Modeling of
+Hybrid Systems</a> studies the integreation of both approaches <span class='ptmri7t-x-x-120'>system </span>and <span class='ptmri7t-x-x-120'>software</span>.
+</p><!-- l. 693 --><p class='indent'><a href='https://hal.science/hal-04152829v1 '>A Static Checker for Reference Tracking Systems via Laplace Transform and Transfer
+Functions.</a>
+</p><!-- l. 699 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='slides-for-the-course-'><span class='titlemark'>4.2 </span> <a id='x1-400004.2'></a>Slides for the course 2020-2021</h4>
+<ul class='itemize1'>
+<li class='itemize'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/2021-01-MLS-00.pdf'>Lecture 1 </a>
+</li>
+<li class='itemize'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/2021-01-MLS-01.pdf'>Lecture 2 </a></li></ul>
+<!-- l. 712 --><p class='noindent'>
+</p>
+<h4 class='subsectionHead' id='slides-for-the-course-1'><span class='titlemark'>4.3 </span> <a id='x1-410004.3'></a>Slides for the course 2021-2022</h4>
+<ul class='itemize1'>
+<li class='itemize'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/2021-22-MLS-00.pdf'>Lecture 1 </a>
+                                                                                       
+                                                                                       
+</li>
+<li class='itemize'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/2021-22-MLS-01.pdf'>Lecture 2 </a>
+</li>
+<li class='itemize'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/2021-22-MLS-02.pdf'>Lecture 3 </a>
+</li>
+<li class='itemize'><a href='http://mery54.github.io/teaching/mosos/lecturesnotes/2021-22-MLS-03.pdf'>Lecture 4 </a></li></ul>
+<!-- l. 1 --><p class='noindent'>
+</p>
+<h3 class='likesectionHead' id='references'><a id='x1-42000'></a>References</h3>
+<!-- l. 1 --><p class='noindent'>
+</p><div class='thebibliography'>
+<p class='bibitem'><span class='biblabel'>
+[1]<span class='bibsp'>   </span></span><a id='Xabrial2010'></a>J.-R. Abrial. <span class='ptmri7t-x-x-120'>Modeling in Event-B: System and Software Engineering</span>. 2010.
+</p>
+<p class='bibitem'><span class='biblabel'>
+[2]<span class='bibsp'>   </span></span><a id='Xlosl-eatcs'></a>Dines Bjørner  and  Martin C. Henson,  editors.    <span class='ptmri7t-x-x-120'>Logics  of  Specification  Languages</span>.
+EATCS Textbook in Computer Science. Springer, 2007.
+</p>
+<p class='bibitem'><span class='biblabel'>
+[3]<span class='bibsp'>   </span></span><a id='Xlosl-b'></a>Dominique Cansell and Dominique Méry.  <span class='ptmri7t-x-x-120'>The event-B Modelling Method: Concepts
+and Case Studies</span>, pages 33–140. Springer, 2007. See <span class='cite'> [<a href='#Xlosl-eatcs'>2</a>]</span>.
+</p>
+</div>
  
-<H1 class="CENTER">Modelling Software-based Systems</H1>
-<P class="CENTER"><STRONG>Dominique Méry</STRONG>
-<BR>
-LORIA &amp; Telecom Nancy
-<BR>
-Université de Lorraine
-<BR><kbd><A ID="tex2html1"
-  HREF="https://members.loria.fr/Mery">https://members.loria.fr/Mery</A></kbd>
-<BR><kbd><A ID="tex2html2"
-  HREF="dominique.mery@loria.fr">dominique.mery@loria.fr</A></kbd>
-</P>
-<BR><P class="CENTER"><B>Date:</B> November 8, 2024</P>
-
-<HR>
-<P>
-This repository contains course notes, exercises, models and projects
-from three courses given as part of master's level training on the
-Event-B formal method. It provides access to resources in the form of
-pdf files or Rodin archives. The relationship with the Atelier-B
-platform is explained.
-
-<P>
-The table
-of contents shows the  summary of three main courses (at Université de 
- Lorraine/University of Lorraine)  based on our
-experiment using the  Event-B method:
-
-<UL>
-<LI>The first course <SPAN  CLASS="textbf">MCFSI</SPAN> is part of the curriculum of the last yer
-  students of Telecom Nancy  who are  focusing on software
-  engineering.
-</LI>
-<LI>The second course  <SPAN  CLASS="textbf">MsC in Computer Scince</SPAN> is aimed at students on the IT Masters course
-  at the University of Lorraine.
-</LI>
-<LI>The third course <SPAN  CLASS="textbf">DISCONT</SPAN> is aimed at Telecom Nancy students in their final year who are specialising in software engineering and embedded systems. The course focuses on hybrid systems and hybrid models. The work of the ANR DISCONT project (see 
-<a href="https://anr.fr/Projet-ANR-17-CE25-0005">
-   website at ANR</a> or  <a href="https://discont.loria.fr">  website at LORIA</a> )
-</LI>
-</UL>
-
-<P>
-The Event-B  method is based on a modelling
- language used to describe state-based models and  safety
- properties of those state-based models.  The originality of  Event-B
- lies in its ability  to
- enable incremental and proof-based modelling of <SPAN  CLASS="textit">reactive
-   systems</SPAN>. The  Event-B   language contains both set notations and a
- first-order predicate calculus; it offers the possibility of defining
- models of reactive systems called machines and contexts and includes
-  the refinement relationship that allows us to follow an incremental
-  development methodology.  
-
-<P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"></A>
-
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html5"
-  HREF="node1.html">Contents</A>
-<LI><A ID="tex2html6"
-  HREF="node2.html"><SPAN CLASS="arabic">1</SPAN> Documentation and Tools</A>
-<LI><A ID="tex2html7"
-  HREF="node3.html"><SPAN CLASS="arabic">2</SPAN> Course MCFSI  at Telecom Nancy</A>
-<UL>
-<LI><A ID="tex2html8"
-  HREF="node4.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Slides for the course MCFSI</A>
-<UL>
-<LI><A ID="tex2html9"
-  HREF="node5.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Lecture 1
-  <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf">The 
-    Modelling Language Event-B</a>. 
-</A>
-<LI><A ID="tex2html10"
-  HREF="node6.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Lecture 2
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-po.pdf">Proof
-      Obligations</a>.</A>
-<LI><A ID="tex2html11"
-  HREF="node7.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN> Lecture 3
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-verification.pdf">Checking
-      contracts using Event-B</a>.</A>
-<LI><A ID="tex2html12"
-  HREF="node8.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">4</SPAN> Lecture 4
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf">Correctness by Construction with the  
-      Modelling Language Event-B using the Refinement</a>.</A>
-<LI><A ID="tex2html13"
-  HREF="node9.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">5</SPAN>  Lecture 5 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf">Access 
-      Control </a>
-</A>
-</UL>
-<LI><A ID="tex2html14"
-  HREF="node10.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Tutorials</A>
-<LI><A ID="tex2html15"
-  HREF="node11.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Project</A>
-<LI><A ID="tex2html16"
-  HREF="node12.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN> Event-B Models</A>
-<UL>
-<LI><A ID="tex2html17"
-  HREF="node13.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Event-B Archives for the  lectures</A>
-<LI><A ID="tex2html18"
-  HREF="node14.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Event-B Archives for   the tutorial 1</A>
-<LI><A ID="tex2html19"
-  HREF="node15.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN> Event-B Archives for   the tutorial 2</A>
-<LI><A ID="tex2html20"
-  HREF="node16.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">4</SPAN> Event-B Archives for   the tutorial 3</A>
-<LI><A ID="tex2html21"
-  HREF="node17.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">5</SPAN> Event-B Archives for   the tutorial 4</A>
-<LI><A ID="tex2html22"
-  HREF="node18.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">6</SPAN> Event-B Archives</A>
-</UL>
-</UL>
-<BR>
-<LI><A ID="tex2html23"
-  HREF="node19.html"><SPAN CLASS="arabic">3</SPAN> Course  MsC in Computer Science:  Modelling and verifying software-based systems for
-  Master in Compurer Science of the University of Lorraine</A>
-<UL>
-<LI><A ID="tex2html24"
-  HREF="node20.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Slides of the course</A>
-<UL>
-<LI><A ID="tex2html25"
-  HREF="node21.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Lecture 1 
-  <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf">The 
-    Modelling Language Event-B</a>.</A>
-<LI><A ID="tex2html26"
-  HREF="node22.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>  Lecture 2 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf">Proof 
-      Obligations</a>.</A>
-<LI><A ID="tex2html27"
-  HREF="node23.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN> Lecture 3 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf">Correctness by Construction with the  
-      Modelling Language Event-B using the Refinement</a>.</A>
-<LI><A ID="tex2html28"
-  HREF="node24.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">4</SPAN>  Lecture 4 
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf">Access 
-      Control </a></A>
-<LI><A ID="tex2html29"
-  HREF="node25.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">5</SPAN>  Lecture 5
-    <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect-verification.pdf">Checking contracts with Event-B</a></A>
-</UL>
-<LI><A ID="tex2html30"
-  HREF="node26.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Tutorials</A>
-<LI><A ID="tex2html31"
-  HREF="node27.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Event-B Models</A>
-<UL>
-<LI><A ID="tex2html32"
-  HREF="node28.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Event-B Archives for the  lectures</A>
-<LI><A ID="tex2html33"
-  HREF="node29.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Event-B Archives for   the tutorial 1</A>
-<LI><A ID="tex2html34"
-  HREF="node30.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Event-B Archives for   the tutorial 2</A>
-<UL>
-<LI><A ID="tex2html35"
-  HREF="node31.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercice 1 Tutorial 2</A>
-<LI><A ID="tex2html36"
-  HREF="node32.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercice 2 Tutorial 2</A>
-<LI><A ID="tex2html37"
-  HREF="node33.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Exercice 3 Tutorial 2</A>
-<LI><A ID="tex2html38"
-  HREF="node34.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Exercice 4 Tutorial 2</A>
-<LI><A ID="tex2html39"
-  HREF="node35.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Exercice 5 Tutorial 2</A>
-<LI><A ID="tex2html40"
-  HREF="node36.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Exercice 6 Tutorial 2</A>
-</UL>
-</UL>
-<LI><A ID="tex2html41"
-  HREF="node37.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Project</A>
-</UL>
-<BR>
-<LI><A ID="tex2html42"
-  HREF="node38.html"><SPAN CLASS="arabic">4</SPAN> Course DISCONT: Modelling hybrid systems</A>
-<UL>
-<LI><A ID="tex2html43"
-  HREF="node39.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Documentation</A>
-<LI><A ID="tex2html44"
-  HREF="node40.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Slides for the course 2020-2021</A>
-<LI><A ID="tex2html45"
-  HREF="node41.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN> Slides for the course 2021-2022</A>
-</UL>
-<BR>
-<LI><A ID="tex2html46"
-  HREF="node42.html">References</A>
-<LI><A ID="tex2html47"
-  HREF="node43.html">About this document ...</A>
-</UL>
-<!--End of Table of Child-Links-->
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node1.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png"> 
-<A ID="tex2html3"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node1.html">Contents</A>
- &nbsp; <B>  <A ID="tex2html4"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
-
-</BODY>
-</HTML>
+</body> 
+</html>
