@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  17 NOV 2024 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  17 NOV 2024 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1575,7 +1575,8 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file TravauxDirigés.html ---
+--- file Cours5hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20242p
+dfCM5.html ---
 [11
 
 ]
@@ -1585,8 +1586,18 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file ProjetMVSI.html ---
+--- file TravauxDirigés.html ---
 [12
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file ProjetMVSI.html ---
+[13
 
 ]
 \openout15 = `web.tmp'.
@@ -1604,16 +1615,6 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 (./web.tmp)
 --- file TD1.html ---
-[13
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file TD2.html ---
 [14
 
 ]
@@ -1623,8 +1624,18 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
+--- file TD2.html ---
+[15
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
 --- file TD3.html ---
-(./web.bbl [15
+(./web.bbl [16
 
 ]
 \openout15 = `web.tmp'.
@@ -1634,9 +1645,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 (./web.tmp)
 --- file refname.html ---
-) [16
+) [17
 
-] [17
+] [18
 
 ] (./web.aux)
  ***********
@@ -1645,12 +1656,12 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 32370 strings out of 474117
- 596320 string characters out of 5743708
+ 32387 strings out of 474117
+ 596878 string characters out of 5743708
  1933184 words of memory out of 5000000
- 53781 multiletter control sequences out of 15000+600000
+ 53794 multiletter control sequences out of 15000+600000
  568193 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,930b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (17 pages, 75916 bytes).
+Output written on web.dvi (18 pages, 79736 bytes).
