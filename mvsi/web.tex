@@ -1,0 +1,252 @@
+\documentclass[ 12pt]{article}
+
+\usepackage{times,vmargin,url}
+\setmarginsrb{3cm}{1cm}{2cm}{1cm}{1cm}{1cm}{1cm}{1cm}
+%\setpapersize{A4}
+
+
+\usepackage{color,time}
+%\pagecolor{yellow}
+%\pagecolor{cyan}
+\pagecolor{white}
+\title{Modélisation et vérification des systèmes informatiques}
+
+
+\newcommand{\keywords}[1]{\textbf{Keywords:} #1} %\\ \clearpage %\tableofcontents\clearpage}
+%
+
+\author{Dominique M\'ery\\
+LORIA \& Telecom Nancy\\ Universit\'e de Lorraine\\ \url{dominique.mery@loria.fr}}
+
+\date{\today}
+
+\usepackage{xcolor}
+%\usepackage{b2latex}
+
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite,time}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor,time,url,nbcode,version}
+\usepackage{wrapfig}
+%\usepackage{b2latex}
+\usepackage{caption}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{bussproofs}
+\usepackage{wrapfig,setspace}
+%\usepackage{lstcoq}
+\usepackage{xspace}
+\usepackage{hyperref}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\pagestyle{plain}
+\pagenumbering{arabic}
+\input{prelude}
+%ddd -aal\renewcommand{\baselinestretch}{0.90}
+\newtheorem{myexample}{Example}[section]
+\newtheorem{mytheorem}{Property}
+%\newtheorem{definition}{Definition}
+%\includeversion{check}
+% \excludeversion{check}
+% \excludeversion{long}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{exemple}{Example}
+%\newtheorem{theorem}{Theorem}
+%\newcommand{\white}[1]{\textcolor{white}{#1}}
+
+%\newtheorem{comm}{Teaching Point}
+%\newenvironment{comm}{\iffalse}{\fi}
+%\excludeversion{comm}
+
+\input eb2latex
+
+\pagestyle{plain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\newcounter{ex}  \setcounter{ex}{1}
+\maketitle
+
+Le cours MVSI  est destiné aux élèves apprentis de seconde année  de
+Telecom Nancy..
+Les objectifs sont de les initier aux techniques de modélisation et
+de vérification, en utilisant ds outils comme TLA Toolbox et Frama-c.
+Un projet est réalisé  en groupe de deux personnes et appliquent  les
+méthodes  et techniques de ce cours.
+
+
+
+  \tableofcontents
+
+\section{Documentation et Outils}
+
+
+
+
+\begin{itemize}
+
+  
+\item La plateforme TLA Toolbox peut être  obtenue en visitant le site  \href{https://lamport.azurewebsites.net/tla/toolbox.html}{The TLA+ Toolbox}.
+
+
+  
+\end{itemize}
+
+
+\section{Slides du cours}
+\label{sec:course-mcfsi-at}
+
+
+
+
+\subsection{Cours 0
+  \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm0.pdf}{CM0}. }
+
+
+
+
+\subsection{Cours 1
+  \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm1.pdf}{CM1}. }
+
+
+  
+\subsection{Cours 2
+  \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm2.pdf}{CM2}. }
+
+
+
+\subsection{Cours 3
+  \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm3.pdf}{CM3}. }
+
+
+
+\subsection{Cours 4
+  \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm4.pdf}{CM4}. }
+
+  
+
+\section{Travaux Dirigés}
+
+  \begin{itemize}
+  \item[]   TD 1 
+    \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/td1.pdf}{Première 
+      série d'exercices sur la modélisation avec TLA }.
+
+       \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/ctd1.pdf}{Correction 
+       TD1}.
+
+       
+  \item[]   TD 2 
+    \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/td2.pdf}{Seconde
+      série d'exercices sur la modélisation avec TLA }.    
+
+          \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/ctd2.pdf}{Correction 
+            TD2}.
+          
+  \item[]   TD 3 
+    \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/td3.pdf}{
+      Série sur les thèmes 
+{Annotation, Contrat, mod\'elisation et  v\'erification (I) }.}
+
+      \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/ctd3.pdf}{Correction 
+       TD3}.
+
+\item[]   TD 4
+    \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/td4.pdf}{
+      Série sur les thèmes 
+{Annotation, Contrat, mod\'elisation et  v\'erification (II) }.}
+
+      \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/ctd4.pdf}{Correction 
+       TD4}.
+    
+  \end{itemize}
+
+  
+  \section{Projet MVSI}
+\label{sec:project}
+
+
+  \section{Modèles TLA}
+\label{sec:event-b-models}
+
+
+\subsection{TD1}
+
+ \begin{itemize}
+  \item[]   appex1\_1.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex1_1.tla}{
+      appec1\_1.tla }.
+      \item[]   appex1\_2.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex1_2.tla}{
+      appec1\_2.tla }.
+       \item[]   appex1\_3.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex1_3.tla}{
+      appec1\_3.tla }.
+          \item[]   appex1\_4.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex1_4.tla}{
+      appec1\_4.tla }.
+  \end{itemize}
+
+  
+\subsection{TD2}
+    
+ \begin{itemize}
+  \item[]   appex2\_1.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex2_1.tla}{
+      appec2\_1.tla }.
+      \item[]   appex2\_2.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex2_2.tla}{
+      appec2\_2.tla }.
+       \item[]   appex2\_3.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex2_3.tla}{
+      appec2\_3.tla }.
+          \item[]   appex2\_4.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex2_4.tla}{
+      appec2\_4.tla }.
+  \end{itemize}
+
+  
+\subsection{TD3}
+    
+\begin{itemize}
+
+  \item[]   appex3\_1.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex3_1.tla}{
+      appec3\_1ls a.tla }.
+
+    
+  \item[]   appex3\_5.tla 
+    \href{http://mery54.github.io/teaching/mvsi/models/appex3_5.tla}{
+      appec3\_5.tla }.
+
+       \href{http://mery54.github.io/teaching/mvsi/models/appex3_5.pdf}{
+      appec3\_5.pdf }.
+
+      \item[]   appex3\_7.tla 
+        \href{http://mery54.github.io/teaching/mvsi/models/appex3_7.tla}{
+          appec3\_7.tla }.
+
+              \item[]   appex3\_8.tla 
+        \href{http://mery54.github.io/teaching/mvsi/models/appex3_8.tla}{
+          appec3\_8.tla }.
+
+              \item[]   appex3\_10.tla 
+        \href{http://mery54.github.io/teaching/mvsi/models/appex3_10.tla}{
+          appec3\_10.tla }.
+        
+   \end{itemize}
+
+\bibliographystyle{plain}
+
+\bibliography{references}
+\end{document}
+
+

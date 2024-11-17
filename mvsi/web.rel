@@ -1,0 +1,60 @@
+;; RefTeX parse info file
+;; File: /Users/mery/lectures/mvsi/webmvsi/web.tex
+;; User: mery (Dominique Méry)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi t)
+
+(bibview-cache)
+
+(master-dir . "/Users/mery/lectures/mvsi/webmvsi/")
+
+(label-numbers)
+
+(bof "/Users/mery/lectures/mvsi/webmvsi/web.tex")
+
+(bof "/Users/mery/lectures/mvsi/webmvsi/prelude.tex")
+
+(eof "/Users/mery/lectures/mvsi/webmvsi/prelude.tex")
+
+(bof "/Users/mery/lectures/mvsi/webmvsi/eb2latex.tex")
+
+(eof "/Users/mery/lectures/mvsi/webmvsi/eb2latex.tex")
+
+(toc "toc" "    1 Documentation et Outils" "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 2 "1" "\\section{Documentation et Outils}" 2395)
+
+(toc "toc" "    2 Slides du cours" "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 2 "2" "\\section{Slides du cours}" 2623)
+
+("sec:course-mcfsi-at" "s" "\\subsection{Cours 1 \\href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm1." "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil)
+
+(toc "toc" "      2.1 Cours 1 \\href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm1.pdf}{CM1}. " "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 3 "2.1" "\\subsection{Cours 1
+  \\href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm1.pdf}{CM1}. }" 2680)
+
+(toc "toc" "      2.2 Cours 2 \\href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm2.pdf}{CM2}. " "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 3 "2.2" "\\subsection{Cours 2
+  \\href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm2.pdf}{CM2}. }" 2800)
+
+(toc "toc" "    3 Travaux Dirigés" "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 2 "3" "\\section{Travaux Dirigés}" 2920)
+
+(toc "toc" "    4 Projet MVSI" "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 2 "4" "\\section{Projet MVSI}" 3299)
+
+("sec:project" "s" "\\section{Modèles TLA}  \\subsection{TD1} \\begin{itemize} " "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil)
+
+(toc "toc" "    5 Modèles TLA" "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 2 "5" "\\section{Modèles TLA}" 3345)
+
+("sec:event-b-models" "s" "\\subsection{TD1} \\begin{itemize} " "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil)
+
+(toc "toc" "      5.1 TD1" "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 3 "5.1" "\\subsection{TD1}" 3395)
+
+(toc "toc" "      5.1 TD1" "/Users/mery/lectures/mvsi/webmvsi/web.tex" nil 3 "5.1" "\\subsection{TD1}" 3395)
+
+(bib "/Users/mery/lectures/mvsi/webmvsi/references.bib")
+
+(eof "/Users/mery/lectures/mvsi/webmvsi/web.tex")
+))
+

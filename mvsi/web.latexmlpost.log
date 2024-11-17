@@ -1,0 +1,7 @@
+latexmlpost (LaTeXML version 0.8.8) paginating /Users/mery/lectures/mosos/lectures-telecom/lectures-telecom2024/web/web
+Fatal:perl:die Perl died
+	I/O error : Is a directory
+	/Users/mery/lectures/mosos/lectures-telecom/lectures-telecom2024/web/web:1: parser error : Document is empty
+	^
+LaTeXML died! at /opt/homebrew/Cellar/latexml/0.8.8/libexec/lib/perl5/LaTeXML/Common/XML/Parser.pm line 29.
+Postprocessing failed 1 fatal error (See /Users/mery/lectures/mosos/lectures-telecom/lectures-telecom2024/web/web.latexmlpost.log) (reqd. 0.00s)
