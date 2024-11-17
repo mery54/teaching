@@ -1,5 +1,23 @@
 \documentclass[ 12pt]{article}
 
+\usepackage[most]{tcolorbox}
+
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!70,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=0mm,
+    boxsep=5pt,
+    arc=0pt,outer arc=0pt,
+  }
+
+
 \usepackage{times,vmargin,url}
 \setmarginsrb{3cm}{1cm}{2cm}{1cm}{1cm}{1cm}{1cm}{1cm}
 %\setpapersize{A4}
@@ -73,6 +91,12 @@ LORIA \& Telecom Nancy\\ Universit\'e de Lorraine\\ \url{dominique.mery@loria.fr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
+
+\begin{tcolorbox}
+
+
+
 \newcounter{ex}  \setcounter{ex}{1}
 \maketitle
 
@@ -137,6 +161,12 @@ méthodes  et techniques de ce cours.
 
 \subsection{Cours 5
   \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-2.pdf}{CM5}. }
+
+
+
+
+\subsection{Cours $\omega$
+  \href{http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-3.pdf}{CM}. }
 
   
 
@@ -271,6 +301,7 @@ sujet  différent pour chaque groupe.
 \bibliographystyle{plain}
 
 \bibliography{references}
+\end{tcolorbox}
 \end{document}
 
 
