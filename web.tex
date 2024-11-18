@@ -1,0 +1,128 @@
+\documentclass[ 12pt]{article}
+%\documentclass[ 12pt]{book}
+
+\usepackage{times,vmargin,url,html}
+\setmarginsrb{3cm}{1cm}{2cm}{1cm}{1cm}{1cm}{1cm}{1cm}
+%\setpapersize{A4}
+\usepackage{dr-bibbib} %-sort-year}
+
+\usepackage{color,time,array,time}
+\pagecolor{yellow}
+%\pagecolor{cyan}
+\pagecolor{white}
+
+\newcommand{\keywords}[1]{\textbf{Keywords:} #1} %\\ \clearpage %\tableofcontents\clearpage}
+%
+
+\usepackage{xcolor}
+%\usepackage{b2latex}
+
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite,time}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor,time,url,nbcode,version}
+\usepackage{wrapfig}
+%\usepackage{b2latex}
+\usepackage{caption}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{bussproofs}
+\usepackage{wrapfig,setspace}
+%\usepackage{lstcoq}
+\usepackage{xspace}
+\usepackage{hyperref}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\pagestyle{plain}
+\pagenumbering{arabic}
+\input{prelude}
+%ddd -aal\renewcommand{\baselinestretch}{0.90}
+\newtheorem{myexample}{Example}[section]
+\newtheorem{mytheorem}{Property}
+%\newtheorem{definition}{Definition}
+%\includeversion{check}
+% \excludeversion{check}
+% \excludeversion{long}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{exemple}{Example}
+%\newtheorem{theorem}{Theorem}
+%\newcommand{\white}[1]{\textcolor{white}{#1}}
+
+%\newtheorem{comm}{Teaching Point}
+%\newenvironment{comm}{\iffalse}{\fi}
+%\excludeversion{comm}
+
+\input eb2latex
+
+\pagestyle{plain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Educational resources}
+\author{Dominique M\'ery\\
+LORIA \& Telecom Nancy\\ Universit\'e de Lorraine\\
+\url{https://members.loria.fr/Mery}\\ \url{dominique-dot-mery-at-loria-dot-fr}}
+
+%\date{Last updated \now on \today}
+
+\makeatletter
+\renewcommand\contentsname{Summary of the links}
+\renewcommand\tableofcontents{%
+  \null\hfill\textbf{\Large\contentsname}\hfill\null\par
+  \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
+  \@starttoc{toc}%
+}
+\makeatother
+
+
+\begin{document}
+\newcounter{ex}  \setcounter{ex}{1}
+\maketitle
+
+This site provides teaching resources for students taking courses at
+the University of Lorraine, particularly the IT Masters and Telecom
+Nancy.
+
+
+
+
+\section{ Course MOSOS Modelling Software-based Systems using  the
+  Event-B modelling language}
+\label{sec:course-mosos-modell}
+
+
+The   course Modelling Software-based Systems (MOSOS) is taught in
+the Master  in Computer Science of the University of Lorraine  and in
+the Master in Computer Engineering of Telecom Nancy. The  lectures notes  and documents for the students  are  at the link
+\href{https://mery54.github.io/teaching/mosos}{MOSOS}
+
+
+
+\section{Course MVSI for french students (in french) }
+\label{sec:course-mvsi-french}
+
+
+Les élèves    apprentis de seconde année
+trouveront un ensemble de ressources pédagohiques comme les 
+textes des cours et des exercices ainsi que les solutions des
+exercices en consultant ce lien
+\href{https://mery54.github.io/teaching/mvsi}{MVSI}
+
+
+\section{Using  the Event-B modelling language  for teaching verification 
+techniques }
+
+Verification of program properties such as partial correctness (PC) or absence of errors at runtime (RTE) applies induction principles using algorithmic techniques for checking statements in a logical framework such as classical logic or temporal logic.  Alan Turing was undoubtedly the first to annotate programs, namely Turing machines, and to apply an induction principle to transition systems.  Our work is placed in this perspective of verifying safety properties of sequential or distributed programs, with the aim of presenting them as simply as possible to student classes in the context of a posteriori verification.  We report on an in vivo experiment using the \eb language and associated tools as an assembly and disassembly platform for correcting programs in a programming language.  We revisit the properties of partial correctness and the absence of run-time errors in the context of this experiment, which precedes the use of \eb as a method of correct design by construction.  We have adopted a contract-based approach to programming, which we are implementing with Event-B.  A few examples are given to illustrate this pedagogical approach.  This step is part of a process of learning both the underlying techniques and other tools such as Frama-c, Dafny and Why3 \ldots, which are based on the same ideas.
+
+Please vidsit the link \href{https://mery54.github.io/fmt}{FMT}.
+
+\section{Course ASPD on modelling, verifying and trying to understand distributed algorithms usd in  main  computer systems. }
+
+\end{document}
