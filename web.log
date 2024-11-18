@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  18 NOV 2024 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  18 NOV 2024 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1572,12 +1572,12 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 32240 strings out of 474117
- 594298 string characters out of 5743708
+ 32239 strings out of 474117
+ 594283 string characters out of 5743708
  1932184 words of memory out of 5000000
- 53702 multiletter control sequences out of 15000+600000
- 565383 words of font info for 64 fonts, out of 8000000 for 9000
+ 53701 multiletter control sequences out of 15000+600000
+ 565076 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,9n,120p,1839b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (7 pages, 42656 bytes).
+Output written on web.dvi (7 pages, 42520 bytes).
