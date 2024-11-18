@@ -212,6 +212,6 @@ Css: span.dashuline, .dashuline-math {text-decoration:underline dashed;}
 Css: span.dotuline, .dotuline-math {text-decoration:underline dotted;}
 --- characters ---
 Font("ptmr7t","","10","120")
-Font("ptmr7t","","10","207")
 Font("ptmr7t","","10","144")
+Font("ptmr7t","","10","207")
 Font("pcrr7t","","10","144")

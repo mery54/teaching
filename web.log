@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  18 NOV 2024 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  18 NOV 2024 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1502,18 +1502,18 @@ Package hyperref Info: Link coloring ON on input line 85.
 [1
 
 ] [2]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 8
-7.
+8.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) (./web.4ct)
@@ -1525,7 +1525,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 (./web.tmp)
 --- file CourseMOSOSModellingSoftwarebasedSystemsusingtheEventBmodellinglanguag
 e.html ---
-[3]
+[3] [4]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1533,7 +1533,7 @@ e.html ---
 
 (./web.tmp)
 --- file CourseMVSIforfrenchstudentsinfrench.html ---
-[4
+[5
 
 ]
 \openout15 = `web.tmp'.
@@ -1545,7 +1545,7 @@ e.html ---
 --- file UsingtheEventBmodellinglanguageforteachingverificationtechniques.html 
 ---
 ! Undefined control sequence.
-l.122 ...rt on an in vivo experiment using the \eb
+l.123 ...rt on an in vivo experiment using the \eb
                                                    language and associated t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1554,7 +1554,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.122 ...experiment, which precedes the use of \eb
+l.123 ...experiment, which precedes the use of \eb
                                                    as a method of correct de...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1562,7 +1562,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[5
+[6
 
 ]
 \openout15 = `web.tmp'.
@@ -1573,9 +1573,9 @@ and I'll forget about whatever was undefined.
 (./web.tmp)
 --- file CourseASPDonmodellingverifyingandtryingtounderstanddistributedalgorith
 msusdinmaincomputersystems.html ---
-[6
+[7
 
-] [7
+] [8
 
 ] (./web.aux)
  ***********
@@ -1584,12 +1584,12 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 32336 strings out of 474117
- 595995 string characters out of 5743708
+ 32335 strings out of 474117
+ 595981 string characters out of 5743708
  1932184 words of memory out of 5000000
- 53788 multiletter control sequences out of 15000+600000
- 566812 words of font info for 65 fonts, out of 8000000 for 9000
+ 53787 multiletter control sequences out of 15000+600000
+ 566596 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,9n,120p,1839b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,9n,120p,1839b,730s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (7 pages, 42332 bytes).
+Output written on web.dvi (8 pages, 42524 bytes).
