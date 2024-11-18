@@ -1,8 +1,4 @@
-htfcss:  pcrr7t  font-family: 'Nimbus Mono L', serif;
-htfcss:  pcrbo7t  font-weight: bold; font-style: oblique; font-family: 'Nimbus Mono L', serif;
-htfcss: ptmr7t font-family: monospace,monospace;
-htfcss: ptmr7t font-family: monospace,monospace;
-htfcss: ptmr7t font-family: monospace,monospace;
+htfcss: cmtt font-family: monospace,monospace;
 File: web.html
 File: web.css
 File: web.tmp
@@ -211,7 +207,4 @@ Css: span.uwave, .uwave-math {text-decoration:underline wavy; }
 Css: span.dashuline, .dashuline-math {text-decoration:underline dashed;}
 Css: span.dotuline, .dotuline-math {text-decoration:underline dotted;}
 --- characters ---
-Font("ptmr7t","","10","120")
-Font("ptmr7t","","10","144")
-Font("ptmr7t","","10","207")
-Font("pcrr7t","","10","144")
+Font("cmtt","12","12","120")
