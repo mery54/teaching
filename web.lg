@@ -1,3 +1,5 @@
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
 htfcss: cmtt font-family: monospace,monospace;
 File: web.html
 File: web.css
@@ -207,4 +209,8 @@ Css: span.uwave, .uwave-math {text-decoration:underline wavy; }
 Css: span.dashuline, .dashuline-math {text-decoration:underline dashed;}
 Css: span.dotuline, .dotuline-math {text-decoration:underline dotted;}
 --- characters ---
+Font("cmr","12","12","100")
+Font("cmr","17","17","120")
+Font("cmr","12","12","120")
 Font("cmtt","12","12","120")
+Font("cmbx","12","12","100")
