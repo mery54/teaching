@@ -79,6 +79,10 @@
 
 ("sec:event-b-archives" "s" nil "/Users/mery/lectures/mosos/webmosos/web.tex" nil "")
 
+(toc "toc" "      2.5 Past exams of the course MCFSI" "/Users/mery/lectures/mosos/webmosos/web.tex" nil 3 "2.5" "\\subsection{Past exams  of  the course MCFSI}" 12744)
+
+("sec:past-exams-course" "s" nil "/Users/mery/lectures/mosos/webmosos/web.tex" nil "")
+
 (toc "toc" "    3 Course DISCONT" "/Users/mery/lectures/mosos/webmosos/web.tex" nil 2 "3" "\\section{Course DISCONT}" 14608)
 
 ("sec:course-discont" "s" nil "/Users/mery/lectures/mosos/webmosos/web.tex" nil "")
