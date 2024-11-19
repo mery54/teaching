@@ -15,7 +15,7 @@ $ref_files{$key} = "$dir".q|node42.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-discont/;
-$ref_files{$key} = "$dir".q|node38.html|; 
+$ref_files{$key} = "$dir".q|node39.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -23,19 +23,19 @@ $ref_files{$key} = "$dir".q|node3.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
-$ref_files{$key} = "$dir".q|node19.html|; 
+$ref_files{$key} = "$dir".q|node20.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:documentation/;
-$ref_files{$key} = "$dir".q|node39.html|; 
+$ref_files{$key} = "$dir".q|node40.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$ref_files{$key} = "$dir".q|node30.html|; 
+$ref_files{$key} = "$dir".q|node31.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$ref_files{$key} = "$dir".q|node27.html|; 
+$ref_files{$key} = "$dir".q|node28.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
@@ -46,8 +46,12 @@ $key = q/sec:lect-4-hrefhttp:m/;
 $ref_files{$key} = "$dir".q|node9.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/sec:past-exams-course/;
+$ref_files{$key} = "$dir".q|node19.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/sec:project/;
-$ref_files{$key} = "$dir".q|node37.html|; 
+$ref_files{$key} = "$dir".q|node38.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
@@ -55,7 +59,7 @@ $ref_files{$key} = "$dir".q|node4.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
-$ref_files{$key} = "$dir".q|node20.html|; 
+$ref_files{$key} = "$dir".q|node21.html|; 
 $noresave{$key} = "$nosave";
 
 1;

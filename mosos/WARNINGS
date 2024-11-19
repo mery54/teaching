@@ -20,4 +20,15 @@ No implementation found for style `ulem'
 redefining command \keywords 
 
 previous meaning of \keywords will be lost
+
+The web.aux file was not found, so sections will not be numbered 
+and cross-references will be shown as icons.
 boolean showcomments not defined
+
+The bibliography file was not found.
+
+no reference for citation: abrial2010
+
+no reference for citation: losl-b
+
+no reference for citation: losl-eatcs
