@@ -27,6 +27,10 @@
 
 (eof "/Users/mery/lectures/mosos/webmosos/eb2latex.tex")
 
+(toc "toc" "  1 un chap" "/Users/mery/lectures/mosos/webmosos/web.tex" nil 1 "1" "\\chapter{un chap}" 3856)
+
+("cha:un-chap" "s" nil "/Users/mery/lectures/mosos/webmosos/web.tex" nil "")
+
 (toc "toc" "  1 TESTS1" "/Users/mery/lectures/mosos/webmosos/web.tex" nil 1 "1" "\\chapter{TESTS1}" 3857)
 
 (toc "toc" "  2 RRR" "/Users/mery/lectures/mosos/webmosos/web.tex" nil 1 "2" "\\chapter{RRR}" 5802)
