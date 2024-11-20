@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  19 NOV 2024 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  20 NOV 2024 05:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1733,9 +1733,9 @@ dfCM5.html ---
 (./web.tmp)
 --- file refname.html ---
 )
-l.313 --- TeX4ht warning --- \SaveEverypar's: 2 at \begin{tcb@savebox} and 3 \e
+l.312 --- TeX4ht warning --- \SaveEverypar's: 2 at \begin{tcb@savebox} and 3 \e
 nd{tcb@savebox} ---
-l.313 --- TeX4ht warning --- \SaveEverypar's: 1 at \begin{tcolorbox} and 2 \end
+l.312 --- TeX4ht warning --- \SaveEverypar's: 1 at \begin{tcolorbox} and 2 \end
 {tcolorbox} ---
 [1
 
@@ -1759,4 +1759,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  107i,10n,131p,901b,1002s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (4 pages, 97236 bytes).
+Output written on web.dvi (4 pages, 97108 bytes).
