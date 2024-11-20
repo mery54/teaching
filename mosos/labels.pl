@@ -15,7 +15,7 @@ $external_labels{$key} = "$URL/" . q|node42.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-discont/;
-$external_labels{$key} = "$URL/" . q|node39.html|; 
+$external_labels{$key} = "$URL/" . q|node42.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -27,11 +27,11 @@ $external_labels{$key} = "$URL/" . q|node20.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:documentation/;
-$external_labels{$key} = "$URL/" . q|node40.html|; 
+$external_labels{$key} = "$URL/" . q|node43.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_labels{$key} = "$URL/" . q|node31.html|; 
+$external_labels{$key} = "$URL/" . q|node38.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
@@ -51,7 +51,7 @@ $external_labels{$key} = "$URL/" . q|node19.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$external_labels{$key} = "$URL/" . q|node38.html|; 
+$external_labels{$key} = "$URL/" . q|node41.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
