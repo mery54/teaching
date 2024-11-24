@@ -205,7 +205,7 @@ Css: span.uwave, .uwave-math {text-decoration:underline wavy; }
 Css: span.dashuline, .dashuline-math {text-decoration:underline dashed;}
 Css: span.dotuline, .dotuline-math {text-decoration:underline dotted;}
 Css: #tcolobox-1 .tcolorbox-title{color: #FFFFFF; background-color: #FFFFFF;}
-Css: #tcolobox-1 .tcolorbox-content{color: #000000; background-color: #FFFF4D; border: 1px solid #FFFFFF;}
+Css: #tcolobox-1 .tcolorbox-content{color: #000000; background-color: #FFD2D2; border: 1px solid #FFFFFF;}
 Css: #tcolobox-1 div{ padding-top:5px; padding-bottom:5px; padding-left:5px; padding-right:5px; }
 --- characters ---
 Font("ptmr7t","","10","120")
