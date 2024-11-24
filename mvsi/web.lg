@@ -1,6 +1,4 @@
 htfcss: ptmri7t font-style: italic;
-htfcss: cmmi font-style: italic;
-htfcss: cmmib font-style: italic; font-weight: bold;
 htfcss:  pcrr7t  font-family: 'Nimbus Mono L', serif;
 htfcss:  pcrbo7t  font-weight: bold; font-style: oblique; font-family: 'Nimbus Mono L', serif;
 htfcss: ptmr7t font-family: monospace,monospace;
@@ -18,7 +16,7 @@ File: Cours2hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm2pdf
 File: Cours3hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm3pdfCM3.html
 File: Cours4hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm4pdfCM4.html
 File: Cours5hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20242pdfCM5.html
-File: Coursomegahrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20243pdfCM.html
+File: Cours6hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20243pdfCM6.html
 File: TravauxDirigés.html
 File: ProjetMVSI.html
 File: ModèlesTLA.html
@@ -215,5 +213,4 @@ Font("ptmr7t","","10","207")
 Font("ptmr7t","","10","144")
 Font("pcrr7t","","10","144")
 Font("cmr","8","8","100")
-Font("cmmi","12","12","100")
 Font("ptmri7t","","10","120")
