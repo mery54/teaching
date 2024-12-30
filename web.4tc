@@ -1,6 +1,7 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
 \doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{2}{x2-10001}{QQ2-2-1}{ Course MOVEX Modelling, Verification and Experimentation for Software-based Systems}}{3}\relax 
-\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{3}{x3-20002}{QQ2-3-2}{ Course MOSOS Modelling Software-based Systems using the Event-B modelling language}}{4}\relax 
-\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{4}{x4-30003}{QQ2-4-3}{Course MVSI for french students (in french) }}{5}\relax 
-\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{5}{x5-40004}{QQ2-5-4}{Using the Event-B modelling language for teaching verification techniques }}{6}\relax 
-\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{6}{x6-50005}{QQ2-6-5}{Course ASPD on modelling, verifying and trying to understand distributed algorithms usd in main computer systems. }}{7}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{3}{x3-20002}{QQ2-3-2}{ Course MOSOS Modelling Software-based Systems using the Event-B modelling language}}{5}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{4}{x4-30003}{QQ2-4-3}{Course MVSI for french students (in french) }}{6}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{5}{x5-40004}{QQ2-5-4}{Using the Event-B modelling language for teaching verification techniques }}{7}\relax 
+\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{6}{x6-50005}{QQ2-6-5}{Course ASPD on modelling, verifying and trying to understand distributed algorithms usd in main computer systems. }}{8}\relax 
+\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{7}{x7-60006}{QQ2-7-6}{ Course DISCONT Modelling Modelling Systems}}{9}\relax 
