@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.6.18)  18 NOV 2024 21:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  30 DEC 2024 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1465,7 +1465,11 @@ File: l3backend-dvips.def 2024-02-20 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count343
 \g__pdf_backend_link_int=\count344
 \g__pdf_backend_link_sf_int=\count345
-) (./web.aux)
+) (./web.aux
+
+LaTeX Warning: Label `sec:course-mosos-modell' multiply defined.
+
+)
 \openout1 = `web.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
@@ -1511,8 +1515,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file CourseMOSOSModellingSoftwarebasedSystemsusingtheEventBmodellinglanguag
-e.html ---
+--- file CourseMOVEXModellingVerificationandExperimentationforSoftwarebasedSyst
+ems.html ---
+! Too many }'s.
+l.103   for  Software-based Systems}
+                                      (MOVEX) is taught in
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
 [3]
 \openout15 = `web.tmp'.
 
@@ -1520,8 +1530,19 @@ e.html ---
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file CourseMVSIforfrenchstudentsinfrench.html ---
+--- file CourseMOSOSModellingSoftwarebasedSystemsusingtheEventBmodellinglanguag
+e.html ---
 [4
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file CourseMVSIforfrenchstudentsinfrench.html ---
+[5
 
 ]
 \openout15 = `web.tmp'.
@@ -1533,7 +1554,7 @@ e.html ---
 --- file UsingtheEventBmodellinglanguageforteachingverificationtechniques.html 
 ---
 ! Undefined control sequence.
-l.122 ...rt on an in vivo experiment using the \eb
+l.136 ...rt on an in vivo experiment using the \eb
                                                    language and associated t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1542,7 +1563,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.122 ...experiment, which precedes the use of \eb
+l.136 ...experiment, which precedes the use of \eb
                                                    as a method of correct de...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1550,7 +1571,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[5
+[6
 
 ]
 \openout15 = `web.tmp'.
@@ -1561,23 +1582,26 @@ and I'll forget about whatever was undefined.
 (./web.tmp)
 --- file CourseASPDonmodellingverifyingandtryingtounderstanddistributedalgorith
 msusdinmaincomputersystems.html ---
-[6
+[7
 
-] [7
+] [8
 
 ] (./web.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 32239 strings out of 474117
- 594283 string characters out of 5743708
- 1932184 words of memory out of 5000000
- 53701 multiletter control sequences out of 15000+600000
+ 32256 strings out of 474117
+ 594818 string characters out of 5743707
+ 1933184 words of memory out of 5000000
+ 53714 multiletter control sequences out of 15000+600000
  565076 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,9n,120p,1839b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (7 pages, 42616 bytes).
+Output written on web.dvi (8 pages, 46440 bytes).
