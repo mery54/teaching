@@ -1,4 +1,4 @@
-# LaTeX2HTML 2024 (Released January 1, 2024)
+# LaTeX2HTML 2024.2 (Released October 21, 2024)
 # Associate labels original text with physical files.
 
 
@@ -15,7 +15,7 @@ $external_labels{$key} = "$URL/" . q|node42.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-discont/;
-$external_labels{$key} = "$URL/" . q|node42.html|; 
+$external_labels{$key} = "$URL/" . q|node43.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -27,7 +27,7 @@ $external_labels{$key} = "$URL/" . q|node20.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:documentation/;
-$external_labels{$key} = "$URL/" . q|node43.html|; 
+$external_labels{$key} = "$URL/" . q|node44.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
@@ -47,7 +47,7 @@ $external_labels{$key} = "$URL/" . q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:past-exams-course/;
-$external_labels{$key} = "$URL/" . q|node19.html|; 
+$external_labels{$key} = "$URL/" . q|node42.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
@@ -65,12 +65,12 @@ $noresave{$key} = "$nosave";
 1;
 
 
-# LaTeX2HTML 2024 (Released January 1, 2024)
+# LaTeX2HTML 2024.2 (Released October 21, 2024)
 # labels from external_latex_labels array.
 
 
 $key = q/sec:course-discont/;
-$external_latex_labels{$key} = q|x15-390004 x15-390004:autorefsectionCourse DISCONT: Modelling hybrid systems|; 
+$external_latex_labels{$key} = q|x15-420004 x15-420004:autorefsectionCourse DISCONT: Modelling hybrid systems|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -82,11 +82,11 @@ $external_latex_labels{$key} = q|x10-200003 x10-200003:autorefsectionCourse MsC 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:documentation/;
-$external_latex_labels{$key} = q|x16-400004.1 x16-400004.1:autorefsubsectionDocumentation|; 
+$external_latex_labels{$key} = q|x16-430004.1 x16-430004.1:autorefsubsectionDocumentation|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_latex_labels{$key} = q|x13-310003.3.3 x13-310003.3.3:autorefsubsubsectionEvent-B Archives for the tutorial 2|; 
+$external_latex_labels{$key} = q|x13-380003.3.4 x13-380003.3.4:autorefsubsubsectionEvent-B Archives for the tutorial 3|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
@@ -102,7 +102,7 @@ $external_latex_labels{$key} = q|x9-190002.5 x9-190002.5:autorefsubsectionPast e
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$external_latex_labels{$key} = q|x14-380003.4 x14-380003.4:autorefsubsectionProject|; 
+$external_latex_labels{$key} = q|x14-410003.4 x14-410003.4:autorefsubsectionProject|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;

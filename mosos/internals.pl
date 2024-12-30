@@ -1,4 +1,4 @@
-# LaTeX2HTML 2024 (Released January 1, 2024)
+# LaTeX2HTML 2024.2 (Released October 21, 2024)
 # Associate internals original text with physical files.
 
 
@@ -15,7 +15,7 @@ $ref_files{$key} = "$dir".q|node42.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-discont/;
-$ref_files{$key} = "$dir".q|node42.html|; 
+$ref_files{$key} = "$dir".q|node43.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -27,7 +27,7 @@ $ref_files{$key} = "$dir".q|node20.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:documentation/;
-$ref_files{$key} = "$dir".q|node43.html|; 
+$ref_files{$key} = "$dir".q|node44.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
@@ -47,7 +47,7 @@ $ref_files{$key} = "$dir".q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:past-exams-course/;
-$ref_files{$key} = "$dir".q|node19.html|; 
+$ref_files{$key} = "$dir".q|node42.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
