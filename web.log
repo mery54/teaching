@@ -1465,11 +1465,7 @@ File: l3backend-dvips.def 2024-02-20 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count343
 \g__pdf_backend_link_int=\count344
 \g__pdf_backend_link_sf_int=\count345
-) (./web.aux
-
-LaTeX Warning: Label `sec:course-mosos-modell' multiply defined.
-
-)
+) (./web.aux)
 \openout1 = `web.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
@@ -1591,15 +1587,12 @@ msusdinmaincomputersystems.html ---
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 32256 strings out of 474117
- 594818 string characters out of 5743707
+ 32257 strings out of 474117
+ 594836 string characters out of 5743707
  1933184 words of memory out of 5000000
- 53714 multiletter control sequences out of 15000+600000
+ 53715 multiletter control sequences out of 15000+600000
  565076 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,9n,120p,1839b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
