@@ -1,156 +1,70 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head><title>Modelling, verification and experimentation for software-based systems (MOVEX)</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='web.css' rel='stylesheet' type='text/css' /> 
+<meta content='web.tex' name='src' /> 
+</head><body>
+   <div class='maketitle'>
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
 
-<!--Converted with LaTeX2HTML 2024.2 (Released October 21, 2024) -->
-<HTML lang="en">
-<HEAD>
-<TITLE>Modelling, verification and experimentation for software-based systems (MOVEX)</TITLE>
+<h2 class='titleHead'>Modelling, verification and experimentation for
+software-based systems (MOVEX)</h2>
+                 <div class='author'><span class='ptmr7t-x-x-144'>Dominique Méry</span>
+<br /><span class='ptmr7t-x-x-144'>LORIA &amp; Telecom Nancy</span>
+<br />              <span class='ptmr7t-x-x-144'>Université de Lorraine</span>
+<br /><a class='url' href='https://members.loria.fr/Mery'><span class='pcrr7t-x-x-144'>https://members.loria.fr/Mery</span></a>
+<br /><a class='url' href='dominique.mery@loria.fr'><span class='pcrr7t-x-x-144'>dominique.mery@loria.fr</span></a></div><br />
+<div class='date'><span class='ptmr7t-x-x-144'>January 9, 2025</span></div>
+</div>
+<!-- l. 81 --><p class='indent'>This repository contains course notes, exercises, models and projects from two courses given as
+part of master’s level training on modelling an verifying software-based systems. It provides access to
+resources in the form of pdf files, TLA files, ACSL files or Rodin files. Moreover, it aims to prepare
+students of the fourth year of University to apply modelling techniques for software-based systems. It
+is divided into two main parts: </p>
+<ul class='itemize1'>
+<li class='itemize'>Part 1 <span class='phvr7t-x-x-120'>MALG </span>is  shared  by  students  in  software  engineering  and  in  CPS  engineering;
+the course  is  oganised  in  6  weeks  (6  lectures  x  2h00  )  (6  tutorials  x  2  h  00).
+Topics are transition systems, invariance, safety, fixed-point theory, induction principles,
+Floyd/Hoare proof systems,
+</li>
+<li class='itemize'>
+<!-- l. 94 --><p class='noindent'>Part 2 is divided into two distinct streams: </p>
+<ul class='itemize2'>
+<li class='itemize'><span class='phvr7t-x-x-120'>MOVEX-SE </span>is the course is oganised in 6 weeks (6 lectures x 2h00 ) (6 tutorials x
+2 h 00)
+</li>
+<li class='itemize'><span class='phvr7t-x-x-120'>MOVEX-CPS </span>the course is oganised in 6 weeks (6 lectures x 2h00 ) (6 tutorials x
+2 h 00)</li></ul>
+</li></ul>
+<!-- l. 103 --><p class='indent'>The table of contents shows the summary of two main courses (at Université de Lorraine/University of
+Lorraine) based on our experiment using the modelling languages as TLA, Event-B and
+ACSL
+</p>
+                                                                                       
+                                                                                       
+<ul class='itemize1'>
+<li class='itemize'>The first course <span class='ptmb7t-x-x-120'>MALG </span>is part of the curriculum of the second year students of Telecom
+Nancy who are focusing on software engineering.
+</li>
+<li class='itemize'>The second  course  <span class='ptmb7t-x-x-120'>MOVEX  </span>is  part  of  the  curriculum  of  the  second  year  students  of
+Telecom Nancy who are focusing on embedded systems, as well as students of seconf
+year of ENSEM.</li></ul>
+<div class='tableofcontents'>
+<span class='likesectionToc'><a href='contentsname.html#contents' id='QQ2-2-1'>Contents</a></span>
+<br /><span class='sectionToc'>1 <a href='DocumentationandTools.html#documentation-and-tools' id='QQ2-3-2'>Documentation and Tools</a></span>
+<br /><span class='sectionToc'>2 <a href='CourseMALG1MOVEX1atTelecomNancy.html#course-malgmovex-at-telecom-nancy' id='QQ2-4-3'>Course MALG1/MOVEX1 at Telecom Nancy</a></span>
+<br /><span class='subsectionToc'>2.1 <a href='SlidesforthecourseMALG1MOVEX1.html#slides-for-the-course-malgmovex' id='QQ2-5-4'>Slides for the course MALG1/MOVEX1</a></span>
+<br /><span class='subsectionToc'>2.2 <a href='LecturesNotes.html#lectures-notes' id='QQ2-6-6'>Lectures Notes</a></span>
+<br /><span class='subsectionToc'>2.3 <a href='Tutorials.html#tutorials' id='QQ2-7-7'>Tutorials</a></span>
+<br /><span class='subsectionToc'>2.4 <a href='Assessment.html#assessment' id='QQ2-8-8'>Assessment</a></span>
+</div>
 
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2024.2">
-
-<LINK REL="STYLESHEET" HREF="web.css">
-
-<LINK REL="next" HREF="node1.html">
-</HEAD>
-
-<BODY  bgcolor="#ffffff">
-
-<DIV CLASS="navigation"><!--Navigation Panel-->
-<A
- HREF="node1.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png"> 
-<A ID="tex2html3"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node1.html">Contents</A>
- &nbsp; <B>  <A ID="tex2html4"
-  HREF="node1.html">Contents</A></B> 
-<BR>
-<BR></DIV>
-<!--End of Navigation Panel-->
  
-<H1 class="CENTER">Modelling,  verification   and experimentation  for 
-  software-based systems (MOVEX)</H1>
-<P class="CENTER"><STRONG>Dominique Méry</STRONG>
-<BR>
-LORIA &amp; Telecom Nancy
-<BR>
-Université de Lorraine
-<BR><kbd><A ID="tex2html1"
-  HREF="https://members.loria.fr/Mery">https://members.loria.fr/Mery</A></kbd>
-<BR><kbd><A ID="tex2html2"
-  HREF="dominique.mery@loria.fr">dominique.mery@loria.fr</A></kbd>
-</P>
-<BR><P class="CENTER"><B>Date:</B> January 9, 2025</P>
-
-<HR>
-<P>
-This repository contains course notes, exercises, models and projects
-from two  courses given as part of master's level training on
-modelling an verifying software-based systems. It provides access to
-resources in the form of pdf files, TLA files, ACSL files  or Rodin
-files. Moreover, it aims to prepare  students of the fourth year of
-University to apply modelling techniques  for software-based systems.
-It is divided into  two  main  parts:
-
-<UL>
-<LI>Part 1  <SPAN  CLASS="textsf">MALG</SPAN> is shared by students in software engineering and in
- CPS engineering; the course is oganised  in 6 weeks (6 lectures x 
- 2h00 ) (6 tutorials x 2 h 00). Topics are  transition systems,
- invariance, safety, fixed-point theory, induction principles,
- Floyd/Hoare proof systems, 
-</LI>
-<LI>Part 2 is divided into  two distinct streams:
-  
-<UL>
-<LI><SPAN  CLASS="textsf">MOVEX-SE</SPAN> is the course is oganised  in 6 weeks (6 lectures x 
- 2h00 ) (6 tutorials x 2 h 00)
-</LI>
-<LI><SPAN  CLASS="textsf">MOVEX-CPS</SPAN> the course is oganised  in 6 weeks (6 lectures x 
- 2h00 ) (6 tutorials x 2 h 00)
-  
-</LI>
-</UL>
-</LI>
-</UL>
-
-<P>
-The table
-of contents shows the  summary of  two main courses (at Université de 
- Lorraine/University of Lorraine)  based on our
- experiment using the modelling languages as TLA,   Event-B  and ACSL
-
-<P>
-
-<UL>
-<LI>The first course <SPAN  CLASS="textbf">MALG</SPAN> is part of the curriculum of the
-  second  year
-  students of Telecom Nancy  who are  focusing on software
-  engineering.
-</LI>
-<LI>The second course  <SPAN  CLASS="textbf">MOVEX</SPAN>  is part of the curriculum of the
-  second  year
-  students of Telecom Nancy  who are  focusing on embedded systems, as
-  well as students of seconf year of ENSEM. 
-</LI>
-</UL>
-
-<P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"></A>
-
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html5"
-  HREF="node1.html">Contents</A>
-<LI><A ID="tex2html6"
-  HREF="node2.html"><SPAN CLASS="arabic">1</SPAN> Documentation and Tools</A>
-<LI><A ID="tex2html7"
-  HREF="node3.html"><SPAN CLASS="arabic">2</SPAN> Course MALG1/MOVEX1 at Telecom Nancy</A>
-<UL>
-<LI><A ID="tex2html8"
-  HREF="node4.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Slides for the course MALG1/MOVEX1</A>
-<UL>
-<LI><A ID="tex2html9"
-  HREF="node5.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Lecture 1
-  <a href="http://mery54.github.io/teaching/movex/lecturesnotes/movexlect1.pdf">The
-    Modelling Language Event-B</a>. 
-</A>
-</UL>
-<LI><A ID="tex2html10"
-  HREF="node6.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Tutorials</A>
-<LI><A ID="tex2html11"
-  HREF="node7.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Assessment</A>
-</UL>
-<BR>
-<LI><A ID="tex2html12"
-  HREF="node8.html">References</A>
-<LI><A ID="tex2html13"
-  HREF="node9.html">About this document ...</A>
-</UL>
-<!--End of Table of Child-Links-->
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node1.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png"> 
-<A ID="tex2html3"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node1.html">Contents</A>
- &nbsp; <B>  <A ID="tex2html4"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
-
-</BODY>
-</HTML>
+</body> 
+</html>
