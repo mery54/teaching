@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  30 DEC 2024 11:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  9 JAN 2025 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1419,7 +1419,7 @@ version 2022-10-25-13:59
 version 2023-10-09-13:31
 ))
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
-6.
+7.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
@@ -1431,89 +1431,58 @@ File: l3backend-dvips.def 2024-02-20 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count333
 \g__pdf_backend_link_int=\count334
 \g__pdf_backend_link_sf_int=\count335
-) (./web.aux
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-models' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:project' multiply defined.
-
-
-LaTeX Warning: Label `sec:past-exams-course' multiply defined.
-
-)
+) (./web.aux)
 \openout1 = `web.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count336
-Package hyperref Info: Link coloring ON on input line 76.
+Package hyperref Info: Link coloring ON on input line 77.
 --- file web.css ---
 \c@ex=\count337
 [1
 
 ] [2]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 7
-8.
+9.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
-8.
+9.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 8
-8.
+9.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 ) [3] (./web.4ct)
@@ -1524,7 +1493,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file contentsname.html ---
-(./web.4ct [4]) [5]
+(./web.4ct) [4]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1532,18 +1501,9 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file DocumentationandTools.html ---
+[5
 
-LaTeX Warning: Citation `abrial2010' on page 6 undefined on input line 130.
-
-
-LaTeX Warning: Citation `losl-b' on page 6 undefined on input line 166.
-
-
-LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 166.
-
-[6
-
-] [7]
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1559,9 +1519,9 @@ LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 166.
 
 (./web.tmp)
 --- file SlidesforthecourseMALG1MOVEX1.html ---
-[8
+[6
 
-] [9]
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1569,7 +1529,7 @@ LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 166.
 
 (./web.tmp)
 --- file Tutorials.html ---
-[10
+[7
 
 ]
 \openout15 = `web.tmp'.
@@ -1578,149 +1538,25 @@ LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 166.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file Project.html ---
-[11
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file EventBModels.html ---
-[12
-
-] [13]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file PastexamsofthecourseMCFSI.html ---
-[14
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file CourseMsCinComputerScienceModellingandverifyingsoftwarebasedsystemsfor
-MasterinCompurerScienceoftheUniversityofLorraine.html ---
-(./web.4ct)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Slidesofthecourse.html ---
-[15
-
-] [16]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Tutorials1.html ---
-[17
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file EventBModels1.html ---
-[18
-
-] [19]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Project1.html ---
-[20
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file PastexamsoftheCourseMsCinComputerScienceModellingandverifyingsoftwareb
-asedsystemsforMasterinComp.html ---
-[21
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file CourseDISCONTModellinghybridsystems.html ---
-(./web.4ct)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Documentation.html ---
-[22
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Slidesforthecourse20202021.html ---
-[23
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Slidesforthecourse20212022.html ---
+--- file Assessment.html ---
 No file web.bbl.
-[24
+[8
 
-] [25
+] [9
 
 ] (./web.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 32568 strings out of 474117
- 599199 string characters out of 5743707
- 1934184 words of memory out of 5000000
- 53963 multiletter control sequences out of 15000+600000
- 569534 words of font info for 71 fonts, out of 8000000 for 9000
+ 32267 strings out of 474117
+ 593610 string characters out of 5743707
+ 1933184 words of memory out of 5000000
+ 53716 multiletter control sequences out of 15000+600000
+ 568770 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,8n,120p,970b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,8n,120p,930b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (25 pages, 122800 bytes).
+Output written on web.dvi (9 pages, 45408 bytes).
