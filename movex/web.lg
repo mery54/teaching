@@ -1,5 +1,6 @@
-htfcss: ptmb7t  font-weight: bold;
 htfcss: phvr7t  font-family: sans-serif;
+htfcss: ptmb7t  font-weight: bold;
+htfcss: ptmr7t font-family: monospace,monospace;
 htfcss:  pcrr7t  font-family: 'Nimbus Mono L', serif;
 htfcss:  pcrbo7t  font-weight: bold; font-style: oblique; font-family: 'Nimbus Mono L', serif;
 htfcss: ptmr7t font-family: monospace,monospace;
@@ -197,5 +198,6 @@ Font("ptmr7t","","10","120")
 Font("ptmr7t","","10","207")
 Font("ptmr7t","","10","144")
 Font("pcrr7t","","10","144")
-Font("phvr7t","","10","120")
-Font("ptmb7t","","10","120")
+Font("ptmr7t","","10","109")
+Font("ptmb7t","","10","109")
+Font("phvr7t","","10","109")
