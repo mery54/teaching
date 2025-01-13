@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  13 JAN 2025 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  13 JAN 2025 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1540,7 +1540,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 (./web.tmp)
 --- file Assessment.html ---
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-82.
+89.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) (./web.bbl [9
@@ -1566,12 +1566,12 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 32257 strings out of 474117
- 593424 string characters out of 5743707
+ 32260 strings out of 474117
+ 593467 string characters out of 5743707
  1932184 words of memory out of 5000000
- 53699 multiletter control sequences out of 15000+600000
+ 53702 multiletter control sequences out of 15000+600000
  569190 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,930b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (11 pages, 51184 bytes).
+Output written on web.dvi (11 pages, 52332 bytes).
