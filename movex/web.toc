@@ -1,6 +1,9 @@
 \contentsline {section}{\numberline {1}Documentation and Tools}{2}{section.1}%
 \contentsline {section}{\numberline {2}Course MALG1/MOVEX1 at Telecom Nancy}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Slides for the course MALG1/MOVEX1}{2}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Lecture 1 \href {http://mery54.github.io/teaching/movex/lecturesnotes/movexlect1.pdf}{The Modelling Language Event-B}. }{2}{subsubsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.2}Tutorials}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Assessment}{2}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.1}Lecture 0 {Overview of the course }}{2}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Lecture 1 {Mod\'elisation, sp\'ecification et v\'erification} (I) }{2}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Lecture 2 {Mod\'elisation, sp\'ecification et v\'erification}}{2}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Lectures Notes}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Tutorials}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Assessment}{3}{subsection.2.4}%
