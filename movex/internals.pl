@@ -51,7 +51,7 @@ $ref_files{$key} = "$dir".q|node42.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$ref_files{$key} = "$dir".q|node7.html|; 
+$ref_files{$key} = "$dir".q|node10.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
