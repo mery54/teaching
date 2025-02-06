@@ -51,7 +51,7 @@ $external_labels{$key} = "$URL/" . q|node42.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$external_labels{$key} = "$URL/" . q|node10.html|; 
+$external_labels{$key} = "$URL/" . q|node11.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
@@ -74,7 +74,7 @@ $external_latex_labels{$key} = q|x4-30002 x4-30002:autorefsectionCourse MALG1/MO
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$external_latex_labels{$key} = q|x8-100002.4 x8-100002.4:autorefsubsectionAssessment|; 
+$external_latex_labels{$key} = q|x8-110002.4 x8-110002.4:autorefsubsectionAssessment|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
