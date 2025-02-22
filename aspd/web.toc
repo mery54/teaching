@@ -5,7 +5,9 @@
 \contentsline {subsubsection}{\numberline {2.1.2}Lecture 1 {Systèmes répartis}}{2}{subsubsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.3}Lecture 2 {Mod\'elisation des syst\`emes r\'epartis}}{2}{subsubsection.2.1.3}%
 \contentsline {subsubsection}{\numberline {2.1.4}Lecture 3 {Protocoles de Communications}}{2}{subsubsection.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.1.5}Lecture 3 Temps et datation dans les syst\`emes r\'epartis - Protocoles de groupe et protocoles d'exclusion mutuelle }{2}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.5}Lecture 4 Temps et datation dans les syst\`emes r\'epartis - Protocoles de groupe et protocoles d'exclusion mutuelle }{2}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Lecture 5 Election}{2}{subsubsection.2.1.6}%
 \contentsline {subsection}{\numberline {2.2}Lectures Notes}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Tutorials}{2}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Assessment}{2}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.3}Tutorials}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Assessment}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Projet ASPD}{3}{subsection.2.5}%
