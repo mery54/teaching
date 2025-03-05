@@ -51,7 +51,7 @@ $external_labels{$key} = "$URL/" . q|node42.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$external_labels{$key} = "$URL/" . q|node11.html|; 
+$external_labels{$key} = "$URL/" . q|node13.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
@@ -70,15 +70,15 @@ $noresave{$key} = "$nosave";
 
 
 $key = q/sec:course-mcfsi-at/;
-$external_latex_labels{$key} = q|x4-30002 x4-30002:autorefsectionCourse MALG1/MOVEX1 at Telecom Nancy|; 
+$external_latex_labels{$key} = q|2 Course MALG1/MOVEX1 at Telecom Nancy|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
-$external_latex_labels{$key} = q|x8-110002.4 x8-110002.4:autorefsubsectionAssessment|; 
+$external_latex_labels{$key} = q|2.4 Assessment|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
-$external_latex_labels{$key} = q|x5-40002.1 x5-40002.1:autorefsubsectionSlides for the course MALG1/MOVEX1|; 
+$external_latex_labels{$key} = q|2.1 Slides for the course MALG1/MOVEX1|; 
 $noresave{$key} = "$nosave";
 
 1;

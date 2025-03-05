@@ -4,6 +4,9 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Lecture 0 {Overview of the course }}{2}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Lecture 1 {Mod\'elisation, sp\'ecification et v\'erification} (I) }{2}{subsubsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.3}Lecture 2 {Mod\'elisation, sp\'ecification et v\'erification} (II)}{2}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Lecture 3 {Mod\'elisation, sp\'ecification et v\'erification} (III)}{2}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Lecture 4 {Vérification mécanisée de contrats} (I)}{2}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Lecture 5 {Vérification mécanisée de contrats} (II)}{2}{subsubsection.2.1.6}%
 \contentsline {subsection}{\numberline {2.2}Lectures Notes}{2}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Tutorials}{3}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Assessment}{3}{subsection.2.4}%
