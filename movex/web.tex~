@@ -1,0 +1,290 @@
+\documentclass[ 12pt]{article}
+%\dose cctioncumentclass[ 12pt]{book}
+
+\usepackage{times,vmargin,url}
+%\setmarginsrb{3cm}{1cm}{2cm}{1cm}{1cm}{1cm}{1cm}{1cm}
+\setpapersize{A4}
+
+
+\usepackage{color,time}
+%\pagecolor{yellow}
+%\pagecolor{cyan}
+\pagecolor{white}
+\title{Modelling,  verification   and experimentation  for 
+  software-based systems (MOVEX)}
+
+
+\newcommand{\keywords}[1]{\textbf{Keywords:} #1} %\\ \clearpage %\tableofcontents\clearpage}
+%
+
+\author{Dominique M\'ery\\
+LORIA \& Telecom Nancy\\ Universit\'e de Lorraine\\
+\url{https://members.loria.fr/Mery}\\ \url{dominique.mery@loria.fr}}
+
+\date{\today}
+
+\usepackage{xcolor}
+%\usepackage{b2latex}
+
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite,time}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor,time,url,nbcode,version}
+\usepackage{wrapfig}
+%\usepackage{b2latex}
+\usepackage{caption}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{bussproofs}
+\usepackage{wrapfig,setspace}
+%\usepackage{lstcoq}
+\usepackage{xspace}
+\usepackage{hyperref}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\pagestyle{plain}
+\pagenumbering{arabic}
+\input{prelude}
+%ddd -aal\renewcommand{\baselinestretch}{0.90}
+\newtheorem{myexample}{Example}[section]
+\newtheorem{mytheorem}{Property}
+%\newtheorem{definition}{Definition}
+%\includeversion{check}
+% \excludeversion{check}
+% \excludeversion{long}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{exemple}{Example}
+%\newtheorem{theorem}{Theorem}
+%\newcommand{\white}[1]{\textcolor{white}{#1}}
+
+%\newtheorem{comm}{Teaching Point}
+%\newenvironment{comm}{\iffalse}{\fi}
+%\excludeversion{comm}
+
+\input eb2latex
+
+\pagestyle{plain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\newcounter{ex}  \setcounter{ex}{1}
+\maketitle
+\begin{abstract}
+This repository contains course notes, exercises, models and projects
+from two  courses given as part of master's level training on
+modelling an verifying software-based systems. It provides access to
+resources in the form of pdf files, TLA files, ACSL files  or Rodin
+files. Moreover, it aims to prepare  students of the fourth year of
+University to apply modelling techniques  for software-based systems.
+It is divided into  two  main  parts:
+\begin{itemize}
+\item Part 1  \textsf{MALG} is shared by students in software engineering and in
+ CPS engineering; the course is oganised  in 6 weeks (6 lectures x 
+ 2h00 ) (6 tutorials x 2 h 00). Topics are  transition systems,
+ invariance, safety, fixed-point theory, induction principles,
+ Floyd/Hoare proof systems, 
+\item Part 2 is divided into  two distinct streams:
+  \begin{itemize}
+  \item \textsf{MOVEX-SE} is the course is oganised  in 6 weeks (6 lectures x 
+ 2h00 ) (6 tutorials x 2 h 00)
+  \item  \textsf{MOVEX-CPS} the course is oganised  in 6 weeks (6 lectures x 
+ 2h00 ) (6 tutorials x 2 h 00)
+  \end{itemize}
+\end{itemize}
+
+The table
+of contents shows the  summary of  two main courses (at Université de 
+ Lorraine/University of Lorraine)  based on our
+ experiment using the modelling languages as TLA,   Event-B  and ACSL
+ 
+\begin{itemize}
+\item The first course \textbf{MALG} is part of the curriculum of the
+  second  year
+  students of Telecom Nancy  who are  focusing on software
+  engineering.
+\item  The second course  \textbf{MOVEX}  is part of the curriculum of the
+  second  year
+  students of Telecom Nancy  who are  focusing on embedded systems, as
+  well as students of seconf year of ENSEM. 
+\end{itemize}
+
+  
+\end{abstract}
+
+\tableofcontents
+
+
+\section{Documentation and Tools}
+
+\begin{itemize}
+
+    
+\item[]  The  TLA+ ToolBox  platform is available at the 
+  \href{https://lamport.azurewebsites.net/tla/toolbox.html}{following 
+    link}. 
+\item[]  The Rodin platform is available at the 
+  \href{https://www.event-b.org/install.html}{following 
+    link}.
+
+  
+  \item[]  The Prob   platform is available at the 
+  \href{https://prob.hhu.de}{following 
+    link}. 
+
+  
+  \item[]  The Frama-c platform is available at the 
+  \href{https://www.frama-c.com}{following 
+    link}.
+
+  \item[]  The Synchrone Reactive Toolbox for LUSTRE is   available at the 
+  \href{https://www-verimag.imag.fr/Outils-SynchronesNEW.html?lang=en}{following 
+    link}.
+
+  \item[]  The Kind 2  platform is available at the 
+  \href{ https://kind2-mc.github.io/kind2/}{following 
+    link}.
+
+  
+\end{itemize}
+
+
+
+
+\section{Course MALG1/MOVEX1 at Telecom Nancy}
+\label{sec:course-mcfsi-at}
+
+
+\subsection{Slides for the course MALG1/MOVEX1}
+\label{sec:slides}
+
+
+\subsubsection{Lecture 0 {Overview of the course }}
+  
+  \href{http://mery54.github.io/teaching/movex/lecturesnotes/movexlecture0.pdf}{Overview of the course }
+
+
+\subsubsection{Lecture 1 {Mod\'elisation, 
+    sp\'ecification et v\'erification}  (I) }
+  
+\begin{itemize}
+\item
+  \href{http://mery54.github.io/teaching/movex/lecturesnotes/movexlecture1.pdf}{Mod\'elisation,
+    sp\'ecification et v\'erification (I)}
+\item
+  \href{http://mery54.github.io/teaching/movex/tlafolder/access_control.tla}{The
+    MODULE access\_control.tla}.  
+ 
+\end{itemize}
+
+
+  
+\subsubsection{Lecture 2 {Mod\'elisation,      sp\'ecification et v\'erification} (II)}
+  
+  \href{http://mery54.github.io/teaching/movex/lecturesnotes/movexlecture2.pdf}{Mod\'elisation,     sp\'ecification et v\'erification (II)}
+
+
+  \subsubsection{Lecture 3 {Mod\'elisation,      sp\'ecification et v\'erification} (III)}
+  
+  \href{http://mery54.github.io/teaching/movex/lecturesnotes/movexlecture3.pdf}{Mod\'elisation,     sp\'ecification et v\'erification (III)}
+
+
+  
+  \subsubsection{Lecture 4 {Vérification  mécanisée de contrats} (I)}
+  
+\href{http://mery54.github.io/teaching/movex/lecturesnotes/movexlecture4.pdf}{{Vérification  mécanisée de contrats} (I)}
+
+
+
+  \subsubsection{Lecture 5 {Vérification  mécanisée de contrats} (II)}
+  
+\href{http://mery54.github.io/teaching/movex/lecturesnotes/movexlecture5.pdf}{{Vérification  mécanisée de contrats} (II)}
+
+
+
+  
+
+  \subsection{Lectures Notes}
+
+  \begin{itemize}
+  \item[]   Notes sur la logique
+    \href{http://mery54.github.io/teaching/movex/lecturesnotes/preprint-chapterlogique.pdf}{Notes sur la logique}.
+
+     \item[]   Notes sur la vérification
+    \href{http://mery54.github.io/teaching/movex/lecturesnotes/preprint-chapterverification.pdf}{Notes
+      sur la vérification}.
+
+     \item[]   Notes sur la preuve
+    \href{http://mery54.github.io/teaching/movex/lecturesnotes/preprint-chapterprouver.pdf}{Notes
+      sur la preuve}.
+
+  \end{itemize}
+
+
+  
+
+\subsection{Tutorials}
+
+
+
+\begin{itemize}
+  
+\item[]  Notes on a tutorial using proofs 
+    \href{http://mery54.github.io/teaching/movex/lecturesnotes/notestuto3.pdf}{Tutorial
+      Notes for Proofs and Verifications Conditions of Contract}.
+
+  \item[]   Serie  A
+    \href{http://mery54.github.io/teaching/movex/lecturesnotes/movexserieA.pdf}{Tutorials 
+      serie A}.
+
+          \href{http://mery54.github.io/teaching/movex/lecturesnotes/correctionmovexserieA.pdf}{Tutorials 
+      serie A with solutions}. 
+
+    
+        \href{http://mery54.github.io/teaching/movex/models/serieA.zip}{TLA 
+           solutions for serie A }.
+\item[]   Serie  B
+    \href{http://mery54.github.io/teaching/movex/lecturesnotes/movexserieB.pdf}{Tutorials 
+      serie B}.
+
+      \href{http://mery54.github.io/teaching/movex/lecturesnotes/correctionmovexserieB.pdf}{Tutorials 
+            serie B with solutions}. 
+
+           \href{http://mery54.github.io/teaching/movex/models/serieB.zip}{
+             ACSL  
+             solutions for serie B with additional notes 
+             }.
+  \end{itemize}
+
+
+
+
+  
+  
+  
+  \subsection{Assessment}
+\label{sec:project}
+
+The assessment  of students is based on three works:
+\begin{itemize}
+\item Two  written  exams: E1 and E2
+\item  A practical exam: TP
+ \end{itemize}
+
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
+
+
+
+
+      
