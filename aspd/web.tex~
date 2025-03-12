@@ -205,12 +205,12 @@ modelling and verifying  distributed algorithms.
            solutions for serie 1
          }.
 
-\item[TD2]   Serie 1  Pluscal (figure aussi dans le fichier de la serie 1)
-    \href{http://mery54.github.io/teaching/aspd/lecturesnotes/aspd-app-pluscal1.pdf}{Tutorials 
-      serie 1  Pluscal}.
+\item[TD2]   Serie  Pluscal (figure aussi dans le fichier de la serie 1)
+    \href{http://mery54.github.io/teaching/aspd/lecturesnotes/aspd-app-pluscal.pdf}{Tutorials 
+      serie Pluscal}.
 
         \href{http://mery54.github.io/teaching/aspd/models/tdpluscal.zip}{TLA 
-           solutions for serie 1 Pluscal
+           solutions for serie Pluscal
          }.
          
 
@@ -225,7 +225,7 @@ modelling and verifying  distributed algorithms.
 
 
          
-\item[TD4]   Serie  3
+\item[TD3]   Serie  3
     \href{http://mery54.github.io/teaching/aspd/lecturesnotes/aspd-app-td3.pdf}{Tutorials 
       serie 3}.
 
@@ -233,14 +233,6 @@ modelling and verifying  distributed algorithms.
            solutions for serie 3
          }.
 
-\item[TD5]   Serie 2  Pluscal 
-    \href{http://mery54.github.io/teaching/aspd/lecturesnotes/aspd-app-plusca2.pdf}{Tutorials 
-      serie 2 Pluscal}.
-
-        \href{http://mery54.github.io/teaching/aspd/models/TDPLUSCAL2.zip}{TLA 
-           solutions for serie 2 Pluscal
-         }.
-                  
          \end{enumerate}
 
   
