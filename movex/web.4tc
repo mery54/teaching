@@ -13,3 +13,7 @@
 \doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{7}{x7-120002.3}{QQ2-7-12}{Tutorials}}{10}\relax 
 \doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{8}{x8-130002.4}{QQ2-8-13}{Assessment}}{11}\relax 
 \doTocEntry\tocsubsection{2.5}{\csname a:TocLink\endcsname{9}{x9-140002.5}{QQ2-9-14}{Examens passés}}{12}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{10}{x10-150003}{QQ2-10-15}{Course MOVEX2 at Telecom Nancy}}{13}\relax 
+\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{11}{x11-160003.1}{QQ2-11-16}{Slides for the course MOVEX2}}{13}\relax 
+\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{11}{x11-170003.1.1}{QQ2-11-17}{Lecture 0 {Overview of the course }}}{13}\relax 
+\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{11}{x11-180003.1.2}{QQ2-11-18}{Lecture 1 {Vérification mécanisée de contrats} (III)}}{13}\relax 

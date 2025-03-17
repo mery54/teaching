@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  14 MAR 2025 09:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  17 MAR 2025 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1431,7 +1431,14 @@ File: l3backend-dvips.def 2024-02-20 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count333
 \g__pdf_backend_link_int=\count334
 \g__pdf_backend_link_sf_int=\count335
-) (./web.aux)
+) (./web.aux
+
+LaTeX Warning: Label `sec:course-mcfsi-at' multiply defined.
+
+
+LaTeX Warning: Label `sec:slides' multiply defined.
+
+)
 \openout1 = `web.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
@@ -1559,24 +1566,45 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file Examenspassés.html ---
-No file web.bbl.
 [12
 
-] [13
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file CourseMOVEX2atTelecomNancy.html ---
+(./web.4ct)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file SlidesforthecourseMOVEX2.html ---
+No file web.bbl.
+[13
+
+] [14
 
 ] (./web.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 32326 strings out of 474117
- 594438 string characters out of 5743707
+ 32368 strings out of 474117
+ 595160 string characters out of 5743707
  1933184 words of memory out of 5000000
- 53767 multiletter control sequences out of 15000+600000
+ 53799 multiletter control sequences out of 15000+600000
  570110 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,930b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (13 pages, 62624 bytes).
+Output written on web.dvi (14 pages, 69332 bytes).
