@@ -1,4 +1,4 @@
-# LaTeX2HTML 2024.2 (Released October 21, 2024)
+# LaTeX2HTML 2025 (Released January 1, 2025)
 # Associate labels original text with physical files.
 
 
@@ -19,7 +19,7 @@ $external_labels{$key} = "$URL/" . q|node43.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
-$external_labels{$key} = "$URL/" . q|node3.html|; 
+$external_labels{$key} = "$URL/" . q|node47.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
@@ -31,15 +31,15 @@ $external_labels{$key} = "$URL/" . q|node44.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_labels{$key} = "$URL/" . q|node38.html|; 
+$external_labels{$key} = "$URL/" . q|node61.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$external_labels{$key} = "$URL/" . q|node28.html|; 
+$external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
-$external_labels{$key} = "$URL/" . q|node8.html|; 
+$external_labels{$key} = "$URL/" . q|node52.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-4-hrefhttp:m/;
@@ -47,7 +47,7 @@ $external_labels{$key} = "$URL/" . q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:past-exams-course/;
-$external_labels{$key} = "$URL/" . q|node42.html|; 
+$external_labels{$key} = "$URL/" . q|node62.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
@@ -55,7 +55,7 @@ $external_labels{$key} = "$URL/" . q|node41.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
-$external_labels{$key} = "$URL/" . q|node4.html|; 
+$external_labels{$key} = "$URL/" . q|node48.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
@@ -65,12 +65,12 @@ $noresave{$key} = "$nosave";
 1;
 
 
-# LaTeX2HTML 2024.2 (Released October 21, 2024)
+# LaTeX2HTML 2025 (Released January 1, 2025)
 # labels from external_latex_labels array.
 
 
 $key = q/sec:course-discont/;
-$external_latex_labels{$key} = q|x15-420004 x15-420004:autorefsectionCourse DISCONT: Modelling hybrid systems|; 
+$external_latex_labels{$key} = q|x16-430004 x16-430004:autorefsectionCourse DISCONT: Modelling hybrid systems|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
@@ -82,7 +82,7 @@ $external_latex_labels{$key} = q|x10-200003 x10-200003:autorefsectionCourse MsC 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:documentation/;
-$external_latex_labels{$key} = q|x16-430004.1 x16-430004.1:autorefsubsectionDocumentation|; 
+$external_latex_labels{$key} = q|x17-440004.1 x17-440004.1:autorefsubsectionDocumentation|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
@@ -98,7 +98,7 @@ $external_latex_labels{$key} = q|x5-80002.1.4 x5-80002.1.4:autorefsubsubsectionL
 $noresave{$key} = "$nosave";
 
 $key = q/sec:past-exams-course/;
-$external_latex_labels{$key} = q|x9-190002.5 x9-190002.5:autorefsubsectionPast exams of the course MCFSI|; 
+$external_latex_labels{$key} = q|x15-420003.5 x15-420003.5:autorefsubsectionPast exams of the Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Comp|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;

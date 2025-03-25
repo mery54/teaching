@@ -1,4 +1,4 @@
-# LaTeX2HTML 2024.2 (Released October 21, 2024)
+# LaTeX2HTML 2025 (Released January 1, 2025)
 # Associate internals original text with physical files.
 
 
@@ -19,7 +19,7 @@ $ref_files{$key} = "$dir".q|node43.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
-$ref_files{$key} = "$dir".q|node3.html|; 
+$ref_files{$key} = "$dir".q|node47.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
@@ -31,15 +31,15 @@ $ref_files{$key} = "$dir".q|node44.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$ref_files{$key} = "$dir".q|node38.html|; 
+$ref_files{$key} = "$dir".q|node61.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$ref_files{$key} = "$dir".q|node28.html|; 
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
-$ref_files{$key} = "$dir".q|node8.html|; 
+$ref_files{$key} = "$dir".q|node52.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-4-hrefhttp:m/;
@@ -47,7 +47,7 @@ $ref_files{$key} = "$dir".q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:past-exams-course/;
-$ref_files{$key} = "$dir".q|node42.html|; 
+$ref_files{$key} = "$dir".q|node62.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
@@ -55,7 +55,7 @@ $ref_files{$key} = "$dir".q|node41.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
-$ref_files{$key} = "$dir".q|node4.html|; 
+$ref_files{$key} = "$dir".q|node48.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;

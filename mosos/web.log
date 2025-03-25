@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  30 DEC 2024 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  25 MAR 2025 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,6 +1462,36 @@ LaTeX Warning: Label `sec:project' multiply defined.
 
 LaTeX Warning: Label `sec:past-exams-course' multiply defined.
 
+
+LaTeX Warning: Label `sec:course-mcfsi-at' multiply defined.
+
+
+LaTeX Warning: Label `sec:slides' multiply defined.
+
+
+LaTeX Warning: Label `sec:lect-3-hrefhttp:m' multiply defined.
+
+
+LaTeX Warning: Label `sec:event-b-models' multiply defined.
+
+
+LaTeX Warning: Label `sec:event-b-archives' multiply defined.
+
+
+LaTeX Warning: Label `sec:event-b-archives' multiply defined.
+
+
+LaTeX Warning: Label `sec:event-b-archives' multiply defined.
+
+
+LaTeX Warning: Label `sec:event-b-archives' multiply defined.
+
+
+LaTeX Warning: Label `sec:event-b-archives' multiply defined.
+
+
+LaTeX Warning: Label `sec:past-exams-course' multiply defined.
+
 )
 \openout1 = `web.aux'.
 
@@ -1519,7 +1549,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 (./web.tmp)
 --- file contentsname.html ---
-(./web.4ct [4]) [5]
+(./web.4ct [4] [5]) [6]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1528,17 +1558,17 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (./web.tmp)
 --- file DocumentationandTools.html ---
 
-LaTeX Warning: Citation `abrial2010' on page 6 undefined on input line 127.
+LaTeX Warning: Citation `abrial2010' on page 7 undefined on input line 134.
 
 
-LaTeX Warning: Citation `losl-b' on page 6 undefined on input line 163.
+LaTeX Warning: Citation `losl-b' on page 7 undefined on input line 170.
 
 
-LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 163.
+LaTeX Warning: Citation `losl-eatcs' on page 7 undefined on input line 170.
 
-[6
+[7
 
-] [7]
+] [8]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1554,9 +1584,9 @@ LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 163.
 
 (./web.tmp)
 --- file SlidesforthecourseMCFSI.html ---
-[8
+[9
 
-] [9]
+] [10]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1564,16 +1594,6 @@ LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 163.
 
 (./web.tmp)
 --- file Tutorials.html ---
-[10
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Project.html ---
 [11
 
 ]
@@ -1583,10 +1603,20 @@ LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 163.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file EventBModels.html ---
+--- file Project.html ---
 [12
 
-] [13]
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file EventBModels.html ---
+[13
+
+] [14]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1594,7 +1624,7 @@ LaTeX Warning: Citation `losl-eatcs' on page 6 undefined on input line 163.
 
 (./web.tmp)
 --- file PastexamsofthecourseMCFSI.html ---
-[14
+[15
 
 ]
 \openout15 = `web.tmp'.
@@ -1613,9 +1643,9 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 
 (./web.tmp)
 --- file Slidesofthecourse.html ---
-[15
+[16
 
-] [16]
+] [17]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1623,7 +1653,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 
 (./web.tmp)
 --- file Tutorials1.html ---
-[17
+[18
 
 ]
 \openout15 = `web.tmp'.
@@ -1633,9 +1663,9 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 
 (./web.tmp)
 --- file EventBModels1.html ---
-[18
+[19
 
-] [19]
+] [20]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1643,7 +1673,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 
 (./web.tmp)
 --- file Project1.html ---
-[20
+[21
 
 ]
 \openout15 = `web.tmp'.
@@ -1654,7 +1684,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 (./web.tmp)
 --- file PastexamsoftheCourseMsCinComputerScienceModellingandverifyingsoftwareb
 asedsystemsforMasterinComp.html ---
-[21
+[22
 
 ]
 \openout15 = `web.tmp'.
@@ -1672,16 +1702,6 @@ asedsystemsforMasterinComp.html ---
 
 (./web.tmp)
 --- file Documentation.html ---
-[22
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Slidesforthecourse20202021.html ---
 [23
 
 ]
@@ -1691,11 +1711,69 @@ asedsystemsforMasterinComp.html ---
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file Slidesforthecourse20212022.html ---
-No file web.bbl.
+--- file Slidesforthecourse20202021.html ---
 [24
 
-] [25
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file Slidesforthecourse20212022.html ---
+[25
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file CourseEMUEventBatMaynoothUniversity.html ---
+(./web.4ct)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file SlidesforthecourseEMU.html ---
+[26
+
+] [27]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file Tutorials2.html ---
+[28
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file EventBModels2.html ---
+[29
+
+] [30]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file PastexamsofthecourseMCFSI1.html ---
+No file web.bbl.
+[31
+
+] [32
 
 ] (./web.aux)
  ***********
@@ -1710,12 +1788,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32512 strings out of 474117
- 598363 string characters out of 5743707
- 1935184 words of memory out of 5000000
- 53911 multiletter control sequences out of 15000+600000
+ 32632 strings out of 474117
+ 600323 string characters out of 5743707
+ 1936184 words of memory out of 5000000
+ 54009 multiletter control sequences out of 15000+600000
  568928 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,8n,120p,970b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,8n,120p,986b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (25 pages, 122036 bytes).
+Output written on web.dvi (32 pages, 155924 bytes).

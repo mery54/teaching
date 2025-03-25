@@ -1,48 +1,64 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{2}{x2-1000}{QQ2-2-1}{Contents}}{4}\relax 
-\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{3}{x3-20001}{QQ2-3-2}{Documentation and Tools}}{6}\relax 
-\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{4}{x4-30002}{QQ2-4-3}{Course MCFSI at Telecom Nancy}}{8}\relax 
-\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{5}{x5-40002.1}{QQ2-5-4}{Slides for the course MCFSI}}{8}\relax 
-\doTocEntry\tocsubsubsection{2.1.1}{\csname a:TocLink\endcsname{5}{x5-50002.1.1}{QQ2-5-5}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf}{The Modelling Language Event-B}. }}{8}\relax 
-\doTocEntry\tocsubsubsection{2.1.2}{\csname a:TocLink\endcsname{5}{x5-60002.1.2}{QQ2-5-6}{Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-po.pdf}{Proof Obligations}.}}{8}\relax 
-\doTocEntry\tocsubsubsection{2.1.3}{\csname a:TocLink\endcsname{5}{x5-70002.1.3}{QQ2-5-7}{Lecture 3 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-verification.pdf}{Checking contracts using Event-B}.}}{9}\relax 
-\doTocEntry\tocsubsubsection{2.1.4}{\csname a:TocLink\endcsname{5}{x5-80002.1.4}{QQ2-5-8}{Lecture 4 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf}{Correctness by Construction with the Modelling Language Event-B using the Refinement}.}}{9}\relax 
-\doTocEntry\tocsubsubsection{2.1.5}{\csname a:TocLink\endcsname{5}{x5-90002.1.5}{QQ2-5-9}{ Lecture 5 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf}{Access Control } }}{9}\relax 
-\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{6}{x6-100002.2}{QQ2-6-10}{Tutorials}}{10}\relax 
-\doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{7}{x7-110002.3}{QQ2-7-11}{Project}}{11}\relax 
-\doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{8}{x8-120002.4}{QQ2-8-12}{Event-B Models}}{12}\relax 
-\doTocEntry\tocsubsubsection{2.4.1}{\csname a:TocLink\endcsname{8}{x8-130002.4.1}{QQ2-8-13}{Event-B Archives for the lectures}}{12}\relax 
-\doTocEntry\tocsubsubsection{2.4.2}{\csname a:TocLink\endcsname{8}{x8-140002.4.2}{QQ2-8-14}{Event-B Archives for the tutorial 1}}{12}\relax 
-\doTocEntry\tocsubsubsection{2.4.3}{\csname a:TocLink\endcsname{8}{x8-150002.4.3}{QQ2-8-15}{Event-B Archives for the tutorial 2}}{12}\relax 
-\doTocEntry\tocsubsubsection{2.4.4}{\csname a:TocLink\endcsname{8}{x8-160002.4.4}{QQ2-8-16}{Event-B Archives for the tutorial 3}}{13}\relax 
-\doTocEntry\tocsubsubsection{2.4.5}{\csname a:TocLink\endcsname{8}{x8-170002.4.5}{QQ2-8-17}{Event-B Archives for the tutorial 4}}{13}\relax 
-\doTocEntry\tocsubsubsection{2.4.6}{\csname a:TocLink\endcsname{8}{x8-180002.4.6}{QQ2-8-18}{Event-B Archives}}{13}\relax 
-\doTocEntry\tocsubsection{2.5}{\csname a:TocLink\endcsname{9}{x9-190002.5}{QQ2-9-19}{Past exams of the course MCFSI}}{14}\relax 
-\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{10}{x10-200003}{QQ2-10-20}{Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine}}{15}\relax 
-\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{11}{x11-210003.1}{QQ2-11-21}{Slides of the course}}{15}\relax 
-\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{11}{x11-220003.1.1}{QQ2-11-22}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf}{The Modelling Language Event-B}.}}{15}\relax 
-\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{11}{x11-230003.1.2}{QQ2-11-23}{ Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf}{Proof Obligations}.}}{15}\relax 
-\doTocEntry\tocsubsubsection{3.1.3}{\csname a:TocLink\endcsname{11}{x11-240003.1.3}{QQ2-11-24}{Lecture 3 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf}{Correctness by Construction with the Modelling Language Event-B using the Refinement}.}}{16}\relax 
-\doTocEntry\tocsubsubsection{3.1.4}{\csname a:TocLink\endcsname{11}{x11-250003.1.4}{QQ2-11-25}{ Lecture 4 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf}{Access Control }}}{16}\relax 
-\doTocEntry\tocsubsubsection{3.1.5}{\csname a:TocLink\endcsname{11}{x11-260003.1.5}{QQ2-11-26}{ Lecture 5 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect-verification.pdf}{Checking contracts with Event-B}}}{16}\relax 
-\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{12}{x12-270003.2}{QQ2-12-27}{Tutorials}}{17}\relax 
-\doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{13}{x13-280003.3}{QQ2-13-28}{Event-B Models}}{18}\relax 
-\doTocEntry\tocsubsubsection{3.3.1}{\csname a:TocLink\endcsname{13}{x13-290003.3.1}{QQ2-13-29}{Event-B Archives for the lectures}}{18}\relax 
-\doTocEntry\tocsubsubsection{3.3.2}{\csname a:TocLink\endcsname{13}{x13-300003.3.2}{QQ2-13-30}{Event-B Archives for the tutorial 1}}{18}\relax 
-\doTocEntry\tocsubsubsection{3.3.3}{\csname a:TocLink\endcsname{13}{x13-310003.3.3}{QQ2-13-31}{Event-B Archives for the tutorial 2}}{18}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-32000}{QQ2-13-32}{Exercice 1 Tutorial 2}}{18}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-33000}{QQ2-13-33}{Exercice 2 Tutorial 2}}{19}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-34000}{QQ2-13-34}{Exercice 3 Tutorial 2}}{19}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-35000}{QQ2-13-35}{Exercice 4 Tutorial 2}}{19}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-36000}{QQ2-13-36}{Exercice 5 Tutorial 2}}{19}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-37000}{QQ2-13-37}{Exercice 6 Tutorial 2}}{19}\relax 
-\doTocEntry\tocsubsubsection{3.3.4}{\csname a:TocLink\endcsname{13}{x13-380003.3.4}{QQ2-13-38}{Event-B Archives for the tutorial 3}}{19}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-39000}{QQ2-13-39}{Exercice 1 Tutorial 3}}{19}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-40000}{QQ2-13-40}{Exercice 2 Tutorial 3}}{19}\relax 
-\doTocEntry\tocsubsection{3.4}{\csname a:TocLink\endcsname{14}{x14-410003.4}{QQ2-14-41}{Project}}{20}\relax 
-\doTocEntry\tocsubsection{3.5}{\csname a:TocLink\endcsname{15}{x15-420003.5}{QQ2-15-42}{Past exams of the Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Comp}}{21}\relax 
-\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{16}{x16-430004}{QQ2-16-43}{Course DISCONT: Modelling hybrid systems}}{22}\relax 
-\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{17}{x17-440004.1}{QQ2-17-44}{Documentation}}{22}\relax 
-\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{18}{x18-450004.2}{QQ2-18-45}{Slides for the course 2020-2021}}{23}\relax 
-\doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{19}{x19-460004.3}{QQ2-19-46}{Slides for the course 2021-2022}}{24}\relax 
+\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{3}{x3-20001}{QQ2-3-2}{Documentation and Tools}}{7}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{4}{x4-30002}{QQ2-4-3}{Course MCFSI at Telecom Nancy}}{9}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{5}{x5-40002.1}{QQ2-5-4}{Slides for the course MCFSI}}{9}\relax 
+\doTocEntry\tocsubsubsection{2.1.1}{\csname a:TocLink\endcsname{5}{x5-50002.1.1}{QQ2-5-5}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf}{The Modelling Language Event-B}. }}{9}\relax 
+\doTocEntry\tocsubsubsection{2.1.2}{\csname a:TocLink\endcsname{5}{x5-60002.1.2}{QQ2-5-6}{Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-po.pdf}{Proof Obligations}.}}{9}\relax 
+\doTocEntry\tocsubsubsection{2.1.3}{\csname a:TocLink\endcsname{5}{x5-70002.1.3}{QQ2-5-7}{Lecture 3 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-verification.pdf}{Checking contracts using Event-B}.}}{10}\relax 
+\doTocEntry\tocsubsubsection{2.1.4}{\csname a:TocLink\endcsname{5}{x5-80002.1.4}{QQ2-5-8}{Lecture 4 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf}{Correctness by Construction with the Modelling Language Event-B using the Refinement}.}}{10}\relax 
+\doTocEntry\tocsubsubsection{2.1.5}{\csname a:TocLink\endcsname{5}{x5-90002.1.5}{QQ2-5-9}{ Lecture 5 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf}{Access Control } }}{10}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{6}{x6-100002.2}{QQ2-6-10}{Tutorials}}{11}\relax 
+\doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{7}{x7-110002.3}{QQ2-7-11}{Project}}{12}\relax 
+\doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{8}{x8-120002.4}{QQ2-8-12}{Event-B Models}}{13}\relax 
+\doTocEntry\tocsubsubsection{2.4.1}{\csname a:TocLink\endcsname{8}{x8-130002.4.1}{QQ2-8-13}{Event-B Archives for the lectures}}{13}\relax 
+\doTocEntry\tocsubsubsection{2.4.2}{\csname a:TocLink\endcsname{8}{x8-140002.4.2}{QQ2-8-14}{Event-B Archives for the tutorial 1}}{13}\relax 
+\doTocEntry\tocsubsubsection{2.4.3}{\csname a:TocLink\endcsname{8}{x8-150002.4.3}{QQ2-8-15}{Event-B Archives for the tutorial 2}}{13}\relax 
+\doTocEntry\tocsubsubsection{2.4.4}{\csname a:TocLink\endcsname{8}{x8-160002.4.4}{QQ2-8-16}{Event-B Archives for the tutorial 3}}{14}\relax 
+\doTocEntry\tocsubsubsection{2.4.5}{\csname a:TocLink\endcsname{8}{x8-170002.4.5}{QQ2-8-17}{Event-B Archives for the tutorial 4}}{14}\relax 
+\doTocEntry\tocsubsubsection{2.4.6}{\csname a:TocLink\endcsname{8}{x8-180002.4.6}{QQ2-8-18}{Event-B Archives}}{14}\relax 
+\doTocEntry\tocsubsection{2.5}{\csname a:TocLink\endcsname{9}{x9-190002.5}{QQ2-9-19}{Past exams of the course MCFSI}}{15}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{10}{x10-200003}{QQ2-10-20}{Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine}}{16}\relax 
+\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{11}{x11-210003.1}{QQ2-11-21}{Slides of the course}}{16}\relax 
+\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{11}{x11-220003.1.1}{QQ2-11-22}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf}{The Modelling Language Event-B}.}}{16}\relax 
+\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{11}{x11-230003.1.2}{QQ2-11-23}{ Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf}{Proof Obligations}.}}{16}\relax 
+\doTocEntry\tocsubsubsection{3.1.3}{\csname a:TocLink\endcsname{11}{x11-240003.1.3}{QQ2-11-24}{Lecture 3 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf}{Correctness by Construction with the Modelling Language Event-B using the Refinement}.}}{17}\relax 
+\doTocEntry\tocsubsubsection{3.1.4}{\csname a:TocLink\endcsname{11}{x11-250003.1.4}{QQ2-11-25}{ Lecture 4 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf}{Access Control }}}{17}\relax 
+\doTocEntry\tocsubsubsection{3.1.5}{\csname a:TocLink\endcsname{11}{x11-260003.1.5}{QQ2-11-26}{ Lecture 5 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect-verification.pdf}{Checking contracts with Event-B}}}{17}\relax 
+\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{12}{x12-270003.2}{QQ2-12-27}{Tutorials}}{18}\relax 
+\doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{13}{x13-280003.3}{QQ2-13-28}{Event-B Models}}{19}\relax 
+\doTocEntry\tocsubsubsection{3.3.1}{\csname a:TocLink\endcsname{13}{x13-290003.3.1}{QQ2-13-29}{Event-B Archives for the lectures}}{19}\relax 
+\doTocEntry\tocsubsubsection{3.3.2}{\csname a:TocLink\endcsname{13}{x13-300003.3.2}{QQ2-13-30}{Event-B Archives for the tutorial 1}}{19}\relax 
+\doTocEntry\tocsubsubsection{3.3.3}{\csname a:TocLink\endcsname{13}{x13-310003.3.3}{QQ2-13-31}{Event-B Archives for the tutorial 2}}{19}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-32000}{QQ2-13-32}{Exercice 1 Tutorial 2}}{19}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-33000}{QQ2-13-33}{Exercice 2 Tutorial 2}}{20}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-34000}{QQ2-13-34}{Exercice 3 Tutorial 2}}{20}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-35000}{QQ2-13-35}{Exercice 4 Tutorial 2}}{20}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-36000}{QQ2-13-36}{Exercice 5 Tutorial 2}}{20}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-37000}{QQ2-13-37}{Exercice 6 Tutorial 2}}{20}\relax 
+\doTocEntry\tocsubsubsection{3.3.4}{\csname a:TocLink\endcsname{13}{x13-380003.3.4}{QQ2-13-38}{Event-B Archives for the tutorial 3}}{20}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-39000}{QQ2-13-39}{Exercice 1 Tutorial 3}}{20}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{13}{x13-40000}{QQ2-13-40}{Exercice 2 Tutorial 3}}{20}\relax 
+\doTocEntry\tocsubsection{3.4}{\csname a:TocLink\endcsname{14}{x14-410003.4}{QQ2-14-41}{Project}}{21}\relax 
+\doTocEntry\tocsubsection{3.5}{\csname a:TocLink\endcsname{15}{x15-420003.5}{QQ2-15-42}{Past exams of the Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Comp}}{22}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{16}{x16-430004}{QQ2-16-43}{Course DISCONT: Modelling hybrid systems}}{23}\relax 
+\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{17}{x17-440004.1}{QQ2-17-44}{Documentation}}{23}\relax 
+\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{18}{x18-450004.2}{QQ2-18-45}{Slides for the course 2020-2021}}{24}\relax 
+\doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{19}{x19-460004.3}{QQ2-19-46}{Slides for the course 2021-2022}}{25}\relax 
+\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{20}{x20-470005}{QQ2-20-47}{Course EMU Event-B at Maynooth University}}{26}\relax 
+\doTocEntry\tocsubsection{5.1}{\csname a:TocLink\endcsname{21}{x21-480005.1}{QQ2-21-48}{Slides for the course EMU}}{26}\relax 
+\doTocEntry\tocsubsubsection{5.1.1}{\csname a:TocLink\endcsname{21}{x21-490005.1.1}{QQ2-21-49}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-lect1.pdf}{The Modelling Language Event-B}. }}{26}\relax 
+\doTocEntry\tocsubsubsection{5.1.2}{\csname a:TocLink\endcsname{21}{x21-500005.1.2}{QQ2-21-50}{Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-po.pdf}{Proof Obligations}.}}{26}\relax 
+\doTocEntry\tocsubsubsection{5.1.3}{\csname a:TocLink\endcsname{21}{x21-510005.1.3}{QQ2-21-51}{Lecture 3 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-verification.pdf}{Checking contracts using Event-B}.}}{27}\relax 
+\doTocEntry\tocsubsubsection{5.1.4}{\csname a:TocLink\endcsname{21}{x21-520005.1.4}{QQ2-21-52}{Lecture 4 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-lect2.pdf}{Correctness by Construction with the Modelling Language Event-B using the Refinement}.}}{27}\relax 
+\doTocEntry\tocsubsubsection{5.1.5}{\csname a:TocLink\endcsname{21}{x21-530005.1.5}{QQ2-21-53}{ Lecture 5 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-lect3.pdf}{Access Control } }}{27}\relax 
+\doTocEntry\tocsubsection{5.2}{\csname a:TocLink\endcsname{22}{x22-540005.2}{QQ2-22-54}{Tutorials}}{28}\relax 
+\doTocEntry\tocsubsection{5.3}{\csname a:TocLink\endcsname{23}{x23-550005.3}{QQ2-23-55}{Event-B Models}}{29}\relax 
+\doTocEntry\tocsubsubsection{5.3.1}{\csname a:TocLink\endcsname{23}{x23-560005.3.1}{QQ2-23-56}{Event-B Archives for the lectures}}{29}\relax 
+\doTocEntry\tocsubsubsection{5.3.2}{\csname a:TocLink\endcsname{23}{x23-570005.3.2}{QQ2-23-57}{Event-B Archives for the tutorial 1}}{29}\relax 
+\doTocEntry\tocsubsubsection{5.3.3}{\csname a:TocLink\endcsname{23}{x23-580005.3.3}{QQ2-23-58}{Event-B Archives for the tutorial 2}}{29}\relax 
+\doTocEntry\tocsubsubsection{5.3.4}{\csname a:TocLink\endcsname{23}{x23-590005.3.4}{QQ2-23-59}{Event-B Archives for the tutorial 3}}{30}\relax 
+\doTocEntry\tocsubsubsection{5.3.5}{\csname a:TocLink\endcsname{23}{x23-600005.3.5}{QQ2-23-60}{Event-B Archives for the tutorial 4}}{30}\relax 
+\doTocEntry\tocsubsubsection{5.3.6}{\csname a:TocLink\endcsname{23}{x23-610005.3.6}{QQ2-23-61}{Event-B Archives}}{30}\relax 
+\doTocEntry\tocsubsection{5.4}{\csname a:TocLink\endcsname{24}{x24-620005.4}{QQ2-24-62}{Past exams of the course MCFSI}}{31}\relax 
 \par 
