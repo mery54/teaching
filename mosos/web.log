@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  26 MAR 2025 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  27 MAR 2025 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1477,18 +1477,6 @@ LaTeX Warning: Label `sec:event-b-models' multiply defined.
 
 LaTeX Warning: Label `sec:event-b-archives' multiply defined.
 
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
-
-LaTeX Warning: Label `sec:event-b-archives' multiply defined.
-
 )
 \openout1 = `web.aux'.
 
@@ -1546,7 +1534,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 (./web.tmp)
 --- file contentsname.html ---
-(./web.4ct [4] [5]) [6]
+(./web.4ct [4]) [5] [6]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1757,11 +1745,10 @@ asedsystemsforMasterinComp.html ---
 
 (./web.tmp)
 --- file EventBModels2.html ---
+No file web.bbl.
 [29
 
-]
-No file web.bbl.
-[30] [31
+] [30
 
 ] (./web.aux)
  ***********
@@ -1776,12 +1763,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32615 strings out of 474117
- 600010 string characters out of 5743707
+ 32607 strings out of 474117
+ 599891 string characters out of 5743707
  1936184 words of memory out of 5000000
- 53996 multiletter control sequences out of 15000+600000
+ 53988 multiletter control sequences out of 15000+600000
  568928 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,986b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (31 pages, 151776 bytes).
+Output written on web.dvi (30 pages, 141996 bytes).
