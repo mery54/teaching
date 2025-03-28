@@ -31,11 +31,11 @@ $external_labels{$key} = "$URL/" . q|node44.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_labels{$key} = "$URL/" . q|node61.html|; 
+$external_labels{$key} = "$URL/" . q|node58.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$external_labels{$key} = "$URL/" . q|node55.html|; 
+$external_labels{$key} = "$URL/" . q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
@@ -47,7 +47,7 @@ $external_labels{$key} = "$URL/" . q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:past-exams-course/;
-$external_labels{$key} = "$URL/" . q|node62.html|; 
+$external_labels{$key} = "$URL/" . q|node42.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
@@ -62,6 +62,10 @@ $key = q/sec:slides-course/;
 $external_labels{$key} = "$URL/" . q|node21.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/sec:tuthrefhttp:m/;
+$external_labels{$key} = "$URL/" . q|node53.html|; 
+$noresave{$key} = "$nosave";
+
 1;
 
 
@@ -74,7 +78,7 @@ $external_latex_labels{$key} = q|x16-430004 x16-430004:autorefsectionCourse DISC
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-mcfsi-at/;
-$external_latex_labels{$key} = q|x4-30002 x4-30002:autorefsectionCourse MCFSI at Telecom Nancy|; 
+$external_latex_labels{$key} = q|x20-470005 x20-470005:autorefsectionCourse EMU Event-B at Maynooth University|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:course-modell-verify/;
@@ -86,15 +90,15 @@ $external_latex_labels{$key} = q|x17-440004.1 x17-440004.1:autorefsubsectionDocu
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_latex_labels{$key} = q|x13-380003.3.4 x13-380003.3.4:autorefsubsubsectionEvent-B Archives for the tutorial 3|; 
+$external_latex_labels{$key} = q|x23-580005.3.2 x23-580005.3.2:autorefsubsubsectionEvent-B Archives for the tutorialS|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$external_latex_labels{$key} = q|x13-280003.3 x13-280003.3:autorefsubsectionEvent-B Models|; 
+$external_latex_labels{$key} = q|x23-560005.3 x23-560005.3:autorefsubsectionEvent-B Models|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
-$external_latex_labels{$key} = q|x5-80002.1.4 x5-80002.1.4:autorefsubsubsectionLecture 4 <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf">Correctness by Construction with the Modelling Language Event-B using the Refinement</a>.|; 
+$external_latex_labels{$key} = q|x21-520005.1.4 x21-520005.1.4:autorefsubsubsectionLecture 4 <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-lect2.pdf">Correctness by Construction with the Modelling Language Event-B using the Refinement</a>.|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:past-exams-course/;
@@ -106,11 +110,15 @@ $external_latex_labels{$key} = q|x14-410003.4 x14-410003.4:autorefsubsectionProj
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides/;
-$external_latex_labels{$key} = q|x5-40002.1 x5-40002.1:autorefsubsectionSlides for the course MCFSI|; 
+$external_latex_labels{$key} = q|x21-480005.1 x21-480005.1:autorefsubsectionSlides for the course EMU|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
 $external_latex_labels{$key} = q|x11-210003.1 x11-210003.1:autorefsubsectionSlides of the course|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:tuthrefhttp:m/;
+$external_latex_labels{$key} = q|x21-530005.1.5 x21-530005.1.5:autorefsubsubsectionTutorial 1 and 2 <a href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-tut.pdf">Tutorial Notes</a>.|; 
 $noresave{$key} = "$nosave";
 
 1;

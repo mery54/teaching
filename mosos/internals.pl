@@ -31,11 +31,11 @@ $ref_files{$key} = "$dir".q|node44.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$ref_files{$key} = "$dir".q|node61.html|; 
+$ref_files{$key} = "$dir".q|node58.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;
-$ref_files{$key} = "$dir".q|node55.html|; 
+$ref_files{$key} = "$dir".q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:lect-3-hrefhttp:m/;
@@ -47,7 +47,7 @@ $ref_files{$key} = "$dir".q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/sec:past-exams-course/;
-$ref_files{$key} = "$dir".q|node62.html|; 
+$ref_files{$key} = "$dir".q|node42.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:project/;
@@ -60,6 +60,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:slides-course/;
 $ref_files{$key} = "$dir".q|node21.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:tuthrefhttp:m/;
+$ref_files{$key} = "$dir".q|node53.html|; 
 $noresave{$key} = "$nosave";
 
 1;
