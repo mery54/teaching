@@ -90,7 +90,7 @@ $external_latex_labels{$key} = q|x17-440004.1 x17-440004.1:autorefsubsectionDocu
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-archives/;
-$external_latex_labels{$key} = q|x23-580005.3.2 x23-580005.3.2:autorefsubsubsectionEvent-B Archives for the tutorialS|; 
+$external_latex_labels{$key} = q|x23-580005.3.2 x23-580005.3.2:autorefsubsubsectionEvent-B Archives for the tutorials|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:event-b-models/;

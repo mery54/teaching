@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Dominique Méry LORIA &amp; Telecom Nancy Université de Lorraine https://members.loria.fr/Mery dominique.mery@loria.fr" />
+  <meta name="dcterms.date" content="2025-04-09" />
+  <title>Modelling Software-based Systems</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Modelling Software-based Systems</h1>
+<p class="author">Dominique Méry<br />
+LORIA &amp; Telecom Nancy<br />
+Université de Lorraine<br />
+<a href="https://members.loria.fr/Mery"
+class="uri">https://members.loria.fr/Mery</a><br />
+<a href="dominique.mery@loria.fr"
+class="uri">dominique.mery@loria.fr</a></p>
+<p class="date">2025-04-09</p>
+</header>
+<p>This repository contains course notes, exercises, models and projects
+from three courses given as part of master’s level training on the
+Event-B formal method. It provides access to resources in the form of
+pdf files or Rodin archives. The relationship with the Atelier-B
+platform is explained.</p>
+<p>The table of contents shows the summary of three main courses (at
+Université de Lorraine/University of Lorraine) based on our experiment
+using the Event-B method:</p>
+<ul>
+<li><p>The first course <strong>MCFSI</strong> is part of the curriculum
+of the last yer students of Telecom Nancy who are focusing on software
+engineering.</p></li>
+<li><p>The second course <strong>MsC in Computer Science</strong> is
+aimed at students on the IT Masters course at the University of
+Lorraine.</p></li>
+<li><p>The third course <strong>DISCONT</strong> is aimed at Telecom
+Nancy students in their final year who are specialising in software
+engineering and embedded systems. The course focuses on hybrid systems
+and hybrid models. The work of the ANR DISCONT project (see <a
+href="https://anr.fr/Projet-ANR-17-CE25-0005"> website at ANR</a> or <a
+href="https://discont.loria.fr"> website at LORIA</a> )</p></li>
+<li><p>The fourth course <strong>MsC in Computer Science</strong> is
+aimed at students on the IT Masters course at the Maynooth University
+and is a special coocking for students of my colleague Professor
+Rosemary Monahan, who is welcoming me every year. This course is a
+special edition that is shorter than the first two courses, which is
+great news! The aim is to give students the specific elements of the
+Event-B language and, above all, to encourage them to follow a few
+tutorials.</p></li>
+</ul>
+<p>The Event-B method is based on a modelling language used to describe
+state-based models and safety properties of those state-based models.
+The originality of Event-B lies in its ability to enable incremental and
+proof-based modelling of <em>reactive systems</em>. The Event-B language
+contains both set notations and a first-order predicate calculus; it
+offers the possibility of defining models of reactive systems called
+machines and contexts and includes the refinement relationship that
+allows us to follow an incremental development methodology.</p>
+<h1 id="documentation-and-tools">Documentation and Tools</h1>
+<ul>
+<li><p>The main document on the Event-B modelling language and
+methodology is the book of Jean-Raymond Abrial <span class="citation"
+data-cites="abrial2010"></span>.</p></li>
+<li><p>The Rodin platform is available at the <a
+href="https://www.event-b.org/install.html">following link</a>.</p></li>
+<li><p>The list of <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/symboles.pdf">
+symbols </a> is useful for typing symbols which will appear as
+mathematical notations.</p></li>
+<li><p>The first chapter on the modelling language Event-B <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/main-C1.pdf">chapter
+1</a> summarizes details on the foundations and on the
+applications.</p></li>
+<li><p>The second chapter on using the modelling language Event-B for
+developing sequential algorithms <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/main-C2.pdf">chapter
+2</a> with examples.</p></li>
+<li><p>The third chapter on using the modelling language Event-B for
+verifying contracts for sequential algorithms <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/main-fmt.pdf">chapter
+3</a> with examples.</p></li>
+<li><p>The chapter <span class="citation" data-cites="losl-b"></span>
+(from <span class="citation" data-cites="losl-eatcs"></span>.) authored
+by Dominique Cansell and Dominique Méry and entitled <em>The Event-B
+Modelling Method: Concepts and Case Studies</em> has benne published
+from lectures notes given in a Summer School and you can use it for
+getting details from Event-B see the <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/BasicEventB.pdf">following
+link</a>.</p></li>
+<li><p>Lectures Notes <em>The Modelling Language</em> at the <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/main-Poly1.pdf">following
+link</a>.</p></li>
+<li><p>Chapter <em>Event-B</em> at the <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/Chapter10.pdf">following
+link</a>.</p></li>
+</ul>
+<h1 id="sec:course-mcfsi-at">Course MCFSI at Telecom Nancy</h1>
+<h2 id="sec:slides">Slides for the course MCFSI</h2>
+<h3 id="lecture-1-the-modelling-language-event-b.">Lecture 1 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf">The
+Modelling Language Event-B</a>. </h3>
+<h3 id="lecture-2-proof-obligations.">Lecture 2 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-po.pdf">Proof
+Obligations</a>.</h3>
+<h3 id="lecture-3-checking-contracts-using-event-b.">Lecture 3 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-verification.pdf">Checking
+contracts using Event-B</a>.</h3>
+<h3 id="sec:lect-3-hrefhttp:m">Lecture 4 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect2.pdf">Correctness
+by Construction with the Modelling Language Event-B using the
+Refinement</a>.</h3>
+<h3 id="lecture-5-access-control"> Lecture 5 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect3.pdf">Access
+Control </a> </h3>
+<h2 id="tutorials">Tutorials</h2>
+<ul>
+<li><p>Tutorial 1 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-td1.pdf">Using
+the Event-B modelling language on simple examples</a>.</p></li>
+<li><p>Tutorial 2 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-td2.pdf">Using
+the Event-B modelling language for verifying contracts</a>.</p></li>
+<li><p>Tutorial 3 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-td3.pdf">Using
+the refinement in the Event-B modelling language for derinving
+sequential algorithms</a>.</p></li>
+<li><p>Tutorial 4 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-td4.pdf">Using
+the refinement in the Event-B modelling language for derinving
+systems</a>.</p></li>
+</ul>
+<h2 id="sec:project">Project</h2>
+<p>The assessment of students is based on two works:</p>
+<ul>
+<li><p>A written exam</p></li>
+<li><p>A project which is stated in the following document <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/telecom-projects2425.pdf">Projet
+3A IL</a></p></li>
+</ul>
+<p>The deadline for the project is February 1, 2025 and the presentation
+is organised on Monday, February 10, 2025.</p>
+<h2 id="sec:event-b-models">Event-B Models</h2>
+<p>The Event-B models related to the tutoriuals are given in the next
+list:</p>
+<h3 id="event-b-archives-for-the-lectures">Event-B Archives for the
+lectures</h3>
+<p><a href="http://mery54.github.io/teaching/mosos/lecturesnotes/
+   ex-safety.zip">Archive Rodin for explaining differences between
+Event-B invariant and Eveny-B theorem. </a></p>
+<p><a href="http://mery54.github.io/teaching/mosos/lecturesnotes/
+   ex-school.zip">Archive Rodin for the management of school. </a></p>
+<p><a href="http://mery54.github.io/teaching/mosos/lecturesnotes/
+   clock-tut0.zip">Archive Rodin for clock modelling. </a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/factorial-plugin-tutO.zip">Archive
+Rodin for modelling the design of the factorial function.</a></p>
+<h3 id="sec:event-b-archives">Event-B Archives for the tutorial 1</h3>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-ex1-tut1.zip">Archive
+Rodin mcfsi1-ex1-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-ex1-tut1.zip">Archive
+Rodin mcfsi1-ex2-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-simple.zip">Archive
+Rodin mcfsi1-simple.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-variant1.zip">Archive
+Rodin mcfsi1-variant1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-variant2.zip">Archive
+Rodin mcfsi1-variant2.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-summation.zip">Archive
+Rodin mcfsi1-summation.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-ressource-pb1.zip">Archive
+Rodin mcfsi1-ressource-pb1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-ressource-pb1.zip">Archive
+Rodin mcfsi1-ressource-pb2.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-invariantsafety.zip">Archive
+Rodin mcfsi1-invariantsafety.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-ex8.zip">Archive
+Rodin mcfsi1-ex8.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-ex9.zip">Archive
+Rodin ex8-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-ex9.zip">Archive
+Rodin mcfsi1-ex9.zip.</a></p>
+<h3 id="sec:event-b-archives">Event-B Archives for the tutorial 2</h3>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/alg-maxtwonumbers.zip">Archive
+Rodin alg-maxtwonumbers.zp.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/alg-ex1.zip">Archive
+Rodin alg-ex1.zp.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/alg-ex2.zip">Archive
+Rodin alg-ex2.zp.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/alg-ex3.zip">Archive
+Rodin alg-ex3.zp.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/alg-ex4.zip">Archive
+Rodin alg-ex4.zp.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/alg-simple.zip">Archive
+Rodin alg-simple.zip.</a></p>
+<h3 id="sec:event-b-archives">Event-B Archives for the tutorial 3</h3>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi3-ex1-plugin.zip">Archive
+Rodin mcfsi3-ex1-plugin.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi3-ex2.zip">Archive
+Rodin mcfsi3-ex2.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi3-ex2-plugin.zip">Archive
+Rodin mcfsi3-ex2.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/codes/power2.c">Fichier
+power2.c.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/codes/power2.h">Fichier
+power2.h.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi3-ex3.zip">Archive
+Rodin mcfsi3-ex3.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi3-ex4.zip">Archive
+Rodin mcfsi3-ex4.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi3-ex5.zip">Archive
+Rodin mcfsi3-ex5.zip.</a></p>
+<h3 id="sec:event-b-archives">Event-B Archives for the tutorial 4</h3>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi4-ex1.zip">Archive
+Rodin mcfsi4-ex1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi4-ex2.zip">Archive
+Rodin mcfsi4-ex2.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi4-ex3.zip">Archive
+Rodin mcfsi4-ex3.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi4-ex4.zip">Archive
+Rodin mcfsi4-ex4.zip.</a></p>
+<h3 id="sec:event-b-archives">Event-B Archives</h3>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mrg1.zip">Archive
+Rodin mrg1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/abacus.zip">Archive
+Rodin abacus.zip.</a></p>
+<h2 id="sec:past-exams-course">Past exams of the course MCFSI</h2>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/exam2017.pdf">Exam
+2017</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/exam2018.pdf">Exam
+2018</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/exam2019.pdf">Exam
+2019</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/exam2020.pdf">Exam
+2020</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/exam2021.pdf">Exam
+2021</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/exam2022.pdf">Exam
+2022</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/exam2023.pdf">Exam
+2023</a></p>
+<h1 id="sec:course-modell-verify">Course MsC in Computer Science:
+Modelling and verifying software-based systems for Master in Compurer
+Science of the University of Lorraine</h1>
+<h2 id="sec:slides-course">Slides of the course</h2>
+<h3 id="lecture-1-the-modelling-language-event-b.-1">Lecture 1 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf">The
+Modelling Language Event-B</a>.</h3>
+<h3 id="lecture-2-proof-obligations.-1"> Lecture 2 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf">Proof
+Obligations</a>.</h3>
+<h3
+id="lecture-3-correctness-by-construction-with-the-modelling-language-event-b-using-the-refinement.">Lecture
+3 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf">Correctness
+by Construction with the Modelling Language Event-B using the
+Refinement</a>.</h3>
+<h3 id="lecture-4-access-control"> Lecture 4 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf">Access
+Control </a></h3>
+<h3 id="lecture-5-checking-contracts-with-event-b"> Lecture 5 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect-verification.pdf">Checking
+contracts with Event-B</a></h3>
+<h2 id="tutorials-1">Tutorials</h2>
+<ul>
+<li><p>Tutorial 1 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/master-tutorial1.pdf">Using
+the Event-B modelling language</a>.</p></li>
+<li><p>Tutorial 2 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/master-tutorial2.pdf">
+Designing and verifying sequential algorithms using the Event-B
+modelling language</a>.</p></li>
+<li><p>Tutorial 3 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/master-tutorial3.pdf">
+Modelling systems using the Event-B</a>.</p></li>
+<li><p>Tutorial 4 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/master-tutorial4.pdf">
+Using Event-B for verifying sequential annoptated
+algorithms</a>.</p></li>
+<li><p>Tutorial 5 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/master-tutorial5.pdf">
+Still refinement …</a>.</p></li>
+</ul>
+<h2 id="sec:event-b-models">Event-B Models</h2>
+<p>The Event-B models related to the tutoriuals are given in the next
+list:</p>
+<h3 id="event-b-archives-for-the-lectures-1">Event-B Archives for the
+lectures</h3>
+<p><a href="http://mery54.github.io/teaching/mosos/lecturesnotes/
+   ex-safety.zip">Archive Rodin for explaining differences between
+Event-B invariant and Eveny-B theorem. </a></p>
+<p><a href="http://mery54.github.io/teaching/mosos/lecturesnotes/
+   ex-school.zip">Archive Rodin for the management of school. </a></p>
+<h3 id="sec:event-b-archives">Event-B Archives for the tutorial 1</h3>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex1-tut1.zip">Archive
+Rodin ex1-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex2-tut1.zip">Archive
+Rodin ex2-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex4-tut1.zip">Archive
+Rodin ex4-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex51-tut1.zip">Archive
+Rodin ex51-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex52-tut1.zip">Archive
+Rodin ex52-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex6-tut1.zip">Archive
+Rodin ex6-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex7-tut1.zip">Archive
+Rodin ex7-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex8-tut1.zip">Archive
+Rodin ex8-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex9-tut1.zip">Archive
+Rodin ex9-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-variant1.zip">Archive
+Rodin mcfsi1-variant1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi1-variant2.zip">Archive
+Rodin mcfsi1-variant2.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex10-1-tut1.zip">Archive
+Rodin ex10-1-tut1.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ex10-2-tut1.zip">Archive
+Rodin ex10-2-tut1.zip.</a></p>
+<h3 id="sec:event-b-archives">Event-B Archives for the tutorial 2</h3>
+<h4 id="exercice-1-tutorial-2">Exercice 1 Tutorial 2</h4>
+<p>Nous donnons deux solutions possibles: l’une avec ok et l’autre sans
+ok.</p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/fx1-tut2.zip">Archive
+Rodin fx1-tut2.zip.</a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/fx1-tut2.zip">Archive
+Rodin fx1-tut2bis.zip.</a></p>
+<h4 id="exercice-2-tutorial-2">Exercice 2 Tutorial 2</h4>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/fx2-tut2.zip">Archive
+Rodin fx2-tut2.zip.</a></p>
+<h4 id="exercice-3-tutorial-2">Exercice 3 Tutorial 2</h4>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/mcfsi3-ex3.zip">Archive
+Rodin mcfsi3-ex3.zip.</a></p>
+<h4 id="exercice-4-tutorial-2">Exercice 4 Tutorial 2</h4>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/fx4-tut2.zip">Archive
+Rodin fx4-tut2.zip.</a></p>
+<h4 id="exercice-5-tutorial-2">Exercice 5 Tutorial 2</h4>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/fx5-tut2.zip">Archive
+Rodin fx5-tut2.zip.</a></p>
+<h4 id="exercice-6-tutorial-2">Exercice 6 Tutorial 2</h4>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/fx6-tut2.zip">Archive
+Rodin fx6-tut2.zip.</a></p>
+<h3 id="sec:event-b-archives">Event-B Archives for the tutorial 3</h3>
+<h4 id="exercice-1-tutorial-3">Exercice 1 Tutorial 3</h4>
+<p>Nous donnons deux solutions possibles: l’une avec ok et l’autre sans
+ok.</p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/qqx1-tut3.zip">Archive
+Rodin ggx1-tut3.zip.</a></p>
+<h4 id="exercice-2-tutorial-3">Exercice 2 Tutorial 3</h4>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/ggx2-tut3.zip">Archive
+Rodin ggx2-tut3.zip.</a></p>
+<h2 id="sec:project">Project</h2>
+<p>The assessment of students is based on two works:</p>
+<ul>
+<li><p>A written exam 1h30</p></li>
+<li><p>A project which is stated in the following document <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/master-projets2425.pdf">Projet
+Master </a></p></li>
+</ul>
+<p>The deadline for the project is February 15, 2025 and the
+presentation will be organised later in February 2025.</p>
+<h2 id="sec:past-exams-course">Past exams of the Course MsC in Computer
+Science: Modelling and verifying software-based systems for Master in
+Comp</h2>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/annales-master2425.zip">Archiuves
+sous forme d’une archive ZIP</a></p>
+<h1 id="sec:course-discont">Course DISCONT: Modelling hybrid
+systems</h1>
+<h2 id="sec:documentation">Documentation</h2>
+<p>The report entitled <a href="https://inria.hal.science/hal-02895528v1
+">A Refinement Strategy for Hybrid System Design with Safety
+Constraints</a> is giving details on the method Event-B in hybrid
+strategy.</p>
+<p>The report entitled <a href="https://hal.science/hal-04189025v2
+">From System Events to Software Operations for Refinement-based
+Modeling of Hybrid Systems</a> studies the integreation of both
+approaches <em>system</em> and <em>software</em>.</p>
+<p><a href="https://hal.science/hal-04152829v1
+  ">A Static Checker for Reference Tracking Systems via Laplace
+Transform and Transfer Functions.</a></p>
+<h2 id="slides-for-the-course-2020-2021">Slides for the course
+2020-2021</h2>
+<ul>
+<li><p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/2021-01-MLS-00.pdf">Lecture
+1 </a></p></li>
+<li><p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/2021-01-MLS-01.pdf">Lecture
+2 </a></p></li>
+</ul>
+<h2 id="slides-for-the-course-2021-2022">Slides for the course
+2021-2022</h2>
+<ul>
+<li><p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/2021-22-MLS-00.pdf">Lecture
+1 </a></p></li>
+<li><p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/2021-22-MLS-01.pdf">Lecture
+2 </a></p></li>
+<li><p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/2021-22-MLS-02.pdf">Lecture
+3 </a></p></li>
+<li><p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/2021-22-MLS-03.pdf">Lecture
+4 </a></p></li>
+</ul>
+<h1 id="sec:course-mcfsi-at">Course EMU Event-B at Maynooth
+University</h1>
+<h2 id="sec:slides">Slides for the course EMU</h2>
+<h3 id="lecture-1-the-modelling-language-event-b.-2">Lecture 1 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-lect1.pdf">The
+Modelling Language Event-B</a>. </h3>
+<h3 id="lecture-2-proof-obligations.-2">Lecture 2 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-po.pdf">Proof
+Obligations</a>.</h3>
+<h3 id="lecture-3-checking-contracts-using-event-b.-1">Lecture 3 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-verification.pdf">Checking
+contracts using Event-B</a>.</h3>
+<h3 id="sec:lect-3-hrefhttp:m">Lecture 4 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-lect2.pdf">Correctness
+by Construction with the Modelling Language Event-B using the
+Refinement</a>.</h3>
+<h3 id="sec:tuthrefhttp:m">Tutorial 1 and 2 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-tut.pdf">Tutorial
+Notes</a>.</h3>
+<h3 id="lecture-5-access-control-1"> Lecture 5 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-maynooth-lect3.pdf">Access
+Control </a> </h3>
+<h2 id="tutorials-2">Tutorials</h2>
+<ul>
+<li><p>Tutorial 1 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mastertutorial1.pdf">Using
+the Event-B modelling language on simple examples</a>.</p></li>
+<li><p>Tutorial 2 <a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/mastertutorial2.pdf">Using
+the Event-B modelling language for verifying contracts</a>.</p></li>
+</ul>
+<h2 id="sec:event-b-models">Event-B Models</h2>
+<p>The Event-B models related to the tutoriuals are given in the next
+list:</p>
+<h3 id="event-b-archives-for-the-lectures-2">Event-B Archives for the
+lectures</h3>
+<p><a href="http://mery54.github.io/teaching/mosos/lecturesnotes/
+   ex-safety.zip">Archive Rodin for explaining differences between
+Event-B invariant and Eveny-B theorem. </a></p>
+<p><a href="http://mery54.github.io/teaching/mosos/models/
+   ex-school.zip">Archive Rodin for the management of school. </a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/clock-tut0.zip">Archive
+Rodin for clock modelling. </a></p>
+<p><a
+href="http://mery54.github.io/teaching/mosos/lecturesnotes/factorial-plugin-tutO.zip">Archive
+Rodin for modelling the design of the factorial function.</a></p>
+<h3 id="sec:event-b-archives">Event-B Archives for the tutorials</h3>
+<p><a
+href="http://mery54.github.io/teaching/mosos/models/maynoothmodels.tar.gz">Archive
+Rodin maynoothmodels.tar.gz.</a></p>
+</body>
+</html>
