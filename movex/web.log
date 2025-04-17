@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  10 APR 2025 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  17 APR 2025 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1523,64 +1523,6 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file CourseMALG1MOVEX1atTelecomNancy.html ---
-(./web.4ct)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file SlidesforthecourseMALG1MOVEX1.html ---
-[7
-
-] [8]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file LecturesNotes.html ---
-[9
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Tutorials.html ---
-[10
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Assessment.html ---
-[11
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Examenspassés.html ---
-[12
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
 --- file CourseMOVEX2atTelecomNancy.html ---
 (./web.4ct)
 \openout15 = `web.tmp'.
@@ -1590,7 +1532,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file SlidesforthecourseMOVEX2.html ---
-[13
+[7
 
 ]
 \openout15 = `web.tmp'.
@@ -1608,10 +1550,79 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file SlidesforthecourseMALG2.html ---
-No file web.bbl.
-[14
+[8
 
-] [15
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file CourseMALG1MOVEX1atTelecomNancy.html ---
+(./web.4ct)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file SlidesforthecourseMALG1MOVEX1.html ---
+[9
+
+] [10]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file LecturesNotes.html ---
+[11
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file Tutorials.html ---
+[12
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file Assessment.html ---
+[13
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file Examenspassés.html ---
+(./web.bbl [14
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file refname.html ---
+l.3 --- TeX4ht warning --- Problem with 'list' environment. Expected syntax: \b
+egin{list}{label}{spacing} \item.... \end{list} ---
+) [15
+
+] [16
 
 ] (./web.aux)
  ***********
@@ -1623,12 +1634,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32416 strings out of 474117
- 595964 string characters out of 5743707
+ 32438 strings out of 474117
+ 596223 string characters out of 5743707
  1933184 words of memory out of 5000000
- 53837 multiletter control sequences out of 15000+600000
+ 53852 multiletter control sequences out of 15000+600000
  570110 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,930b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (15 pages, 78228 bytes).
+Output written on web.dvi (16 pages, 80252 bytes).
