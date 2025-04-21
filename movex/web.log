@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  17 APR 2025 14:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  21 APR 2025 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1534,6 +1534,16 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 --- file SlidesforthecourseMOVEX2.html ---
 [7
 
+] [8]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file Tutorials.html ---
+[9
+
 ]
 \openout15 = `web.tmp'.
 
@@ -1550,9 +1560,9 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file SlidesforthecourseMALG2.html ---
-[8
+[10
 
-]
+] [11]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1568,9 +1578,9 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file SlidesforthecourseMALG1MOVEX1.html ---
-[9
+[12
 
-] [10]
+] [13]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1578,7 +1588,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file LecturesNotes.html ---
-[11
+[14
 
 ]
 \openout15 = `web.tmp'.
@@ -1587,8 +1597,8 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file Tutorials.html ---
-[12
+--- file Tutorials1.html ---
+[15
 
 ]
 \openout15 = `web.tmp'.
@@ -1598,7 +1608,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file Assessment.html ---
-[13
+[16
 
 ]
 \openout15 = `web.tmp'.
@@ -1608,7 +1618,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file Examenspassés.html ---
-(./web.bbl [14
+(./web.bbl [17
 
 ]
 \openout15 = `web.tmp'.
@@ -1620,9 +1630,9 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 --- file refname.html ---
 l.3 --- TeX4ht warning --- Problem with 'list' environment. Expected syntax: \b
 egin{list}{label}{spacing} \item.... \end{list} ---
-) [15
+) [18
 
-] [16
+] [19
 
 ] (./web.aux)
  ***********
@@ -1634,12 +1644,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32438 strings out of 474117
- 596223 string characters out of 5743707
+ 32464 strings out of 474117
+ 596603 string characters out of 5743707
  1933184 words of memory out of 5000000
- 53852 multiletter control sequences out of 15000+600000
+ 53874 multiletter control sequences out of 15000+600000
  570110 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,930b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (16 pages, 80252 bytes).
+Output written on web.dvi (19 pages, 86960 bytes).

@@ -2,13 +2,17 @@
 \contentsline {section}{\numberline {2}Course MOVEX2 at Telecom Nancy}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Slides for the course MOVEX2}{2}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Lecture 0 {Overview of the course }}{2}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Lecture 1 {Vérification mécanisée de contrats} (III)}{3}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Lecture 2 {Théprie du point-fixe et applications}}{3}{subsubsection.2.1.3}%
-\contentsline {section}{\numberline {3}Course MALG2 at Telecom Nancy}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Slides for the course MALG2}{3}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Lecture 0 {Overview of the course }}{3}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Lecture 1 {Vérification mécanisée de contrats} (III)}{2}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Lecture 2 {Théprie du point-fixe et applications}}{2}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Lecture 3 {Modélisation synchrone}}{2}{subsubsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.2}Tutorials}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Course MALG2 at Telecom Nancy}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Slides for the course MALG2}{2}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Lecture 0 {Overview of the course }}{2}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Lecture 1 {Vérification mécanisée de contrats} (III)}{3}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Lecture 2 {Théprie du point-fixe et applications}}{3}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3}Lecture 2 {Théorie du point-fixe et applications}}{3}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Lecture 3 {Sémantique ds langages de programmation}}{3}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Lecture 4 {Interprétation Abstraite}}{3}{subsubsection.3.1.5}%
 \contentsline {section}{\numberline {4}Course MALG1/MOVEX1 at Telecom Nancy}{3}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Slides for the course MALG1/MOVEX1}{3}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Lecture 0 {Overview of the course }}{3}{subsubsection.4.1.1}%
@@ -16,7 +20,7 @@
 \contentsline {subsubsection}{\numberline {4.1.3}Lecture 2 {Mod\'elisation, sp\'ecification et v\'erification} (II)}{3}{subsubsection.4.1.3}%
 \contentsline {subsubsection}{\numberline {4.1.4}Lecture 3 {Mod\'elisation, sp\'ecification et v\'erification} (III)}{3}{subsubsection.4.1.4}%
 \contentsline {subsubsection}{\numberline {4.1.5}Lecture 4 {Vérification mécanisée de contrats} (I)}{3}{subsubsection.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.1.6}Lecture 5 {Vérification mécanisée de contrats} (II)}{4}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.6}Lecture 5 {Vérification mécanisée de contrats} (II)}{3}{subsubsection.4.1.6}%
 \contentsline {subsection}{\numberline {4.2}Lectures Notes}{4}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Tutorials}{4}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Assessment}{4}{subsection.4.4}%
