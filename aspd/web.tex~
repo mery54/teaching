@@ -1,0 +1,273 @@
+\documentclass[ 12pt]{article}
+%\dose cctioncumentclass[ 12pt]{book}
+
+\usepackage{times,vmargin,url,time}
+%\setmarginsrb{3cm}{1cm}{2cm}{1cm}{1cm}{1cm}{1cm}{1cm}
+\setpapersize{A4}
+
+
+\usepackage{color,time}
+%\pagecolor{yellow}
+%\pagecolor{cyan}
+\pagecolor{white}
+\title{Distributed Algorithms:  modelling,  verification   and experimentation  (ASPD)}
+
+
+\newcommand{\keywords}[1]{\textbf{Keywords:} #1} %\\ \clearpage %\tableofcontents\clearpage}
+%
+
+\author{Dominique M\'ery\\
+LORIA \& Telecom Nancy\\ Universit\'e de Lorraine\\
+\url{https://members.loria.fr/Mery}\\ \url{dominique.mery@loria.fr}}
+
+\date{\today\\\now}
+
+\usepackage{xcolor}
+%\usepackage{b2latex}
+
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite,time}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor,time,url,nbcode,version}
+\usepackage{wrapfig}
+%\usepackage{b2latex}
+\usepackage{caption}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{bussproofs}
+\usepackage{wrapfig,setspace}
+%\usepackage{lstcoq}
+\usepackage{xspace}
+\usepackage{hyperref}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\pagestyle{plain}
+\pagenumbering{arabic}
+\input{prelude}
+%ddd -aal\renewcommand{\baselinestretch}{0.90}
+\newtheorem{myexample}{Example}[section]
+\newtheorem{mytheorem}{Property}
+%\newtheorem{definition}{Definition}
+%\includeversion{check}
+% \excludeversion{check}
+% \excludeversion{long}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{exemple}{Example}
+%\newtheorem{theorem}{Theorem}
+%\newcommand{\white}[1]{\textcolor{white}{#1}}
+
+%\newtheorem{comm}{Teaching Point}
+%\newenvironment{comm}{\iffalse}{\fi}
+%\excludeversion{comm}
+
+\input eb2latex
+
+\pagestyle{plain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\newcounter{ex}  \setcounter{ex}{1}
+\maketitle
+\begin{abstract}
+This repository contains course notes, exercises, models and projects
+from two  courses given as part of master's level training on
+modelling and verifying  distributed algorithms.
+\end{abstract}
+
+\tableofcontents
+
+
+\section{Documentation and Tools}
+
+\begin{itemize}
+
+    
+\item[]  The  TLA+ ToolBox  platform is available at the 
+  \href{https://lamport.azurewebsites.net/tla/toolbox.html}{following 
+    link}. 
+\item[]  The Rodin platform is available at the 
+  \href{https://www.event-b.org/install.html}{following 
+    link}.
+
+  
+  \item[]  The Prob   platform is available at the 
+  \href{https://prob.hhu.de}{following 
+    link}. 
+
+  
+  \item[]  The Frama-c platform is available at the 
+  \href{https://www.frama-c.com}{following 
+    link}.
+
+  \item[]  The Synchrone Reactive Toolbox for LUSTRE is   available at the 
+  \href{https://www-verimag.imag.fr/Outils-SynchronesNEW.html?lang=en}{following 
+    link}.
+
+  \item[]  The Kind 2  platform is available at the 
+  \href{ https://kind2-mc.github.io/kind2/}{following 
+    link}.
+
+  
+\end{itemize}
+
+
+
+
+\section{Course  ASPD apprenticeship at Telecom Nancy}
+\label{sec:course-mcfsi-at}
+
+
+\subsection{Slides for the course}
+\label{sec:slides}
+
+
+\subsubsection{Lecture 0 {Overview of the course }}
+  
+  \href{http://mery54.github.io/teaching/aspd/lecturesnotes/ASPD0.pdf}{Overview of the course }
+
+
+\subsubsection{Lecture 1 {Systèmes répartis}}
+  
+\href{http://mery54.github.io/teaching/aspd/lecturesnotes/ASPD1.pdf}{Syst\`emes
+  R\'epartis: Probl\`emes  - Concepts - Techniques - Outils}
+
+
+
+\subsubsection{Lecture 2 {Mod\'elisation   des syst\`emes  r\'epartis}}
+  
+\href{http://mery54.github.io/teaching/aspd/lecturesnotes/ASPD2.pdf}{Mod\'elisation   des syst\`emes  r\'epartis}
+
+
+
+
+\subsubsection{Lecture 3 {Protocoles de Communications}}
+  
+\href{http://mery54.github.io/teaching/aspd/lecturesnotes/ASPD3.pdf}{Protocoles de Communications}
+
+
+
+
+\subsubsection{Lecture 4 Temps et datation  dans les syst\`emes 
+  r\'epartis -  Protocoles de groupe et protocoles d'exclusion mutuelle }
+  
+\href{http://mery54.github.io/teaching/aspd/lecturesnotes/ASPD4.pdf}{Protocoles
+  de groupe et protocoles d'exclusion mutuelle}
+
+
+\subsubsection{Lecture 5 Election}
+  
+\href{http://mery54.github.io/teaching/aspd/lecturesnotes/ASPD5.pdf}{Election}
+
+
+
+
+
+\subsubsection{Lecture 6 Auto-stabilisation - nommage}
+  
+\href{http://mery54.github.io/teaching/aspd/lecturesnotes/ASPD6.pdf}{Election}
+
+
+
+  \subsection{Lectures Notes}
+
+  \begin{itemize}
+  \item[]   Notes sur la logique
+    \href{http://mery54.github.io/teaching/movex/lecturesnotes/preprint-chapterlogique.pdf}{Notes sur la logique}.
+
+     \item[]   Notes sur la vérification
+    \href{http://mery54.github.io/teaching/movex/lecturesnotes/preprint-chapterverification.pdf}{Notes sur la vérification}.
+
+  \end{itemize}
+
+
+  
+
+\subsection{Tutorials}
+
+
+\begin{enumerate}
+
+
+
+  \item[TD1]   Serie  1
+    \href{http://mery54.github.io/teaching/aspd/lecturesnotes/aspd-app-td1.pdf}{Tutorials 
+      serie 1}.
+
+        \href{http://mery54.github.io/teaching/aspd/models/tlatd1.zip}{TLA 
+           solutions for serie 1
+         }.
+
+\item[TD2]   Serie  Pluscal (figure aussi dans le fichier de la serie 1)
+    \href{http://mery54.github.io/teaching/aspd/lecturesnotes/aspd-app-pluscal.pdf}{Tutorials 
+      serie Pluscal}.
+
+        \href{http://mery54.github.io/teaching/aspd/models/tdpluscal.zip}{TLA 
+           solutions for serie Pluscal
+         }.
+         
+
+         
+\item[TD3]   Serie  2
+    \href{http://mery54.github.io/teaching/aspd/lecturesnotes/aspd-app-td2.pdf}{Tutorials 
+      serie 2}.
+
+        \href{http://mery54.github.io/teaching/aspd/models/tlatd2.zip}{TLA 
+           solutions for serie 2
+         }.
+
+
+         
+\item[TD3]   Serie  3
+    \href{http://mery54.github.io/teaching/aspd/lecturesnotes/aspd-app-td3.pdf}{Tutorials 
+      serie 3}.
+
+        \href{http://mery54.github.io/teaching/aspd/models/tlatd3.zip}{TLA 
+           solutions for serie 3
+         }.
+
+         \end{enumerate}
+
+  
+  
+  \subsection{Assessment}
+\label{sec:project}
+
+The assessment  of students is based on three works:
+\begin{itemize}
+\item Two  written  exams: E1 and E2
+\item  A practical exam: TP
+ \end{itemize}
+
+
+  \subsection{Projet ASPD}
+\label{sec:project}
+
+Le  projet est décrit   dans ce
+\href{http://mery54.github.io/teaching/aspd/lecturesnotes/projetaspd2025.pdf}{document}.
+
+Vous pourrez  récupérer les  documents  complémentaires  piur réaliser
+les sujets sur ce \href{http://mery54.github.io/teaching/aspd/lecturesnotes/documents.zip}{ lien  sous la forme  d'un fichier documents.zip.}
+
+
+
+Vous devez  constituer des groupes de deux personnes   et choisir un
+sujet  différent pour chaque groupe.
+
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
+
+
+
+
+      
