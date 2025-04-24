@@ -15,16 +15,17 @@
 \doTocEntry\tocsubsubsection{3.1.3}{\csname a:TocLink\endcsname{8}{x8-140003.1.3}{QQ2-8-14}{Lecture 2 {Théorie du point-fixe et applications}}}{10}\relax 
 \doTocEntry\tocsubsubsection{3.1.4}{\csname a:TocLink\endcsname{8}{x8-150003.1.4}{QQ2-8-15}{Lecture 3 {Sémantique ds langages de programmation}}}{11}\relax 
 \doTocEntry\tocsubsubsection{3.1.5}{\csname a:TocLink\endcsname{8}{x8-160003.1.5}{QQ2-8-16}{Lecture 4 {Interprétation Abstraite}}}{11}\relax 
-\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{9}{x9-170004}{QQ2-9-17}{Course MALG1/MOVEX1 at Telecom Nancy}}{12}\relax 
-\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{10}{x10-180004.1}{QQ2-10-18}{Slides for the course MALG1/MOVEX1}}{12}\relax 
-\doTocEntry\tocsubsubsection{4.1.1}{\csname a:TocLink\endcsname{10}{x10-190004.1.1}{QQ2-10-19}{Lecture 0 {Overview of the course }}}{12}\relax 
-\doTocEntry\tocsubsubsection{4.1.2}{\csname a:TocLink\endcsname{10}{x10-200004.1.2}{QQ2-10-20}{Lecture 1 {Mod\'elisation, sp\'ecification et v\'erification} (I) }}{12}\relax 
-\doTocEntry\tocsubsubsection{4.1.3}{\csname a:TocLink\endcsname{10}{x10-210004.1.3}{QQ2-10-21}{Lecture 2 {Mod\'elisation, sp\'ecification et v\'erification} (II)}}{13}\relax 
-\doTocEntry\tocsubsubsection{4.1.4}{\csname a:TocLink\endcsname{10}{x10-220004.1.4}{QQ2-10-22}{Lecture 3 {Mod\'elisation, sp\'ecification et v\'erification} (III)}}{13}\relax 
-\doTocEntry\tocsubsubsection{4.1.5}{\csname a:TocLink\endcsname{10}{x10-230004.1.5}{QQ2-10-23}{Lecture 4 {Vérification mécanisée de contrats} (I)}}{13}\relax 
-\doTocEntry\tocsubsubsection{4.1.6}{\csname a:TocLink\endcsname{10}{x10-240004.1.6}{QQ2-10-24}{Lecture 5 {Vérification mécanisée de contrats} (II)}}{13}\relax 
-\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{11}{x11-250004.2}{QQ2-11-25}{Lectures Notes}}{14}\relax 
-\doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{12}{x12-260004.3}{QQ2-12-26}{Tutorials}}{15}\relax 
-\doTocEntry\tocsubsection{4.4}{\csname a:TocLink\endcsname{13}{x13-270004.4}{QQ2-13-27}{Assessment}}{16}\relax 
-\doTocEntry\tocsubsection{4.5}{\csname a:TocLink\endcsname{14}{x14-280004.5}{QQ2-14-28}{Examens passés}}{17}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{15}{x15-29000}{QQ2-15-29}{References}}{18}\relax 
+\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{9}{x9-170003.2}{QQ2-9-17}{Tutorials}}{12}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{10}{x10-180004}{QQ2-10-18}{Course MALG1/MOVEX1 at Telecom Nancy}}{13}\relax 
+\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{11}{x11-190004.1}{QQ2-11-19}{Slides for the course MALG1/MOVEX1}}{13}\relax 
+\doTocEntry\tocsubsubsection{4.1.1}{\csname a:TocLink\endcsname{11}{x11-200004.1.1}{QQ2-11-20}{Lecture 0 {Overview of the course }}}{13}\relax 
+\doTocEntry\tocsubsubsection{4.1.2}{\csname a:TocLink\endcsname{11}{x11-210004.1.2}{QQ2-11-21}{Lecture 1 {Mod\'elisation, sp\'ecification et v\'erification} (I) }}{13}\relax 
+\doTocEntry\tocsubsubsection{4.1.3}{\csname a:TocLink\endcsname{11}{x11-220004.1.3}{QQ2-11-22}{Lecture 2 {Mod\'elisation, sp\'ecification et v\'erification} (II)}}{14}\relax 
+\doTocEntry\tocsubsubsection{4.1.4}{\csname a:TocLink\endcsname{11}{x11-230004.1.4}{QQ2-11-23}{Lecture 3 {Mod\'elisation, sp\'ecification et v\'erification} (III)}}{14}\relax 
+\doTocEntry\tocsubsubsection{4.1.5}{\csname a:TocLink\endcsname{11}{x11-240004.1.5}{QQ2-11-24}{Lecture 4 {Vérification mécanisée de contrats} (I)}}{14}\relax 
+\doTocEntry\tocsubsubsection{4.1.6}{\csname a:TocLink\endcsname{11}{x11-250004.1.6}{QQ2-11-25}{Lecture 5 {Vérification mécanisée de contrats} (II)}}{14}\relax 
+\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{12}{x12-260004.2}{QQ2-12-26}{Lectures Notes}}{15}\relax 
+\doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{13}{x13-270004.3}{QQ2-13-27}{Tutorials}}{16}\relax 
+\doTocEntry\tocsubsection{4.4}{\csname a:TocLink\endcsname{14}{x14-280004.4}{QQ2-14-28}{Assessment}}{17}\relax 
+\doTocEntry\tocsubsection{4.5}{\csname a:TocLink\endcsname{15}{x15-290004.5}{QQ2-15-29}{Examens passés}}{18}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{16}{x16-30000}{QQ2-16-30}{References}}{19}\relax 
