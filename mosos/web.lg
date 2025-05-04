@@ -1,5 +1,7 @@
+htfcss: phvr7t  font-family: sans-serif;
 htfcss: ptmri7t font-style: italic;
 htfcss: ptmb7t  font-weight: bold;
+htfcss: ptmr7t font-family: monospace,monospace;
 htfcss:  pcrr7t  font-family: 'Nimbus Mono L', serif;
 htfcss:  pcrbo7t  font-weight: bold; font-style: oblique; font-family: 'Nimbus Mono L', serif;
 htfcss: ptmr7t font-family: monospace,monospace;
@@ -8,28 +10,8 @@ htfcss: ptmr7t font-family: monospace,monospace;
 File: web.html
 File: web.css
 File: web.tmp
-File: contentsname.html
-File: DocumentationandTools.html
-File: CourseEMUEventBatMaynoothUniversity.html
-File: SlidesforthecourseEMU.html
-File: Tutorials.html
-File: EventBModels.html
-File: CourseMCFSIatTelecomNancy.html
-File: SlidesforthecourseMCFSI.html
-File: Tutorials1.html
-File: Project.html
-File: EventBModels1.html
-File: PastexamsofthecourseMCFSI.html
-File: CourseMsCinComputerScienceModellingandverifyingsoftwarebasedsystemsforMasterinCompurerScienceoftheUniversityofLorraine.html
-File: Slidesofthecourse.html
-File: Tutorials2.html
-File: EventBModels2.html
-File: Project1.html
-File: PastexamsoftheCourseMsCinComputerScienceModellingandverifyingsoftwarebasedsystemsforMasterinComp.html
-File: CourseDISCONTModellinghybridsystems.html
 File: Documentation.html
-File: Slidesforthecourse20202021.html
-File: Slidesforthecourse20212022.html
+File: CourseMCFSIatTelecomNancy.html
 File: refname.html
 Css: p{margin-top:0;margin-bottom:0}
 Css: p.indent{text-indent:0;}
@@ -213,5 +195,8 @@ Font("ptmr7t","","10","120")
 Font("ptmr7t","","10","207")
 Font("ptmr7t","","10","144")
 Font("pcrr7t","","10","144")
-Font("ptmb7t","","10","120")
+Font("ptmr7t","","10","109")
+Font("ptmb7t","","10","109")
+Font("ptmri7t","","10","109")
 Font("ptmri7t","","10","120")
+Font("phvr7t","","10","120")
