@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{abrial2010}
+J.-R. Abrial.
+\newblock {\em {Modeling in Event-B: System and Software Engineering}}.
+\newblock 2010.
+
 \bibitem{losl-eatcs}
 Dines Bj{\o}rner and Martin~C.\ Henson, editors.
 \newblock {\em Logics of Specification Languages}.
