@@ -27,6 +27,10 @@
 
 (eof "/Users/mery/lectures/malg/webmovex/eb2latex.tex")
 
+(toc "toc" "    1 TP Noté SLE ENSEM lundi 19 mai 2025 " "/Users/mery/lectures/malg/webmovex/web.tex" nil 2 "1" "\\section{TP Noté  SLE ENSEM lundi 19 mai 2025 }" 3885)
+
+("sec:tp-note-sle" "s" nil "/Users/mery/lectures/malg/webmovex/web.tex" nil "")
+
 (toc "toc" "    1 Documentation and Tools" "/Users/mery/lectures/malg/webmovex/web.tex" nil 2 "1" "\\section{Documentation and Tools}" 3885)
 
 (toc "toc" "    2 Course MALG1/MOVEX1 at Telecom Nancy" "/Users/mery/lectures/malg/webmovex/web.tex" nil 2 "2" "\\section{Course MALG1/MOVEX1 at Telecom Nancy}" 4732)
