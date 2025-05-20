@@ -5,6 +5,7 @@ all:
 
 go:
 	make4ht web.tex "3,sec-filename,fn-in"
+	cp web.html index.html
 
 up:
 	$(MAKE) -C /Users/mery/lectures/malg/webmovex ht	
