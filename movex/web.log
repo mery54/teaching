@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  20 MAY 2025 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  22 MAY 2025 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1513,46 +1513,8 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file TPNotéSLEENSEMlundi19mai2025.html ---
-[6
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
 --- file DocumentationandTools.html ---
-[7
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file CourseMOVEX2atTelecomNancy.html ---
-(./web.4ct)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file SlidesforthecourseMOVEX2.html ---
-[8
-
-] [9]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Tutorials.html ---
-[10
+[6
 
 ]
 \openout15 = `web.tmp'.
@@ -1570,17 +1532,17 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file SlidesforthecourseMALG2.html ---
-[11
+[7
 
-] [12]
+] [8]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file Tutorials1.html ---
-[13
+--- file Tutorials.html ---
+[9
 
 ]
 \openout15 = `web.tmp'.
@@ -1598,9 +1560,9 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file SlidesforthecourseMALG1MOVEX1.html ---
-[14
+[10
 
-] [15]
+] [11]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1608,7 +1570,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file LecturesNotes.html ---
-[16
+[12
 
 ]
 \openout15 = `web.tmp'.
@@ -1617,8 +1579,8 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file Tutorials2.html ---
-[17
+--- file Tutorials1.html ---
+[13
 
 ]
 \openout15 = `web.tmp'.
@@ -1628,7 +1590,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file Assessment.html ---
-[18
+[14
 
 ]
 \openout15 = `web.tmp'.
@@ -1638,6 +1600,44 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
 (./web.tmp)
 --- file Examenspassés.html ---
+[15
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file CourseMOVEX2atTelecomNancy.html ---
+(./web.4ct)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file SlidesforthecourseMOVEX2.html ---
+[16
+
+] [17]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file Tutorials2.html ---
+[18
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file TPNotéSLEENSEMlundi19mai2025.html ---
 (./web.bbl [19
 
 ]
@@ -1665,11 +1665,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  32499 strings out of 474117
- 597179 string characters out of 5743707
+ 597175 string characters out of 5743707
  1933184 words of memory out of 5000000
  53901 multiletter control sequences out of 15000+600000
  570110 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,930b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (21 pages, 94456 bytes).
+Output written on web.dvi (21 pages, 94640 bytes).
