@@ -10,6 +10,7 @@ go:
 up:
 	$(MAKE) -C /Users/mery/webmery ht
 	$(MAKE) -C /Users/mery/lectures/malg/webmovex ht
+	$(MAKE) -C /Users/mery/lectures/mosos/webmosos ht
 	$(MAKE) -C /Users/mery/lectures/mvsi/webmvsi ht
 	$(MAKE) -C /Users/mery/github/teaching all
 
