@@ -20,11 +20,11 @@
 \doTocEntry\tocsubsection{2.5}{\csname a:TocLink\endcsname{9}{x9-190002.5}{QQ2-9-19}{Past exams of the course MCFSI}}{15}\relax 
 \doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{10}{x10-200003}{QQ2-10-20}{Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine}}{16}\relax 
 \doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{11}{x11-210003.1}{QQ2-11-21}{Slides of the course}}{16}\relax 
-\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{11}{x11-220003.1.1}{QQ2-11-22}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf}{The Modelling Language Event-B}.}}{16}\relax 
-\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{11}{x11-230003.1.2}{QQ2-11-23}{ Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf}{Proof Obligations}.}}{16}\relax 
-\doTocEntry\tocsubsubsection{3.1.3}{\csname a:TocLink\endcsname{11}{x11-240003.1.3}{QQ2-11-24}{Lecture 3 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect2.pdf}{Correctness by Construction with the Modelling Language Event-B using the Refinement}.}}{17}\relax 
-\doTocEntry\tocsubsubsection{3.1.4}{\csname a:TocLink\endcsname{11}{x11-250003.1.4}{QQ2-11-25}{ Lecture 4 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect3.pdf}{Access Control }}}{17}\relax 
-\doTocEntry\tocsubsubsection{3.1.5}{\csname a:TocLink\endcsname{11}{x11-260003.1.5}{QQ2-11-26}{ Lecture 5 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect-verification.pdf}{Checking contracts with Event-B}}}{17}\relax 
+\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{11}{x11-220003.1.1}{QQ2-11-22}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillectcm1.pdf}{The Modelling Language Event-B}.}}{16}\relax 
+\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{11}{x11-230003.1.2}{QQ2-11-23}{ Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillectcm2.pdf}{Proof Obligations}.}}{16}\relax 
+\doTocEntry\tocsubsubsection{3.1.3}{\csname a:TocLink\endcsname{11}{x11-240003.1.3}{QQ2-11-24}{Lecture 3 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillectcm3.pdf}{Correctness by Construction with the Modelling Language Event-B using the Refinement}.}}{17}\relax 
+\doTocEntry\tocsubsubsection{3.1.4}{\csname a:TocLink\endcsname{11}{x11-250003.1.4}{QQ2-11-25}{ Lecture 4 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillectcm4.pdf}{Access Control }}}{17}\relax 
+\doTocEntry\tocsubsubsection{3.1.5}{\csname a:TocLink\endcsname{11}{x11-260003.1.5}{QQ2-11-26}{ Lecture 5 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillectcm5.pdf}{Checking contracts with Event-B}}}{17}\relax 
 \doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{12}{x12-270003.2}{QQ2-12-27}{Tutorials}}{18}\relax 
 \doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{13}{x13-280003.3}{QQ2-13-28}{Event-B Models}}{19}\relax 
 \doTocEntry\tocsubsubsection{3.3.1}{\csname a:TocLink\endcsname{13}{x13-290003.3.1}{QQ2-13-29}{Event-B Archives for the lectures}}{19}\relax 
@@ -57,7 +57,7 @@
 \doTocEntry\tocsubsection{5.3}{\csname a:TocLink\endcsname{23}{x23-560005.3}{QQ2-23-56}{Event-B Models}}{29}\relax 
 \doTocEntry\tocsubsubsection{5.3.1}{\csname a:TocLink\endcsname{23}{x23-570005.3.1}{QQ2-23-57}{Event-B Archives for the lectures}}{29}\relax 
 \doTocEntry\tocsubsubsection{5.3.2}{\csname a:TocLink\endcsname{23}{x23-580005.3.2}{QQ2-23-58}{Event-B Archives for the tutorials}}{29}\relax 
-\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{24}{x24-590006}{QQ2-24-59}{Course MsC in Computer Science 2024/2025: Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine}}{30}\relax 
+\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{24}{x24-590006}{QQ2-24-59}{Course MsC in Computer Science 2024/2025MsC: Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine}}{30}\relax 
 \doTocEntry\tocsubsection{6.1}{\csname a:TocLink\endcsname{25}{x25-600006.1}{QQ2-25-60}{Slides of the course}}{30}\relax 
 \doTocEntry\tocsubsubsection{6.1.1}{\csname a:TocLink\endcsname{25}{x25-610006.1.1}{QQ2-25-61}{Lecture 1 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-1.pdf}{The Modelling Language Event-B}.}}{30}\relax 
 \doTocEntry\tocsubsubsection{6.1.2}{\csname a:TocLink\endcsname{25}{x25-620006.1.2}{QQ2-25-62}{ Lecture 2 \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillect1-2.pdf}{Proof Obligations}.}}{30}\relax 
