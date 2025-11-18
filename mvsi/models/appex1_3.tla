@@ -51,12 +51,12 @@ Inv2 ==  M["po"] \leq  Q
 QInv4 ==  M["pi"]+M["p5"]+M["po"]+M["p2"]+M["p4"] = N+2 
 Inv5 ==  M["p3"]+M["p4"]+M["p1"]+M["p2"] = 2
 
-QInv3 ==  M["p3"] = 0
+Inv3 ==  M["p3"] = 0
 
 Inv6 == M["p1"] + M["p2"] = 1
  
 Question == M["po"] #  N
 Safety1 ==  M["p2"] \leq  1  /\ M["p2"] \geq  0
 Check == Inv6
-safe == Inv5
+safe == Inv3
 =============================================

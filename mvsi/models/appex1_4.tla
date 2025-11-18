@@ -67,16 +67,11 @@ Next ==
 (* vérification du contrôle *)
 safety1 == pc \in locs
 (* correction partielle *)
-
 safety2 == pc="HALT" => z1 = x1 \div x2 /\ z2= x1 % x2 /\ PrintT(z1) /\ PrintT(z2)
-
 safety3 == pc="HALT" =>     x1 = z1*x2 +z2  /\ 0 \leq z2 /\ z2 < x2
-
-
+(* vérification de l'absence d'erreurs à l'exé&cution ou RTE *)
 safety4 == BF(z1) /\BF(z2) /\BF(y1) /\BF(y2) /\BF(y3)
 
 
-tes == safety1 /\ safety2 /\ safety3 /\ safety4
- 
 Safety == safety1 /\ safety2  /\ safety3  /\ safety4 
 =============================================================================

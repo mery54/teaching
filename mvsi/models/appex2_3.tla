@@ -1,4 +1,5 @@
 -------------------------------- MODULE appex2_3 --------------------------------
+(* prime numbers *)
 EXTENDS Naturals,TLC,Integers
 CONSTANTS x0,max,u
 min == -max
@@ -57,7 +58,7 @@ Q3 == pc ="HALT" => (x=x0) /\ (z = prime(x))
 Q4 == pc \in Locs
 Q5 ==  rte(x) /\ rte(y)
 
-Q == Q1 /\  Q2 /\ Q3 /\ Q4 /\ Q5
+Q ==   Q2 /\ Q3 /\ Q4 /\ Q5
 
 
 =============================================

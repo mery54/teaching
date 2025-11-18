@@ -4,9 +4,10 @@ EXTENDS Naturals,TLC,Integers
 ------------------
 CONSTANTS x,max,u
 min == -max
+--------------------------------
 VARIABLES  y1,y2,z,pc
 ---------------------------------
-BF(X) == X#u => X \in min..max
+BF(Y) == Y#u => Y \in min..max
 
 ASSUME  BF(x) 
 
@@ -41,7 +42,7 @@ ePrint == pc="HALT" /\ PrintT(z)/\ UNCHANGED <<y1,y2,z,pc>>
 -----------
 Next == start  \/ case1 \/ case2 \/ case21 \/ case22 \/ UNCHANGED <<y1,y2,z,pc>> \/ ePrint
 init1 == y1 \in Int /\ y2 \in Int /\ z \in Int /\ pc = "START"
-Init  == y1 =0  /\ y2 = 0  /\ z =0  /\ pc = "START"
+Init  == y1 =u  /\ y2 = u  /\ z =u  /\ pc = "START"
 
 --------------------------
 
