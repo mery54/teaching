@@ -9,12 +9,12 @@
 \contentsline {subsection}{\numberline {2.2}Tutorials}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Project}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Event-B Models}{4}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Event-B Archives for the lectures}{4}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1}Event-B Archives for the lectures}{5}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}Event-B Archives for the tutorial 1}{5}{subsubsection.2.4.2}%
 \contentsline {subsubsection}{\numberline {2.4.3}Event-B Archives for the tutorial 2}{5}{subsubsection.2.4.3}%
 \contentsline {subsubsection}{\numberline {2.4.4}Event-B Archives for the tutorial 3}{5}{subsubsection.2.4.4}%
 \contentsline {subsubsection}{\numberline {2.4.5}Event-B Archives for the tutorial 4}{5}{subsubsection.2.4.5}%
-\contentsline {subsubsection}{\numberline {2.4.6}Event-B Archives}{5}{subsubsection.2.4.6}%
+\contentsline {subsubsection}{\numberline {2.4.6}Event-B Archives}{6}{subsubsection.2.4.6}%
 \contentsline {subsection}{\numberline {2.5}Past exams of the course MCFSI}{6}{subsection.2.5}%
 \contentsline {section}{\numberline {3}Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Compurer Science of the University of Lorraine}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Slides of the course}{6}{subsection.3.1}%
@@ -25,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {3.1.5} Lecture 5 \href {http://mery54.github.io/teaching/mosos/lecturesnotes/masterillectcm5.pdf}{Checking contracts with Event-B}}{6}{subsubsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.2}Tutorials}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Event-B Models}{6}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Event-B Archives for the lectures}{6}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1}Event-B Archives for the lectures}{7}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Event-B Archives for the tutorial 1}{7}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Event-B Archives for the tutorial 2}{7}{subsubsection.3.3.3}%
 \contentsline {paragraph}{Exercice 1 Tutorial 2}{7}{section*.2}%
@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{\numberline {3.3.4}Event-B Archives for the tutorial 3}{7}{subsubsection.3.3.4}%
 \contentsline {paragraph}{Exercice 1 Tutorial 3}{7}{section*.8}%
 \contentsline {paragraph}{Exercice 2 Tutorial 3}{7}{section*.9}%
-\contentsline {subsection}{\numberline {3.4}Project}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}Project}{8}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Past exams of the Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Comp}{8}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Course DISCONT: Modelling hybrid systems}{8}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Documentation}{8}{subsection.4.1}%
