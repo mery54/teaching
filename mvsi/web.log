@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  24 NOV 2025 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  24 NOV 2025 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1582,6 +1582,9 @@ Missing character: There is no ® in font ptmr7t!
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 \c@ex=\count347
+[1
+
+] [2]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 103
 .
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1604,7 +1607,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 (./web.tmp)
 --- file contentsname.html ---
-(./web.4ct)
+[3] (./web.4ct) [4]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1616,7 +1619,9 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 24.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
+) [5
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1633,6 +1638,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (./web.tmp)
 --- file Cours0hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture0pdfCM
 0.html ---
+[6
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1641,6 +1649,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (./web.tmp)
 --- file Cours1hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture1pdfCM
 1.html ---
+[7
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1649,6 +1660,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (./web.tmp)
 --- file Cours2hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture2pdfCM
 2.html ---
+[8
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1657,6 +1671,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (./web.tmp)
 --- file Cours3hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm
 3pdfCM3.html ---
+[9
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1665,6 +1682,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (./web.tmp)
 --- file Cours4hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm
 4pdfCM4.html ---
+[10
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1673,6 +1693,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (./web.tmp)
 --- file Cours5hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20242p
 dfCM5.html ---
+[11
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1681,6 +1704,9 @@ dfCM5.html ---
 (./web.tmp)
 --- file Cours6hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20243p
 dfCM6.html ---
+[12
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1688,6 +1714,9 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file TravauxDirig√©s.html ---
+[13
+
+] [14]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1695,6 +1724,9 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file ProjetMVSI.html ---
+[15
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1710,6 +1742,9 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file TD1.html ---
+[16
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1717,6 +1752,9 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file TD2.html ---
+[17
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1724,6 +1762,9 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file TD3.html ---
+[18
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1731,7 +1772,9 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file Annalesdesexamenspass√©s.html ---
-(./web.bbl
+(./web.bbl [19
+
+]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1739,17 +1782,9 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file refname.html ---
-)
-l.358 --- TeX4ht warning --- \SaveEverypar's: 2 at \begin{tcb@savebox} and 3 \e
-nd{tcb@savebox} ---
-l.358 --- TeX4ht warning --- \SaveEverypar's: 1 at \begin{tcolorbox} and 2 \end
-{tcolorbox} ---
-[1
+) [20
 
-] [2
-
-
-] [3] [4
+] [21
 
 ] (./web.aux)
  ***********
@@ -1758,12 +1793,12 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 37678 strings out of 474117
- 747546 string characters out of 5743707
- 1976184 words of memory out of 5000000
- 58971 multiletter control sequences out of 15000+600000
+ 37664 strings out of 474117
+ 747385 string characters out of 5743707
+ 1934184 words of memory out of 5000000
+ 58957 multiletter control sequences out of 15000+600000
  575309 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,10n,131p,901b,1008s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,8n,131p,901b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (4 pages, 101800 bytes).
+Output written on web.dvi (21 pages, 104888 bytes).

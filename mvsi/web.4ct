@@ -1,20 +1,20 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{2}{x2-1000}{QQ2-2-1}{Contents}}{2}\relax 
-\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{3}{x3-20001}{QQ2-3-2}{Documentation et Outils}}{2}\relax 
-\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{4}{x4-30002}{QQ2-4-3}{Slides du cours}}{2}\relax 
-\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{5}{x5-40002.1}{QQ2-5-4}{Cours 0 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture0.pdf}{CM0}. }}{2}\relax 
-\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{6}{x6-50002.2}{QQ2-6-5}{Cours 1 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture1.pdf}{CM1}. }}{2}\relax 
-\doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{7}{x7-60002.3}{QQ2-7-6}{Cours 2 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture2.pdf}{CM2}. }}{2}\relax 
-\doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{8}{x8-70002.4}{QQ2-8-7}{Cours 3 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm3.pdf}{CM3}. }}{2}\relax 
-\doTocEntry\tocsubsection{2.5}{\csname a:TocLink\endcsname{9}{x9-80002.5}{QQ2-9-8}{Cours 4 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm4.pdf}{CM4}. }}{2}\relax 
-\doTocEntry\tocsubsection{2.6}{\csname a:TocLink\endcsname{10}{x10-90002.6}{QQ2-10-9}{Cours 5 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-2.pdf}{CM5}. }}{2}\relax 
-\doTocEntry\tocsubsection{2.7}{\csname a:TocLink\endcsname{11}{x11-100002.7}{QQ2-11-10}{Cours 6 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-3.pdf}{CM6}. }}{2}\relax 
-\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{12}{x12-110003}{QQ2-12-11}{Travaux Dirigés}}{2}\relax 
-\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{13}{x13-120004}{QQ2-13-12}{Projet MVSI}}{2}\relax 
-\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{14}{x14-130005}{QQ2-14-13}{Modèles TLA}}{2}\relax 
-\doTocEntry\tocsubsection{5.1}{\csname a:TocLink\endcsname{15}{x15-140005.1}{QQ2-15-14}{TD1}}{2}\relax 
-\doTocEntry\tocsubsection{5.2}{\csname a:TocLink\endcsname{16}{x16-150005.2}{QQ2-16-15}{TD2}}{2}\relax 
-\doTocEntry\tocsubsection{5.3}{\csname a:TocLink\endcsname{17}{x17-160005.3}{QQ2-17-16}{TD3}}{2}\relax 
-\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{18}{x18-170006}{QQ2-18-17}{Annales des examens passés}}{2}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{19}{x19-18000}{QQ2-19-18}{References}}{2}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{2}{x2-1000}{QQ2-2-1}{Contents}}{4}\relax 
+\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{3}{x3-20001}{QQ2-3-2}{Documentation et Outils}}{5}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{4}{x4-30002}{QQ2-4-3}{Slides du cours}}{6}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{5}{x5-40002.1}{QQ2-5-4}{Cours 0 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture0.pdf}{CM0}. }}{6}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{6}{x6-50002.2}{QQ2-6-5}{Cours 1 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture1.pdf}{CM1}. }}{7}\relax 
+\doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{7}{x7-60002.3}{QQ2-7-6}{Cours 2 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture2.pdf}{CM2}. }}{8}\relax 
+\doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{8}{x8-70002.4}{QQ2-8-7}{Cours 3 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm3.pdf}{CM3}. }}{9}\relax 
+\doTocEntry\tocsubsection{2.5}{\csname a:TocLink\endcsname{9}{x9-80002.5}{QQ2-9-8}{Cours 4 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm4.pdf}{CM4}. }}{10}\relax 
+\doTocEntry\tocsubsection{2.6}{\csname a:TocLink\endcsname{10}{x10-90002.6}{QQ2-10-9}{Cours 5 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-2.pdf}{CM5}. }}{11}\relax 
+\doTocEntry\tocsubsection{2.7}{\csname a:TocLink\endcsname{11}{x11-100002.7}{QQ2-11-10}{Cours 6 \href  {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-3.pdf}{CM6}. }}{12}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{12}{x12-110003}{QQ2-12-11}{Travaux Dirigés}}{13}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{13}{x13-120004}{QQ2-13-12}{Projet MVSI}}{15}\relax 
+\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{14}{x14-130005}{QQ2-14-13}{Modèles TLA}}{16}\relax 
+\doTocEntry\tocsubsection{5.1}{\csname a:TocLink\endcsname{15}{x15-140005.1}{QQ2-15-14}{TD1}}{16}\relax 
+\doTocEntry\tocsubsection{5.2}{\csname a:TocLink\endcsname{16}{x16-150005.2}{QQ2-16-15}{TD2}}{17}\relax 
+\doTocEntry\tocsubsection{5.3}{\csname a:TocLink\endcsname{17}{x17-160005.3}{QQ2-17-16}{TD3}}{18}\relax 
+\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{18}{x18-170006}{QQ2-18-17}{Annales des examens passés}}{19}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{19}{x19-18000}{QQ2-19-18}{References}}{20}\relax 
 \par 

@@ -8,9 +8,9 @@
 \contentsline {subsection}{\numberline {2.6}Cours 5 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-2.pdf}{CM5}. }{2}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Cours 6 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-3.pdf}{CM6}. }{2}{subsection.2.7}%
 \contentsline {section}{\numberline {3}Travaux Dirigés}{2}{section.3}%
-\contentsline {section}{\numberline {4}Projet MVSI}{2}{section.4}%
-\contentsline {section}{\numberline {5}Modèles TLA}{2}{section.5}%
-\contentsline {subsection}{\numberline {5.1}TD1}{2}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}TD2}{2}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}TD3}{2}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Annales des examens passés}{2}{section.6}%
+\contentsline {section}{\numberline {4}Projet MVSI}{3}{section.4}%
+\contentsline {section}{\numberline {5}Modèles TLA}{3}{section.5}%
+\contentsline {subsection}{\numberline {5.1}TD1}{3}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}TD2}{3}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}TD3}{3}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Annales des examens passés}{3}{section.6}%

@@ -1,82 +1,55 @@
 <!DOCTYPE html> 
-<html lang="en-US" xml:lang="en-US" > 
+<html lang='en-US' xml:lang='en-US'> 
 <head><title>Modlisation et vrification des systmes informatiques
 Cours pour la formation d’ingnieurs par apprentissage</title> 
-<meta  charset="utf-8" /> 
-<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
-<meta name="viewport" content="width=device-width,initial-scale=1" /> 
-<link rel="stylesheet" type="text/css" href="web.css" /> 
-<meta name="src" content="web.tex" /> 
-</head><body 
->
-   <div class="tcolorbox tcolorbox" id="tcolobox-1">     
-<div class="tcolorbox-title">
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='web.css' rel='stylesheet' type='text/css' /> 
+<meta content='web.tex' name='src' /> 
+</head><body>
+   <div class='maketitle'>
                                                                                        
                                                                                        
-</div> 
-<div class="tcolorbox-content"><div class="maketitle">
+                                                                                       
+                                                                                       
 
-<h2 class="titleHead">Modélisation et vérification des systèmes
+<h2 class='titleHead'>Modélisation et vérification des systèmes
 informatiques<br />
 Cours pour la formation d’ingénieurs par
 apprentissage</h2>
-            <div class="author" ><span 
-class="ptmr7t-x-x-144">Dominique M</span><span 
-class="ptmr7t-x-x-144">éry</span>
-<br />       <span 
-class="ptmr7t-x-x-144">LORIA &#x0026; Telecom Nancy</span>
-<br />         <span 
-class="ptmr7t-x-x-144">Universit</span><span 
-class="ptmr7t-x-x-144">é de Lorraine</span><br /><a 
-href="dominique.mery@loria.fr" class="url" ><span 
-class="pcrr7t-x-x-144">dominique.mery@loria.fr</span></a></div>
-<br />
-<div class="date" ><span 
-class="ptmr7t-x-x-144">November 24, 2025(11:38</span><span 
-class="ptmr7t-x-x-144"> A.M.)</span></div>
+<div class='author'><span class='ptmr7t-x-x-144'>Dominique Méry</span>
+<br /><span class='ptmr7t-x-x-144'>LORIA &amp; Telecom Nancy</span>
+<br /><span class='ptmr7t-x-x-144'>Université de Lorraine</span>
+<br /><a class='url' href='dominique.mery@loria.fr'><span class='pcrr7t-x-x-144'>dominique.mery@loria.fr</span></a></div><br />
+<div class='date'><span class='ptmr7t-x-x-144'>November 24, 2025(11:45 A.M.)</span></div>
 </div>
-<!--l. 105--><p class="noindent" >Le cours MVSI est destiné aux élèves apprentis de seconde année de Telecom Nancy.. Les
-objectifs sont de les initier aux techniques de modélisation et de vérification, en utilisant ds
-outils comme TLA Toolbox et Frama-c. Un projet est réalisé en groupe de deux personnes et
-appliquent les méthodes et techniques de ce cours.
+<!-- l. 105 --><p class='indent'>Le cours MVSI est destiné aux élèves apprentis de seconde année de Telecom Nancy.. Les
+objectifs sont de les initier aux techniques de modélisation et de vérification, en utilisant ds outils
+comme TLA Toolbox et Frama-c. Un projet est réalisé en groupe de deux personnes et appliquent les
+méthodes et techniques de ce cours.
 </p>
-<div class="tableofcontents">
-<span class="likesectionToc" ><a 
-href="contentsname.html#x2-1000" id="QQ2-2-1">Contents</a></span>
-<br /><span class="sectionToc" >1 <a 
-href="DocumentationetOutils.html#x3-20001" id="QQ2-3-2">Documentation et Outils</a></span>
-<br /><span class="sectionToc" >2 <a 
-href="Slidesducours.html#x4-30002" id="QQ2-4-3">Slides du cours</a></span>
-<br /><span class="subsectionToc" >2.1 <a 
-href="Cours0hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture0pdfCM0.html#x5-40002.1" id="QQ2-5-4">Cours 0  CM0. </a></span>
-<br /><span class="subsectionToc" >2.2 <a 
-href="Cours1hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture1pdfCM1.html#x6-50002.2" id="QQ2-6-5">Cours 1  CM1. </a></span>
-<br /><span class="subsectionToc" >2.3 <a 
-href="Cours2hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture2pdfCM2.html#x7-60002.3" id="QQ2-7-6">Cours 2  CM2. </a></span>
-<br /><span class="subsectionToc" >2.4 <a 
-href="Cours3hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm3pdfCM3.html#x8-70002.4" id="QQ2-8-7">Cours 3  CM3. </a></span>
-<br /><span class="subsectionToc" >2.5 <a 
-href="Cours4hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm4pdfCM4.html#x9-80002.5" id="QQ2-9-8">Cours 4  CM4. </a></span>
-<br /><span class="subsectionToc" >2.6 <a 
-href="Cours5hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20242pdfCM5.html#x10-90002.6" id="QQ2-10-9">Cours 5  CM5. </a></span>
-<br /><span class="subsectionToc" >2.7 <a 
-href="Cours6hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20243pdfCM6.html#x11-100002.7" id="QQ2-11-10">Cours 6  CM6. </a></span>
-<br /><span class="sectionToc" >3 <a 
-href="TravauxDirigés.html#x12-110003" id="QQ2-12-11">Travaux Dirigés</a></span>
-<br /><span class="sectionToc" >4 <a 
-href="ProjetMVSI.html#x13-120004" id="QQ2-13-12">Projet MVSI</a></span>
-<br /><span class="sectionToc" >5 <a 
-href="ModèlesTLA.html#x14-130005" id="QQ2-14-13">Modèles TLA</a></span>
-<br /><span class="subsectionToc" >5.1 <a 
-href="TD1.html#x15-140005.1" id="QQ2-15-14">TD1</a></span>
-<br /><span class="subsectionToc" >5.2 <a 
-href="TD2.html#x16-150005.2" id="QQ2-16-15">TD2</a></span>
-<br /><span class="subsectionToc" >5.3 <a 
-href="TD3.html#x17-160005.3" id="QQ2-17-16">TD3</a></span>
-<br /><span class="sectionToc" >6 <a 
-href="Annalesdesexamenspassés.html#x18-170006" id="QQ2-18-17">Annales des examens passés</a></span>
-<br /><span class="likesectionToc" ><a 
-href="refname.html#x19-18000" id="QQ2-19-18">References</a></span>
+<div class='tableofcontents'>
+<span class='likesectionToc'><a href='contentsname.html#contents' id='QQ2-2-1'>Contents</a></span>
+<br /><span class='sectionToc'>1 <a href='DocumentationetOutils.html#documentation-et-outils' id='QQ2-3-2'>Documentation et Outils</a></span>
+<br /><span class='sectionToc'>2 <a href='Slidesducours.html#slides-du-cours' id='QQ2-4-3'>Slides du cours</a></span>
+<br /><span class='subsectionToc'>2.1 <a href='Cours0hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture0pdfCM0.html#cours-httpmerygithubioteachingmvsilecturesnotesmvsilecturepdfcm-' id='QQ2-5-4'>Cours 0  CM0. </a></span>
+<br /><span class='subsectionToc'>2.2 <a href='Cours1hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture1pdfCM1.html#cours-httpmerygithubioteachingmvsilecturesnotesmvsilecturepdfcm-1' id='QQ2-6-5'>Cours 1  CM1. </a></span>
+<br /><span class='subsectionToc'>2.3 <a href='Cours2hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture2pdfCM2.html#cours-httpmerygithubioteachingmvsilecturesnotesmvsilecturepdfcm-2' id='QQ2-7-6'>Cours 2  CM2. </a></span>
+<br /><span class='subsectionToc'>2.4 <a href='Cours3hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm3pdfCM3.html#cours-httpmerygithubioteachingmvsilecturesnoteslecturesappcmpdfcm-' id='QQ2-8-7'>Cours 3  CM3. </a></span>
+<br /><span class='subsectionToc'>2.5 <a href='Cours4hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm4pdfCM4.html#cours-httpmerygithubioteachingmvsilecturesnoteslecturesappcmpdfcm-1' id='QQ2-9-8'>Cours 4  CM4. </a></span>
+<br /><span class='subsectionToc'>2.6 <a href='Cours5hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20242pdfCM5.html#cours-httpmerygithubioteachingmvsilecturesnoteslecturesapppdfcm-' id='QQ2-10-9'>Cours 5  CM5. </a></span>
+<br /><span class='subsectionToc'>2.7 <a href='Cours6hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20243pdfCM6.html#cours-httpmerygithubioteachingmvsilecturesnoteslecturesapppdfcm-1' id='QQ2-11-10'>Cours 6  CM6. </a></span>
+<br /><span class='sectionToc'>3 <a href='TravauxDirigés.html#travaux-diriges' id='QQ2-12-11'>Travaux Dirigés</a></span>
+<br /><span class='sectionToc'>4 <a href='ProjetMVSI.html#projet-mvsi' id='QQ2-13-12'>Projet MVSI</a></span>
+<br /><span class='sectionToc'>5 <a href='ModèlesTLA.html#modeles-tla' id='QQ2-14-13'>Modèles TLA</a></span>
+<br /><span class='subsectionToc'>5.1 <a href='TD1.html#td' id='QQ2-15-14'>TD1</a></span>
+<br /><span class='subsectionToc'>5.2 <a href='TD2.html#td1' id='QQ2-16-15'>TD2</a></span>
+<br /><span class='subsectionToc'>5.3 <a href='TD3.html#td2' id='QQ2-17-16'>TD3</a></span>
+<br /><span class='sectionToc'>6 <a href='Annalesdesexamenspassés.html#annales-des-examens-passes' id='QQ2-18-17'>Annales des examens passés</a></span>
+<br /><span class='likesectionToc'><a href='refname.html#references' id='QQ2-19-18'>References</a></span>
+                                                                                       
+                                                                                       
 </div>
 
 
@@ -87,6 +60,3 @@ href="refname.html#x19-18000" id="QQ2-19-18">References</a></span>
  
 </body> 
 </html>
-                                                                                       
-
-
