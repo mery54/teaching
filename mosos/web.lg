@@ -179,6 +179,10 @@ Css: figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; te
 Css: figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
 Css: p + figcaption, img + figcaption{margin-top: 1em;}
 Css: .abstract{margin:1em;}
+Css: .tcolorbox{margin-top:0.5em;margin-bottom: 0.5em;}
+Css: .tcolorbox .lowerbox{margin-top:0pt;}
+Css: .rotatebox{display: inline-block;}
+Css: div.verbatiminput {font-family: monospace,monospace; white-space: nowrap; }
 Css: .equation td{text-align:center; }
 Css: .equation-star td{text-align:center; }
 Css: table.equation-star { width:100%; }
@@ -192,21 +196,20 @@ Css: table.multline, table.multline-star {width:100%;}
 Css: td.gather {text-align:center; }
 Css: table.gather {width:100%;}
 Css: div.gather-star {text-align:center;}
-Css: .ALCitem {width:2em; text-align:right;display:inline-block;font-size:0.8em;}
-Css: .ALIndent{display:inline-block;}
-Css: .rotatebox{display: inline-block;}
-Css: .caption span.id{font-weight: bold;}
-Css:  .wrapfig-r, .wrapfig-ri, .wrapfig-ir, .wrapfig-ro, .wrapfig-or {float:right; text-align:left; margin-left:auto; margin-top:0.5em;} 
-Css:  .wrapfig-l, .wrapfig-li, .wrapfig-il, .wrapfig-lo, .wrapfig-ol {float:left; text-align:left; margin-right:auto; margin-top:0.5em;} 
-Css: .wrapfig-r .caption td.content, .wrapfig-ri .caption td.content, .wrapfig-ir .caption td.content, .wrapfig-ro .caption td.content, .wrapfig-or .caption td.content, .wrapfig-l .caption td.content, .wrapfig-li .caption td.content, .wrapfig-il .caption td.content, .wrapfig-lo .caption td.content, .wrapfig-ol .caption td.content {white-space: normal; }
-Css: .wrapfig-r .caption, .wrapfig-ri .caption, .wrapfig-ir .caption, .wrapfig-ro .caption, .wrapfig-or .caption, .wrapfig-l .caption, .wrapfig-li .caption, .wrapfig-il .caption, .wrapfig-lo .caption, .wrapfig-ol .caption {width:30%; }
-Css: dl.enumerate-enumitem{display:grid; grid-template-columns: 3ch 1fr; align-items: top; row-gap:1ch;}
 Css: code.lstinline{font-family:monospace,monospace;}
 Css: pre.listings{font-family: monospace,monospace; white-space: pre-wrap; margin-top:0.5em; margin-bottom:0.5em; }
 Css: .lstlisting .label{margin-right:0.5em; }
 Css: pre.lstlisting{font-family: monospace,monospace; white-space: pre-wrap; margin-top:0.5em; margin-bottom:0.5em; }
 Css: pre.lstinputlisting{ font-family: monospace,monospace; white-space: pre-wrap; }
 Css: .lstinputlisting .label{margin-right:0.5em;}
+Css: .ALCitem {width:2em; text-align:right;display:inline-block;font-size:0.8em;}
+Css: .ALIndent{display:inline-block;}
+Css: .caption span.id{font-weight: bold;}
+Css:  .wrapfig-r, .wrapfig-ri, .wrapfig-ir, .wrapfig-ro, .wrapfig-or {float:right; text-align:left; margin-left:auto; margin-top:0.5em;} 
+Css:  .wrapfig-l, .wrapfig-li, .wrapfig-il, .wrapfig-lo, .wrapfig-ol {float:left; text-align:left; margin-right:auto; margin-top:0.5em;} 
+Css: .wrapfig-r .caption td.content, .wrapfig-ri .caption td.content, .wrapfig-ir .caption td.content, .wrapfig-ro .caption td.content, .wrapfig-or .caption td.content, .wrapfig-l .caption td.content, .wrapfig-li .caption td.content, .wrapfig-il .caption td.content, .wrapfig-lo .caption td.content, .wrapfig-ol .caption td.content {white-space: normal; }
+Css: .wrapfig-r .caption, .wrapfig-ri .caption, .wrapfig-ir .caption, .wrapfig-ro .caption, .wrapfig-or .caption, .wrapfig-l .caption, .wrapfig-li .caption, .wrapfig-il .caption, .wrapfig-lo .caption, .wrapfig-ol .caption {width:30%; }
+Css: dl.enumerate-enumitem{display:grid; grid-template-columns: 3ch 1fr; align-items: top; row-gap:1ch;}
 Css: .uline,.uline-math{ text-decoration:underline; }
 Css: .uuline,.uuline-math{ text-decoration:underline double; }
 Css: span.sout, .sout-math {text-decoration: line-through }
@@ -214,6 +217,9 @@ Css: span.xout, .xout-math {text-decoration: line-through underline }
 Css: span.uwave, .uwave-math {text-decoration:underline wavy; }
 Css: span.dashuline, .dashuline-math {text-decoration:underline dashed;}
 Css: span.dotuline, .dotuline-math {text-decoration:underline dotted;}
+Css: #tcolobox-1 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-1 .tcolorbox-content{color: #000000; background-color: #FFFF80; border: 1px solid #404040;}
+Css: #tcolobox-1 div{ padding-top:8.5358px; padding-bottom:8.5358px; padding-left:14.22635px; padding-right:14.22635px; }
 --- characters ---
 Font("ptmr7t","","10","120")
 Font("ptmr7t","","10","207")

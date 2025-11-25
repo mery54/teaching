@@ -147,6 +147,10 @@ figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-al
 figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
 p + figcaption, img + figcaption{margin-top: 1em;}
 .abstract{margin:1em;}
+.tcolorbox{margin-top:0.5em;margin-bottom: 0.5em;}
+.tcolorbox .lowerbox{margin-top:0pt;}
+.rotatebox{display: inline-block;}
+div.verbatiminput {font-family: monospace,monospace; white-space: nowrap; }
 .equation td{text-align:center; }
 .equation-star td{text-align:center; }
 table.equation-star { width:100%; }
@@ -160,21 +164,20 @@ table.multline, table.multline-star {width:100%;}
 td.gather {text-align:center; }
 table.gather {width:100%;}
 div.gather-star {text-align:center;}
-.ALCitem {width:2em; text-align:right;display:inline-block;font-size:0.8em;}
-.ALIndent{display:inline-block;}
-.rotatebox{display: inline-block;}
-.caption span.id{font-weight: bold;}
- .wrapfig-r, .wrapfig-ri, .wrapfig-ir, .wrapfig-ro, .wrapfig-or {float:right; text-align:left; margin-left:auto; margin-top:0.5em;} 
- .wrapfig-l, .wrapfig-li, .wrapfig-il, .wrapfig-lo, .wrapfig-ol {float:left; text-align:left; margin-right:auto; margin-top:0.5em;} 
-.wrapfig-r .caption td.content, .wrapfig-ri .caption td.content, .wrapfig-ir .caption td.content, .wrapfig-ro .caption td.content, .wrapfig-or .caption td.content, .wrapfig-l .caption td.content, .wrapfig-li .caption td.content, .wrapfig-il .caption td.content, .wrapfig-lo .caption td.content, .wrapfig-ol .caption td.content {white-space: normal; }
-.wrapfig-r .caption, .wrapfig-ri .caption, .wrapfig-ir .caption, .wrapfig-ro .caption, .wrapfig-or .caption, .wrapfig-l .caption, .wrapfig-li .caption, .wrapfig-il .caption, .wrapfig-lo .caption, .wrapfig-ol .caption {width:30%; }
-dl.enumerate-enumitem{display:grid; grid-template-columns: 3ch 1fr; align-items: top; row-gap:1ch;}
 code.lstinline{font-family:monospace,monospace;}
 pre.listings{font-family: monospace,monospace; white-space: pre-wrap; margin-top:0.5em; margin-bottom:0.5em; }
 .lstlisting .label{margin-right:0.5em; }
 pre.lstlisting{font-family: monospace,monospace; white-space: pre-wrap; margin-top:0.5em; margin-bottom:0.5em; }
 pre.lstinputlisting{ font-family: monospace,monospace; white-space: pre-wrap; }
 .lstinputlisting .label{margin-right:0.5em;}
+.ALCitem {width:2em; text-align:right;display:inline-block;font-size:0.8em;}
+.ALIndent{display:inline-block;}
+.caption span.id{font-weight: bold;}
+ .wrapfig-r, .wrapfig-ri, .wrapfig-ir, .wrapfig-ro, .wrapfig-or {float:right; text-align:left; margin-left:auto; margin-top:0.5em;} 
+ .wrapfig-l, .wrapfig-li, .wrapfig-il, .wrapfig-lo, .wrapfig-ol {float:left; text-align:left; margin-right:auto; margin-top:0.5em;} 
+.wrapfig-r .caption td.content, .wrapfig-ri .caption td.content, .wrapfig-ir .caption td.content, .wrapfig-ro .caption td.content, .wrapfig-or .caption td.content, .wrapfig-l .caption td.content, .wrapfig-li .caption td.content, .wrapfig-il .caption td.content, .wrapfig-lo .caption td.content, .wrapfig-ol .caption td.content {white-space: normal; }
+.wrapfig-r .caption, .wrapfig-ri .caption, .wrapfig-ir .caption, .wrapfig-ro .caption, .wrapfig-or .caption, .wrapfig-l .caption, .wrapfig-li .caption, .wrapfig-il .caption, .wrapfig-lo .caption, .wrapfig-ol .caption {width:30%; }
+dl.enumerate-enumitem{display:grid; grid-template-columns: 3ch 1fr; align-items: top; row-gap:1ch;}
 .uline,.uline-math{ text-decoration:underline; }
 .uuline,.uuline-math{ text-decoration:underline double; }
 span.sout, .sout-math {text-decoration: line-through }
@@ -182,5 +185,8 @@ span.xout, .xout-math {text-decoration: line-through underline }
 span.uwave, .uwave-math {text-decoration:underline wavy; }
 span.dashuline, .dashuline-math {text-decoration:underline dashed;}
 span.dotuline, .dotuline-math {text-decoration:underline dotted;}
+#tcolobox-1 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+#tcolobox-1 .tcolorbox-content{color: #000000; background-color: #FFFF80; border: 1px solid #404040;}
+#tcolobox-1 div{ padding-top:8.5358px; padding-bottom:8.5358px; padding-left:14.22635px; padding-right:14.22635px; }
 /* end css.sty */
 
