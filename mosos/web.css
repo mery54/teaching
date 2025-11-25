@@ -185,8 +185,5 @@ span.xout, .xout-math {text-decoration: line-through underline }
 span.uwave, .uwave-math {text-decoration:underline wavy; }
 span.dashuline, .dashuline-math {text-decoration:underline dashed;}
 span.dotuline, .dotuline-math {text-decoration:underline dotted;}
-#tcolobox-1 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-#tcolobox-1 .tcolorbox-content{color: #000000; background-color: #FFFF80; border: 1px solid #404040;}
-#tcolobox-1 div{ padding-top:8.5358px; padding-bottom:8.5358px; padding-left:14.22635px; padding-right:14.22635px; }
 /* end css.sty */
 
