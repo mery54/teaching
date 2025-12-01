@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  1 DEC 2025 13:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  1 DEC 2025 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1669,8 +1669,8 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file Cours3hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp2024cm
-3pdfCM3.html ---
+--- file Cours3hrefhttpmery54githubioteachingmvsilecturesnotesmvsilecture3pdfCM
+3.html ---
 [9
 
 ]
@@ -1794,11 +1794,11 @@ L3 programming layer <2024-02-20>
  ) 
 Here is how much of TeX's memory you used:
  37664 strings out of 474117
- 747385 string characters out of 5743707
+ 747355 string characters out of 5743707
  1934184 words of memory out of 5000000
  58957 multiletter control sequences out of 15000+600000
  575309 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,8n,131p,901b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (21 pages, 105728 bytes).
+Output written on web.dvi (21 pages, 105616 bytes).
