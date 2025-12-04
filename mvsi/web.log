@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  4 DEC 2025 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  4 DEC 2025 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1702,21 +1702,10 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file Cours6hrefhttpmery54githubioteachingmvsilecturesnoteslecturesapp20243p
-dfCM6.html ---
+--- file TravauxDirigés.html ---
 [12
 
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file TravauxDirigés.html ---
-[13
-
-] [14]
+] [13]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1724,7 +1713,7 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file ProjetMVSI.html ---
-[15
+[14
 
 ]
 \openout15 = `web.tmp'.
@@ -1742,7 +1731,7 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file TD1.html ---
-[16
+[15
 
 ]
 \openout15 = `web.tmp'.
@@ -1752,7 +1741,7 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file TD2.html ---
-[17
+[16
 
 ]
 \openout15 = `web.tmp'.
@@ -1762,7 +1751,7 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file TD3.html ---
-[18
+[17
 
 ]
 \openout15 = `web.tmp'.
@@ -1772,7 +1761,7 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file Annalesdesexamenspassés.html ---
-(./web.bbl [19
+(./web.bbl [18
 
 ]
 \openout15 = `web.tmp'.
@@ -1782,9 +1771,9 @@ dfCM6.html ---
 
 (./web.tmp)
 --- file refname.html ---
-) [20
+) [19
 
-] [21
+] [20
 
 ] (./web.aux)
  ***********
@@ -1793,12 +1782,12 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 37664 strings out of 474117
- 747305 string characters out of 5743707
+ 37647 strings out of 474117
+ 746747 string characters out of 5743707
  1934184 words of memory out of 5000000
- 58957 multiletter control sequences out of 15000+600000
+ 58944 multiletter control sequences out of 15000+600000
  575309 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,8n,131p,901b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (21 pages, 105660 bytes).
+Output written on web.dvi (20 pages, 101880 bytes).
