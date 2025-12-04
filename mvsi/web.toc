@@ -3,7 +3,7 @@
 \contentsline {subsection}{\numberline {2.1}Cours 0 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture0.pdf}{CM0}. }{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Cours 1 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture1.pdf}{CM1}. }{2}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Cours 2 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture2.pdf}{CM2}. }{2}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Cours 3 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm3.pdf}{CM3}. }{2}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Cours 3 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/mvsilecture3.pdf}{CM3}. }{2}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Cours 4 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-cm4.pdf}{CM4}. }{2}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Cours 5 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-2.pdf}{CM5}. }{2}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Cours 6 \href {http://mery54.github.io/teaching/mvsi/lecturesnotes/lectures-app-2024-3.pdf}{CM6}. }{2}{subsection.2.7}%
@@ -13,4 +13,4 @@
 \contentsline {subsection}{\numberline {5.1}TD1}{3}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}TD2}{3}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}TD3}{3}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Annales des examens passés}{3}{section.6}%
+\contentsline {section}{\numberline {6}Annales des examens passés}{4}{section.6}%
