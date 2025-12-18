@@ -1,27 +1,27 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{2}{x2-1000}{QQ2-2-1}{Contents}}{4}\relax 
 \doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{3}{x3-20001}{QQ2-3-2}{Documentation and Tools}}{6}\relax 
-\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{4}{x4-30002}{QQ2-4-3}{Course MALG2 at Telecom Nancy}}{7}\relax 
-\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{5}{x5-40002.1}{QQ2-5-4}{Slides for the course MALG2}}{7}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{4}{x4-30002}{QQ2-4-3}{Course MALG1/MOVEX1 at Telecom Nancy (in progress)}}{7}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{5}{x5-40002.1}{QQ2-5-4}{Slides for the course MALG1/MOVEX1}}{7}\relax 
 \doTocEntry\tocsubsubsection{2.1.1}{\csname a:TocLink\endcsname{5}{x5-50002.1.1}{QQ2-5-5}{Lecture 0 {Overview of the course }}}{7}\relax 
-\doTocEntry\tocsubsubsection{2.1.2}{\csname a:TocLink\endcsname{5}{x5-60002.1.2}{QQ2-5-6}{Lecture 1 {Vérification mécanisée de contrats} (III)}}{7}\relax 
-\doTocEntry\tocsubsubsection{2.1.3}{\csname a:TocLink\endcsname{5}{x5-70002.1.3}{QQ2-5-7}{Lecture 2 {Théorie du point-fixe et applications}}}{7}\relax 
-\doTocEntry\tocsubsubsection{2.1.4}{\csname a:TocLink\endcsname{5}{x5-80002.1.4}{QQ2-5-8}{Lecture 3 {Sémantique ds langages de programmation}}}{8}\relax 
-\doTocEntry\tocsubsubsection{2.1.5}{\csname a:TocLink\endcsname{5}{x5-90002.1.5}{QQ2-5-9}{Lecture 4 {Interprétation Abstraite}}}{8}\relax 
-\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{6}{x6-100002.2}{QQ2-6-10}{Tutorials}}{9}\relax 
-\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{7}{x7-110003}{QQ2-7-11}{Course MALG1/MOVEX1 at Telecom Nancy}}{10}\relax 
-\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{8}{x8-120003.1}{QQ2-8-12}{Slides for the course MALG1/MOVEX1}}{10}\relax 
-\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{8}{x8-130003.1.1}{QQ2-8-13}{Lecture 0 {Overview of the course }}}{10}\relax 
-\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{8}{x8-140003.1.2}{QQ2-8-14}{Lecture 1 {Mod\'elisation, sp\'ecification et v\'erification} (I) }}{10}\relax 
-\doTocEntry\tocsubsubsection{3.1.3}{\csname a:TocLink\endcsname{8}{x8-150003.1.3}{QQ2-8-15}{Lecture 2 {Mod\'elisation, sp\'ecification et v\'erification} (II)}}{11}\relax 
-\doTocEntry\tocsubsubsection{3.1.4}{\csname a:TocLink\endcsname{8}{x8-160003.1.4}{QQ2-8-16}{Lecture 3 {Mod\'elisation, sp\'ecification et v\'erification} (III)}}{11}\relax 
-\doTocEntry\tocsubsubsection{3.1.5}{\csname a:TocLink\endcsname{8}{x8-170003.1.5}{QQ2-8-17}{Lecture 4 {Vérification mécanisée de contrats} (I)}}{11}\relax 
-\doTocEntry\tocsubsubsection{3.1.6}{\csname a:TocLink\endcsname{8}{x8-180003.1.6}{QQ2-8-18}{Lecture 5 {Vérification mécanisée de contrats} (II)}}{11}\relax 
-\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{9}{x9-190003.2}{QQ2-9-19}{Lectures Notes}}{12}\relax 
-\doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{10}{x10-200003.3}{QQ2-10-20}{Tutorials}}{13}\relax 
-\doTocEntry\tocsubsection{3.4}{\csname a:TocLink\endcsname{11}{x11-210003.4}{QQ2-11-21}{Assessment}}{14}\relax 
-\doTocEntry\tocsubsection{3.5}{\csname a:TocLink\endcsname{12}{x12-220003.5}{QQ2-12-22}{Examens passés}}{15}\relax 
-\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{13}{x13-230004}{QQ2-13-23}{Course MOVEX2 at Telecom Nancy}}{16}\relax 
+\doTocEntry\tocsubsubsection{2.1.2}{\csname a:TocLink\endcsname{5}{x5-60002.1.2}{QQ2-5-6}{Lecture 1 {Mod\'elisation, sp\'ecification et v\'erification} (I) }}{7}\relax 
+\doTocEntry\tocsubsubsection{2.1.3}{\csname a:TocLink\endcsname{5}{x5-70002.1.3}{QQ2-5-7}{Lecture 2 {Mod\'elisation, sp\'ecification et v\'erification} (II)}}{8}\relax 
+\doTocEntry\tocsubsubsection{2.1.4}{\csname a:TocLink\endcsname{5}{x5-80002.1.4}{QQ2-5-8}{Lecture 3 {Mod\'elisation, sp\'ecification et v\'erification} (III)}}{8}\relax 
+\doTocEntry\tocsubsubsection{2.1.5}{\csname a:TocLink\endcsname{5}{x5-90002.1.5}{QQ2-5-9}{Lecture 4 {Vérification mécanisée de contrats} (I)}}{8}\relax 
+\doTocEntry\tocsubsubsection{2.1.6}{\csname a:TocLink\endcsname{5}{x5-100002.1.6}{QQ2-5-10}{Lecture 5 {Vérification mécanisée de contrats} (II)}}{8}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{6}{x6-110002.2}{QQ2-6-11}{Lectures Notes}}{9}\relax 
+\doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{7}{x7-120002.3}{QQ2-7-12}{Tutorials}}{10}\relax 
+\doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{8}{x8-130002.4}{QQ2-8-13}{Assessment}}{11}\relax 
+\doTocEntry\tocsubsection{2.5}{\csname a:TocLink\endcsname{9}{x9-140002.5}{QQ2-9-14}{Past Exams}}{12}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{10}{x10-150003}{QQ2-10-15}{Course MALG2 at Telecom Nancy (past year)}}{13}\relax 
+\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{11}{x11-160003.1}{QQ2-11-16}{Slides for the course MALG2}}{13}\relax 
+\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{11}{x11-170003.1.1}{QQ2-11-17}{Lecture 0 {Overview of the course }}}{13}\relax 
+\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{11}{x11-180003.1.2}{QQ2-11-18}{Lecture 1 {Vérification mécanisée de contrats} (III)}}{13}\relax 
+\doTocEntry\tocsubsubsection{3.1.3}{\csname a:TocLink\endcsname{11}{x11-190003.1.3}{QQ2-11-19}{Lecture 2 {Théorie du point-fixe et applications}}}{13}\relax 
+\doTocEntry\tocsubsubsection{3.1.4}{\csname a:TocLink\endcsname{11}{x11-200003.1.4}{QQ2-11-20}{Lecture 3 {Sémantique ds langages de programmation}}}{14}\relax 
+\doTocEntry\tocsubsubsection{3.1.5}{\csname a:TocLink\endcsname{11}{x11-210003.1.5}{QQ2-11-21}{Lecture 4 {Interprétation Abstraite}}}{14}\relax 
+\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{12}{x12-220003.2}{QQ2-12-22}{Tutorials}}{15}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{13}{x13-230004}{QQ2-13-23}{Course MOVEX2 at Telecom Nancy (past year)}}{16}\relax 
 \doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{14}{x14-240004.1}{QQ2-14-24}{Slides for the course MOVEX2}}{16}\relax 
 \doTocEntry\tocsubsubsection{4.1.1}{\csname a:TocLink\endcsname{14}{x14-250004.1.1}{QQ2-14-25}{Lecture 0 {Overview of the course }}}{16}\relax 
 \doTocEntry\tocsubsubsection{4.1.2}{\csname a:TocLink\endcsname{14}{x14-260004.1.2}{QQ2-14-26}{Lecture 1 {Vérification mécanisée de contrats} (III)}}{16}\relax 
