@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  5 JAN 2026 10:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=latex 2024.12.14)  12 JAN 2026 08:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1535,7 +1535,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 --- file Tutorials.html ---
 [9
 
-]
+] [10]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1543,11 +1543,11 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 (./web.tmp)
 --- file Assessment.html ---
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-50.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+11.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [10
+) [11
 
 ]
 \openout15 = `web.tmp'.
@@ -1557,7 +1557,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 (./web.tmp)
 --- file ProjetASPDforstudentsasapprentices.html ---
-(./web.bbl [11
+(./web.bbl [12
 
 ]
 \openout15 = `web.tmp'.
@@ -1569,9 +1569,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 --- file refname.html ---
 l.3 --- TeX4ht warning --- Problem with 'list' environment. Expected syntax: \b
 egin{list}{label}{spacing} \item.... \end{list} ---
-) [12
+) [13
 
-] [13
+] [14
 
 ] (./web.aux)
  ***********
@@ -1583,12 +1583,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32289 strings out of 474117
- 593941 string characters out of 5743707
+ 32299 strings out of 474117
+ 594066 string characters out of 5743707
  1933184 words of memory out of 5000000
- 53727 multiletter control sequences out of 15000+600000
+ 53737 multiletter control sequences out of 15000+600000
  569190 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,930b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (13 pages, 60576 bytes).
+Output written on web.dvi (14 pages, 65028 bytes).
