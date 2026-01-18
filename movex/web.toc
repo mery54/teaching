@@ -1,5 +1,5 @@
 \contentsline {section}{\numberline {1}Documentation and Tools}{2}{section.1}%
-\contentsline {section}{\numberline {2}Course MALG1/MOVEX1 at Telecom Nancy}{3}{section.2}%
+\contentsline {section}{\numberline {2}Course MALG1/MOVEX1 at Telecom Nancy (in progress)}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Slides for the course MALG1/MOVEX1}{3}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Lecture 0 {Overview of the course }}{3}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Lecture 1 {Mod\'elisation, sp\'ecification et v\'erification} (I) }{3}{subsubsection.2.1.2}%
@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {2.2}Lectures Notes}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Tutorials}{3}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Assessment}{4}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Examens passés}{4}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Course MALG2 at Telecom Nancy}{4}{section.3}%
+\contentsline {subsection}{\numberline {2.5}Past Exams}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Course MALG2 at Telecom Nancy (past year)}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Slides for the course MALG2}{4}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Lecture 0 {Overview of the course }}{4}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Lecture 1 {Vérification mécanisée de contrats} (III)}{4}{subsubsection.3.1.2}%
@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{\numberline {3.1.4}Lecture 3 {Sémantique ds langages de programmation}}{4}{subsubsection.3.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.5}Lecture 4 {Interprétation Abstraite}}{4}{subsubsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.2}Tutorials}{5}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Course MOVEX2 at Telecom Nancy}{5}{section.4}%
+\contentsline {section}{\numberline {4}Course MOVEX2 at Telecom Nancy (past year)}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Slides for the course MOVEX2}{5}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Lecture 0 {Overview of the course }}{5}{subsubsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}Lecture 1 {Vérification mécanisée de contrats} (III)}{5}{subsubsection.4.1.2}%
