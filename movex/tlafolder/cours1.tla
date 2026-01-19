@@ -1,5 +1,5 @@
 ----------MODULE cours1 ---------
-EXTENDS Integers, TLC
+EXTENDS Integers, TLCy
 -------------------------------
 CONSTANTS
 	\* @type: Int;
