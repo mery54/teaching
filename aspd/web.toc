@@ -9,5 +9,7 @@
 \contentsline {subsubsection}{\numberline {2.1.6}Lecture 5 Main Distributed Algorithms}{2}{subsubsection.2.1.6}%
 \contentsline {subsection}{\numberline {2.2}Lectures Notes}{2}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Tutorials}{3}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}ASPD Apprenticeship}{3}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}ASPD IL}{3}{subsubsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.4}Assessment}{3}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Projet ASPD for students as apprentices}{3}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.5}Projet ASPD for students as apprentices}{4}{subsection.2.5}%
