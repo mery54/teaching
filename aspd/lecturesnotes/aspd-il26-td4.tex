@@ -1,0 +1,184 @@
+% naserie3
+\input head-ex
+
+\usepackage{amssymb}
+%\usepackage{bsymb}
+%\usepackage{fullpage}
+\usepackage{alltt,url}
+
+\usepackage{babel}
+\addto\extrasfrench{\providecommand{\og}{\leavevmode\flqq~}\providecommand{\fg}{\ifdim\lastskip>\z@\unskip\fi~\frqq}}
+
+%\usepackage{mytlatex}
+
+
+\usepackage{version}
+\input{macros}
+\input tla2tex
+
+\newenvironment{solution}{
+%\refstepcounter{sol} %maj \ref
+%%\label{rem:#1}    %rem:label  <-   \ref
+\hbox to \textwidth { $\!\!\diamond \! - $ {\bf Solution de l'exercice  \arabic{exercice}} \hrulefill }    }{ \par \hbox to \textwidth { \hrulefill {\bf  Fin \arabic{exercice}}  }}
+
+
+\newenvironment{qsolution}{
+%\refstepcounter{sol} %maj \ref
+%%\label{rem:#1}    %rem:label  <-   \ref
+\hbox to \textwidth { $\!\!\diamond \! - $ {\bf Solution de la question \arabic{exnaserie3ercice}.\arabic{question}} \hrulefill }    }{ \par \hbox to \textwidth { \hrulefill {\bf  Fin \arabic{exercice}.\arabic{question}}  }}
+
+
+
+\includeversion{COR}
+%\excludeversion{COR}
+
+\includeversion{comment}
+\excludeversion{comment}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\blind}[1]{}
+
+% 2014
+
+\newcommand{\Bevent}[1]{\textsc{EVENT}\ \textsf{#1}}
+\newcommand{\BRevent}[1]{} %{\textsc{REFINES}}\ \textsf{#1}}
+\newenvironment{Bcode}
+  {\begin{array}{|@{\quad}l@{\quad}|}\hline\\[-1.8\jot]}
+  {\\[1.8\jot]\hline\end{array}}
+
+\renewcommand{\Bclause}[1]{\textrm{\mdseries\small\uppercase{#1}}}
+\def\Bkeyword#1{\textbf{\uppercase{#1}}}
+\newcommand{\band}{\mathrel{\>\wedge\>}}
+\newcommand{\bcdot}{\!\cdot\!}
+\newcommand{\bor}{\mathrel{\vee}}
+
+\newcommand{\Values}{\textsc{Vals}}
+\newcommand{\PROG}{\textsc{Programs}}
+\newcommand{\LOC}{\textsc{Locations}}
+\newcommand{\INLOC}{\textsc{InputLocations}}
+\newcommand{\MEM}{\textsc{Memory}}
+
+\newcommand{\preco}[1]{\textbf{pre}(\textsc{#1})}
+\newcommand{\postco}[1]{\textbf{post}(\textsc{#1})}
+\newcommand{\triplet}[3]{\{#1\}~\textsc{{\bf #2}}~\{#3\} }
+\newcommand{\trimorgan}[3]{#1~:~[$#2~,~#3$] }
+\newcommand{\event}[1]{\textsf{#1}}
+
+
+
+\usepackage{version}
+\includeversion{COR}
+\excludeversion{COR}
+
+\includeversion{serie1}
+\excludeversion{serie1}
+
+\includeversion{nserie0}
+\excludeversion{nserie0}
+
+\includeversion{nserie1}
+\excludeversion{nserie1}
+
+
+
+\includeversion{naserie1}
+\excludeversion{naserie1}
+
+\includeversion{naserie2}
+\excludeversion{naserie2}
+
+\includeversion{naserie3}
+% \excludeversion{naserie3}
+
+
+\includeversion{naserie4}
+\excludeversion{naserie4}
+
+
+\includeversion{naserie5}
+\excludeversion{naserie5}
+
+\includeversion{napluscal}
+\excludeversion{napluscal}
+\excludeversion{napluscal2}
+
+\includeversion{serie2}
+\excludeversion{serie2}
+
+\includeversion{nserie2}
+\excludeversion{nserie2}
+
+
+
+\includeversion{serie3}
+\excludeversion{serie3}
+
+\includeversion{nserie3}
+\excludeversion{nserie3}
+
+\includeversion{nserie4}
+\excludeversion{nserie4}
+
+\includeversion{nserie5}
+\excludeversion{nserie5}
+
+\includeversion{nserie6}
+\excludeversion{nserie6}
+
+\includeversion{serie4}
+\excludeversion{serie4}
+
+\includeversion{serie5}
+\excludeversion{serie5}
+
+\includeversion{serie6}
+\excludeversion{serie6}
+
+
+
+\includeversion{serie7}
+\excludeversion{serie7}
+
+\includeversion{serie8}
+\excludeversion{serie8}
+
+\includeversion{nserie7}
+\excludeversion{nserie7}
+\pagestyle{plain}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%b%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\clearpage
+\newcommand{\taille}{\small}
+\newcommand{\bc}[1]{#1}
+\newcommand{\fois}{*} 
+\newcommand{\atree}{{\sf atree}}
+
+
+
+%\input sommaire-apprentis
+
+
+\input rootapp2026
+
+
+
+\end{document}
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "aspd-il-td4"
+%%% End:
