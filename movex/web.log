@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  3 APR 2026 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  3 APR 2026 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1603,7 +1603,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file CourseMALG2atTelecomNancypastyear.html ---
+--- file CourseMALG2atTelecomNancyinprogress.html ---
 (./web.4ct)
 \openout15 = `web.tmp'.
 
@@ -1637,7 +1637,7 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file CourseMOVEX2atTelecomNancy.html ---
+--- file CourseMOVEX2atTelecomNancyinprogreess.html ---
 (./web.4ct)
 \openout15 = `web.tmp'.
 
@@ -1705,11 +1705,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  32731 strings out of 473191
- 601276 string characters out of 5715826
- 1118047 words of memory out of 5000000
+ 601341 string characters out of 5715826
+ 1118136 words of memory out of 5000000
  55023 multiletter control sequences out of 15000+600000
  570878 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,120p,930b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (21 pages, 95744 bytes).
+Output written on web.dvi (21 pages, 96388 bytes).
