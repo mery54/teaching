@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  21 APR 2026 16:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  23 APR 2026 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1537,6 +1537,15 @@ File: l3backend-dvips.def 2024-05-08 L3 backend support: dvips
 \g__pdf_backend_link_sf_int=\count352
 ) (./web.aux
 
+LaTeX Warning: Label `sec:course-mcfsi-at' multiply defined.
+
+
+LaTeX Warning: Label `sec:slides' multiply defined.
+
+
+LaTeX Warning: Label `sec:lect-3-hrefhttp:m' multiply defined.
+
+
 LaTeX Warning: Label `sec:event-b-archives' multiply defined.
 
 
@@ -1565,15 +1574,6 @@ LaTeX Warning: Label `sec:project' multiply defined.
 
 
 LaTeX Warning: Label `sec:past-exams-course' multiply defined.
-
-
-LaTeX Warning: Label `sec:course-mcfsi-at' multiply defined.
-
-
-LaTeX Warning: Label `sec:slides' multiply defined.
-
-
-LaTeX Warning: Label `sec:lect-3-hrefhttp:m' multiply defined.
 
 
 LaTeX Warning: Label `sec:event-b-models' multiply defined.
@@ -1700,7 +1700,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file CourseMCFSIatTelecomNancy.html ---
+--- file CourseEMUEventBatMaynoothUniversity.html ---
 (./web.4ct)
 \openout15 = `web.tmp'.
 
@@ -1708,7 +1708,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file SlidesforthecourseMCFSI.html ---
+--- file SlidesforthecourseEMU.html ---
 
 
 [9
@@ -1722,10 +1722,32 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file Tutorials.html ---
+--- file CourseMCFSIatTelecomNancy.html ---
+(./web.4ct)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file SlidesforthecourseMCFSI.html ---
 
 
 [11
+
+]
+
+[12]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file Tutorials.html ---
+
+
+[13
 
 ]
 \openout15 = `web.tmp'.
@@ -1737,7 +1759,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 --- file Project.html ---
 
 
-[12
+[14
 
 ]
 \openout15 = `web.tmp'.
@@ -1749,11 +1771,11 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 --- file EventBModels.html ---
 
 
-[13
+[15
 
 ]
 
-[14]
+[16]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1763,7 +1785,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 --- file PastexamsofthecourseMCFSI.html ---
 
 
-[15
+[17
 
 ]
 \openout15 = `web.tmp'.
@@ -1784,11 +1806,11 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Slidesofthecourse.html ---
 
 
-[16
+[18
 
 ]
 
-[17]
+[19]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1798,7 +1820,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Tutorials1.html ---
 
 
-[18
+[20
 
 ]
 \openout15 = `web.tmp'.
@@ -1810,11 +1832,11 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file EventBModels1.html ---
 
 
-[19
+[21
 
 ]
 
-[20]
+[22]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1824,7 +1846,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Project1.html ---
 
 
-[21
+[23
 
 ]
 \openout15 = `web.tmp'.
@@ -1837,7 +1859,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 asedsystemsforMasterinComp.html ---
 
 
-[22
+[24
 
 ]
 \openout15 = `web.tmp'.
@@ -1857,7 +1879,7 @@ asedsystemsforMasterinComp.html ---
 --- file Documentation.html ---
 
 
-[23
+[25
 
 ]
 \openout15 = `web.tmp'.
@@ -1869,7 +1891,7 @@ asedsystemsforMasterinComp.html ---
 --- file Slidesforthecourse20202021.html ---
 
 
-[24
+[26
 
 ]
 \openout15 = `web.tmp'.
@@ -1881,31 +1903,9 @@ asedsystemsforMasterinComp.html ---
 --- file Slidesforthecourse20212022.html ---
 
 
-[25
+[27
 
 ]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file CourseEMUEventBatMaynoothUniversity.html ---
-(./web.4ct)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file SlidesforthecourseEMU.html ---
-
-
-[26
-
-]
-
-[27]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -2035,6 +2035,6 @@ Here is how much of TeX's memory you used:
  60199 multiletter control sequences out of 15000+600000
  569696 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,8n,149p,986b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,8n,149p,980b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (38 pages, 200628 bytes).
+Output written on web.dvi (38 pages, 200660 bytes).
