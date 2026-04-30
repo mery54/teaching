@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  24 APR 2026 09:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  29 APR 2026 08:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1725,6 +1725,18 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
+--- file TutorialsforEMU.html ---
+
+
+[11
+
+]
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
 --- file CourseMCFSIatTelecomNancy.html ---
 (./web.4ct)
 \openout15 = `web.tmp'.
@@ -1736,11 +1748,11 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 --- file SlidesforthecourseMCFSI.html ---
 
 
-[11
+[12
 
 ]
 
-[12]
+[13]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1748,18 +1760,6 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 (./web.tmp)
 --- file Tutorials.html ---
-
-
-[13
-
-]
-\openout15 = `web.tmp'.
-
-(./web.tmp)
-\openout15 = `web.tmp'.
-
-(./web.tmp)
---- file Project.html ---
 
 
 [14
@@ -1771,14 +1771,26 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout15 = `web.tmp'.
 
 (./web.tmp)
---- file EventBModels.html ---
+--- file Project.html ---
 
 
 [15
 
 ]
+\openout15 = `web.tmp'.
 
-[16]
+(./web.tmp)
+\openout15 = `web.tmp'.
+
+(./web.tmp)
+--- file EventBModels.html ---
+
+
+[16
+
+]
+
+[17]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1788,7 +1800,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 --- file PastexamsofthecourseMCFSI.html ---
 
 
-[17
+[18
 
 ]
 \openout15 = `web.tmp'.
@@ -1809,11 +1821,11 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Slidesofthecourse.html ---
 
 
-[18
+[19
 
 ]
 
-[19]
+[20]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1823,7 +1835,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Tutorials1.html ---
 
 
-[20
+[21
 
 ]
 \openout15 = `web.tmp'.
@@ -1835,11 +1847,11 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file EventBModels1.html ---
 
 
-[21
+[22
 
 ]
 
-[22]
+[23]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1849,7 +1861,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Project1.html ---
 
 
-[23
+[24
 
 ]
 \openout15 = `web.tmp'.
@@ -1862,7 +1874,7 @@ MasterinCompurerScienceoftheUniversityofLorraine.html ---
 asedsystemsforMasterinComp.html ---
 
 
-[24
+[25
 
 ]
 \openout15 = `web.tmp'.
@@ -1882,7 +1894,7 @@ asedsystemsforMasterinComp.html ---
 --- file Documentation.html ---
 
 
-[25
+[26
 
 ]
 \openout15 = `web.tmp'.
@@ -1894,7 +1906,7 @@ asedsystemsforMasterinComp.html ---
 --- file Slidesforthecourse20202021.html ---
 
 
-[26
+[27
 
 ]
 \openout15 = `web.tmp'.
@@ -1906,7 +1918,7 @@ asedsystemsforMasterinComp.html ---
 --- file Slidesforthecourse20212022.html ---
 
 
-[27
+[28
 
 ]
 \openout15 = `web.tmp'.
@@ -1918,7 +1930,7 @@ asedsystemsforMasterinComp.html ---
 --- file Tutorials2.html ---
 
 
-[28
+[29
 
 ]
 \openout15 = `web.tmp'.
@@ -1930,7 +1942,7 @@ asedsystemsforMasterinComp.html ---
 --- file EventBModels2.html ---
 
 
-[29
+[30
 
 ]
 \openout15 = `web.tmp'.
@@ -1951,11 +1963,11 @@ dsystemsforMasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Slidesofthecourse1.html ---
 
 
-[30
+[31
 
 ]
 
-[31]
+[32]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1965,7 +1977,7 @@ dsystemsforMasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Tutorials3.html ---
 
 
-[32
+[33
 
 ]
 \openout15 = `web.tmp'.
@@ -1977,11 +1989,11 @@ dsystemsforMasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file EventBModels3.html ---
 
 
-[33
+[34
 
 ]
 
-[34]
+[35]
 \openout15 = `web.tmp'.
 
 (./web.tmp)
@@ -1991,7 +2003,7 @@ dsystemsforMasterinCompurerScienceoftheUniversityofLorraine.html ---
 --- file Project2.html ---
 
 
-[35
+[36
 
 ]
 \openout15 = `web.tmp'.
@@ -2004,7 +2016,7 @@ dsystemsforMasterinCompurerScienceoftheUniversityofLorraine.html ---
 asedsystemsforMasterinComp1.html ---
 (./web.bbl
 
-[36
+[37
 
 ]
 \openout15 = `web.tmp'.
@@ -2016,11 +2028,11 @@ asedsystemsforMasterinComp1.html ---
 --- file refname.html ---
 )
 
-[37
+[38
 
 ]
 
-[38
+[39
 
 ] (./web.aux)
  ***********
@@ -2032,12 +2044,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 38055 strings out of 473191
- 754164 string characters out of 5715826
- 1322334 words of memory out of 5000000
- 60206 multiletter control sequences out of 15000+600000
+ 38072 strings out of 473191
+ 754422 string characters out of 5715826
+ 1322478 words of memory out of 5000000
+ 60219 multiletter control sequences out of 15000+600000
  569696 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,8n,149p,980b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (38 pages, 202328 bytes).
+Output written on web.dvi (39 pages, 204884 bytes).
