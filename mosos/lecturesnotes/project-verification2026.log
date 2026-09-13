@@ -1,0 +1,1350 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.17)  13 SEP 2026 21:50
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**project-verification2026.tex
+(./project-verification2026.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(./head-ex.tex (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2024/02/08 v1.3d Input encoding file
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read2
+\epsfframemargin=\dimen142
+\epsfframethickness=\dimen143
+\epsfrsize=\dimen144
+\epsftmp=\dimen145
+\epsftsize=\dimen146
+\epsfxsize=\dimen147
+\epsfysize=\dimen148
+\pspoints=\dimen149
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/theorem.sty
+Package: theorem 2024/08/06 v2.2c Theorem extension package (FMi)
+\theorem@style=\toks19
+\theorem@bodyfont=\toks20
+\theorempreskipamount=\skip51
+\theorempostskipamount=\skip52
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/thp.sty
+File: thp.sty 2024/08/06 v2.2c Theorem extension package (FMi)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count270
+\float@exts=\toks21
+\float@box=\box52
+\@float@everytoks=\toks22
+\@floatcapt=\box53
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count271
+\U@D=\dimen150
+\l@unhyphenated=\language90
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count272
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel-french/francais.ldf
+Language: francais 2024-07-25 v3.6c French support from the babel system
+
+
+Package francais.ldf Warning: Option `francais' for Babel is *deprecated*,
+(francais.ldf)                it might be removed sooner or later. Please
+(francais.ldf)                use `french' instead; reported on input line 31.
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2024-07-25 v3.6c French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language30). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language30). Reported on input line 92.
+\FB@stdchar=\count273
+Package babel Info: Making : an active character on input line 421.
+Package babel Info: Making ; an active character on input line 422.
+Package babel Info: Making ! an active character on input line 423.
+Package babel Info: Making ? an active character on input line 424.
+\FBguill@level=\count274
+\FBold@everypar=\toks23
+\FB@Mht=\dimen151
+\mc@charclass=\count275
+\mc@charfam=\count276
+\mc@charslot=\count277
+\std@mcc=\count278
+\dec@mcc=\count279
+\FB@parskip=\dimen152
+\listindentFB=\dimen153
+\descindentFB=\dimen154
+\labelindentFB=\dimen155
+\labelwidthFB=\dimen156
+\leftmarginFB=\dimen157
+\parindentFFN=\dimen158
+\FBfnindent=\dimen159
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 2024/07/07 v2.0g defines alltt environment
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/t1enc.sty
+Package: t1enc 1994/06/01 Standard LaTeX package
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks24
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen160
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen161
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count280
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count281
+\leftroot@=\count282
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count283
+\DOTSCASE@=\count284
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen162
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count285
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count286
+\dotsspace@=\muskip17
+\c@parentequation=\count287
+\dspbrk@lvl=\count288
+\tag@help=\toks26
+\row@=\count289
+\column@=\count290
+\maxfields@=\count291
+\andhelp@=\toks27
+\eqnshift@=\dimen163
+\alignsep@=\dimen164
+\tagshift@=\dimen165
+\tagwidth@=\dimen166
+\totwidth@=\dimen167
+\lineht@=\dimen168
+\@envbody=\toks28
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks29
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/vmargin/vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen169
+\PaperHeight=\dimen170
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xypic.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xy.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
+catcodes, docmode,
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xyrecat.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen171
+\Y@c=\dimen172
+\U@c=\dimen173
+\D@c=\dimen174
+\L@c=\dimen175
+\R@c=\dimen176
+\Edge@c=\toks30
+\X@p=\dimen177
+\Y@p=\dimen178
+\U@p=\dimen179
+\D@p=\dimen180
+\L@p=\dimen181
+\R@p=\dimen182
+\Edge@p=\toks31
+\X@origin=\dimen183
+\Y@origin=\dimen184
+\X@xbase=\dimen185
+\Y@xbase=\dimen186
+\X@ybase=\dimen187
+\Y@ybase=\dimen188
+\X@min=\dimen189
+\Y@min=\dimen190
+\X@max=\dimen191
+\Y@max=\dimen192
+\lastobjectbox@=\box56
+\zerodotbox@=\box57
+\almostz@=\dimen193
+ direction,
+\d@X=\dimen194
+\d@Y=\dimen195
+\K@=\count292
+\KK@=\count293
+\Direction=\count294
+\K@dXdY=\dimen196
+\K@dYdX=\dimen197
+\xyread@=\read4
+\xywrite@=\write3
+\csp@=\count295
+\quotPTK@=\dimen198
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks32
+\connectobjectbox@@=\box58
+ objects,
+\styletoks@=\toks33
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+
+LaTeX Warning: You have requested package `xypic',
+               but the package provides `xy'.
+
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xypdf.tex
+ Xy-pic option: PDF driver v.1.7 loaded))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xyv2.tex
+ Xy-pic option: Version 2 Compatibility v.3.8
+
+Xy-pic Warning: `\stop' redefined.
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+Xy-pic pdf driver: `frame' extension support
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xypdf-fr.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count296
+\crvpts@=\toks34
+\splinebox@=\box59
+\splineval@=\dimen199
+\splinedepth@=\dimen256
+\splinetol@=\dimen257
+\splinelength@=\dimen258
+ circles,
+\L@=\dimen259
+ loaded)
+Xy-pic pdf driver: `curve' extension support
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
+loaded) (/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.14
+\Row=\count297
+\Col=\count298
+\queue@=\toks35
+\queue@@=\toks36
+\qcount@=\count299
+\qcount@@=\count300
+\matrixsize@=\count301
+ loaded)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded) loaded))
+(/Users/mery/lectures/general/sty/galois.sty
+
+LaTeX Warning: You have requested package `/Users/mery/lectures/general/sty/gal
+ois',
+               but the package provides `galois'.
+
+Package: galois 1998/10/19 v1.01 LaTeX2e package for Galois connections
+LaTeX2e package for Galois connections, v1.01, 1997/05/19, P. Cousot
+\@GALOISalphadepth=\skip56
+\@GALOISalphaheight=\skip57
+\@GALOISgammadepth=\skip58
+\@GALOISwidth=\skip59
+\@GALOISheight=\skip60
+\@GALOISdepth=\skip61
+\@GALOIStotalheight=\skip62
+\@GALOISGap=\skip63
+\@GALOISalphaarrowwidth=\skip64
+\@GALOISalphaarrowhalfheight=\skip65
+\@GALOISgammaarrowwidth=\skip66
+\@GALOISgammaarrowhalfheight=\skip67
+) (/Users/mery/lectures/general/sty/pf.sty
+\pfindent=\skip68
+\pftopsep=\skip69
+\pfbotsep=\skip70
+\pfsep=\skip71
+\stepsep=\skip72
+\pfbox=\box60
+\c@pfhidelevel=\count302
+\pfshortNumberLevel=\count303
+\c@pf@sidenumberdepth=\count304
+\pf@sidenumberoutdent=\skip73
+\pfLevelCount=\count305
+\pfStepCount=\count306
+\pf@outdent=\skip74
+\c@pf@conjCounter=\count307
+\c@pfenum=\count308
+\c@pfenumdepth=\count309
+\enumindent=\skip75
+\c@pfenumi=\count310
+\c@pfenumii=\count311
+\c@pfenumiii=\count312
+)
+(/Users/mery/lectures/general/sty/bsymb.sty
+
+LaTeX Warning: You have requested package `/Users/mery/lectures/general/sty/bsy
+mb',
+               but the package provides `bsymb'.
+
+Package: bsymb 2006/02/06 v1.7 Symbols for the B language
+) (/Users/mery/lectures/general/sty/dashbox.sty
+
+LaTeX Warning: You have requested package `/Users/mery/lectures/general/sty/das
+hbox',
+               but the package provides `dashbox'.
+
+Package: dashbox 2001/08/08 v1.13 Dashed and layered boxes
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count313
+\calc@Bcount=\count314
+\calc@Adimen=\dimen260
+\calc@Bdimen=\dimen261
+\calc@Askip=\skip76
+\calc@Bskip=\skip77
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count315
+\calc@Cskip=\skip78
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\dashlength=\skip79
+\dashdash=\skip80
+\layersize=\skip81
+\d@shedsavebox=\box61
+\d@shedboxwidth=\skip82
+\d@shedboxtotalheight=\skip83
+\l@yersavebox=\box62
+\l@yerwidth=\skip84
+\l@yerboxwidth=\skip85
+\l@yertotalheight=\skip86
+\l@yerlineheight=\skip87
+\l@yervoffset=\skip88
+\c@l@yercount=\count316
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks37
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen262
+\Gin@req@width=\dimen263
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks38
+\verbatim@line=\toks39
+\verbatim@in@stream=\read5
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/newcent.sty
+Package: newcent 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(/Users/mery/lectures/general/sty/algorithm2e.sty
+
+LaTeX Warning: You have requested package `/Users/mery/lectures/general/sty/alg
+orithm2e',
+               but the package provides `algorithm2e'.
+
+Package: algorithm2e 1995/12/08
+\c@AlgoLine=\count317
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+
+Package `algorithm2e' Release 2.40 -- December 23 2003 --
+send comments, questions to fiorio@lirmm.fr
+
+\skiptotal=\skip89
+\skiprule=\skip90
+\skiptext=\skip91
+\skiplength=\skip92
+\algomargin=\skip93
+\skipnumline=\skip94
+\skipalgocfslide=\skip95
+\algowidth=\dimen264
+\inoutsize=\dimen265
+\inoutline=\dimen266
+\algo@inoutbox=\box63
+\algo@inputbox=\box64
+\@float@every@algocf=\toks40
+\c@algocf=\count318
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/minitoc/minitoc.sty
+Package: minitoc 2018/07/12 v62 Package minitoc
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 62 ***.
+\tf@mtc=\write4
+\mtcindent=\skip96
+\mtcskipamount=\skip97
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0004
+(minitoc)             chapter level macros NOT available.
+Package minitoc Info: I0028
+(minitoc)             section level macros available.
+\mtc@toks=\toks41
+\mtc@strutbox=\box65
+\mtc@hstrutbox=\box66
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout4 = `project-verification2026.mtc0'.
+
+\openout4 = `project-verification2026.mtc'.
+
+
+(./project-verification2026.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout4 = `project-verification2026.mtc'.
+
+\openout4 = `project-verification2026.mtc0'.
+
+\c@ptc=\count319
+\c@parttocdepth=\count320
+\ptcindent=\skip98
+\c@stc=\count321
+\c@secttocdepth=\count322
+\stcindent=\skip99
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4910.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)
+Package minitoc Info: I0010
+(minitoc)             The french language is selected.
+(minitoc)              on input line 4911.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/minitoc/french.mld
+File: french.mld 2006/03/21
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(./tlt.sty
+Package: tlt 1998/12/15
+\skipbox=\box67
+\indentbox=\box68
+\unitspace=\dimen267
+\commbox=\box69
+\tempboxOne=\box70
+\tempboxTwo=\box71
+\tempboxThree=\box72
+\tempDim=\dimen268
+\maxdim=\dimen269
+)
+\c@exercice=\count323
+\c@question=\count324
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/version/version.sty
+Package: version 2009/09/15  v 2.0
+Package version Info: Excluding comment environments declared on input line 115
+.
+) (./macros.tex
+\c@property=\count325
+\c@theorem=\count326
+\c@mydefinition=\count327
+\c@service=\count328
+\c@thnu=\count329
+\c@commentaire=\count330
+\c@dem=\count331
+\c@demonstration=\count332
+\c@prouf=\count333
+\c@corollaire=\count334
+\c@justification=\count335
+\c@regle=\count336
+\c@regled=\count337
+\c@fact=\count338
+\c@fait=\count339
+\c@equa=\count340
+\c@cptremarque=\count341
+\c@cptprincipe=\count342
+\c@cptnotation=\count343
+\c@lemme=\count344
+\c@theoreme=\count345
+\c@prop=\count346
+\c@cas=\count347
+\c@sous-cas=\count348
+\c@definition=\count349
+\rulenamewidth=\skip100
+\minitw=\skip101
+\c@cptexemple=\count350
+\c@cptsys=\count351
+\c@cpttregle=\count352
+\c@cptpropriete=\count353
+\c@cptproposition=\count354
+\c@cptnote=\count355
+\c@cptbnotation=\count356
+)
+Package version Info: Including COR environments declared on input line 31.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count357
+\lst@gtempboxa=\box73
+\lst@token=\toks42
+\lst@length=\count358
+\lst@currlwidth=\dimen270
+\lst@column=\count359
+\lst@pos=\count360
+\lst@lostspace=\dimen271
+\lst@width=\dimen272
+\lst@newlines=\count361
+\lst@lineno=\count362
+\lst@maxwidth=\dimen273
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count363
+\lst@skipnumbers=\count364
+\lst@framebox=\box74
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+Package version Info: Retain meaning of COR environment declared on input line 
+68.
+Package version Info: Excluding COR environments declared on input line 69.
+Package version Info: Including serie1 environments declared on input line 71.
+Package version Info: Excluding serie1 environments declared on input line 72.
+Package version Info: Including serie2 environments declared on input line 74.
+Package version Info: Excluding serie2 environments declared on input line 75.
+Package version Info: Including serie3 environments declared on input line 77.
+Package version Info: Excluding serie3 environments declared on input line 78.
+Package version Info: Including serie4 environments declared on input line 81.
+Package version Info: Including serie5 environments declared on input line 84.
+Package version Info: Excluding serie5 environments declared on input line 85.
+Package version Info: Including serie6 environments declared on input line 87.
+Package version Info: Excluding serie6 environments declared on input line 88.
+Package version Info: Including serie7 environments declared on input line 92.
+Package version Info: Excluding serie7 environments declared on input line 93.
+\c@cptsujet=\count365
+LaTeX Font Info:    Trying to load font information for T1+pnc on input line 99
+.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1pnc.fd
+File: t1pnc.fd 2001/06/04 font definitions for T1/pnc.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count366
+\l__pdf_internal_box=\box75
+)
+(./project-verification2026.aux
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/locale/fr/babel-french.te
+x
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+)
+
+LaTeX Warning: Label `sec:programme-1' multiply defined.
+
+
+LaTeX Warning: Label `sec:programme-1' multiply defined.
+
+
+LaTeX Warning: Label `sec:programme-1' multiply defined.
+
+
+LaTeX Warning: Label `sec:programme-1' multiply defined.
+
+
+LaTeX Warning: Label `sec:programme-1' multiply defined.
+
+
+LaTeX Warning: Label `sec:programme-1' multiply defined.
+
+
+LaTeX Warning: Label `sec:programme-1' multiply defined.
+
+
+LaTeX Warning: Label `sec:programme-1' multiply defined.
+
+)
+\openout1 = `project-verification2026.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Info: Redefining \degres on input line 99.
+LaTeX Info: Redefining \up on input line 99.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 99
+.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
+
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
+
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 99
+.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+Package xypdf Info: Line width: 0.39998pt on input line 99.
+
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count367
+\scratchdimen=\dimen274
+\scratchbox=\box76
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen275
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks44
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+\c@lstlisting=\count373
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+LaTeX Font Info:    Trying to load font information for T1+pag on input line 12
+0.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1pag.fd
+File: t1pag.fd 2001/06/04 font definitions for T1/pag.
+)
+Overfull \hbox (12.35977pt too wide) in paragraph at lines 120--121
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+
+[1
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+(./project-verification2026.toc
+
+[2
+
+])
+\tf@toc=\write5
+\openout5 = `project-verification2026.toc'.
+
+
+
+[3] (./project-verification2026.lol)
+\tf@lol=\write6
+\openout6 = `project-verification2026.lol'.
+
+
+
+[4
+
+]
+
+[5
+
+]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 19
+1.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (754.56847pt too wide) in paragraph at lines 192--192
+[]\T1/pcr/m/n/10 C program to print Floyd's triangle:- This program prints Floy
+d's triangle. Number of rows of Floyd's triangle to print is entered by the use
+r. First four rows of Floyd's triangle are as follows :-[] 
+ []
+
+(./codes/floyd.c) (./codes/bubblesort.c
+LaTeX Font Info:    Trying to load font information for TS1+pnc on input line 2
+.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1pnc.fd
+File: ts1pnc.fd 2001/06/04 font definitions for TS1/pnc.
+)
+
+[6
+
+]) (./codes/premier.c)
+
+[7] (./codes/selectionsort.c) (./codes/power5.c
+Overfull \hbox (196.57481pt too wide) in paragraph at lines 4--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[8]
+Overfull \hbox (4.57285pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (22.57304pt too wide) in paragraph at lines 11--12
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (22.57304pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.57285pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (292.57579pt too wide) in paragraph at lines 35--37
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.57317pt too wide) in paragraph at lines 37--39
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.57317pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (220.57504pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (34.57317pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[9]
+Overfull \hbox (64.57347pt too wide) in paragraph at lines 68--70
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][] 
+ []
+
+
+Overfull \hbox (220.57504pt too wide) in paragraph at lines 89--90
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][]
+ []
+
+
+
+[10]
+
+[11]
+Overfull \hbox (106.5739pt too wide) in paragraph at lines 176--177
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./codes/fusion.c
+
+[12]) (./codes/recherche.c
+
+[13]) (./codes/mergesort.c
+Overfull \hbox (16.57298pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.57298pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (22.57304pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[14]
+Overfull \hbox (28.5731pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.57317pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (22.57304pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.57286pt too wide) in paragraph at lines 43--44
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (28.5731pt too wide) in paragraph at lines 63--64
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./codes/power4.c
+
+[15]
+Overfull \hbox (196.5748pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (196.5748pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][] 
+ []
+
+) (./codes/bin2dec.c
+
+[16]) (./codes/power2.c
+Overfull \hbox (10.57292pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./codes/power4.c
+
+[17]
+Overfull \hbox (196.5748pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (196.5748pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][] 
+ []
+
+
+
+[18]) (./codes/radixsort.c
+Overfull \hbox (16.57298pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.57323pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[19]
+Overfull \hbox (16.57298pt too wide) in paragraph at lines 58--61
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./codes/binarysearchiterative.c
+
+[20]
+Overfull \hbox (88.57372pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.57298pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (88.57372pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.57292pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./codes/gcdscm.c
+
+[21]) (./codes/gcdscmrun.c) (./codes/gcdscmrunrun.c
+
+[22]) (./codes/binarysearchiterative.c
+Overfull \hbox (88.57372pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.57298pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[23]
+Overfull \hbox (88.57372pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.57292pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./codes/power3.c
+Overfull \hbox (4.57285pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[24]) (./codes/power4.c
+Overfull \hbox (196.5748pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (196.5748pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][] 
+ []
+
+
+
+[25]) (./codes/sorting.c
+
+[26]
+
+[27]
+
+[28]) (./codes/power6bis.c
+Overfull \hbox (4.57285pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[29]) (./codes/quick0.c
+
+[30]) (./codes/power6.c
+Overfull \hbox (244.5753pt too wide) in paragraph at lines 5--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
+ []
+
+
+
+[31]
+Overfull \hbox (292.57579pt too wide) in paragraph at lines 41--43
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.57317pt too wide) in paragraph at lines 43--45
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.57317pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (220.57504pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (34.57317pt too wide) in paragraph at lines 65--66
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[32]) (./codes/shellsort.c
+
+[33]) (./codes/gcdscm.c) (./codes/gcdscmrun.c)
+
+[34] (./codes/gcdscmrunrun.c) (./codes/rotation.c
+
+[35]) (./codes/minmax.c
+
+[36]) (./codes/commonbis.c
+
+[37]) (./codes/primes.c
+
+[38]) (./codes/common.c
+
+[39]) (./codes/merge.c
+
+[40]) (./codes/remove.c) (./codes/checkmatrix.c
+
+[41]) (./codes/simplify.c
+
+[42]) (./codes/average.c)
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the project-verification2026.maf file.
+\openout4 = `project-verification2026.maf'.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the project-verification2026.log file.
+
+
+
+[43] (./project-verification2026.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+ *File List*
+ article.cls    2024/06/29 v1.4n Standard LaTeX document class
+  size10.clo    2024/06/29 v1.4n Standard LaTeX file (size option)
+ fontenc.sty    2021/04/29 v2.0v Standard LaTeX package
+inputenc.sty    2024/02/08 v1.3d Input encoding file
+  latin1.def    2024/02/08 v1.3d Input encoding file
+latexsym.sty    1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+    epsf.sty    
+ theorem.sty    2024/08/06 v2.2c Theorem extension package (FMi)
+     thp.sty    2024/08/06 v2.2c Theorem extension package (FMi)
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
+   babel.sty    2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLa
+TeX and XeLaTeX
+francais.ldf    2024-07-25 v3.6c French support from the babel system
+scalefnt.sty    
+   alltt.sty    2024/07/07 v2.0g defines alltt environment
+   t1enc.sty    1994/06/01 Standard LaTeX package
+ amssymb.sty    2013/01/14 v3.01 AMS font symbols
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+ amsmath.sty    2024/11/05 v2.17t AMS math features
+ amstext.sty    2021/08/26 v2.01 AMS text
+  amsgen.sty    1999/11/30 v2.0 generic functions
+  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
+  amsopn.sty    2022/04/08 v2.04 operator names
+ vmargin.sty    2004/07/15 V2.5 set document margins (VK)
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+ wasysym.sty    2020/01/19 v2.4 Wasy-2 symbol support package
+   xypic.sty    2013/10/06 Xy-pic version 3.8.9
+      xy.sty
+   ifpdf.sty    2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+   iftex.sty    2024/12/12 v1.0g TeX engine tests
+/Users/mery/lectures/general/sty/galois.sty    1998/10/19 v1.01 LaTeX2e package
+ for Galois connections
+/Users/mery/lectures/general/sty/pf.sty    
+/Users/mery/lectures/general/sty/bsymb.sty    2006/02/06 v1.7 Symbols for the B
+ language
+/Users/mery/lectures/general/sty/dashbox.sty    2001/08/08 v1.13 Dashed and lay
+ered boxes
+    calc.sty    2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+  ifthen.sty    2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+graphicx.sty    2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+  keyval.sty    2022/05/29 v1.15 key=value parser (DPC)
+graphics.sty    2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    2023/12/02 v1.11 sin cos tan (DPC)
+graphics.cfg    2016/06/04 v1.11 sample graphics configuration
+  pdftex.def    2024/04/13 v1.2c Graphics/color driver for pdftex
+verbatim.sty    2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+ newcent.sty    2020/03/25 PSNFSS-v9.3 (SPQR) 
+/Users/mery/lectures/general/sty/algorithm2e.sty    1995/12/08
+  xspace.sty    2014/10/28 v1.13 Space after command names (DPC,MH)
+ minitoc.sty    2018/07/12 v62 Package minitoc
+ mtcmess.sty    2006/03/14
+project-verification2026.mtc0
+ english.mld    2006/01/13
+ english.mld    2006/01/13
+  french.mld    2006/03/21
+   color.sty    2024/06/23 v1.3e Standard LaTeX Color (DPC)
+   color.cfg    2016/01/02 v1.6 sample color configuration
+mathcolor.ltx
+     tlt.sty    1998/12/15
+ version.sty    2009/09/15  v 2.0
+  macros.tex
+listings.sty    2024/09/23 1.10c (Carsten Heinz)
+lstpatch.sty    2024/09/23 1.10c (Carsten Heinz)
+ lstmisc.sty    2024/09/23 1.10c (Carsten Heinz)
+listings.cfg    2024/09/23 1.10c listings configuration
+   t1pnc.fd    2001/06/04 font definitions for T1/pnc.
+l3backend-pdftex.def    2024-05-08 L3 backend support: PDF output (pdfTeX)
+babel-french.tex
+   ulasy.fd    1998/08/17 v2.2e LaTeX symbol font definitions
+    umsa.fd    2013/01/14 v3.01 AMS symbols A
+    umsb.fd    2013/01/14 v3.01 AMS symbols B
+   uwasy.fd    2020/01/19 v2.4 Wasy-2 symbol font definitions
+supp-pdf.mkii
+epstopdf-base.sty    2020-01-24 v2.11 Base part for package epstopdf
+epstopdf-sys.cfg    2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+lstlang1.sty    2024/09/23 1.10c listings language file
+ lstmisc.sty    2024/09/23 1.10c (Carsten Heinz)
+   t1pag.fd    2001/06/04 font definitions for T1/pag.
+   t1pcr.fd    2001/06/04 font definitions for T1/pcr.
+codes/floyd.c
+codes/bubblesort.c
+  ts1pnc.fd    2001/06/04 font definitions for TS1/pnc.
+codes/premier.c
+codes/selectionsort.c
+codes/power5.c
+codes/fusion.c
+codes/recherche.c
+codes/mergesort.c
+codes/power4.c
+codes/bin2dec.c
+codes/power2.c
+codes/power4.c
+codes/radixsort.c
+codes/binarysearchiterative.c
+codes/gcdscm.c
+codes/gcdscmrun.c
+codes/gcdscmrunrun.c
+codes/binarysearchiterative.c
+codes/power3.c
+codes/power4.c
+codes/sorting.c
+codes/power6bis.c
+codes/quick0.c
+codes/power6.c
+codes/shellsort.c
+codes/gcdscm.c
+codes/gcdscmrun.c
+codes/gcdscmrunrun.c
+codes/rotation.c
+codes/minmax.c
+codes/commonbis.c
+codes/primes.c
+codes/common.c
+codes/merge.c
+codes/remove.c
+codes/checkmatrix.c
+codes/simplify.c
+codes/average.c
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 14641 strings out of 473190
+ 211281 string characters out of 5715800
+ 902598 words of memory out of 5000000
+ 37546 multiletter control sequences out of 15000+600000
+ 581792 words of font info for 76 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 63i,6n,68p,1530b,1706s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2025/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/
+2025/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2025/te
+xmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2025/texmf-dis
+t/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on project-verification2026.pdf (43 pages, 207314 bytes).
+PDF statistics:
+ 191 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
