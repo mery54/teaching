@@ -9,7 +9,7 @@
 \contentsline {subsubsection}{\numberline {2.1.6} Lecture 6 \href {http://mery54.github.io/teaching/mosos/lecturesnotes/amcfsi-lect6.pdf}{ Validation, Verification and Proof Tools for Event-B for Correct-by-Construction}}{4}{subsubsection.2.1.6}%
 \contentsline {subsection}{\numberline {2.2}Tutorials}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Project}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Event-B Models}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Event-B Models}{5}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Event-B Archives for the lectures}{5}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}Event-B Archives for the tutorial 1}{5}{subsubsection.2.4.2}%
 \contentsline {subsubsection}{\numberline {2.4.3}Event-B Archives for the tutorial 2}{5}{subsubsection.2.4.3}%
@@ -35,8 +35,8 @@
 \contentsline {paragraph}{Exercice 4 Tutorial 2}{7}{section*.5}%
 \contentsline {paragraph}{Exercice 5 Tutorial 2}{7}{section*.6}%
 \contentsline {paragraph}{Exercice 6 Tutorial 2}{7}{section*.7}%
-\contentsline {subsubsection}{\numberline {3.3.4}Event-B Archives for the tutorial 3}{7}{subsubsection.3.3.4}%
-\contentsline {paragraph}{Exercice 1 Tutorial 3}{7}{section*.8}%
+\contentsline {subsubsection}{\numberline {3.3.4}Event-B Archives for the tutorial 3}{8}{subsubsection.3.3.4}%
+\contentsline {paragraph}{Exercice 1 Tutorial 3}{8}{section*.8}%
 \contentsline {paragraph}{Exercice 2 Tutorial 3}{8}{section*.9}%
 \contentsline {subsection}{\numberline {3.4}Project}{8}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Past exams of the Course MsC in Computer Science: Modelling and verifying software-based systems for Master in Comp}{8}{subsection.3.5}%
@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {4.1}Documentation}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Slides for the course 2020-2021}{8}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Slides for the course 2021-2022}{8}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Tutorials}{8}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Tutorials}{9}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Event-B Models}{9}{subsection.4.5}%
 \contentsline {subsubsection}{\numberline {4.5.1}Event-B Archives for the lectures}{9}{subsubsection.4.5.1}%
 \contentsline {subsubsection}{\numberline {4.5.2}Event-B Archives for the tutorials}{9}{subsubsection.4.5.2}%
