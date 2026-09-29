@@ -219,7 +219,6 @@ Css: span.uwave, .uwave-math {text-decoration:underline wavy; }
 Css: span.dashuline, .dashuline-math {text-decoration:underline dashed;}
 Css: span.dotuline, .dotuline-math {text-decoration:underline dotted;}
 --- characters ---
-Font("cmr","12","12","100")
 Font("ptmr7t","","10","120")
 Font("ptmr7t","","10","207")
 Font("ptmr7t","","10","144")
