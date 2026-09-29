@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage{bsymb,b2latex}
+\begin{document}
+\MultiTitle{variant1}
+\MultiHeader{CONTEXT}{ADDC}
+\CONTEXT{ADDC}{}{}
+\CONSTANTS{
+	\Constant{x0}{}
+	\Constant{y0}{}
+}
+\AXIOMS{
+	\Axiom{axm1}{false}{$x0 \in{} \nat{} $}{}
+	\Axiom{axm2}{false}{$y0\in{}\nat{} $}{}
+}
+\END
+\MultiHeader{MACHINE}{ADDM}
+\MACHINE{ADDM}{}{ADDC}{}
+\VARIABLES{
+	\Variable{x}{}
+	\Variable{y}{}
+	\Variable{z}{}
+	\Variable{ok}{}
+}
+\INVARIANTS{
+	\Invariant{inv1}{false}{$x \in{} 0\upto{}x0$}{}
+	\Invariant{inv2}{false}{$y \in{} 0\upto{}y0$}{}
+	\Invariant{inv4}{false}{$ok \in{} BOOL $}{}
+	\Invariant{inv3}{false}{$z = x0-x+y0-y $}{}
+	\Invariant{inv5}{false}{$ok=TRUE \limp{} z=x0+y0$}{}
+}
+\VARIANT{
+	\Variant{$x+y$}{}
+	\Variant{$y+x$}{}
+}
+\EVENTS{
+\INITIALISATION{false}{}{
+	\ACTIONS{false}{
+		\Action{act1}{$x\bcmeq{}x0$}{true}{}
+		\Action{act2}{$y\bcmeq{}y0$}{true}{}
+		\Action{act3}{$z\bcmeq{}0$}{true}{}
+		\Action{act4}{$ok\bcmeq{}FALSE$}{true}{}
+	}
+}
+\EVT{evt1}{false}{ordinary}{}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$x=0 \land{} y=0$}{true}{}
+		\Guard{grd2}{false}{$ok=FALSE$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$ok\bcmeq{}TRUE$}{true}{}
+	}
+}
+\EVT{evt2}{false}{convergent}{}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$ok=FALSE$}{true}{}
+		\Guard{grd2}{false}{$x > 0$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$z\bcmeq{}z+1$}{true}{}
+		\Action{act2}{$x\bcmeq{}x-1$}{true}{}
+	}
+}
+\EVT{evt3}{false}{convergent}{}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$ok=FALSE$}{true}{}
+		\Guard{grd2}{false}{$y > 0$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$z\bcmeq{}z+1$}{true}{}
+		\Action{act2}{$y\bcmeq{}y-1$}{true}{}
+	}
+}
+\EVT{evt4}{false}{anticipated}{}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$x>1 \land{} y>1$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$x,y,z,ok\bcmsuch{} ( z' = x0-x'+y0-y' \land{} x' \in{} 0\upto{}x0 \land{} y'\in{}0\upto{}y0  \land{} ((x'<x\land{}y'=y)  \lor{} (y'<y\land{}x'=x)) \land{} (ok'=TRUE \limp{} z'=x0+y0))$}{true}{}
+	}
+}
+}
+\END
+\end{document}

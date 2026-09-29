@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="x0" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="y0" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDC.bpo|org.eventb.core.poFile#ADDC|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x0∈ℕ" org.eventb.core.source="/mcfsi1-variant/ADDC.buc|org.eventb.core.contextFile#ADDC|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y0∈ℕ" org.eventb.core.source="/mcfsi1-variant/ADDC.buc|org.eventb.core.contextFile#ADDC|org.eventb.core.axiom#*"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  23 SEP 2026 09:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  29 SEP 2026 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,7 +587,20 @@ Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
 \minute=\count323
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/xcolor-hooks.4ht
 version 2020-10-17-13:53
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/cite/cite.sty
+)
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 m
+      cfso%\IEEEoverridecommandlockouts
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
@@ -2046,10 +2059,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  38072 strings out of 473191
  754638 string characters out of 5715826
- 1322749 words of memory out of 5000000
+ 1323754 words of memory out of 5000000
  60219 multiletter control sequences out of 15000+600000
  569696 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,8n,149p,986b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (39 pages, 207576 bytes).
+Output written on web.dvi (39 pages, 207048 bytes).

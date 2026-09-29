@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="x0" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="y0" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="y1" org.eventb.core.predicate="x0∈ℕ" org.eventb.core.source="/mcfsi1-variant/ADDC.buc|org.eventb.core.contextFile#ADDC|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="y2" org.eventb.core.predicate="y0∈ℕ" org.eventb.core.source="/mcfsi1-variant/ADDC.buc|org.eventb.core.contextFile#ADDC|org.eventb.core.axiom#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="z" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="ok" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="vrn1/FIN" org.eventb.core.accurate="true" org.eventb.core.poDesc="Finiteness of variant" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite({v⦂ℤ·v∈ℕ∧x+y=v ∣ v})" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDK"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x0∈0 ‥ x0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDK"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="y0∈0 ‥ y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDK"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=x0 − x0+y0 − y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDK"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒0=x0+y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTADDK" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="ok'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="x'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="y'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="z'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPADDK" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTIDENTADDK" org.eventb.core.poStamp="1"/>
+    <org.eventb.core.poSequent name="evt1/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDL"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE=TRUE⇒z=x0+y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt1\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTADDL" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="ok'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPADDL" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTIDENTADDL" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x=0∧y=0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#0|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="ok=FALSE" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#0|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="evt2/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDM"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x − 1∈0 ‥ x0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt2\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt2/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDM"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="z+1=x0 − (x − 1)+y0 − y" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt2\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt2/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDM"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ok=TRUE⇒z+1=x0+y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt2\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt2/vrn1/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDM"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{v⦂ℤ·v∈ℕ∧x − 1+y=v ∣ v}⊆{v⦂ℤ·v∈ℕ∧x+y=v ∣ v}" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt2\/vrn1\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt2/vrn2/NAT" org.eventb.core.accurate="true" org.eventb.core.poDesc="Natural number variant of event" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDM">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="{v⦂ℤ·v∈ℕ∧x − 1+y=v ∣ v}={v⦂ℤ·v∈ℕ∧x+y=v ∣ v}" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="y+x∈ℕ" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt2\/vrn2\/NAT|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt2/vrn2/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDM">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="{v⦂ℤ·v∈ℕ∧x − 1+y=v ∣ v}={v⦂ℤ·v∈ℕ∧x+y=v ∣ v}" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="y+(x − 1)&lt;y+x" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt2\/vrn2\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTADDM" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="x'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="z'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPADDM" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTIDENTADDM" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ok=FALSE" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#1|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="x&gt;0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#1|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="evt3/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDN"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="y − 1∈0 ‥ y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt3\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt3/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDN"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="z+1=x0 − x+y0 − (y − 1)" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt3\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt3/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDN"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ok=TRUE⇒z+1=x0+y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt3\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt3/vrn1/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDN"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{v⦂ℤ·v∈ℕ∧x+(y − 1)=v ∣ v}⊆{v⦂ℤ·v∈ℕ∧x+y=v ∣ v}" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt3\/vrn1\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt3/vrn2/NAT" org.eventb.core.accurate="true" org.eventb.core.poDesc="Natural number variant of event" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDN">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="{v⦂ℤ·v∈ℕ∧x+(y − 1)=v ∣ v}={v⦂ℤ·v∈ℕ∧x+y=v ∣ v}" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="y+x∈ℕ" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt3\/vrn2\/NAT|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt3/vrn2/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDN">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="{v⦂ℤ·v∈ℕ∧x+(y − 1)=v ∣ v}={v⦂ℤ·v∈ℕ∧x+y=v ∣ v}" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="y − 1+x&lt;y+x" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt3\/vrn2\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTADDN" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="y'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="z'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPADDN" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTIDENTADDN" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ok=FALSE" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#5|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y&gt;0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#5|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="evt4/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDO">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="z'=x0 − x'+y0 − y'∧x'∈0 ‥ x0∧y'∈0 ‥ y0∧((x'&lt;x∧y'=y)∨(y'&lt;y∧x'=x))∧(ok'=TRUE⇒z'=x0+y0)" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.action#'"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x'∈0 ‥ x0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt4\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt4/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDO">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="z'=x0 − x'+y0 − y'∧x'∈0 ‥ x0∧y'∈0 ‥ y0∧((x'&lt;x∧y'=y)∨(y'&lt;y∧x'=x))∧(ok'=TRUE⇒z'=x0+y0)" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.action#'"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="y'∈0 ‥ y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt4\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt4/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDO">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="z'=x0 − x'+y0 − y'∧x'∈0 ‥ x0∧y'∈0 ‥ y0∧((x'&lt;x∧y'=y)∨(y'&lt;y∧x'=x))∧(ok'=TRUE⇒z'=x0+y0)" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.action#'"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="z'=x0 − x'+y0 − y'" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt4\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt4/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDO">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="z'=x0 − x'+y0 − y'∧x'∈0 ‥ x0∧y'∈0 ‥ y0∧((x'&lt;x∧y'=y)∨(y'&lt;y∧x'=x))∧(ok'=TRUE⇒z'=x0+y0)" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.action#'"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ok'=TRUE⇒z'=x0+y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt4\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt4/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDO"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃x'⦂ℤ,y'⦂ℤ,z'⦂ℤ,ok'⦂BOOL·z'=x0 − x'+y0 − y'∧x'∈0 ‥ x0∧y'∈0 ‥ y0∧((x'&lt;x∧y'=y)∨(y'&lt;y∧x'=x))∧(ok'=TRUE⇒z'=x0+y0)" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.action#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.action#'"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDO"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt4/vrn1/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDO">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="z'=x0 − x'+y0 − y'∧x'∈0 ‥ x0∧y'∈0 ‥ y0∧((x'&lt;x∧y'=y)∨(y'&lt;y∧x'=x))∧(ok'=TRUE⇒z'=x0+y0)" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.action#'"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{v⦂ℤ·v∈ℕ∧x'+y'=v ∣ v}⊆{v⦂ℤ·v∈ℕ∧x+y=v ∣ v}" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt4\/vrn1\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="evt4/vrn2/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTALLHYPADDO">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="z'=x0 − x'+y0 − y'∧x'∈0 ‥ x0∧y'∈0 ‥ y0∧((x'&lt;x∧y'=y)∨(y'&lt;y∧x'=x))∧(ok'=TRUE⇒z'=x0+y0)" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.action#'"/>
+            <org.eventb.core.poPredicate name="(" org.eventb.core.predicate="{v⦂ℤ·v∈ℕ∧x'+y'=v ∣ v}={v⦂ℤ·v∈ℕ∧x+y=v ∣ v}" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="y'+x'≤y+x" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.variant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poSequent#evt4\/vrn2\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTADDO" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="x'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="ok'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="y'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="z'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPADDO" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#EVTIDENTADDO" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x&gt;1∧y&gt;1" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.event#8|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/mcfsi1-variant/ADDM.bpo|org.eventb.core.poFile#ADDM|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x∈0 ‥ x0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y∈0 ‥ y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="ok∈BOOL" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="z=x0 − x+y0 − y" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="ok=TRUE⇒z=x0+y0" org.eventb.core.source="/mcfsi1-variant/ADDM.bum|org.eventb.core.machineFile#ADDM|org.eventb.core.invariant#4"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

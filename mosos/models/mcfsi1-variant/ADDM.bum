@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="x≔x0" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="y≔y0" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="z≔0" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="ok≔FALSE" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="ADDC"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="x"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="y"/>
+    <org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="x ∈ 0‥x0"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="y ∈ 0‥y0"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="inv4" org.eventb.core.predicate="ok ∈ BOOL "/>
+    <org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="z = x0−x+y0−y "/>
+    <org.eventb.core.invariant name="4" org.eventb.core.label="inv5" org.eventb.core.predicate="ok=TRUE ⇒ z=x0+y0"/>
+    <org.eventb.core.variable name="/" org.eventb.core.identifier="z"/>
+    <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="evt1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="x=0 ∧ y=0"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="ok≔TRUE" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="ok=FALSE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="1" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="evt2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="ok=FALSE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="x &gt; 0"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="z≔z+1" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="x≔x−1" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="2" org.eventb.core.identifier="ok"/>
+    <org.eventb.core.event name="5" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="evt3">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="ok=FALSE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="y &gt; 0"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="z≔z+1" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="y≔y−1" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variant name="6" org.eventb.core.expression="{v ∣ v ∈ ℕ ∧ x+y=v} " org.eventb.core.label="vrn1"/>
+    <org.eventb.core.variant name="7" org.eventb.core.expression="y+x" org.eventb.core.label="vrn2"/>
+    <org.eventb.core.event name="8" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="evt4">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="x,y,z,ok:∣ ( z' = x0−x'+y0−y' ∧ x' ∈ 0‥x0 ∧ y'∈0‥y0  ∧ ((x'&lt;x∧y'=y)  ∨ (y'&lt;y∧x'=x)) ∧ (ok'=TRUE ⇒ z'=x0+y0))" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="x&gt;1 ∧ y&gt;1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>
