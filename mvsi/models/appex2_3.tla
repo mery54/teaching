@@ -10,7 +10,7 @@ rte(X) == X#u => X \in D
 (* Précondition *) 
 ASSUME x0 \in D /\  x0 \geq 2
 -----------------------------
-(* définitiobs *)
+(* définitions *)
 
 diviseurs(X) == {  m \in 1..X :  X % m = 0}
 prime(X) ==  (diviseurs (X) = {1,X}) /\ X # 1

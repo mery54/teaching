@@ -1,6 +1,5 @@
 --------- MODULE appex4_1_4 --------
 EXTENDS Integers,TLC
-
 --------------------------------------------------------------
 
 (*
@@ -57,19 +56,16 @@ Termination == <>(pc = "Done")
 
 \* END TRANSLATION
 
-
-
-
+------------------------------------------------------------
 MAX == 32768  (* 16 bits *)
 D == 0..32768
-(*  x \leq 32760 *)
-
 DD(X) == ( X \in D)
-
+DDP(X) ==  (X # defaultInitValue) => (X \in D)
+----------------------------------------
 Safety_absence ==  DD(x)  /\ DD(y) 
-
-
 Inv ==
+    /\ pc \in {"l1","l2","Done"}
+    /\ x \in Int /\ y \in Int
     /\ pc="l1" =>  x=11 /\ y=13
     /\ pc="l2" =>  x=26 \div 2 /\ y=33 \div 3
 

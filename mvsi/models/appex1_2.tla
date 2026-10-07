@@ -1,4 +1,5 @@
 ------------------- MODULE appex1_2 -----------------
+(* Computing  GCD of two numbers a and b *)
 EXTENDS Naturals,TLC
 CONSTANTS a,b
 VARIABLES  x,y
@@ -20,10 +21,11 @@ Next ==
     \/ a1 
     \/ a2  
     \/ over 
+
 ------------------------------------
 (* Propriétés de sûreté à vérifier *)
 question == x # y 
-prop1 == x \geq 0 /\ y \geq 0
+prop1 == [](x \geq 0 /\ y \geq 0)
 prop2 == x+y \leq a+b
 prop == question
 Check == prop2

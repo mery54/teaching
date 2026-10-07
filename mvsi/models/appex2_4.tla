@@ -1,5 +1,5 @@
--------------------------------- MODULE appex2_4 --------------------------------
-5* labyrinthe *)EXTENDS Integers,TLC
+ c-------------------------------- MODULE appex2_4 --------------------------------
+EXTENDS Integers,TLC
 VARIABLES  p
 CONSTANTS input,output 
 

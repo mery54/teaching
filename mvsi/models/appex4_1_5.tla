@@ -112,7 +112,7 @@ Inv ==
     /\ pc = "l0" => x=x0/\ y=y0
     /\ pc="l1" => x=x0 /\ y=y0 /\ x<y
     
-safetyrte == x \in min..max /\ y \min..max /\ z \ min.max
+safetyrte == x \in min..max /\ y \in min..max /\ z \in min.max
 
 
 safetypcv1 == pc="Done" =>  x=x0 /\ y=y0 /\ z \in  {x,y} /\ x <= z /\ y <= z

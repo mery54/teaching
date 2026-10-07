@@ -2,21 +2,21 @@
 (* modules de base importables *)
 EXTENDS Naturals, Integers, TLC 
 ----------------------------------------------------------------------------
-CONSTANTS  x1,x2,U,MAX
+CONSTANTS  x10,x20,U,MAX
 
 MIN == -MAX
 ----------------------------------------------------------------------------
-VARIABLES  y1,y2,y3,z1,z2,pc
+VARIABLES  x1,x2,y1,y2,y3,z1,z2,pc
 -----------------------------------------------------------------------------
 locs == {"START","HALT","LOOP"}
 -----------------------------------------------------------------------------
 BF(X) == X#U => X \in MIN..MAX
 
-ASSUME  BF(x1) /\ BF(x2)
+ASSUME  BF(x10) /\ BF(x20)
 -----------------------------------------------------------------------------
 
 
-Init == pc="START" /\ y1=U /\ y2 = U /\ y3=U /\ z1 = U /\ z2 = U
+Init == pc="START" /\ x1=x10 /\ x2=x20 /\ y1=U /\ y2 = U /\ y3=U /\ z1 = U /\ z2 = U
 -----------------------------------------------------------------------------
 actionSTART_LOOP ==
 	      /\ pc = "START"
@@ -24,7 +24,7 @@ actionSTART_LOOP ==
 	      /\ y1'=0
 	      /\ y2'=0
 	      /\ y3'=x1
-	      /\ UNCHANGED <<z1,z2>>
+	      /\ UNCHANGED <<x1,x2,z1,z2>>
 
 
 actionLOOP_HALT ==
@@ -36,6 +36,7 @@ actionLOOP_HALT ==
 	      /\ y3'=y3
 	      /\ z1'=y1
 	      /\ z2'=y2
+	      /\ UNCHANGED <<x1,x2>>
 
 
 
@@ -48,9 +49,10 @@ actionLOOP_LOOP ==
 	     /\ y3'=y3-1
 	     /\ z1'=z1
 	     /\ z2'=z2
+	      /\ UNCHANGED <<x1,x2>>	     
 
 
-skip == UNCHANGED << y1,y2,y3,z1,z2,pc>>
+skip == UNCHANGED <<x1,x2, y1,y2,y3,z1,z2,pc>>
 
 -----------------------------------------------------------------------------
 
@@ -71,6 +73,8 @@ safety2 == pc="HALT" => z1 = x1 \div x2 /\ z2= x1 % x2 /\ PrintT(z1) /\ PrintT(z
 safety3 == pc="HALT" =>     x1 = z1*x2 +z2  /\ 0 \leq z2 /\ z2 < x2
 (* vérification de l'absence d'erreurs à l'exé&cution ou RTE *)
 safety4 == BF(z1) /\BF(z2) /\BF(y1) /\BF(y2) /\BF(y3)
+
+prop1 == [] (x1=x10 /\ x2=x20)
 
 
 Safety == safety1 /\ safety2  /\ safety3  /\ safety4 

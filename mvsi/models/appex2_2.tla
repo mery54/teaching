@@ -53,6 +53,7 @@ Qy1 == BF(y1)
 Qrte == BF(y1) /\ BF(y2) /\ BF(z)
 Question == Qpartialcorrectness /\ Qrte
 
+QQQ== [] Question
 QQ == 0 \leq y2 /\ y2 \leq 2
 
 test == QQ

@@ -71,16 +71,12 @@ l2 == /\ pc = "l2"
 
 l3 == /\ pc = "l3"
       /\ IF y3#x2
-            THEN /\ pc' = "ll6"
+            THEN /\ y2' = 2*y2
+                 /\ y3' = (y3 \div 2)
+                 /\ pc' = "l4"
             ELSE /\ pc' = "l5"
-      /\ UNCHANGED << x1, x2, y1, y2, y3, z1, z2 >>
-
-ll6 == /\ pc = "ll6"
-       /\ PrintT(<<y1,y2,y3,x1,x2>>)
-       /\ y2' = 2*y2
-       /\ y3' = (y3 \div 2)
-       /\ pc' = "l4"
-       /\ UNCHANGED << x1, x2, y1, z1, z2 >>
+                 /\ UNCHANGED << y2, y3 >>
+      /\ UNCHANGED << x1, x2, y1, z1, z2 >>
 
 l4 == /\ pc = "l4"
       /\ IF y3\leq y1
@@ -112,7 +108,7 @@ l7 == /\ pc = "l7"
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
 
-Next == l1 \/ l2 \/ l3 \/ ll6 \/ l4 \/ l5 \/ l6 \/ l7
+Next == l1 \/ l2 \/ l3 \/ l4 \/ l5 \/ l6 \/ l7
            \/ Terminating
 
 Spec == /\ Init /\ [][Next]_vars
