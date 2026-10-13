@@ -1,7 +1,7 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{2}{x2-1000}{QQ2-2-1}{Contents}}{5}\relax 
 \doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{3}{x3-20001}{QQ2-3-2}{Documentation and Tools}}{7}\relax 
-\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{4}{x4-30002}{QQ2-4-3}{Focus on publications related to te courses}}{9}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{4}{x4-30002}{QQ2-4-3}{Focus on publications related to the courses}}{9}\relax 
 \doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{5}{x5-40003}{QQ2-5-4}{Course MCFSI at Telecom Nancy academic year 2026/2027}}{10}\relax 
 \doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{6}{x6-50003.1}{QQ2-6-5}{Slides for the course MCFSI}}{10}\relax 
 \doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{6}{x6-60003.1.1}{QQ2-6-6}{Lecture 1 (CM1 \& CM2) \href  {http://mery54.github.io/teaching/mosos/lecturesnotes/mcfsi-lect1.pdf}{The Modelling Language Event-B}. }}{10}\relax 
