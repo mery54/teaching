@@ -23,7 +23,7 @@ Next ==
     \/ over 
 
 ------------------------------------
-(* Propriétés de sûreté à vérifier *)
+(* Safety properties to be verified *)
 question == x # y 
 prop1 == [](x \geq 0 /\ y \geq 0)
 prop2 == x+y \leq a+b

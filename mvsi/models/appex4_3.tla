@@ -112,8 +112,7 @@ D == 0..MAXINT\cup {defaultInitValue}
 Qpc1 == pc = "Done" => ( x1 % z1  = 0 ) /\ (x2 % z1 = 0)
 Qpc2 == pc = "Done" => ( z2 % x1  = 0 ) /\ (z2 % x2 = 0)
 Qproperty1 == pc = "Done" => x1*x2=z1*z2
-Qef == x1 \in D /\ x2 \in D /\ y1 \in D /\ y3 \in D /\ z1 \in D /\ z2 \in D 
-
+Qef == x1 \in D 
 ==================================================================
 \* Modification History
 \* Last modified Thu Nov 19 20:42:02 CET 2020 by mery

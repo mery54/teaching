@@ -1,6 +1,6 @@
 --------- MODULE appex4_1_2 --------
 EXTENDS Integers, Naturals,TLC
-CONSTANTS x0,y0,p,maxi 
+CONSTANTS x0,y0,p,maxi,defaultInitValue
 --------------------------------------------------------------
 diviseurs(n) == { m \in 1..maxi:  n % m = 0 }
 premier(n) ==  diviseurs(n) = {1,n} /\ n # 1 
@@ -18,7 +18,7 @@ l2:assert x=5*(2^p) /\ y=2^(p+1) ;
 }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "31a0954b" /\ chksum(tla) = "e1037380")
+\* BEGIN TRANSLATION (chksum(pcal) = "31a0954b" /\ chksum(tla) = "3211f152")
 VARIABLES x, y, pc
 
 vars == << x, y, pc >>
@@ -30,14 +30,14 @@ Init == (* Global variables *)
 
 l1 == /\ pc = "l1"
       /\ Assert(x=2^p /\ y=(2^p)*2 /\  x*y=2^(2*p+1), 
-                "Failure of assertion at line 16, column 4.")
+                "Failure of assertion at line 15, column 4.")
       /\ x' = y+x+(2^x)
       /\ pc' = "l2"
       /\ y' = y
 
 l2 == /\ pc = "l2"
       /\ Assert(x=5*(2^p) /\ y=2^(p+1), 
-                "Failure of assertion at line 18, column 4.")
+                "Failure of assertion at line 17, column 4.")
       /\ pc' = "Done"
       /\ UNCHANGED << x, y >>
 

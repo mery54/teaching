@@ -12,14 +12,13 @@ ASSUME pre(x0,y0,z0)
 --algorithm  test  {
 variables x=x0,z=z0,y=y0,t;
 {
-l1:\* assert x=10 /\ z=2*x /\ y = z + x;
+l1: assert x=10 /\ z=2*x /\ y = z + x;
 y:=z+x;
-l2: \* assert x = 10 /\ y = x + 2*10
-    skip ;
+l2: assert x = 10 /\ y = x + 2*10;
 }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "cec661f" /\ chksum(tla) = "51e99e7b")
+\* BEGIN TRANSLATION (chksum(pcal) = "6b4ae46f" /\ chksum(tla) = "d33b1a21")
 CONSTANT defaultInitValue
 VARIABLES x, z, y, t, pc
 
@@ -33,12 +32,15 @@ Init == (* Global variables *)
         /\ pc = "l1"
 
 l1 == /\ pc = "l1"
+      /\ Assert(x=10 /\ z=2*x /\ y = z + x, 
+                "Failure of assertion at line 15, column 5.")
       /\ y' = z+x
       /\ pc' = "l2"
       /\ UNCHANGED << x, z, t >>
 
 l2 == /\ pc = "l2"
-      /\ TRUE
+      /\ Assert(x = 10 /\ y = x + 2*10, 
+                "Failure of assertion at line 17, column 5.")
       /\ pc' = "Done"
       /\ UNCHANGED << x, z, y, t >>
 
