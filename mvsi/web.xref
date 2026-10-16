@@ -19,6 +19,7 @@
 \:CrossWord{)QQQ2-17-16}{1}{3}%
 \:CrossWord{)QQQ2-18-17}{1}{3}%
 \:CrossWord{)QQQ2-19-18}{1}{4}%
+\:CrossWord{)QQQ2-20-19}{1}{4}%
 \:CrossWord{)Bcontentsname.html(L }{web.html}{4}%
 \:CrossWord{)F2F-}{contentsname.html}{4}%
 \:CrossWord{fileidcut 2}{1}{4}%
@@ -135,31 +136,39 @@
 \:CrossWord{)N 15(L }{TD2.html}{17}%
 \:CrossWord{)Qx16-150005.2}{16}{17}%
 \:CrossWord{)QtailTD2.html}{16}{18}%
-\:CrossWord{)BTD3.html(L }{ModèlesTLA.html}{18}%
-\:CrossWord{)F17F-}{TD3.html}{18}%
+\:CrossWord{)BTD4.html(L }{ModèlesTLA.html}{18}%
+\:CrossWord{)F17F-}{TD4.html}{18}%
 \:CrossWord{fileidcut 17}{16}{18}%
-\:CrossWord{cutfile 16(L }{TD3.html}{18}%
-\:CrossWord{TD3.html(L }{TD3.html}{18}%
-\:CrossWord{)N 16(L }{TD3.html}{18}%
+\:CrossWord{cutfile 16(L }{TD4.html}{18}%
+\:CrossWord{TD4.html(L }{TD4.html}{18}%
+\:CrossWord{)N 16(L }{TD4.html}{18}%
 \:CrossWord{)Qx17-160005.3}{17}{18}%
-\:CrossWord{)QtailTD3.html}{17}{18}%
-\:CrossWord{)QtailModèlesTLA.html}{14}{19}%
-\:CrossWord{)BAnnalesdesexamenspassés.html(L }{web.html}{19}%
-\:CrossWord{)F18F-}{Annalesdesexamenspassés.html}{19}%
+\:CrossWord{)QtailTD4.html}{17}{19}%
+\:CrossWord{)BTD3.html(L }{ModèlesTLA.html}{19}%
+\:CrossWord{)F18F-}{TD3.html}{19}%
 \:CrossWord{fileidcut 18}{17}{19}%
-\:CrossWord{cutfile 17(L }{Annalesdesexamenspassés.html}{19}%
-\:CrossWord{Annalesdesexamenspassés.html(L }{Annalesdesexamenspassés.html}{19}%
-\:CrossWord{)N 14(L }{Annalesdesexamenspassés.html}{19}%
-\:CrossWord{)Qx18-170006}{18}{19}%
-\:CrossWord{)QtailAnnalesdesexamenspassés.html}{18}{20}%
-\:CrossWord{)Brefname.html(L }{web.html}{20}%
-\:CrossWord{)F19F-}{refname.html}{20}%
+\:CrossWord{cutfile 17(L }{TD3.html}{19}%
+\:CrossWord{TD3.html(L }{TD3.html}{19}%
+\:CrossWord{)N 17(L }{TD3.html}{19}%
+\:CrossWord{)Qx18-170005.4}{18}{19}%
+\:CrossWord{)QtailTD3.html}{18}{19}%
+\:CrossWord{)QtailModèlesTLA.html}{14}{20}%
+\:CrossWord{)BAnnalesdesexamenspassés.html(L }{web.html}{20}%
+\:CrossWord{)F19F-}{Annalesdesexamenspassés.html}{20}%
 \:CrossWord{fileidcut 19}{18}{20}%
-\:CrossWord{cutfile 18(L }{refname.html}{20}%
-\:CrossWord{refname.html(L }{refname.html}{20}%
-\:CrossWord{)N 18(L }{refname.html}{20}%
-\:CrossWord{)Qx19-18000}{19}{20}%
-\:CrossWord{)QXabrial2010}{19}{20}%
-\:CrossWord{)QXlosl-eatcs}{19}{20}%
-\:CrossWord{)QXlosl-b}{19}{20}%
-\:CrossWord{)Qtailrefname.html}{19}{21}%
+\:CrossWord{cutfile 18(L }{Annalesdesexamenspassés.html}{20}%
+\:CrossWord{Annalesdesexamenspassés.html(L }{Annalesdesexamenspassés.html}{20}%
+\:CrossWord{)N 14(L }{Annalesdesexamenspassés.html}{20}%
+\:CrossWord{)Qx19-180006}{19}{20}%
+\:CrossWord{)QtailAnnalesdesexamenspassés.html}{19}{21}%
+\:CrossWord{)Brefname.html(L }{web.html}{21}%
+\:CrossWord{)F20F-}{refname.html}{21}%
+\:CrossWord{fileidcut 20}{19}{21}%
+\:CrossWord{cutfile 19(L }{refname.html}{21}%
+\:CrossWord{refname.html(L }{refname.html}{21}%
+\:CrossWord{)N 19(L }{refname.html}{21}%
+\:CrossWord{)Qx20-19000}{20}{21}%
+\:CrossWord{)QXabrial2010}{20}{21}%
+\:CrossWord{)QXlosl-eatcs}{20}{21}%
+\:CrossWord{)QXlosl-b}{20}{21}%
+\:CrossWord{)Qtailrefname.html}{20}{22}%
