@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  9 NOV 2026 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2026.1.17)  10 NOV 2026 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2060,10 +2060,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  38095 strings out of 473191
  755078 string characters out of 5715826
- 1323960 words of memory out of 5000000
+ 1322958 words of memory out of 5000000
  60238 multiletter control sequences out of 15000+600000
  569696 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,8n,149p,986b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.dvi (41 pages, 214196 bytes).
+Output written on web.dvi (41 pages, 214200 bytes).
