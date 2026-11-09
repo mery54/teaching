@@ -1,0 +1,163 @@
+% carte-event-b.tex -- Carte de référence de la notation mathématique Event-B
+% Feuille recto-verso (A4). Langue : \def\langue{fr} (défaut) ou \def\langue{en}
+% avant \input{carte-event-b} (voir carte-event-b-fr.tex et carte-event-b-en.tex).
+\providecommand{\langue}{fr}
+\documentclass[10pt,a4paper]{article}
+\newif\ifen
+\def\langueen{en}\ifx\langue\langueen\entrue\fi
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\ifen\usepackage[english]{babel}\else\usepackage[french]{babel}\fi
+\usepackage{lmodern}
+\usepackage[a4paper,margin=12mm,top=11mm,bottom=12mm]{geometry}
+\usepackage{bsymb}
+\providecommand{\dom}{\mathop{\mathrm{dom}}\nolimits}
+\providecommand{\ran}{\mathop{\mathrm{ran}}\nolimits}
+\usepackage{array,longtable,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fancyhdr}
+
+% --- bilingue
+\newcommand{\T}[2]{\ifen#2\else#1\fi}
+% --- une ligne : nom (fr, en), fonction (fr, en), ASCII, symbole
+\newcommand{\E}[6]{\T{#1}{#2} & \T{#3}{#4} & \texttt{#5} & $#6$\\}
+% --- titre de rubrique
+\newcommand{\R}[2]{\rowcolor{blue!12}\multicolumn{4}{l}{\rule{0pt}{2.6ex}\bfseries\T{#1}{#2}}\\}
+\newcommand{\bs}{\textbackslash}
+
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.22}
+\setlength{\LTpre}{2pt}\setlength{\LTpost}{0pt}
+
+\pagestyle{fancy}\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\scriptsize\T{Carte Event-B -- notation mathématique (Rodin)}{Event-B card -- mathematical notation (Rodin)}}
+\fancyfoot[R]{\scriptsize\T{page}{page} \thepage/2}
+
+\begin{document}
+\normalsize
+\begin{center}
+  {\Large\bfseries \T{Notation mathématique d'Event-B}{Event-B mathematical notation}}\\[2pt]
+  {\footnotesize\T{Pour chaque élément : son nom, sa fonction, sa saisie ASCII dans Rodin
+  et son symbole mathématique. $P,Q$ : prédicats ; $E,F$ : expressions ; $S,T$ :
+  ensembles ; $r,p,q$ : relations ; $f$ : fonction ; $x,y$ : variables.}{For each element:
+  its name, its function, its ASCII input in Rodin and its mathematical symbol.
+  $P,Q$: predicates; $E,F$: expressions; $S,T$: sets; $r,p,q$: relations; $f$:
+  function; $x,y$: variables.}}
+\end{center}
+
+\begin{longtable}{>{\raggedright}p{0.21\linewidth} >{\raggedright\arraybackslash}p{0.42\linewidth} >{\raggedright\arraybackslash}p{0.13\linewidth} >{\raggedright\arraybackslash}p{0.17\linewidth}}
+\toprule
+\textbf{\T{Nom}{Name}} & \textbf{\T{Fonction}{Function}} & \textbf{ASCII} & \textbf{\T{Symbole}{Symbol}}\\
+\midrule\endfirsthead
+\toprule
+\textbf{\T{Nom}{Name}} & \textbf{\T{Fonction}{Function}} & \textbf{ASCII} & \textbf{\T{Symbole}{Symbol}}\\
+\midrule\endhead
+\bottomrule\endfoot
+% ------------------------------------------------------------------
+\R{Prédicats}{Predicates}
+\E{vrai}{true}{prédicat toujours vrai}{predicate that always holds}{true}{\btrue}
+\E{faux}{false}{prédicat toujours faux}{predicate that never holds}{false}{\bfalse}
+\E{conjonction}{conjunction}{$P$ et $Q$}{$P$ and $Q$}{P \& Q}{P \land Q}
+\E{disjonction}{disjunction}{$P$ ou $Q$}{$P$ or $Q$}{P or Q}{P \lor Q}
+\E{implication}{implication}{si $P$ alors $Q$}{if $P$ then $Q$}{P => Q}{P \limp Q}
+\E{équivalence}{equivalence}{$P$ si et seulement si $Q$}{$P$ if and only if $Q$}{P <=> Q}{P \leqv Q}
+\E{négation}{negation}{non $P$}{not $P$}{not P}{\lnot P}
+\E{quantification universelle}{universal quantifier}{pour tout $x$ tel que $P$, $Q$}{for every $x$ such that $P$, $Q$}{!x.P => Q}{\forall x \qdot P \limp Q}
+\E{quantification existentielle}{existential quantifier}{il existe $x$ tel que $P$ et $Q$}{there is an $x$ such that $P$ and $Q$}{\#x.P \& Q}{\exists x \qdot P \land Q}
+\E{égalité}{equality}{$E$ et $F$ ont la même valeur}{$E$ and $F$ have the same value}{E = F}{E = F}
+\E{différence}{inequality}{$E$ et $F$ ont des valeurs différentes}{$E$ and $F$ have different values}{E /= F}{E \neq F}
+% ------------------------------------------------------------------
+\R{Ensembles}{Sets}
+\E{appartenance}{membership}{$E$ est un élément de $S$}{$E$ is an element of $S$}{E : S}{E \in S}
+\E{non-appartenance}{non-membership}{$E$ n'est pas un élément de $S$}{$E$ is not an element of $S$}{E /: S}{E \notin S}
+\E{inclusion}{subset}{tout élément de $S$ est dans $T$}{every element of $S$ is in $T$}{S <: T}{S \subseteq T}
+\E{non-inclusion}{not a subset}{négation de $S \subseteq T$}{negation of $S \subseteq T$}{S /<: T}{S \not\subseteq T}
+\E{inclusion stricte}{proper subset}{$S \subseteq T$ et $S \neq T$}{$S \subseteq T$ and $S \neq T$}{S <{}<: T}{S \subset T}
+\E{non-inclusion stricte}{not a proper subset}{négation de $S \subset T$}{negation of $S \subset T$}{S /<{}<: T}{S \not\subset T}
+\E{ensemble vide}{empty set}{ensemble sans élément}{set with no element}{\{\}}{\emptyset}
+\E{ensemble en extension}{set extension}{ensemble formé des éléments listés}{set made of the listed elements}{\{a,b,c\}}{\{a,b,c\}}
+\E{ensemble en compréhension}{set comprehension}{valeurs de $E$ pour les $x$ qui vérifient $P$}{values of $E$ for the $x$ satisfying $P$}{\{x.P | E\}}{\{x \qdot P \mid E\}}
+\E{compréhension simple}{simple comprehension}{éléments $x$ qui vérifient $P$}{elements $x$ satisfying $P$}{\{x | P\}}{\{x \mid P\}}
+\E{ensemble des parties}{power set}{ensemble de tous les sous-ensembles de $S$}{set of all subsets of $S$}{POW(S)}{\pow(S)}
+\E{parties non vides}{non-empty subsets}{sous-ensembles non vides de $S$}{non-empty subsets of $S$}{POW1(S)}{\pown(S)}
+\E{produit cartésien}{Cartesian product}{couples $x \mapsto y$ avec $x \in S$, $y \in T$}{pairs $x \mapsto y$ with $x \in S$, $y \in T$}{S ** T}{S \cprod T}
+\E{union}{union}{éléments de $S$ ou de $T$}{elements of $S$ or of $T$}{S \bs/ T}{S \bunion T}
+\E{intersection}{intersection}{éléments de $S$ et de $T$}{elements of both $S$ and $T$}{S /\bs{} T}{S \binter T}
+\E{différence}{difference}{éléments de $S$ qui ne sont pas dans $T$}{elements of $S$ not in $T$}{S \bs{} T}{S \setminus T}
+\E{union généralisée}{generalised union}{union des ensembles éléments de $U$}{union of the sets in $U$}{union(U)}{\union(U)}
+\E{intersection généralisée}{generalised intersection}{intersection des ensembles de $U$ ($U \neq \emptyset$)}{intersection of the sets in $U$ ($U \neq \emptyset$)}{inter(U)}{\inter(U)}
+\E{union quantifiée}{quantified union}{union des $E$ pour les $x$ qui vérifient $P$}{union of the $E$ for the $x$ satisfying $P$}{UNION x.P | E}{\Union x \qdot P \mid E}
+\E{intersection quantifiée}{quantified intersection}{intersection des $E$ (au moins un $x$ vérifie $P$)}{intersection of the $E$ (some $x$ satisfies $P$)}{INTER x.P | E}{\Inter x \qdot P \mid E}
+\E{finitude}{finiteness}{$S$ est un ensemble fini}{$S$ is a finite set}{finite(S)}{\finite(S)}
+\E{cardinal}{cardinality}{nombre d'éléments de $S$ fini}{number of elements of a finite $S$}{card(S)}{\card(S)}
+\E{partition}{partition}{$S = A \bunion B$ et $A \binter B = \emptyset$ (généralisable)}{$S = A \bunion B$ and $A \binter B = \emptyset$ (generalises)}{partition(S,\allowbreak A,B)}{\mathit{partition}(S,A,B)}
+% ------------------------------------------------------------------
+\R{Nombres}{Numbers}
+\E{entiers naturels}{natural numbers}{$\{0,1,2,\ldots\}$}{$\{0,1,2,\ldots\}$}{NAT}{\nat}
+\E{naturels non nuls}{positive naturals}{$\{1,2,3,\ldots\}$}{$\{1,2,3,\ldots\}$}{NAT1}{\natn}
+\E{entiers relatifs}{integers}{$\{\ldots,-1,0,1,\ldots\}$}{$\{\ldots,-1,0,1,\ldots\}$}{INT}{\intg}
+\E{opérations arithmétiques}{arithmetic operations}{addition, soustraction, multiplication}{addition, subtraction, multiplication}{x+y \ x-y \ x*y}{x+y \ \ x-y \ \ x*y}
+\E{division entière}{integer division}{quotient entier de $x$ par $y$ ($y \neq 0$)}{integer quotient of $x$ by $y$ ($y \neq 0$)}{x / y}{x \div y}
+\E{reste}{remainder}{reste de la division ($0 \leq x$, $0 < y$)}{remainder of the division ($0 \leq x$, $0 < y$)}{x mod y}{x \bmod y}
+\E{puissance}{exponentiation}{$x$ à la puissance $y$ ($0 \leq x$, $0 \leq y$)}{$x$ to the power $y$ ($0 \leq x$, $0 \leq y$)}{x \textasciicircum{} y}{x \expn y}
+\E{intervalle}{interval}{entiers compris entre $a$ et $b$}{integers between $a$ and $b$}{a .. b}{a \upto b}
+\E{comparaisons}{comparisons}{inférieur, inférieur ou égal, supérieur, supérieur ou égal}{less, less or equal, greater, greater or equal}{< <= > >=}{< \ \leq \ > \ \geq}
+\E{minimum, maximum}{minimum, maximum}{plus petit, plus grand élément ($S \neq \emptyset$, borné)}{least, greatest element ($S \neq \emptyset$, bounded)}{min(S) max(S)}{\min(S) \ \max(S)}
+\E{successeur, prédécesseur}{successor, predecessor}{fonctions $x \mapsto x+1$ et $x \mapsto x-1$ sur $\intg$}{functions $x \mapsto x+1$ and $x \mapsto x-1$ on $\intg$}{succ pred}{\usucc \ \ \upred}
+% ------------------------------------------------------------------
+\R{Booléens}{Booleans}
+\E{ensemble des booléens}{set of Booleans}{$\{\True, \False\}$}{$\{\True, \False\}$}{BOOL}{\Bool}
+\E{valeurs booléennes}{Boolean values}{vrai et faux, valeurs de données}{true and false as data values}{TRUE FALSE}{\True \ \ \False}
+\E{conversion}{conversion}{valeur booléenne du prédicat $P$}{Boolean value of the predicate $P$}{bool(P)}{\bool(P)}
+% ------------------------------------------------------------------
+\R{Relations}{Relations}
+\E{couple}{maplet (pair)}{paire ordonnée formée de $x$ et $y$}{ordered pair of $x$ and $y$}{x |-> y}{x \mapsto y}
+\E{relations}{relations}{ensemble des relations de $S$ vers $T$, $\pow(S \cprod T)$}{set of relations from $S$ to $T$, $\pow(S \cprod T)$}{S <-> T}{S \rel T}
+\E{relations totales}{total relations}{relations dont le domaine est $S$}{relations whose domain is $S$}{S <{}<-> T}{S \trel T}
+\E{relations surjectives}{surjective relations}{relations dont le codomaine est $T$}{relations whose range is $T$}{S <->{}> T}{S \srel T}
+\E{relations totales surjectives}{total surjective relations}{domaine $S$ et codomaine $T$}{domain $S$ and range $T$}{S <{}<->{}> T}{S \strel T}
+\E{domaine}{domain}{premiers éléments des couples de $r$}{first elements of the pairs of $r$}{dom(r)}{\dom(r)}
+\E{codomaine (image)}{range}{seconds éléments des couples de $r$}{second elements of the pairs of $r$}{ran(r)}{\ran(r)}
+\E{identité}{identity}{relation $\{x \mapsto x\}$ ; avec $S$ : $S \domres \id$}{relation $\{x \mapsto x\}$; on $S$: $S \domres \id$}{id}{\id}
+\E{projections}{projections}{$x \mapsto y \mapsto x$ et $x \mapsto y \mapsto y$}{$x \mapsto y \mapsto x$ and $x \mapsto y \mapsto y$}{prj1 prj2}{\prjone \ \ \prjtwo}
+\E{restriction de domaine}{domain restriction}{couples de $r$ dont le premier élément est dans $S$}{pairs of $r$ whose first element is in $S$}{S <| r}{S \domres r}
+\E{soustraction de domaine}{domain subtraction}{couples de $r$ dont le premier élément n'est pas dans $S$}{pairs of $r$ whose first element is not in $S$}{S <{}<| r}{S \domsub r}
+\E{restriction de codomaine}{range restriction}{couples de $r$ dont le second élément est dans $T$}{pairs of $r$ whose second element is in $T$}{r |> T}{r \ranres T}
+\E{soustraction de codomaine}{range subtraction}{couples de $r$ dont le second élément n'est pas dans $T$}{pairs of $r$ whose second element is not in $T$}{r |>{}> T}{r \ransub T}
+\E{inverse}{inverse}{couples de $r$ retournés}{pairs of $r$ reversed}{r\textasciitilde}{r^{-1}}
+\E{image relationnelle}{relational image}{images par $r$ des éléments de $S$}{images under $r$ of the elements of $S$}{r[S]}{r[S]}
+\E{composition directe}{forward composition}{$p$ puis $q$}{$p$ then $q$}{p ; q}{p \fcomp q}
+\E{composition arrière}{backward composition}{$q$ puis $p$ ($p \bcomp q = q \fcomp p$)}{$q$ then $p$ ($p \bcomp q = q \fcomp p$)}{p circ q}{p \bcomp q}
+\E{surcharge}{overriding}{$r$ dont les couples sont remplacés par ceux de $s$ sur $\dom(s)$}{$r$ with its pairs replaced by those of $s$ on $\dom(s)$}{r <+ s}{r \ovl s}
+\E{produit direct}{direct product}{$\{x \mapsto (y \mapsto z) \mid x \mapsto y \in p \land x \mapsto z \in q\}$}{$\{x \mapsto (y \mapsto z) \mid x \mapsto y \in p \land x \mapsto z \in q\}$}{p >< q}{p \dprod q}
+\E{produit parallèle}{parallel product}{$\{(x \mapsto y) \mapsto (z \mapsto t) \mid x \mapsto z \in p \land y \mapsto t \in q\}$}{$\{(x \mapsto y) \mapsto (z \mapsto t) \mid x \mapsto z \in p \land y \mapsto t \in q\}$}{p || q}{p \pprod q}
+% ------------------------------------------------------------------
+\R{Fonctions}{Functions}
+\E{fonctions partielles}{partial functions}{relations où chaque $x$ a au plus une image}{relations where each $x$ has at most one image}{S +-> T}{S \pfun T}
+\E{fonctions totales}{total functions}{fonctions partielles de domaine $S$}{partial functions with domain $S$}{S -{}-> T}{S \tfun T}
+\E{injections partielles}{partial injections}{fonctions partielles dont l'inverse est une fonction}{partial functions whose inverse is a function}{S >+> T}{S \pinj T}
+\E{injections totales}{total injections}{injections de domaine $S$}{injections with domain $S$}{S >-> T}{S \tinj T}
+\E{surjections partielles}{partial surjections}{fonctions partielles de codomaine $T$}{partial functions with range $T$}{S +>{}> T}{S \psur T}
+\E{surjections totales}{total surjections}{fonctions totales de codomaine $T$}{total functions with range $T$}{S ->{}> T}{S \tsur T}
+\E{bijections}{bijections}{injections totales et surjectives}{total injections that are surjective}{S >->{}> T}{S \tbij T}
+\E{lambda-abstraction}{lambda abstraction}{fonction $x \mapsto E$ pour les $x$ qui vérifient $P$}{function $x \mapsto E$ for the $x$ satisfying $P$}{\%x.P | E}{\lambda x \qdot P \mid E}
+\E{application}{application}{image de $E$ par $f$ ($E \in \dom(f)$, $f$ fonction)}{image of $E$ under $f$ ($E \in \dom(f)$, $f$ a function)}{f(E)}{f(E)}
+% ------------------------------------------------------------------
+\R{Actions (substitutions)}{Actions (substitutions)}
+\E{affectation}{assignment}{$x$ prend la valeur de $E$}{$x$ takes the value of $E$}{x := E}{x \bcmeq E}
+\E{choix dans un ensemble}{set choice}{$x$ prend une valeur quelconque de $S$}{$x$ takes any value in $S$}{x :: S}{x \bcmin S}
+\E{choix par prédicat}{choice by predicate}{$x$ prend une valeur $x'$ telle que $P(x,x')$}{$x$ takes a value $x'$ such that $P(x,x')$}{x :| P}{x \bcmsuch P}
+\end{longtable}
+
+\vspace{2pt}
+{\footnotesize\T{\textbf{Remarques.} Rodin remplace l'ASCII par le symbole pendant la saisie.
+Les opérateurs partiels ($f(E)$, $\div$, $\bmod$, $\card$, $\min$, $\max$, $\inter$) engendrent
+des obligations de bien-définition (WD). Un prédicat se lit de gauche à droite pour WD :
+$x \in \dom(f) \land f(x) > 0$ est bien défini, l'ordre inverse ne l'est pas.}{\textbf{Remarks.}
+Rodin replaces the ASCII input by the symbol while typing. Partial operators ($f(E)$,
+$\div$, $\bmod$, $\card$, $\min$, $\max$, $\inter$) give rise to well-definedness (WD)
+obligations. A predicate is read from left to right for WD: $x \in \dom(f) \land f(x) > 0$
+is well defined, the reverse order is not.}\par}
+
+\end{document}

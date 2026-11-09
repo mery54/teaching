@@ -1,0 +1,722 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,stmaryrd}
+\usepackage{booktabs,longtable,array}
+\usepackage[most]{tcolorbox}
+\usepackage[hidelinks]{hyperref}
+
+% ------------------------------------------------------------------
+% Notation
+\newcommand{\limp}{\Rightarrow}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\intg}{\mathbb{Z}}
+\newcommand{\pfun}{\mathrel{+\!\!\!\!\!\rightarrow}}
+\newcommand{\dom}{\mathrm{dom}}
+\newcommand{\WD}{\mathit{WD}}
+\newcommand{\BA}{\mathit{BA}}
+\newcommand{\AX}{\mathit{AX}(s,c)}
+\newcommand{\Th}{\mathit{Th}}
+\newcommand{\sff}[1]{\textsf{#1}}
+\newcommand{\po}[1]{\textsf{\small #1}}
+\newcommand{\trm}{\mathsf{trm}}
+\newcommand{\Fis}{\mathsf{Fis}}
+\newcommand{\fis}{\mathsf{fis}}
+\newcommand{\ligne}[1]{(l.~#1)}
+
+% Box describing a generation rule
+\newtcolorbox{regle}[2][]{enhanced,breakable,colback=blue!3,colframe=blue!45!black,
+  fonttitle=\bfseries,title={#2},#1}
+\newtcolorbox{remarque}[1][]{enhanced,breakable,colback=orange!5,colframe=orange!60!black,
+  fonttitle=\bfseries,title={Remark},#1}
+\newtcolorbox{rodin}[1][]{enhanced,breakable,colback=green!4,colframe=green!40!black,
+  fonttitle=\bfseries,title={In Rodin: limitations and adjustments},#1}
+
+\setlength{\emergencystretch}{3em}
+\newcommand{\champ}[1]{\par\smallskip\noindent\textbf{#1}\enspace}
+
+\title{Generation rules for proof obligations\\
+  in the chapter ``The Event-B Modelling Language''\\[2pt]
+  \large Analysis and precise description}
+\author{Dominique Méry}
+\date{\today}
+\begin{document}
+\bibliographystyle{plain}
+\maketitle
+
+\begin{abstract}
+  This document gives a precise description of the rules for generating the
+  verification conditions (\emph{proof obligations}, written POs below) presented in
+  the Event-B chapter \cite{buneventb}  of the book \emph{Modelling Software-based Systems:
+  Correct by Construction Paradigm}\cite{bun}. For each rule, it gives its origin
+  in the text, the model element that triggers it, the exact form of the sequent it
+  produces, its naming convention (Rodin style), its justification and, when the
+  chapter discusses them, the limitations and adjustments of Rodin. 
+ \end{abstract}
+
+\tableofcontents
+
+% ==================================================================
+\section{Purpose, scope and method}
+
+The chapter under analysis (compiled version \texttt{main-C1.pdf}) presents the POs
+in three stages:
+\begin{enumerate}
+  \item \textbf{semantic foundations} (§1.2): transition system, induction
+    principle, fixed-point characterisation, equivalence of the \emph{wp} and
+    relational styles;
+  \item the \textbf{POs of a context and of an abstract machine} (§1.3);
+  \item the \textbf{POs of refinement} (§1.4), complemented by event merging and by
+    a semantic discussion of deadlock freedom.
+\end{enumerate}
+Section~1.5 (abacus, ``Rule 1'' and ``Rule 2'') describes the rules for using an
+abacus and defines no new PO generation rule. It illustrates how the rules
+described here are applied, and is therefore outside the scope of this document.
+
+The text always follows the same generation method:
+\begin{description}
+  \item[(M1) Global condition.] Start from a global semantic condition
+    (preservation of an invariant, refinement in \emph{wp}, etc.).
+  \item[(M2) Sequent form.] Rewrite it as a sequent by removing the universal
+    quantifications over the state, which become free variables.
+  \item[(M3) Decomposition.] Apply two sequent-calculus rules
+    (§\ref{sec:simplif}) to obtain elementary sequents.
+  \item[(M4) Elimination of existentials.] When possible, replace an existential
+    quantification in the conclusion by a \emph{witness} supplied by the modeller,
+    which gives rise to a PO for the feasibility of the witness.
+  \item[(M5) Naming.] Each elementary sequent is named after the label
+    $\ell(\mathit{text})$ of the formal text (axiom, invariant, guard, action,
+    theorem) that produced it, in the form \po{element/label/TYPE}.
+\end{description}
+
+% ==================================================================
+\section{Framework, notation and basic rules}
+
+\subsection{Event-based model}
+An event-based model of a system \textsc{S} (def.~\emph{event-based model}) is a
+quintuple
+\[
+  \mathit{EM}(S) = (\AX,\ \{x\},\ \mathcal{V}\!\mathit{alues},\ \mathit{Init}(x),\ \{e_0,\dots,e_n\})
+\]
+where $s$ are the basic sets, $c$ the constants, $\AX$ the axiomatic theory (the
+context), $x$ the flexible variables, $\mathit{Init}$ the initial predicate and
+$e_i$ the events. The event $e_0$ is \sff{skip}. The chapter now writes states
+$\sigma,\sigma'$, the letter $s$ being reserved for the basic sets,
+and writes the refinement events in sans-serif type, $\mathsf{a}$ and $\mathsf{c}$,
+to distinguish the concrete event $\mathsf{c}$ from the list $c$ of constants.
+
+\subsection{Normalised form of an event}\label{sec:forme}
+An event is written
+\[
+  \sff{e} \;\widehat{=}\; \textbf{any } u \textbf{ where } G(u,s,c,x)
+  \textbf{ then } x :\mid \mathit{BAP}(u,s,c,x,x') \textbf{ end}
+\]
+and its before-after relation is
+\[
+  \BA(\sff{e})(s,c,x,x') \;\widehat{=}\; \exists u\cdot G(u,s,c,x) \wedge \mathit{BAP}(u,s,c,x,x').
+\]
+The global transition relation is $\mathit{Next} \widehat{=} \bigvee_{i} \BA(e_i)$,
+and $\mathit{Next}^\star$ is its reflexive transitive closure, defined as the
+\emph{least} relation satisfying the recursive equation of the chapter.
+
+\subsection{Notation used in the sequents}
+\begin{center}
+\begin{tabular}{>{$}l<{$} p{0.72\linewidth}}
+\toprule
+\AX & conjunction of the axioms of the context that is seen (\sff{sees}) and of the contexts it extends\\
+\Th(s,c) & theorems of the context that precede the theorem under consideration\\
+\Th_i(s,c) & theorems located \emph{before} the machine theorem $th_i$ (for $i=1$, only those of the context)\\
+I(s,c,x) & invariant $I_1\wedge\dots\wedge I_r$ of the machine, labelled $inv_1,\dots,inv_r$\\
+\mathit{SAFE}_i(s,c,x) & safety properties (clause \sff{THEOREMS}), $i\in 1..h$; $A = \bigwedge_i \mathit{SAFE}_i$\\
+\mathit{initBAP} & before-after predicate of the initialisation, split by actions $act_i$; $\mathit{Init}(s,c,x)\equiv\mathit{initBAP}(s,c,x)$\\
+G,\ \mathit{BAP} & guard and before-after predicate of the abstract event\\
+J(s,c,x,y) & gluing invariant $J_1\wedge\dots\wedge J_r$, labelled $jnv_i$, linking $x$ (abstract) and $y$ (concrete)\\
+H,\ \mathit{CBAP} & guard and before-after predicate of the concrete event (parameters $v$)\\
+\mathit{WP}(u,s,c,v,y) & witness for the abstract parameter $u$ (\emph{Witness Parameter})\\
+\mathit{WV}(v,s,c,y',x') & witness for the abstract after-value $x'$ (\emph{Witness Variable}); at initialisation, $\mathit{WV}(s,c,y',x')$\\
+\mathit{varexp} & the single variant of the machine (natural number or finite set)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Simplification of typing}
+The semantic conditions are first written in the form
+$\AX \vdash \forall x\in\mathcal{V}\!\mathit{alues}\cdot P(x)$. Since $x$ has no free
+occurrence in $\AX$, they are rewritten as $\AX, x\in\mathcal{V}\!\mathit{alues}\vdash P(x)$.
+The typing hypothesis $x\in\mathcal{V}\!\mathit{alues}$ is then assumed to be carried
+by the invariant and the initialisation, and is omitted.
+
+\subsection{The two sequent decomposition rules}\label{sec:simplif}
+The whole generation rests on two rules (property ``simplification of sequents''
+and property ``Introduction/Elimination of connector $\wedge$''):
+\begin{regle}{Rule S1: implication introduction}
+  \[
+    \AX, \mathcal{H} \vdash P_1 \limp P_2 \limp \dots \limp P_n \limp Q
+    \quad\text{is equivalent to}\quad
+    \AX, \mathcal{H}, P_1, \dots, P_n \vdash Q .
+  \]
+\end{regle}
+\begin{regle}{Rule S2: splitting a conjunction}
+  \[
+    \Gamma \vdash \textstyle\bigwedge_{i\in 1..t} P_i
+    \quad\text{is equivalent to}\quad
+    \Gamma \vdash P_i \ \text{ for all } i\in 1..t .
+  \]
+  This is the rule that produces \emph{one PO per label}: one per invariant, per
+  theorem, per action, etc.
+\end{regle}
+Two implicit rules complete these explicit ones. The text uses them in the
+derivations without naming them:
+\begin{itemize}
+  \item \textbf{S3, existential in a hypothesis}:
+    $\Gamma, \exists v\cdot P(v) \vdash Q$ is equivalent to $\Gamma, P(v)\vdash Q$
+    if $v$ is not free in $\Gamma, Q$ (the variable becomes a free parameter of the
+    sequent);
+  \item \textbf{S4, existential in the conclusion by a witness}: if
+    $\Gamma, W(u) \vdash P(u)$ and $\Gamma\vdash\exists u\cdot W(u)$, then
+    $\Gamma\vdash\exists u\cdot P(u)$. This is the basis of the \po{WFIS} POs
+    (§\ref{sec:wfis}); the second premise is essential.
+\end{itemize}
+
+\subsection{Naming convention}
+POs are named as in Rodin: \po{object/label/TYPE}, where \emph{object} is an event
+(or \po{INITIALISATION}), a theorem or an axiom, \emph{label} is the label of the
+invariant, action, guard or witness concerned, and \emph{TYPE} is one of the
+following suffixes: \po{WD}, \po{THM}, \po{INV}, \po{FIS}, \po{GRD}, \po{SIM},
+\po{WFIS}, \po{WWD}, \po{NAT}, \po{FIN}, \po{VAR}, \po{MRG}, \po{DLF}. For variants,
+Rodin inserts no label: \po{e/NAT}, \po{e/FIN}, \po{e/VAR}. The suffixes \po{-WIT},
+\po{-P} and \po{-V} (\po{GRD-WIT}, \po{WFIS-P}, \dots) belong to the chapter: Rodin
+produces \po{GRD} and \po{SIM} with the witness predicates as hypotheses.
+
+% ==================================================================
+\section{Foundations: where the POs come from}
+
+\subsection{Induction principle}
+\begin{regle}{Induction principle (property \emph{induction principle})}
+  $P(x)$ is a safety property of \textsc{S} if, and only if, there exists $I(x)$
+  such that, for all $x,x'$:
+  \[
+    \text{(1) } \mathit{Init}(x)\limp I(x) \qquad
+    \text{(2) } I(x)\limp P(x) \qquad
+    \text{(3) } I(x)\wedge \mathit{Next}(s,c,x,x') \limp I(x').
+  \]
+\end{regle}
+The \emph{equivalence of induction principles} replaces (3) by one condition per
+event: $\forall i\cdot I(x)\wedge\BA(e_i)(s,c,x,x')\limp I(x')$. This is rule S2
+applied to the disjunction in the hypothesis, since
+$(\bigvee_i A_i)\limp B \equiv \bigwedge_i (A_i\limp B)$. This yields the three
+families of POs of the definition ``Verification conditions for a system
+\textsc{S}'' (where the safety property is written $A(x)$):
+\[
+  \AX\vdash \mathit{Init}\limp I, \qquad
+  \AX\vdash I\wedge \BA(\sff{e})\limp I' \ (\forall \sff{e}), \qquad
+  \AX\vdash I\limp A .
+\]
+
+\subsection{Fixed-point characterisation}\label{sec:pf}
+Let $F = \lambda X\cdot \mathit{INIT}\cup\mathit{Next}[X]$ on the lattice
+$(\mathcal{P}(\mathcal{V}\!\mathit{alues}),\subseteq)$. The \emph{inductive
+invariants} are exactly the sets $I$ such that $F(I)\subseteq I$ (pre-fixed points),
+that is, $\mathit{INIT}\subseteq I$ and $\mathit{Next}[I]\subseteq I$; they are not
+only the solutions of $X=F(X)$. The least fixed point
+$\mathit{lfp}(F)$, the set of reachable states, is their intersection
+(Knaster--Tarski): every inductive invariant \emph{contains} the reachable states.
+The POs therefore only check that a \emph{proposed} invariant is indeed inductive:
+this is the correct-by-construction approach.
+
+\subsection{Termination and feasibility of an event}
+For an event, $\trm(\sff{e}) \widehat{=} [\sff{e}]\mathit{true}$ is always
+$\mathit{true}$ (under the WD conditions): an event always terminates. Only its
+feasibility is at stake. The chapter distinguishes two predicates:
+\begin{align*}
+  \fis(\sff{e})(s,c,x) &\equiv \exists u\cdot\big(G(u,s,c,x)\wedge\exists x'\cdot \mathit{BAP}(u,s,c,x,x')\big)
+    && \text{(global feasibility: the actual guard)},\\
+  \Fis(\sff{e})(s,c,x) &\widehat{=} \forall u\cdot\big(G(u,s,c,x)\limp \exists x'\cdot \mathit{BAP}(u,s,c,x,x')\big)
+    && \text{(per-parameter feasibility)}.
+\end{align*}
+The obligation \po{FIS} requires $I\limp\Fis(\sff{e})$: it rules out the
+\emph{hidden miracle}, a guard that holds while the action produces no state. The
+name \po{FIS} is reserved for the proof obligation.
+
+\subsection{Equivalence of the \emph{wp} and relational styles}
+For an event \sff{e} and a property $P$:
+\[
+  [\sff{e}]P(s,c,x) \equiv \forall u\cdot\big(G(u,s,c,x)\limp \forall x'\cdot(\mathit{BAP}(u,s,c,x,x')\limp P(s,c,x'))\big).
+\]
+The \emph{wp} condition (Atelier~B style)
+$\vdash I\limp\Fis(\sff{e})\wedge[\sff{e}]I$ is equivalent to the pair of
+relational conditions (Rodin style), free variables being universally quantified
+(property ``\emph{wp} and relational styles'' of the chapter, with its proof):
+\[
+  \text{(FIS)}\ \ I\wedge G \limp \exists x'\cdot \mathit{BAP},
+  \qquad
+  \text{(INV)}\ \ I\wedge G\wedge \mathit{BAP}\limp I(x').
+\]
+\textbf{Consequence:} invariant preservation always splits into an \emph{induction
+step} (INV) and a \emph{feasibility proof} (FIS). The transformer $[\sff{e}]$ alone
+says nothing about feasibility: a parameter value with no next state satisfies
+every postcondition. This is why $\Fis(\sff{e})$ appears in the
+\emph{conclusion} of the \emph{wp} condition, not as a hypothesis. The chapter's
+definition ``verification condition \sff{e}'' (def.~\texttt{def:poe}) is
+$\AX\vdash I\limp\Fis(\sff{e})\wedge[\sff{e}]I$.
+
+% ==================================================================
+\section{Rules for a context}
+
+\begin{regle}{R1 \quad \po{axm/WD}, \po{th/WD}, \po{expr/WD}: well-definedness of an expression}
+  \champ{Trigger.} Any expression or predicate $\mathit{expr}$ written in the model
+  (axiom, theorem, invariant, guard, action, variant, witness).
+  \champ{PO produced.}
+  \[ \AX \vdash \WD(\mathit{expr}) \]
+  (in a machine, the hypotheses also include the invariant and, where relevant,
+  the guards; see R8).
+  \champ{Computing $\WD$.} $\WD$ is defined by induction on the syntax, using three
+  tables (predicates, unary/binary expressions, other expressions). The
+  significant cases are:
+  \begin{center}
+  \begin{tabular}{>{$}l<{$} >{$}l<{$}}
+    \toprule
+    e & \WD(e)\\ \midrule
+    P\wedge Q,\ P\limp Q & \WD(P)\wedge(P\limp \WD(Q))\\
+    P\vee Q & \WD(P)\wedge(P\vee \WD(Q))\\
+    P\Leftrightarrow Q & \WD(P)\wedge \WD(Q)\\
+    \neg P & \WD(P)\\
+    \forall L\cdot P,\ \exists L\cdot P & \forall L\cdot \WD(P)\\
+    \lambda P\cdot Q\mid E & \forall \mathcal{F}_P\cdot \WD(Q)\wedge(Q\limp\WD(E))\\
+    \bigcap L\cdot P\mid E & \forall L\cdot(\WD(P)\wedge(P\limp\WD(E)))\wedge\exists L\cdot P\\
+    \bigcap E\mid P & \forall \mathcal{F}_E\cdot(\WD(P)\wedge(P\limp\WD(E)))\wedge\exists \mathcal{F}_E\cdot P\\
+    F(E) & \WD(E)\wedge\WD(F)\wedge E\in\dom(F)\wedge F\in S\pfun T\\
+    E / F & \WD(E)\wedge\WD(F)\wedge F\neq 0\\
+    E \bmod F & \WD(E)\wedge\WD(F)\wedge 0\le E\wedge 0< F\\
+    E^{F} & \WD(E)\wedge 0\le E\wedge\WD(F)\wedge 0\le F\\
+    \mathrm{card}(E) & \WD(E)\wedge \mathrm{finite}(E)\\
+    \mathrm{inter}(E) & \WD(E)\wedge E\neq\varnothing\\
+    \min(E) & \WD(E)\wedge E\neq\varnothing\wedge \exists v\cdot\forall u\cdot u\in E\limp v\le u\\
+    \max(E) & \WD(E)\wedge E\neq\varnothing\wedge \exists v\cdot\forall u\cdot u\in E\limp v\ge u\\
+    E\ \mathsf{op}\ F \text{ (relations, $+$, $\cup$, \dots)} & \WD(E)\wedge\WD(F)\\
+    \text{identifiers, literals, } \nat, \intg, \varnothing & \top\\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+  In the $\lambda$ row, $P$ is the pattern (the bound variables) and $Q$ the
+  predicate; $\mathcal{F}_X$ denotes the variables bound by $X$.
+  \champ{Principle.} Connectives are evaluated \emph{from left to right and lazily}:
+  in $P\wedge Q$, the well-definedness of $Q$ may assume $P$. This is why the order
+  in which axioms, invariants and guards are written affects the POs produced
+  (see R8).
+  \champ{Example from the text.} In this example, $s$ is the sum function of the
+  context, not the list of sets:
+  $\WD(\forall k\cdot k\in\nat\limp 2*s(k)=k*k+k)
+   = \forall k\cdot k\in\nat\limp k\in\dom(s)\wedge s\in\intg\pfun\intg$.
+\end{regle}
+
+\begin{regle}{R2 \quad \po{th/THM}: context theorem}
+  \champ{Trigger.} A theorem labelled $th$ in a context (or a property on $s,c$
+  placed among the theorems of a machine).
+  \champ{PO produced.}
+  \[ \AX,\ \Th(s,c) \vdash th \]
+  where $\Th(s,c)$ denotes the theorems of the context that precede $th$.
+  \champ{Justification.} The \sff{THEOREMS} clause contains consequences of the
+  axiomatic theory: they must be \emph{proved}, not \emph{assumed}. The consistency
+  of the theory itself is not checked by any PO; the chapter recommends checking it,
+  for instance with ProB.
+\end{regle}
+
+% ==================================================================
+\section{Rules for an abstract machine}
+
+\begin{regle}{R3 \quad \po{th$_i$/THM}: safety property (machine theorem)}
+  \champ{Trigger.} A theorem $th_i : \mathit{SAFE}_i(s,c,x)$ of the machine, $i\in 1..h$.
+  \champ{Derivation.} $\AX\vdash I\limp \bigwedge_i \mathit{SAFE}_i$
+  $\xrightarrow{\text{S1}}$ $\AX, I\vdash \bigwedge_i \mathit{SAFE}_i$
+  $\xrightarrow{\text{S2}}$ one PO per $i$, to which the theorems already
+  established are added.
+  \champ{PO produced (for each $i$).}
+  \[ \AX,\ \Th_i(s,c),\ I(s,c,x) \vdash \mathit{SAFE}_i(s,c,x) \]
+  \champ{Role.} It separates the \emph{inductive} properties (invariants, which
+  require an induction step) from the safety properties that \emph{follow} from
+  them (theorems). In the \sff{SAFETY} example, $x\le 0$ is not inductive, but it
+  follows from the inductive invariant $x=-1$.
+\end{regle}
+
+\begin{regle}{R4 \quad \po{INITIALISATION/inv$_i$/INV}: establishing the invariant}
+  \champ{Trigger.} The \sff{INITIALISATION} event, written
+  $x :\mid \mathit{initBAP}(s,c,x')$, and each invariant $inv_i$.
+  \champ{Derivation.} $\AX\vdash \mathit{Init}\limp I$ $\xrightarrow{\text{S1}}$
+  $\AX,\mathit{Init}\vdash I$ $\xrightarrow{\text{S2}}$ one PO per $inv_i$, stated by
+  Rodin with the after-values $x'$.
+ 
+  \[ \AX,\ \mathit{initBAP}(s,c,x') \vdash I_i(s,c,x') \]
+  \champ{Remark.} The initialisation has no before-state: neither the invariant nor
+  a typing hypothesis on $x$ appears as a hypothesis.
+\end{regle}
+
+\begin{regle}{R5 \quad \po{INITIALISATION/act$_i$/FIS}: feasibility of the initialisation}
+  \champ{Trigger.} Each \emph{non-deterministic} action
+  $act_i : x_i :\mid \mathit{initBAP}_i(s,c,x_i')$ of the initialisation, the $x_i$
+  forming a \emph{partition} of $x$.
+  \champ{Derivation.} $\AX\vdash\exists x'\cdot\mathit{initBAP}(s,c,x')$ with
+  $\mathit{initBAP}\equiv\bigwedge_i\mathit{initBAP}_i$. Since the $x_i$ are
+  disjoint, the existential distributes:
+  $\exists x'\cdot\bigwedge_i \mathit{initBAP}_i(x_i') \equiv \bigwedge_i \exists x_i'\cdot \mathit{initBAP}_i(x_i')$,
+  and S2 is then applied.
+  \champ{PO produced.}
+  \[ \AX \vdash \exists x_i'\cdot \mathit{initBAP}_i(s,c,x_i') \]
+  \champ{Role.} It guarantees that the model has at least one initial state. When
+  the action gives no explicit value (for instance
+  $acc:\mid acc'\in P\to B\wedge acc'\subseteq a$), a witness constant $acc0$ is
+  introduced in the context. The chapter points out that this only moves the
+  difficulty: the axiom on $acc0$ is consistent only if $a$ contains a total
+  function from $P$ to $B$. For a deterministic assignment $x:=e$, no
+  \po{FIS} PO is produced; only the \po{WD} PO for $e$ remains.
+\end{regle}
+
+\begin{regle}{R6 \quad \po{e/inv$_i$/INV}: invariant preservation by an event}
+  \champ{Trigger.} Each event \sff{e} (other than the initialisation) and each
+  invariant $inv_i$.
+  \champ{Derivation.} From (INV): $\AX\vdash I\wedge \BA(\sff{e})\limp I'$, unfold
+  $\BA$, eliminate $\exists u$ in the hypothesis (S3), apply S1, then S2.
+  \champ{PO produced.}
+  \[ \AX,\ I(s,c,x),\ G(u,s,c,x),\ \mathit{BAP}(u,s,c,x,x') \vdash I_i(s,c,x') \]
+  \champ{Remark.} The \emph{whole} invariant is a hypothesis; only the conclusion is
+  split. In the \sff{SAFETY} example, the PO for $x=-1$ holds because the
+  hypotheses are inconsistent ($x=-1$, $x\ge 0$). With $x\le 0$, one would obtain
+  the false PO $\dots\vdash 1\le 0$, which shows that $x\le 0$ is not inductive.
+\end{regle}
+
+\begin{regle}{R7 \quad \po{e/act$_i$/FIS}: feasibility of an event}
+  \champ{Trigger.} Each \emph{non-deterministic} action
+  $act_i : x_i :\mid \mathit{BAP}_i(u,s,c,x,x_i')$ (or $x_i :\in E$) of the event \sff{e}.
+  
+  \[ \AX,\ I(s,c,x),\ G(u,s,c,x) \vdash \exists x_i'\cdot \mathit{BAP}_i(u,s,c,x,x_i') \]
+  \champ{Role.} It corresponds to the $\Fis(\sff{e})$ part of the \emph{wp}
+  condition: when the guard holds, the event can actually produce a next state. As
+  for the initialisation, the existential distributes over the actions, which act
+  on disjoint variables, hence one PO per action. For $x:=e$, the existence of
+  $x'=e$ is trivial and no \po{FIS} PO is produced.
+\end{regle}
+\begin{rodin}
+  Box \emph{feasibility in Rodin} of the chapter:
+  \begin{itemize}
+    \item \po{FIS} is generated only for non-deterministic actions, $x:\in E$ and
+      $x:\mid P(x,x')$; for $x:\in E$ it reduces to $E\neq\varnothing$; an action
+      $x:=e$ produces only \po{WD};
+    \item feasibility is split action by action; this is sound because the actions
+      modify disjoint lists of variables;
+    \item limitation: the feasibility of an action is proved in isolation, and an
+      unprovable \po{FIS} PO does not say whether to strengthen the guard or weaken
+      the action.
+  \end{itemize}
+\end{rodin}
+
+\begin{regle}{R8 \quad \po{e/grd$_i$/WD}, \po{e/act$_i$/WD} and \po{INITIALISATION/act$_i$/WD}: well-definedness of guards and actions}
+  \champ{Trigger.} Each guard and each action of an event, and each action of the
+  initialisation.
+  
+  \begin{align*}
+    &\AX,\ I(s,c,x),\ G_1,\dots,G_{i-1} \vdash \WD(G_i(u,s,c,x)) && (\po{e/grd$_i$/WD})\\
+    &\AX,\ I(s,c,x),\ G(u,s,c,x) \vdash \WD(\mathit{BAP}_i(u,s,c,x,x_i')) && (\po{e/act$_i$/WD})\\
+    &\AX \vdash \WD(\mathit{initBAP}_i(s,c,x_i')) && (\po{INITIALISATION/act$_i$/WD})
+  \end{align*}
+  \champ{Role.} They rule out ``silly'' expressions (in Lamport's sense), such as a
+  division by zero. The guards that precede $G_i$ are hypotheses: the list of
+  guards is read as the conjunction $G_1\wedge\dots\wedge G_k$, to which the rule
+  $\WD(P\wedge Q)=\WD(P)\wedge(P\limp\WD(Q))$ is applied. This allows one to write
+  the two guards $grd_1 : x\in\dom(f)$ and $grd_2 : f(x)>0$.
+\end{regle}
+\begin{rodin}
+  Box \emph{well-definedness in Rodin} of the chapter:
+  \begin{itemize}
+    \item the same left-to-right reading applies to every labelled list: an axiom,
+      an invariant or a guard is proved well defined with those that precede it,
+      and an action with all the guards;
+    \item order matters: exchanging $grd_1$ and $grd_2$ above yields
+      $\AX, I\vdash x\in\dom(f)$, which is in general not provable;
+    \item within a single predicate, $\wedge$ is not commutative for WD:
+      $x\in\dom(f)\wedge f(x)>0$ is well defined, $f(x)>0\wedge x\in\dom(f)$ is not;
+    \item Rodin discharges most \po{WD} POs automatically: an undischarged \po{WD} PO
+      usually points to a missing or misplaced hypothesis.
+  \end{itemize}
+\end{rodin}
+
+\subsection{Event status and variants}\label{sec:statut}
+Each event has a status: \emph{ordinary}, \emph{convergent} or
+\emph{anticipated}. The text justifies the variant POs by the following liveness
+rule. If $R_{n+1}\leadsto R_n$ for all $n$, if $P\wedge I\limp\exists n\cdot R_n$
+and if $R_0\limp Q$, then $P\leadsto Q$, with
+$R_n \widehat{=} I\wedge \mathit{varexp}\le n$ (the variant may decrease
+by more than one unit). The POs ensure that a convergent event strictly decreases a
+well-founded quantity, hence that convergent events cannot occur forever. To
+conclude $P\leadsto Q$, a convergent event must also remain enabled as long as $Q$
+does not hold: this follows from deadlock freedom or from a fairness assumption.
+
+\begin{regle}{R9 \quad \po{e/NAT} and \po{e/FIN}: the variant is well founded}
+  \champ{Trigger.} A \emph{convergent} (or anticipated) event \sff{e}. A machine has
+  a single variant (clause \sff{variant}).
+  \champ{PO produced (numeric variant).}
+  \[ \AX,\ I(s,c,x),\ G_e(u,s,c,x) \vdash \mathit{varexp}(s,c,x)\in\nat \]
+  \champ{PO produced (set-valued variant).}
+  \[ \AX,\ I(s,c,x),\ G_e(u,s,c,x) \vdash \mathrm{finite}(\mathit{varexp}(s,c,x)) \]
+\end{regle}
+
+\begin{regle}{R10 \quad \po{e/VAR}: decrease of the variant}
+  \champ{Trigger.} A \emph{convergent} event \sff{e}.
+  \champ{PO produced (numeric variant).}
+  \[ \AX,\ I,\ G_e,\ \mathit{BAP}(u,s,c,x,x') \vdash \mathit{varexp}(s,c,x') < \mathit{varexp}(s,c,x) \]
+  \champ{PO produced (set-valued variant).}
+  \[ \AX,\ I,\ G_e,\ \mathit{BAP}(u,s,c,x,x') \vdash \mathit{varexp}(s,c,x') \subset \mathit{varexp}(s,c,x) \]
+  \champ{For an anticipated event.} The variant is only required not to increase:
+  $\le$ (resp.\ $\subseteq$). See R18.
+\end{regle}
+
+% ==================================================================
+\section{Rules for refinement}
+
+\subsection{Reference definition and derivation}\label{sec:defraf}
+\begin{regle}{Definition (refinement of two events, \emph{wp} style)}
+  $\mathsf{c}$ refines $\mathsf{a}$ with respect to $x, I, y, J$ if
+  \[ \AX \vdash I(s,c,x)\wedge J(s,c,x,y) \limp [\mathsf{c}]\,\neg[\mathsf{a}]\,\neg J(s,c,x,y). \]
+\end{regle}
+This is the definition of operation refinement in B, transposed to events. The
+chapter transforms it in seven steps, all of them equivalences: unfolding
+$[\mathsf{a}]$ (normalised form with $\exists u$), simplifying the negation,
+unfolding $[\mathsf{c}]$ (with $\exists v$), eliminating $\forall y'$ (free
+variable), implication introduction (S1), eliminating $\exists v$ in the hypothesis
+(S3). With $\Gamma_0 \widehat{=} \AX, I(s,c,x), J(s,c,x,y)$, one obtains:
+\begin{multline*}
+  \text{(7)}\qquad \Gamma_0,\ H(v,s,c,y),\ \mathit{CBAP}(v,s,c,y,y') \\
+  \vdash \exists x'\cdot\exists u\cdot\big(G(u,s,c,x)\wedge\mathit{ABAP}(u,s,c,x,x')\wedge J(s,c,x',y')\big).
+\end{multline*}
+The definition does not guarantee the feasibility of $\mathsf{c}$: it is proved
+separately (\po{c/act$_i$/FIS}, R16).
+
+\begin{regle}{Property (event refinement, version II): GRD and SIM}
+  $\mathsf{c}$ refines $\mathsf{a}$ \emph{if, and only if,} (7) holds. Consequently,
+  if $\mathsf{c}$ refines $\mathsf{a}$, then
+  \begin{align*}
+    \text{(GRD)}\quad & \AX, I, J, H(v,s,c,y) \vdash \exists u\cdot G(u,s,c,x)\\
+    \text{(SIM)}\quad & \AX, I, J, H(v,s,c,y), \mathit{CBAP}(v,s,c,y,y')\\
+      & \qquad \vdash \exists x'\cdot\exists u\cdot \mathit{ABAP}(u,s,c,x,x')\wedge J(s,c,x',y')
+  \end{align*}
+  The converse does not hold in general: GRD and SIM are \emph{necessary} but not
+  \emph{sufficient}.
+\end{regle}
+Going from (7) to GRD and SIM separates two existentials that referred to the
+\emph{same} value of $u$. Counterexample: $u\in\{0,1\}$, $G\equiv u=0$,
+$\mathit{ABAP}\equiv u=1\wedge x'=x+1$, $J\equiv\mathit{true}$; GRD holds with
+$u=0$, SIM with $u=1$, but (7) is false. In GRD, the hypothesis $\mathit{CBAP}$ is
+dropped: the abstract guard does not depend on $y'$; this is the form used by
+Rodin. The chapter's summary list (property \texttt{pro:poraf}) now
+follows this form for \po{GRD}, \po{GRD-WIT} and \po{WFIS-P}.
+
+The witnesses restore the link. Rule S4 is applied with the witnesses declared in
+the \sff{witness} clause of the concrete event: $u : \mathit{WP}(u,s,c,v,y)$ and
+$x' : \mathit{WV}(v,s,c,y',x')$.
+
+\begin{regle}{Property (refinement with witnesses, version III)}
+  If the POs \po{GRD-WIT} (R11), \po{SIM-WIT} (R12 and R13), \po{WFIS-P} and
+  \po{WFIS-V} (R14) are valid, then $\mathsf{c}$ refines $\mathsf{a}$.
+  \champ{Proof (chapter).} \po{WFIS-P} gives $u_0$ with $\mathit{WP}(u_0)$,
+  \po{WFIS-V} gives $x'_0$ with $\mathit{WV}(x'_0)$; \po{GRD-WIT} gives $G(u_0)$
+  and \po{SIM-WIT} gives $\mathit{ABAP}(u_0,x'_0)\wedge J(x'_0,y')$, hence (7). The
+  key point is that \po{GRD-WIT} and \po{SIM-WIT} share the hypothesis
+  $\mathit{WP}(u,s,c,v,y)$: the same value of $u$ is used for both. The witnesses
+  therefore make the decomposition sound; they are not merely an aid for the
+  prover.
+\end{regle}
+\textbf{When is a witness required?} For every abstract parameter that disappears
+in the concrete event, and for every abstract variable that disappears and that the
+abstract event modifies non-deterministically. Elsewhere, witnesses are optional
+but help the prover (see \texttt{temoins-obligatoires.pdf}).
+
+\textbf{Machine refinement.} \sff{CM} refines \sff{AM} if the concrete
+initialisation refines the abstract one (R15) and if every event of \sff{CM}
+refines an event of \sff{AM}, the new events refining \sff{skip}.
+
+\subsection{Rules generated for a concrete event}
+
+\begin{regle}{R11 \quad \po{c/grd/GRD}: guard strengthening}
+  \champ{Trigger.} A concrete event $\mathsf{c}$ \sff{refines} $\mathsf{a}$, and each
+  abstract guard $grd : G$.
+  \champ{PO produced (with a witness).}
+  \[ \AX,\ I(s,c,x),\ J(s,c,x,y),\ H(v,s,c,y),\ \mathit{WP}(u,s,c,v,y) \vdash G(u,s,c,x) \]
+  \champ{Role.} When the concrete event is observable, so is the abstract event:
+  the concrete model shows no new behaviour.
+\end{regle}
+
+\begin{regle}{R12 \quad \po{c/jnv$_i$/INV}: preservation of the gluing invariant}
+  \champ{Trigger.} $\mathsf{c}$ and each invariant $jnv_i : J_i$ of the concrete
+  machine.
+  \champ{Derivation.} The conclusion of SIM-WIT, $\mathit{ABAP}\wedge J'$, is split
+  by S2 into an INV part and a SIM part.
+  
+  \begin{multline*} \AX,\ I,\ J,\ H(v,s,c,y),\ \mathit{CBAP}(v,s,c,y,y'),\\ \mathit{WP}(u,s,c,v,y),\ \mathit{WV}(v,s,c,y',x') \vdash J_i(s,c,x',y') \end{multline*}
+\end{regle}
+
+\begin{regle}{R13 \quad \po{c/act/SIM}: simulation of the abstract action}
+  \champ{Trigger.} $\mathsf{c}$ and each abstract action $act : x :\mid \mathit{ABAP}$
+  of $\mathsf{a}$.
+  \champ{PO produced.}
+  \begin{multline*} \AX,\ I,\ J,\ H(v,s,c,y),\ \mathit{CBAP}(v,s,c,y,y'),\\ \mathit{WP}(u,s,c,v,y),\ \mathit{WV}(v,s,c,y',x') \vdash \mathit{ABAP}(u,s,c,x,x') \end{multline*}
+  \champ{Role.} Every concrete transition corresponds to an abstract transition.
+  The abstract invariant $I$ is not \emph{proved again}: it is inherited, since
+  $\mathsf{a}$ already preserves it.
+\end{regle}
+
+\begin{regle}{R14 \quad \po{c/u/WFIS}, \po{c/x'/WFIS}, \po{c/u/WWD} and \po{c/x'/WWD}: feasibility and well-definedness of witnesses}\label{sec:wfis}
+  \champ{Trigger.} Each witness declared in the \sff{witness} clause.
+  \champ{Feasibility POs (non-deterministic witnesses).}
+  \begin{align*}
+    &\AX,\ I,\ J,\ H(v,s,c,y) \vdash \exists u\cdot \mathit{WP}(u,s,c,v,y)\\
+    &\AX,\ I,\ J,\ H(v,s,c,y),\ \mathit{CBAP}(v,s,c,y,y') \vdash \exists x'\cdot \mathit{WV}(v,s,c,y',x')
+  \end{align*}
+ 
+  \begin{align*}
+    &\AX,\ I,\ J,\ H(v,s,c,y) \vdash \WD(\mathit{WP}(u,s,c,v,y))\\
+    &\AX,\ I,\ J,\ H(v,s,c,y),\ \mathit{CBAP}(v,s,c,y,y') \vdash \WD(\mathit{WV}(v,s,c,y',x'))
+  \end{align*}
+  \champ{Role.} The \po{WFIS} POs make the use of witnesses sound: together with
+  R11 to R13, they imply (7) (rule S4). The \po{WWD} POs treat a witness like any
+  other formal text written by the modeller.
+\end{regle}
+\begin{rodin}
+  Box \emph{witnesses in Rodin} of the chapter.
+  \begin{itemize}
+    \item Rodin checks statically that a witness is given for every abstract
+      parameter that disappears and for every disappearing abstract variable that
+      the abstract event modifies non-deterministically; a missing witness is
+      reported as an error, before any proof;
+    \item \po{WFIS} is generated only for non-deterministic witnesses: for a
+      deterministic witness $u=E$ or $x'=E$, Rodin substitutes $E$ for the variable
+      in the other POs (one-point rule); only \po{WWD} remains;
+    \item \po{WWD} is generated for all witnesses;
+    \item limitation: the tool does not help in finding a witness; a wrong choice
+      shows up only as an unprovable \po{GRD}, \po{SIM}, \po{INV} or \po{WFIS} PO,
+      and the modeller must then revise the witness or the gluing invariant.
+  \end{itemize}
+\end{rodin}
+
+\begin{regle}{R15 \quad Refined initialisation: \po{INITIALISATION/jnv$_i$/INV}, \po{act/SIM}, \po{act$_i$/FIS}, \po{act$_i$/WD}, \po{x'/WFIS}, \po{x'/WWD}}
+  \champ{Global condition.}
+  $\AX, \mathit{CInit}(s,c,y') \vdash \exists x'\cdot \mathit{AInit}(s,c,x')\wedge J(s,c,x',y')$.
+  \champ{With the witness $x' : \mathit{WV}(s,c,y',x')$ and S2.} The initialisation
+  has no parameter: the witness does not depend on $v$.
+  \begin{align*}
+    &\AX,\ \mathit{CInit}(s,c,y'),\ \mathit{WV}(s,c,y',x') \vdash J_i(s,c,x',y') && (\po{INITIALISATION/jnv$_i$/INV})\\
+    &\AX,\ \mathit{CInit}(s,c,y'),\ \mathit{WV}(s,c,y',x') \vdash \mathit{AInit}(s,c,x') && (\po{INITIALISATION/act/SIM})\\
+    &\AX \vdash \exists y'\cdot \mathit{CInit}(s,c,y') && (\po{INITIALISATION/act/FIS})\\
+    &\AX \vdash \WD(\mathit{CInit}_i(s,c,y_i')) && (\po{INITIALISATION/act$_i$/WD})\\
+    &\AX,\ \mathit{CInit}(s,c,y') \vdash \exists x'\cdot \mathit{WV}(s,c,y',x') && (\po{INITIALISATION/x'/WFIS})\\
+    &\AX,\ \mathit{CInit}(s,c,y') \vdash \WD(\mathit{WV}(s,c,y',x')) && (\po{INITIALISATION/x'/WWD})
+  \end{align*}
+  \po{x'/WFIS} is produced only when the witness is not deterministic.
+\end{regle}
+
+\begin{regle}{R16 \quad \po{c/act$_i$/FIS}, \po{c/grd$_i$/WD}, \po{c/act$_i$/WD}: feasibility and well-definedness of the concrete event}
+  \champ{Trigger.} The guards and actions of the concrete event $\mathsf{c}$.
+  
+  with the abstract and gluing invariants as hypotheses:
+  \begin{align*}
+    &\AX,\ I,\ J,\ H(v,s,c,y) \vdash \exists y_i'\cdot \mathit{CBAP}_i(v,s,c,y,y_i') && (\po{c/act$_i$/FIS})\\
+    &\AX,\ I,\ J,\ H_1,\dots,H_{i-1} \vdash \WD(H_i(v,s,c,y)) && (\po{c/grd$_i$/WD})\\
+    &\AX,\ I,\ J,\ H(v,s,c,y) \vdash \WD(\mathit{CBAP}_i(v,s,c,y,y_i')) && (\po{c/act$_i$/WD})
+  \end{align*}
+  As in R7, \po{c/act$_i$/FIS} is produced only for non-deterministic actions.
+\end{regle}
+
+\begin{regle}{R17 \quad \po{th/THM}: theorem of the concrete machine}
+  \[ \AX,\ \Th(s,c),\ I(s,c,x),\ J(s,c,x,y) \vdash \mathit{SAFE}(s,c,x,y) \]
+\end{regle}
+
+\begin{regle}{R18 \quad \po{c/NAT}, \po{c/FIN}, \po{c/VAR}: variants in a refinement}
+  \champ{Trigger.} A concrete event with status convergent or anticipated; the
+  variant refers only to the concrete variables $y$.
+  \begin{align*}
+    &\AX, I, J, H(v,s,c,y) \vdash \mathit{varexp}(s,c,y)\in\nat && (\po{c/NAT})\\
+    &\AX, I, J, H(v,s,c,y) \vdash \mathrm{finite}(\mathit{varexp}(s,c,y)) && (\po{c/FIN}, \text{ set-valued variant})\\
+    &\AX, I, J, H, \mathit{CBAP} \vdash \mathit{varexp}(s,c,y') < \mathit{varexp}(s,c,y) && (\text{convergent})\\
+    &\AX, I, J, H, \mathit{CBAP} \vdash \mathit{varexp}(s,c,y') \le \mathit{varexp}(s,c,y) && (\text{anticipated})
+  \end{align*}
+  Rodin produces one or the other \po{c/VAR} PO depending on the status of the event;
+  for a set-valued variant, $<$ and $\le$ become $\subset$ and $\subseteq$.
+  \champ{Methodology.} A \emph{new} event implicitly refines \sff{skip}: its SIM PO
+  then reduces to $x'=x$. It must be convergent so as not to take control forever.
+  An anticipated event postpones this obligation to a later refinement, while
+  guaranteeing that it does not increase the variant.
+\end{regle}
+
+\begin{regle}{R19 \quad \po{c/MRG}: event merging}
+  \champ{Trigger.} A concrete event $\mathsf{c}$ that refines \emph{two} abstract
+  events $\mathsf{a}_1$ and $\mathsf{a}_2$ (\sff{c(a1+a2)}).
+  \champ{Application condition (syntactic).} The actions of $\mathsf{a}_1$,
+  $\mathsf{a}_2$ and $\mathsf{c}$ must be \emph{syntactically identical}, and the merged
+  events must have the same parameters.
+  \champ{PO produced.}
+  \[ \AX,\ I(s,c,x),\ J(s,c,x,y),\ H(v,s,c,y) \vdash G_1(u,s,c,x)\vee G_2(u,s,c,x) \]
+  The gluing invariant $J$ links $y$ (in $H$) to $x$ (in $G_1,G_2$).
+  \champ{Role.} The GRD PO is replaced by the strengthening of the
+  \emph{disjunction} of the guards. The rule makes it possible to reduce the number
+  of events, for instance to obtain a conditional. In the example of the maximum of
+  two numbers (machines \sff{MRG0} to \sff{MRG3}), the PO becomes
+  $done=\mathit{FALSE}\vdash(i<j\wedge done=\mathit{FALSE})\vee(i\ge j\wedge done=\mathit{FALSE})$,
+  which reduces to $i<j\vee i\ge j$, hence to true.
+\end{regle}
+
+% ==================================================================
+\section{Deadlock freedom (semantics)}
+
+These POs are \emph{not} generated systematically by Rodin or by Atelier~B: the
+modeller adds them as theorems, or checks them by model checking (ProB).
+
+\begin{regle}{R20 \quad \po{m/DLF}: deadlock-free machine}
+  \[ \AX,\ I(s,c,x) \vdash \bigvee_{\sff{e}\in E(\mathsf{AM})} \exists u\cdot G_{\sff{e}}(u,s,c,x) \]
+\end{regle}
+\begin{regle}{R21 \quad \po{r/DLF}: the refinement does not deadlock more often}
+  \[ \AX,\ I,\ J,\ \bigvee_{\sff{e}\in E(\mathsf{AM})} \exists u\cdot G_{\sff{e}}(u,s,c,x)
+     \vdash \bigvee_{\sff{e}\in E(\mathsf{CM})} \exists v\cdot H_{\sff{e}}(v,s,c,y) \]
+\end{regle}
+
+% ==================================================================
+\section{Summary table}
+
+\begin{longtable}{p{0.27\linewidth} p{0.27\linewidth} p{0.38\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Trigger} & \textbf{Hypotheses $\vdash$ goal}\\ \midrule\endhead
+\po{x/WD} & any expression & $\AX\,[,I,G] \vdash \WD(x)$\\
+\po{th/THM} (context) & context theorem & $\AX,\Th\vdash th$\\
+\po{th$_i$/THM} (machine) & machine theorem & $\AX,\Th_i,I\vdash \mathit{SAFE}_i$\\
+\po{INITIALISATION/inv$_i$/INV} & invariant $\times$ init. & $\AX,\mathit{initBAP}'\vdash I_i'$\\
+\po{INITIALISATION/act$_i$/FIS} & non-det. init. action & $\AX\vdash\exists x_i'\cdot\mathit{initBAP}_i$\\
+\po{INITIALISATION/act$_i$/WD} & init. action & $\AX\vdash\WD(\mathit{initBAP}_i)$\\
+\po{e/inv$_i$/INV} & invariant $\times$ event & $\AX,I,G,\mathit{BAP}\vdash I_i'$\\
+\po{e/act$_i$/FIS} & non-det. action & $\AX,I,G\vdash\exists x_i'\cdot\mathit{BAP}_i$\\
+\po{e/grd$_i$/WD} & guard & $\AX,I,G_1..G_{i-1}\vdash \WD(G_i)$\\
+\po{e/act$_i$/WD} & action & $\AX,I,G\vdash \WD(\mathit{BAP}_i)$\\
+\po{e/NAT} & convergent/anticipated event & $\AX,I,G\vdash \mathit{varexp}\in\nat$\\
+\po{e/FIN} & same, set-valued variant & $\AX,I,G\vdash \mathrm{finite}(\mathit{varexp})$\\
+\po{e/VAR} & convergent event & $\AX,I,G,\mathit{BAP}\vdash \mathit{varexp}'<\mathit{varexp}$ (or $\subset$)\\
+\po{c/grd/GRD} & abstract guard $\times$ refinement & $\AX,I,J,H,\mathit{WP}\vdash G$\\
+\po{c/act/SIM} & abstract action $\times$ refinement & $\AX,I,J,H,\mathit{CBAP},\mathit{WP},\mathit{WV}\vdash \mathit{ABAP}$\\
+\po{c/jnv$_i$/INV} & gluing invariant & $\AX,I,J,H,\mathit{CBAP},\mathit{WP},\mathit{WV}\vdash J_i'$\\
+\po{c/u/WFIS} & non-det. parameter witness & $\AX,I,J,H\vdash\exists u\cdot \mathit{WP}$\\
+\po{c/x'/WFIS} & non-det. variable witness & $\AX,I,J,H,\mathit{CBAP}\vdash\exists x'\cdot \mathit{WV}$\\
+\po{c/u/WWD}, \po{c/x'/WWD} & any witness & same hypotheses $\vdash\WD(\mathit{WP})$, $\WD(\mathit{WV})$\\
+\po{c/act$_i$/FIS} & non-det. concrete action & $\AX,I,J,H\vdash\exists y_i'\cdot\mathit{CBAP}_i$\\
+\po{c/grd$_i$/WD}, \po{c/act$_i$/WD} & concrete guard, action & $\AX,I,J,H_1..H_{i-1}\vdash\WD(H_i)$; $\AX,I,J,H\vdash\WD(\mathit{CBAP}_i)$\\
+\po{INITIALISATION/jnv$_i$/INV} & refined init. & $\AX,\mathit{CInit}',\mathit{WV}\vdash J_i(x',y')$\\
+\po{INITIALISATION/act/SIM} & refined init. & $\AX,\mathit{CInit}',\mathit{WV}\vdash \mathit{AInit}(x')$\\
+\po{INITIALISATION/x'/WFIS}, \po{x'/WWD} & init. witness & $\AX,\mathit{CInit}'\vdash\exists x'\cdot\mathit{WV}$; $\vdash\WD(\mathit{WV})$\\
+\po{th/THM} (refinement) & concrete theorem & $\AX,\Th,I,J\vdash\mathit{SAFE}$\\
+\po{c/NAT}, \po{c/FIN} & convergent / anticipated & $\AX,I,J,H\vdash \mathit{varexp}(y)\in\nat$ / finite\\
+\po{c/VAR} & convergent / anticipated & $\dots\vdash \mathit{varexp}(y')<\mathit{varexp}(y)$ / $\le$\\
+\po{c/MRG} & merging $\mathsf{a}_1+\mathsf{a}_2$ & $\AX,I,J,H\vdash G_1\vee G_2$\\
+\po{m/DLF}, \po{r/DLF} & optional & disjunction of the guards\\
+\bottomrule
+\end{longtable}
+
+
+\bibliography{refs}
+\end{document}
