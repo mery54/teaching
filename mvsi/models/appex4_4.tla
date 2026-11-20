@@ -1,4 +1,4 @@
----------------------- MODULE appex4_5 --------------------------------
+---------------------- MODULE appex4_4 --------------------------------
 EXTENDS Naturals, Integers, TLC
 CONSTANT MAXINT,x10,x20
 
