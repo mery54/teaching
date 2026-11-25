@@ -1,0 +1,11 @@
+crp power2lit /Users/mery/working-directory/literate-modelling/lemon/power2lit/atelierb/power2lit/bdp /Users/mery/working-directory/literate-modelling/lemon/power2lit/atelierb/power2lit/lang SYSTEM
+op power2lit
+af /Users/mery/working-directory/literate-modelling/lemon/power2lit/atelierb/power2lit/A-C0.sys /Users/mery/working-directory/literate-modelling/lemon/power2lit/atelierb/power2lit/B-PREPOST.sys /Users/mery/working-directory/literate-modelling/lemon/power2lit/atelierb/power2lit/C-COMPUTING.ref /Users/mery/working-directory/literate-modelling/lemon/power2lit/atelierb/power2lit/D-PREALGO.ref /Users/mery/working-directory/literate-modelling/lemon/power2lit/atelierb/power2lit/E-ALGO.ref /Users/mery/working-directory/literate-modelling/lemon/power2lit/atelierb/power2lit/F-ALGOPC.ref
+t A-C0
+t B-PREPOST
+t C-COMPUTING
+t D-PREALGO
+t E-ALGO
+t F-ALGOPC
+clp
+quit

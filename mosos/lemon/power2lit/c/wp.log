@@ -1,0 +1,9 @@
+[kernel] Parsing power2lit.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 30 goals scheduled
+[wp] Proved goals:   32 / 32
+  Terminating:       1
+  Unreachable:       1
+  Qed:              22 (0.90ms-1ms-8ms)
+  Alt-Ergo 2.6.0:    8 (10ms-14ms)

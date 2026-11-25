@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="internal_e1" org.eventb.core.target="REQUIREMENTS"/>
+    <org.eventb.core.seesContext name="internal_e2" org.eventb.core.target="A-C0"/>
+    <org.eventb.core.variable name="internal_e3" org.eventb.core.identifier="r"/>
+    <org.eventb.core.variable name="internal_e4" org.eventb.core.identifier="ok"/>
+    <org.eventb.core.variable name="internal_e5" org.eventb.core.identifier="n"/>
+    <org.eventb.core.invariant name="internal_e6" org.eventb.core.label="inv1" org.eventb.core.predicate="r ∈ ℤ"/>
+    <org.eventb.core.invariant name="internal_e7" org.eventb.core.label="inv4" org.eventb.core.predicate="n ∈ ℤ"/>
+    <org.eventb.core.invariant name="internal_e8" org.eventb.core.label="inv2" org.eventb.core.predicate="ok ∈ BOOL"/>
+    <org.eventb.core.invariant name="internal_e9" org.eventb.core.label="inv3" org.eventb.core.predicate="ok = TRUE ⇒ r = n0 ∗ n0"/>
+    <org.eventb.core.invariant name="internal_e10" org.eventb.core.label="inv5" org.eventb.core.predicate="n = n0"/>
+    <org.eventb.core.event name="internal_e11" org.eventb.core.label="INITIALISATION" org.eventb.core.convergence="0" org.eventb.core.extended="false">
+        <org.eventb.core.action name="internal_e1" org.eventb.core.label="act1" org.eventb.core.assignment="r ≔ r0"/>
+        <org.eventb.core.action name="internal_e2" org.eventb.core.label="act2" org.eventb.core.assignment="ok ≔ FALSE"/>
+        <org.eventb.core.action name="internal_e3" org.eventb.core.label="act3" org.eventb.core.assignment="n ≔ n0"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_e12" org.eventb.core.label="computing" org.eventb.core.convergence="0" org.eventb.core.extended="false">
+        <org.eventb.core.guard name="internal_e1" org.eventb.core.label="LSEgrd1" org.eventb.core.predicate="ok = FALSE"/>
+        <org.eventb.core.action name="internal_e2" org.eventb.core.label="act1" org.eventb.core.assignment="r ≔ v(n)" org.eventb.core.comment="[FUN-3] [FUN-2]"/>
+        <org.eventb.core.action name="internal_e3" org.eventb.core.label="act2" org.eventb.core.assignment="ok ≔ TRUE"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

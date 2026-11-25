@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.carrierSet name="internal_e1" org.eventb.core.identifier="L"/>
+    <org.eventb.core.constant name="internal_e2" org.eventb.core.identifier="n0"/>
+    <org.eventb.core.constant name="internal_e3" org.eventb.core.identifier="v"/>
+    <org.eventb.core.constant name="internal_e4" org.eventb.core.identifier="w"/>
+    <org.eventb.core.constant name="internal_e5" org.eventb.core.identifier="start"/>
+    <org.eventb.core.constant name="internal_e6" org.eventb.core.identifier="end"/>
+    <org.eventb.core.constant name="internal_e7" org.eventb.core.identifier="s"/>
+    <org.eventb.core.constant name="internal_e8" org.eventb.core.identifier="r0"/>
+    <org.eventb.core.axiom name="internal_e9" org.eventb.core.label="pre1" org.eventb.core.predicate="n0 ∈ ℕ" org.eventb.core.comment="precondition [FUN-1]"/>
+    <org.eventb.core.axiom name="internal_e10" org.eventb.core.label="pre2" org.eventb.core.predicate="r0 ∈ ℤ"/>
+    <org.eventb.core.axiom name="internal_e11" org.eventb.core.label="axm2" org.eventb.core.predicate="w ∈ ℕ → ℤ"/>
+    <org.eventb.core.axiom name="internal_e12" org.eventb.core.label="axm3" org.eventb.core.predicate="w(0) = 0"/>
+    <org.eventb.core.axiom name="internal_e13" org.eventb.core.label="axm4" org.eventb.core.predicate="∀ n · n ∈ ℕ ⇒ w(n + 1) = w(n) + 2"/>
+    <org.eventb.core.axiom name="internal_e14" org.eventb.core.label="axm5" org.eventb.core.predicate="v ∈ ℕ → ℤ"/>
+    <org.eventb.core.axiom name="internal_e15" org.eventb.core.label="axm6" org.eventb.core.predicate="v(0) = 0"/>
+    <org.eventb.core.axiom name="internal_e16" org.eventb.core.label="axm7" org.eventb.core.predicate="∀ n · n ∈ ℕ ⇒ v(n + 1) = v(n) + w(n) + 1"/>
+    <org.eventb.core.axiom name="internal_e17" org.eventb.core.label="axm8" org.eventb.core.predicate="partition(L, {start}, {end})"/>
+    <org.eventb.core.axiom name="internal_e18" org.eventb.core.label="axm10" org.eventb.core.predicate="s ∈ ℕ → ℕ ∧ (∀ i · i ∈ ℕ ⇒ s(i) = i + 1)"/>
+    <org.eventb.core.axiom name="internal_e19" org.eventb.core.label="axm9" org.eventb.core.predicate="∀ A · A ⊆ ℕ ∧ 0 ∈ A ∧ s[A] ⊆ A ⇒ ℕ ⊆ A"/>
+    <org.eventb.core.axiom name="internal_e20" org.eventb.core.label="th1" org.eventb.core.predicate="∀ n · n ∈ ℕ ⇒ w(n) = 2 ∗ n" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="internal_e21" org.eventb.core.label="th2" org.eventb.core.predicate="∀ n · n ∈ ℕ ⇒ v(n) = n ∗ n" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="internal_e22" org.eventb.core.label="axm11" org.eventb.core.predicate="n0 ≥ 3"/>
+</org.eventb.core.contextFile>

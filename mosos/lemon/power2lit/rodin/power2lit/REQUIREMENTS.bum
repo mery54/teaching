@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.comment="Exigences du document (lmodel tangle) :&#10;FUN-1 : Le calcul de la fonction λ n · n ∈ ℕ ∣ n∗n est réalisé à partir d'une valeur entière positive ou nulle n0.&#10;FUN-2 : Le résultat r de cette fonction contient la valeur n0∗n0 en fin de calcul.&#10;FUN-3 : Le calcul est modélisé dans la machine \textsf{PREPOST} par un événement computing qui observe la fonction calculant une valeur par l'appel d'une fonction cachée.&#10;Traçabilité (exigence -&gt; éléments) :&#10;FUN-1 -&gt; A-C0.pre1&#10;FUN-2 -&gt; B-PREPOST.computing.act1&#10;FUN-3 -&gt; B-PREPOST.computing.act1" version="5">
+    <org.eventb.core.event name="internal_e1" org.eventb.core.label="INITIALISATION" org.eventb.core.convergence="0" org.eventb.core.extended="false"/>
+</org.eventb.core.machineFile>

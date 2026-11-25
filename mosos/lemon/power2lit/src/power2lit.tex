@@ -1,0 +1,297 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\directlua{luaotfload.add_fallback("lmfallback",
+  {"FreeMono:mode=harf;", "STIXTwoMath-Regular:mode=harf;", "DejaVuSans:mode=harf;"})}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=lmfallback}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=lmfallback}]
+\usepackage[french]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{literate-eventb}
+
+\title{Le projet Rodin power2lit}
+\author{Dominique Méry}
+\date{\today}
+\project{power2lit}
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+
+  Le problème à résoudre est le calcul de la fonction $\lambda. n
+  . n*n$ en utilisant  uniquementb des additions.  La solution est
+  décrite  pendanty une séance de travaux dirigés et ce document présente le développement Event-B \textsf{power2}, obtenu à partir du projet Rodin \textsf{mcfsi3-ex2} : 1 contexte et 5 machines. 
+
+  
+\end{abstract}
+
+
+\section{Les exigences}
+
+% À expliquer : les exigences du système, par exemple
+% \begin{requirement}{FUN-1} … \end{requirement}
+% et \trace{FUN-1} dans les composants.
+
+\begin{requirement}{FUN-1}
+  Le calcul de la fonction  $\lambda n \qdot n \in \nat \mid n*n$ est réalisé à
+  partir d'une valeur  entière positive ou nulle $n0$.
+\end{requirement}
+
+\begin{requirement}{FUN-2}
+  Le résultat r de cette fonction  contient la valeur $n0*n0$ en fin
+  de  calcul.
+\end{requirement}
+
+\begin{requirement}{FUN-3}
+  Le calcul est modélisé dans la machine \textsf{PREPOST} par un
+  événement  computing qui  observe  la fonction calculant une valeur
+  par l'appel d'une fonction cachée.
+\end{requirement}
+
+
+
+\section{Le contexte A-C0}
+
+Le contexte \textsf{A-C0} déclare l'ensemble \textsf{L} et les constantes \textsf{n0}, \textsf{v}, \textsf{w}, \textsf{start}, \textsf{end}, \textsf{s} et \textsf{r0}, avec 12 axiomes et 2 théorèmes.
+% À expliquer : le rôle de A-C0.
+
+\begin{context}{A-C0}
+  \begin{sets}{L}
+  \end{sets}
+  \begin{constants}{n0, v, w, start, end, s, r0}
+    \axm{pre1}{n0 \in \nat} \trace[pre1]{FUN-1}
+    \comment{pre1}{precondition}
+    \axm{pre2}{r0 \in \intg}
+    \axm{axm2}{w \in \nat \tfun \intg}
+    \axm{axm3}{w(0) = 0}
+    \axm{axm4}{\forall n \qdot n \in \nat \limp w(n + 1) = w(n) + 2}
+    \axm{axm5}{v \in \nat \tfun \intg}
+    \axm{axm6}{v(0) = 0}
+    \axm{axm7}{\forall n \qdot n \in \nat \limp v(n + 1) = v(n) + w(n) + 1}
+    \axm{axm8}{\partition(L, \{start\}, \{end\})}
+    \axm{axm10}{s \in \nat \tfun \nat \land (\forall i \qdot i \in \nat \limp s(i) = i + 1)}
+    \axm{axm9}{\forall A \qdot A \subseteq \nat \land 0 \in A \land s[A] \subseteq A \limp \nat \subseteq A}
+    \thm{th1}{\forall n \qdot n \in \nat \limp w(n) = 2 * n}
+    \thm{th2}{\forall n \qdot n \in \nat \limp v(n) = n * n}
+    \axm{axm11}{n0 \geq 3}
+  \end{constants}
+\end{context}
+
+\section{La machine B-PREPOST}
+
+La machine \textsf{B-PREPOST} voit \textsf{A-C0} ; ses variables sont \textsf{r}, \textsf{ok} et \textsf{n}, avec 5 invariants. Elle a 1 événement.
+% À expliquer : le rôle de B-PREPOST.
+
+\begin{machine}{B-PREPOST}
+  \sees{A-C0}
+  \begin{variables}{r, ok, n}
+    \inv{inv1}{r \in \intg}
+    \inv{inv4}{n \in \intg}
+    \inv{inv2}{ok \in \Bool}
+    \inv{inv3}{ok = \True \limp r = n0 * n0}
+    \inv{inv5}{n = n0}
+  \end{variables}
+  % À expliquer : l'initialisation.
+  \begin{initialisation}
+    \begin{action}{act1} r := r0 \end{action}
+    \begin{action}{act2} ok := \False \end{action}
+    \begin{action}{act3} n := n0 \end{action}
+  \end{initialisation}
+  % À expliquer : l'événement computing.
+  \begin{event}{computing}
+    \begin{guard}{LSEgrd1} ok = \False \end{guard}
+    \begin{action}{act1} r := v(n) \end{action} \trace[act1]{FUN-3}\trace[act1]{FUN-2}
+    \begin{action}{act2} ok := \True \end{action}
+  \end{event}
+\end{machine}
+
+\section{La machine C-COMPUTING}
+
+La machine \textsf{C-COMPUTING} raffine \textsf{B-PREPOST} et voit \textsf{A-C0} ; ses variables sont \textsf{r}, \textsf{vv}, \textsf{k}, \textsf{ww}, \textsf{ok} et \textsf{n}, avec 9 invariants et 2 théorèmes. Elle a 2 événements, dont 1 nouveau (\textsf{step}) ; \textsf{step} est convergent (variant).
+% À expliquer : le rôle de C-COMPUTING.
+
+\begin{machine}{C-COMPUTING}
+  \refines{B-PREPOST}
+  \sees{A-C0}
+  \begin{variables}{r, vv, k, ww, ok, n}
+    \inv{inv1}{vv \in \nat \pfun \intg}
+    \inv{inv2}{ww \in \nat \pfun \intg}
+    \inv{inv3}{k \in \nat}
+    \inv{inv4}{\forall i \qdot i \in \dom(vv) \limp vv(i) = v(i)}
+    \inv{inv5}{\forall i \qdot i \in \dom(ww) \limp ww(i) = w(i)}
+    \inv{inv6}{\dom(vv) = 0 \upto k}
+    \inv{inv7}{\dom(ww) = 0 \upto k}
+    \inv{inv8}{k \leq n}
+    \thm{safe1}{\forall i \qdot i \in \dom(vv) \limp vv(i) = i * i}
+    \thm{safe2}{\forall i \qdot i \in \dom(ww) \limp ww(i) = 2 * i}
+    \inv{inv11}{k < n \limp ok = \False}
+  \end{variables}
+  \begin{variant}[vrn1] n - k \end{variant}
+  % À expliquer : l'initialisation.
+  \begin{initialisation}
+    \begin{action}{act1} r := r0 \end{action}
+    \begin{action}{act2} vv := \{0 \mapsto 0\} \end{action}
+    \begin{action}{act3} ww := \{0 \mapsto 0\} \end{action}
+    \begin{action}{act4} k := 0 \end{action}
+    \begin{action}{act5} ok := \False \end{action}
+    \begin{action}{act6} n := n0 \end{action}
+  \end{initialisation}
+  % À expliquer : l'événement computing.
+  \begin{event}{computing}
+    \begin{refines} computing \end{refines}
+    \begin{guard}{grd1} n \in \dom(vv) \end{guard}
+    \begin{guard}{grd2} ok = \False \end{guard}
+    \begin{action}{act1} r := vv(n) \end{action}
+    \begin{action}{act2} ok := \True \end{action}
+  \end{event}
+  % À expliquer : l'événement step.
+  \begin{event}[convergent]{step}
+    \begin{guard}{grd1} n \notin \dom(vv) \end{guard}
+    \begin{guard}{grd2} ok = \False \end{guard}
+    \begin{action}{act1} vv(k + 1) := vv(k) + ww(k) + 1 \end{action}
+    \begin{action}{act2} k := k + 1 \end{action}
+    \begin{action}{act3} ww(k + 1) := ww(k) + 2 \end{action}
+  \end{event}
+\end{machine}
+
+\section{La machine D-PREALGO}
+
+La machine \textsf{D-PREALGO} raffine \textsf{C-COMPUTING} et voit \textsf{A-C0} ; ses variables sont \textsf{r}, \textsf{vv}, \textsf{k}, \textsf{cv}, \textsf{ww}, \textsf{cw}, \textsf{ok} et \textsf{n}, avec 4 invariants et 4 théorèmes. Elle a 2 événements ; \textsf{step} est convergent (variant).
+% À expliquer : le rôle de D-PREALGO.
+
+\begin{machine}{D-PREALGO}
+  \refines{C-COMPUTING}
+  \sees{A-C0}
+  \begin{variables}{r, vv, k, cv, ww, cw, ok, n}
+    \inv{inv2}{cv \in \intg}
+    \inv{inv5}{cv = vv(k)}
+    \inv{inv6}{cw \in \intg}
+    \inv{inv7}{cw = ww(k)}
+    \thm{propk}{k \in 0 \upto n}
+    \thm{thw}{cw = 2 * k}
+    \thm{thv}{cv = k * k}
+    \thm{thvw}{4 * cv = cw * cw}
+  \end{variables}
+  \begin{variant} n - k \end{variant}
+  % À expliquer : l'initialisation.
+  \begin{initialisation}
+    \begin{action}{act1} r := r0 \end{action}
+    \begin{action}{act3} vv := \{0 \mapsto 0\} \end{action}
+    \begin{action}{act5} k := 0 \end{action}
+    \begin{action}{act8} cv := 0 \end{action}
+    \begin{action}{act9} ww := \{0 \mapsto 0\} \end{action}
+    \begin{action}{act10} cw := 0 \end{action}
+    \begin{action}{act11} ok := \False \end{action}
+    \begin{action}{act12} n := n0 \end{action}
+  \end{initialisation}
+  % À expliquer : l'événement computing.
+  \begin{event}{computing}
+    \begin{refines} computing \end{refines}
+    \begin{guard}{grd1} k = n \end{guard}
+    \begin{guard}{grd2} ok = \False \end{guard}
+    \begin{action}{act1} r := cv \end{action}
+    \begin{action}{act2} ok := \True \end{action}
+  \end{event}
+  % À expliquer : l'événement step.
+  \begin{event}[convergent]{step}
+    \begin{refines} step \end{refines}
+    \begin{guard}{grd1} k < n \end{guard}
+    \begin{guardth}{grd2} ok = \False \end{guardth}
+    \begin{action}{act2} vv(k + 1) := vv(k) + ww(k) + 1 \end{action}
+    \begin{action}{act4} k := k + 1 \end{action}
+    \begin{action}{act5} cv := cv + cw + 1 \end{action}
+    \begin{action}{act6} ww(k + 1) := ww(k) + 2 \end{action}
+    \begin{action}{act7} cw := cw + 2 \end{action}
+  \end{event}
+\end{machine}
+
+\section{La machine E-ALGO}
+
+La machine \textsf{E-ALGO} raffine \textsf{D-PREALGO} et voit \textsf{A-C0} ; ses variables sont \textsf{r}, \textsf{k}, \textsf{cv}, \textsf{cw}, \textsf{ok} et \textsf{n}, avec 0 invariant et 3 théorèmes. Elle a 2 événements ; \textsf{step} est convergent (variant).
+% À expliquer : le rôle de E-ALGO.
+
+\begin{machine}{E-ALGO}
+  \refines{D-PREALGO}
+  \sees{A-C0}
+  \begin{variables}{r, k, cv, cw, ok, n}
+    \thm{th1}{cw = 2 * k}
+    \thm{th2}{cv = k * k}
+    \thm{inv1th3}{4 * cv = cw * cw}
+  \end{variables}
+  \begin{variant} n - k \end{variant}
+  % À expliquer : l'initialisation.
+  \begin{initialisation}
+    \begin{action}{act1} r := r0 \end{action}
+    \begin{action}{act5} k := 0 \end{action}
+    \begin{action}{act8} cv := 0 \end{action}
+    \begin{action}{act10} cw := 0 \end{action}
+    \begin{action}{act11} ok := \False \end{action}
+    \begin{action}{act12} n := n0 \end{action}
+  \end{initialisation}
+  % À expliquer : l'événement computing.
+  \begin{event}{computing}
+    \begin{refines} computing \end{refines}
+    \begin{guard}{grd1} k = n \end{guard}
+    \begin{guard}{grd2} ok = \False \end{guard}
+    \begin{action}{act1} r := cv \end{action}
+    \begin{action}{act2} ok := \True \end{action}
+  \end{event}
+  % À expliquer : l'événement step.
+  \begin{event}[convergent]{step}
+    \begin{refines} step \end{refines}
+    \begin{guard}{grd1} k < n \end{guard}
+    \begin{guardth}{grd2} ok = \False \end{guardth}
+    \begin{action}{act4} k := k + 1 \end{action}
+    \begin{action}{act5} cv := cv + cw + 1 \end{action}
+    \begin{action}{act7} cw := cw + 2 \end{action}
+  \end{event}
+\end{machine}
+
+\section{La machine F-ALGOPC}
+
+La machine \textsf{F-ALGOPC} raffine \textsf{E-ALGO} et voit \textsf{A-C0} ; ses variables sont \textsf{r}, \textsf{k}, \textsf{cv}, \textsf{cw}, \textsf{pc} et \textsf{n}, avec 4 invariants et 3 théorèmes. Elle a 2 événements ; \textsf{step} est convergent (variant).
+% À expliquer : le rôle de F-ALGOPC.
+
+\begin{machine}{F-ALGOPC}
+  \refines{E-ALGO}
+  \sees{A-C0}
+  \begin{variables}{r, k, cv, cw, pc, n}
+    \inv{inv1}{pc \in L}
+    \inv{inv2}{pc = end \limp r = v(n)}
+    \inv{inv3}{pc = start \leqv ok = \False}
+    \inv{inv4}{pc = end \leqv ok = \True}
+    \thm{th1}{cw = 2 * k}
+    \thm{th2}{cv = k * k}
+    \thm{th3}{4 * cv = cw * cw}
+  \end{variables}
+  \begin{variant} n - k \end{variant}
+  % À expliquer : l'initialisation.
+  \begin{initialisation}
+    \begin{action}{act1} r := r0 \end{action}
+    \begin{action}{act5} k := 0 \end{action}
+    \begin{action}{act8} cv := 0 \end{action}
+    \begin{action}{act10} cw := 0 \end{action}
+    \begin{action}{act11} pc := start \end{action}
+    \begin{action}{act12} n := n0 \end{action}
+  \end{initialisation}
+  % À expliquer : l'événement computing.
+  \begin{event}{computing}
+    \begin{refines} computing \end{refines}
+    \begin{guard}{grd1} k = n \end{guard}
+    \begin{guard}{grd2} pc = start \end{guard}
+    \begin{action}{act1} r := cv \end{action}
+    \begin{action}{act2} pc := end \end{action}
+  \end{event}
+  % À expliquer : l'événement step.
+  \begin{event}[convergent]{step}
+    \begin{refines} step \end{refines}
+    \begin{guard}{grd1} k < n \end{guard}
+    \begin{guard}{grd2} pc = start \end{guard}
+    \begin{action}{act4} k := k + 1 \end{action}
+    \begin{action}{act5} cv := cv + cw + 1 \end{action}
+    \begin{action}{act7} cw := cw + 2 \end{action}
+  \end{event}
+\end{machine}
+
+\end{document}

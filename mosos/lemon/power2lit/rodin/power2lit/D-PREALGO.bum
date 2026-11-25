@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="internal_e1" org.eventb.core.target="C-COMPUTING"/>
+    <org.eventb.core.seesContext name="internal_e2" org.eventb.core.target="A-C0"/>
+    <org.eventb.core.variable name="internal_e3" org.eventb.core.identifier="r"/>
+    <org.eventb.core.variable name="internal_e4" org.eventb.core.identifier="vv"/>
+    <org.eventb.core.variable name="internal_e5" org.eventb.core.identifier="k"/>
+    <org.eventb.core.variable name="internal_e6" org.eventb.core.identifier="cv"/>
+    <org.eventb.core.variable name="internal_e7" org.eventb.core.identifier="ww"/>
+    <org.eventb.core.variable name="internal_e8" org.eventb.core.identifier="cw"/>
+    <org.eventb.core.variable name="internal_e9" org.eventb.core.identifier="ok"/>
+    <org.eventb.core.variable name="internal_e10" org.eventb.core.identifier="n"/>
+    <org.eventb.core.invariant name="internal_e11" org.eventb.core.label="inv2" org.eventb.core.predicate="cv ∈ ℤ"/>
+    <org.eventb.core.invariant name="internal_e12" org.eventb.core.label="inv5" org.eventb.core.predicate="cv = vv(k)"/>
+    <org.eventb.core.invariant name="internal_e13" org.eventb.core.label="inv6" org.eventb.core.predicate="cw ∈ ℤ"/>
+    <org.eventb.core.invariant name="internal_e14" org.eventb.core.label="inv7" org.eventb.core.predicate="cw = ww(k)"/>
+    <org.eventb.core.invariant name="internal_e15" org.eventb.core.label="propk" org.eventb.core.predicate="k ∈ 0 ‥ n" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="internal_e16" org.eventb.core.label="thw" org.eventb.core.predicate="cw = 2 ∗ k" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="internal_e17" org.eventb.core.label="thv" org.eventb.core.predicate="cv = k ∗ k" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="internal_e18" org.eventb.core.label="thvw" org.eventb.core.predicate="4 ∗ cv = cw ∗ cw" org.eventb.core.theorem="true"/>
+    <org.eventb.core.variant name="internal_e19" org.eventb.core.label="vrn1" org.eventb.core.expression="n − k"/>
+    <org.eventb.core.event name="internal_e20" org.eventb.core.label="INITIALISATION" org.eventb.core.convergence="0" org.eventb.core.extended="false">
+        <org.eventb.core.action name="internal_e1" org.eventb.core.label="act1" org.eventb.core.assignment="r ≔ r0"/>
+        <org.eventb.core.action name="internal_e2" org.eventb.core.label="act3" org.eventb.core.assignment="vv ≔ {0 ↦ 0}"/>
+        <org.eventb.core.action name="internal_e3" org.eventb.core.label="act5" org.eventb.core.assignment="k ≔ 0"/>
+        <org.eventb.core.action name="internal_e4" org.eventb.core.label="act8" org.eventb.core.assignment="cv ≔ 0"/>
+        <org.eventb.core.action name="internal_e5" org.eventb.core.label="act9" org.eventb.core.assignment="ww ≔ {0 ↦ 0}"/>
+        <org.eventb.core.action name="internal_e6" org.eventb.core.label="act10" org.eventb.core.assignment="cw ≔ 0"/>
+        <org.eventb.core.action name="internal_e7" org.eventb.core.label="act11" org.eventb.core.assignment="ok ≔ FALSE"/>
+        <org.eventb.core.action name="internal_e8" org.eventb.core.label="act12" org.eventb.core.assignment="n ≔ n0"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_e21" org.eventb.core.label="computing" org.eventb.core.convergence="0" org.eventb.core.extended="false">
+        <org.eventb.core.refinesEvent name="internal_e1" org.eventb.core.target="computing"/>
+        <org.eventb.core.guard name="internal_e2" org.eventb.core.label="grd1" org.eventb.core.predicate="k = n"/>
+        <org.eventb.core.guard name="internal_e3" org.eventb.core.label="grd2" org.eventb.core.predicate="ok = FALSE"/>
+        <org.eventb.core.action name="internal_e4" org.eventb.core.label="act1" org.eventb.core.assignment="r ≔ cv"/>
+        <org.eventb.core.action name="internal_e5" org.eventb.core.label="act2" org.eventb.core.assignment="ok ≔ TRUE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_e22" org.eventb.core.label="step" org.eventb.core.convergence="1" org.eventb.core.extended="false">
+        <org.eventb.core.refinesEvent name="internal_e1" org.eventb.core.target="step"/>
+        <org.eventb.core.guard name="internal_e2" org.eventb.core.label="grd1" org.eventb.core.predicate="k &lt; n"/>
+        <org.eventb.core.guard name="internal_e3" org.eventb.core.label="grd2" org.eventb.core.predicate="ok = FALSE" org.eventb.core.theorem="true"/>
+        <org.eventb.core.action name="internal_e4" org.eventb.core.label="act2" org.eventb.core.assignment="vv(k + 1) ≔ vv(k) + ww(k) + 1"/>
+        <org.eventb.core.action name="internal_e5" org.eventb.core.label="act4" org.eventb.core.assignment="k ≔ k + 1"/>
+        <org.eventb.core.action name="internal_e6" org.eventb.core.label="act5" org.eventb.core.assignment="cv ≔ cv + cw + 1"/>
+        <org.eventb.core.action name="internal_e7" org.eventb.core.label="act6" org.eventb.core.assignment="ww(k + 1) ≔ ww(k) + 2"/>
+        <org.eventb.core.action name="internal_e8" org.eventb.core.label="act7" org.eventb.core.assignment="cw ≔ cw + 2"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

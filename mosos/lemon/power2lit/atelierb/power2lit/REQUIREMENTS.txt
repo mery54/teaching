@@ -1,0 +1,13 @@
+Requirements of the literate model power2lit.tex
+
+FUN-1
+    Le calcul de la fonction λ n · n ∈ ℕ ∣ n∗n est réalisé à partir d'une valeur entière positive ou nulle n0.
+    -> A-C0.pre1
+
+FUN-2
+    Le résultat r de cette fonction contient la valeur n0∗n0 en fin de calcul.
+    -> B-PREPOST.computing.act1
+
+FUN-3
+    Le calcul est modélisé dans la machine \textsf{PREPOST} par un événement computing qui observe la fonction calculant une valeur par l'appel d'une fonction cachée.
+    -> B-PREPOST.computing.act1
